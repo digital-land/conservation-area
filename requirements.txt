@@ -1,0 +1,8 @@
+black==20.8b1
+decorator==4.4.2
+-e git+https://github.com/digital-land/frontend.git#egg=digital_land_frontend
+-e git+https://github.com/digital-land/govuk-jinja-components.git#egg=govuk_jinja_components
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+six==1.15.0
+validators==0.18.1
