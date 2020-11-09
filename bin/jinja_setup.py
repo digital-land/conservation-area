@@ -24,6 +24,6 @@ def setup_jinja():
 
     # set variables to make available to all templates
     env.globals["staticPath"] = "https://digital-land.github.io"
-    env.globals["urlPath"] = "/design-system"
+    env.globals["urlPath"] = "/conservation-area-geography"
 
     return env
