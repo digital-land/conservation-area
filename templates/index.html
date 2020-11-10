@@ -1,0 +1,29 @@
+{% extends "digital-land-frontend/dlf-base.html" %}
+{%- from "digital-land-frontend/components/map/macro.html" import dlMap %}
+
+{%- block beforeContent -%}
+    {{ super() }}
+
+    {{- govukBreadcrumbs({
+    "items": [
+        {
+        "text": "Digital Land",
+        "href": "/"
+        },
+        {
+        "text": "Conservation area geographies"
+        }
+    ]
+    }) -}}
+{%- endblock -%}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Conservation area geographies</h1>
+
+<ul class="govuk-list govuk-list--bullet">
+    {% for area in conservation_areas %}
+    <li><a href="{{ area['id'] }}">{{ area['id'] }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock content %}
