@@ -17,7 +17,33 @@
 
 {% endblock  %}
 
+{%- block beforeContent -%}
+    {{ super() }}
+
+    {{- govukBreadcrumbs({
+    "items": [
+        {
+        "text": "Digital Land",
+        "href": "/"
+        },
+        {
+        "text": "Conservation area geographies",
+        "href": "/conservation-area-geography"
+        },
+        {
+        "text": con_area['resource']|truncate(12)
+        }
+    ]
+    }) -}}
+{%- endblock -%}
+
 {% block content %}
+
+<span class="govuk-caption-xl">Conservation area geography</span>
+<h1 class="govuk-heading-xl">{{ con_area['resource']|truncate(12) }}</h1>
+
+{{ con_area }}
+
 {{ dlMap({
     "id": "aMap",
     "classes": "govuk-!-margin-top-1 govuk-!-margin-bottom-2",
