@@ -21,6 +21,7 @@
 
 <h1 class="govuk-heading-xl">Conservation area geographies</h1>
 
+<p class="govuk-body">Showing {{ conservation_areas|length }} records.</p>
 <ul class="govuk-list govuk-list--bullet">
     {% for area in conservation_areas %}
     <li><a href="{{ area['id'] }}">{{ area['id'] }}</a></li>
