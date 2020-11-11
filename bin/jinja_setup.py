@@ -2,6 +2,8 @@
 
 import jinja2
 
+from digital_land_frontend.filters import organisation_id_to_name_filter
+
 
 def setup_jinja():
     # register templates
@@ -21,6 +23,9 @@ def setup_jinja():
         ]
     )
     env = jinja2.Environment(loader=multi_loader)
+
+    # register jinja filters
+    env.filters["organisation_id_to_name"] = organisation_id_to_name_filter
 
     # set variables to make available to all templates
     env.globals["staticPath"] = "https://digital-land.github.io"
