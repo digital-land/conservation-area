@@ -21,10 +21,14 @@
 
 <h1 class="govuk-heading-xl">Conservation area geographies</h1>
 
-<p class="govuk-body">Showing {{ conservation_areas|length }} records.</p>
+<p class="govuk-body">Showing {{ conservation_areas['count'] }} records from {{ conservation_areas['organisation']|length }} organisations.</p>
+
+{% for org in conservation_areas['organisation']  %}
+<h4 class="govuk-heading-s">{{ org|organisation_id_to_name }}</h4>
 <ul class="govuk-list govuk-list--bullet">
-    {% for area in conservation_areas %}
+    {% for area in conservation_areas['organisation'][org] %}
     <li><a href="{{ urlRoot }}{{ area['id'] }}">{{ area['id'] }}</a></li>
     {% endfor %}
 </ul>
+{% endfor %}
 {% endblock content %}

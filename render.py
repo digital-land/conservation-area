@@ -5,7 +5,7 @@ import sys
 import csv
 import json
 
-from collections import Counter
+from collections import Counter, OrderedDict
 
 from bin.convert_geojson import wkt_to_json_geometry
 from bin.jinja_setup import setup_jinja
@@ -48,12 +48,19 @@ def create_geometry_file(area):
         print(e)
 
 
+def by_organisation(areas):
+    by_organisation = {}
+    for area in areas:
+        by_organisation.setdefault(area["organisation"], [])
+        by_organisation[area["organisation"]].append(area)
+    return OrderedDict(sorted(by_organisation.items()))
+
+
 def generate_pages():
     conservation_areas = []
     for idx, o in enumerate(csv.DictReader(open(dataset_csv)), start=1):
-        o[
-            "id"
-        ] = f"{idx}:{o['resource']}"  # temporary ids using row number and resource
+        # temporary ids using row number and resource
+        o["id"] = f"{idx}:{o['resource']}"
         # attempt to create a more readable id
         o["id"] = f"{create_conservation_area_identifier(o)}:{idx}"
         create_geometry_file(o)
@@ -63,7 +70,15 @@ def generate_pages():
 
     # id_counts = Counter([x["id"] for x in conservation_areas])
     # print(sorted(id_counts.items(), key=lambda x: x[1]))
-    render("index.html", index_template, conservation_areas=conservation_areas)
+    cas = {
+        "count": len(conservation_areas),
+        "organisation": by_organisation(conservation_areas),
+    }
+    render(
+        "index.html",
+        index_template,
+        conservation_areas=cas,
+    )
 
 
 if __name__ == "__main__":
