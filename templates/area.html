@@ -29,7 +29,7 @@
         },
         {
         "text": "Conservation area geographies",
-        "href": "/conservation-area-geography"
+        "href": urlRoot
         },
         {
         "text": con_area['resource']|truncate(12)
@@ -53,7 +53,7 @@
     <dd class="govuk-summary-list__value">
     {% if i == "organisation" %}
     <a href="https://digital-land.github.io/organisation/{{con_area[i]|replace(':','/')}}" class="govuk-link">{{ con_area[i]|organisation_id_to_name }}</a>
-    <span class="govuk-!-font-size-16 secondary-text">({{ con_area[i] }})</span>
+    <span title="Key in organisation dataset: {{ con_area[i] }}" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Key in the organisation dataset is </span>{{ con_area[i] }})</span>
     {% else %}
     {{ con_area[i] }}
     {% endif %}

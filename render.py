@@ -31,6 +31,7 @@ def render(path, template, **kwargs):
 
 
 env = setup_jinja()
+env.globals["urlRoot"] = "/conservation-area-geography/"
 index_template = env.get_template("index.html")
 area_template = env.get_template("area.html")
 
@@ -47,16 +48,27 @@ def create_geometry_file(area):
         print(e)
 
 
-conservation_areas = []
-for idx, o in enumerate(csv.DictReader(open(dataset_csv)), start=1):
-    o["id"] = f"{idx}:{o['resource']}"  # temporary ids using row number and resource
-    # attempt to create a more readable id
-    o["id"] = f"{create_conservation_area_identifier(o)}:{idx}"
-    create_geometry_file(o)
-    del o["geometry"]  # don't need to send to template
-    conservation_areas.append(o)
-    render(f"{o['id']}/index.html", area_template, con_area=o)
+def generate_pages():
+    conservation_areas = []
+    for idx, o in enumerate(csv.DictReader(open(dataset_csv)), start=1):
+        o[
+            "id"
+        ] = f"{idx}:{o['resource']}"  # temporary ids using row number and resource
+        # attempt to create a more readable id
+        o["id"] = f"{create_conservation_area_identifier(o)}:{idx}"
+        create_geometry_file(o)
+        del o["geometry"]  # don't need to send to template
+        conservation_areas.append(o)
+        render(f"{o['id']}/index.html", area_template, con_area=o)
 
-# id_counts = Counter([x["id"] for x in conservation_areas])
-# print(sorted(id_counts.items(), key=lambda x: x[1]))
-render("index.html", index_template, conservation_areas=conservation_areas)
+    # id_counts = Counter([x["id"] for x in conservation_areas])
+    # print(sorted(id_counts.items(), key=lambda x: x[1]))
+    render("index.html", index_template, conservation_areas=conservation_areas)
+
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == "--local":
+        # env.globals["staticPath"] = "/static"
+        env.globals["urlRoot"] = "/"
+
+    generate_pages()
