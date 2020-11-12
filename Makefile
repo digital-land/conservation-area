@@ -7,7 +7,7 @@ collect:
 render:
 	python render.py
 
-build: collect render
+build: clean collect render
 
 clean:
 	rm -r ./docs/
