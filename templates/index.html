@@ -36,7 +36,7 @@
       </div>
       <div id="accordion-default-content-{{loop.index}}" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-{{loop.index}}">
         <ul class="govuk-list govuk-list--bullet">
-            {% for area in conservation_areas['organisation'][org] %}
+            {% for area in conservation_areas['organisation'][org]['area'] %}
             <li><a href="{{ urlRoot }}{{ area['id'] }}">{{ area['id'] }}</a></li>
             {% endfor %}
         </ul>
