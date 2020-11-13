@@ -7,6 +7,8 @@ import json
 
 from collections import Counter, OrderedDict
 
+from digital_land_frontend.jinja_filters.organisation_mapper import OrganisationMapper
+
 from bin.convert_geojson import wkt_to_json_geometry
 from bin.jinja_setup import setup_jinja
 from bin.create_id import create_conservation_area_identifier
@@ -17,6 +19,8 @@ csv.field_size_limit(sys.maxsize)
 docs = "docs"
 dataset_csv = "data/dataset.csv"
 # dataset_csv = "data/small.csv"
+
+organisation_mapper = OrganisationMapper()
 
 
 def render(path, template, **kwargs):
@@ -51,9 +55,10 @@ def create_geometry_file(area):
 def by_organisation(areas):
     by_organisation = {}
     for area in areas:
-        by_organisation.setdefault(area["organisation"], [])
-        by_organisation[area["organisation"]].append(area)
-    return OrderedDict(sorted(by_organisation.items()))
+        o = {"name": organisation_mapper.get_by_key(area["organisation"]), "area": []}
+        by_organisation.setdefault(area["organisation"], o)
+        by_organisation[area["organisation"]]["area"].append(area)
+    return OrderedDict(sorted(by_organisation.items(), key=lambda x: x[1]["name"]))
 
 
 def generate_pages():
