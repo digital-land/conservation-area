@@ -1,6 +1,6 @@
-# Conservation Area Geographies
+# Conservation Area
 
-This repo renders the conservation area geogrpahy pages on the digital land site.
+This repo renders the [conservation area pages](https://digital-land.github.io/conservation-area/) on the digital land site.
 
 ### Getting started
 
@@ -8,11 +8,11 @@ Install requirements
 
     make init
 
-To build all pages (using the latest [dataset.csv](https://raw.githubusercontent.com/digital-land/conservation-area-geography-collection/master/index/dataset.csv)) run
+To build all pages (using the latest [dataset.csv](https://github.com/digital-land/conservation-area-collection/blob/main/index/dataset.csv)) run
 
     make build
 
-Fetch latest dataset from the [conservation-area-geography-collection](https://github.com/digital-land/conservation-area-geography-collection/tree/national-dataset).
+Fetch latest dataset from the [conservation-area-collection](https://github.com/digital-land/conservation-area-collection).
 
     make collect
 

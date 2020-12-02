@@ -28,7 +28,7 @@
         "href": "/"
         },
         {
-        "text": "Conservation area geographies",
+        "text": "Conservation areas",
         "href": urlRoot
         },
         {
@@ -40,7 +40,7 @@
 
 {% block content %}
 
-<span class="govuk-caption-xl">Conservation area geography</span>
+<span class="govuk-caption-xl">Conservation area</span>
 <h1 class="govuk-heading-xl">{{ con_area['name'] if con_area['name'] else con_area['id']|truncate(16) }}</h1>
 
 {% set props = ['conservation-area', 'name', 'organisation', 'documentation-url', 'entry-date', 'start-date', 'end-date'] %}
