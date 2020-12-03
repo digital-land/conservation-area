@@ -7,7 +7,7 @@ collect:
 render:
 	python render.py
 
-render/local:
+local:
 	python render.py --local
 
 build: clean collect render

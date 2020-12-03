@@ -19,3 +19,7 @@ Fetch latest dataset from the [conservation-area-collection](https://github.com/
 To build pages from `dataset.csv` in `/data`
 
     make render
+
+You can also build them locally (this updates the asset paths) for testing. Do this with
+
+    make local
