@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 
-import os
-import sys
 import csv
 import json
+import os
+import sys
+from collections import OrderedDict
 
-from collections import Counter, OrderedDict
-
+from digital_land_frontend.jinja import setup_jinja
 from digital_land_frontend.jinja_filters.organisation_mapper import OrganisationMapper
+from digital_land_frontend.render import render
 
 from bin.convert_geojson import wkt_to_json_geometry
-from bin.jinja_setup import setup_jinja
 from bin.create_id import create_conservation_area_identifier
 
 # handle large field sizes
@@ -23,18 +23,8 @@ dataset_csv = "data/dataset.csv"
 organisation_mapper = OrganisationMapper()
 
 
-def render(path, template, **kwargs):
-    path = os.path.join(docs, path)
-    directory = os.path.dirname(path)
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
-    with open(path, "w") as f:
-        print(f"creating {path}")
-        f.write(template.render(**kwargs))
-
-
 env = setup_jinja()
+env.globals["urlPath"] = "/conservation-area-geography"
 env.globals["urlRoot"] = "/conservation-area-geography/"
 index_template = env.get_template("index.html")
 area_template = env.get_template("area.html")
