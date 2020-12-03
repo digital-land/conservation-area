@@ -23,7 +23,8 @@ dataset_csv = "data/dataset.csv"
 organisation_mapper = OrganisationMapper()
 
 
-env = setup_jinja(url_path="/conservation-area-geography")
+env = setup_jinja()
+env.globals["urlPath"] = "/conservation-area-geography"
 env.globals["urlRoot"] = "/conservation-area-geography/"
 index_template = env.get_template("index.html")
 area_template = env.get_template("area.html")
