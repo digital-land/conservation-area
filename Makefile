@@ -12,6 +12,9 @@ local:
 
 build: clean collect render
 
+serve:
+	python -m http.server --directory docs
+
 clean:
 	rm -r ./docs/
 	mkdir docs
