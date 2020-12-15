@@ -5,6 +5,7 @@ click==7.1.2
 dataclasses
 decorator==4.4.2
 -e git+https://github.com/digital-land/frontend.git#egg=digital_land_frontend
+-e git+https://github.com/digital-land/digital-land-python#egg=digital_land
 -e git+https://github.com/digital-land/govuk-jinja-components.git#egg=govuk_jinja_components
 importlib-metadata==2.0.0
 iniconfig==1.1.1
