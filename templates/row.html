@@ -28,11 +28,11 @@
         "href": "/"
         },
         {
-        "text": "Conservation areas",
+        "text": data_type|capitalize,
         "href": urlRoot
         },
         {
-        "text": con_area['resource']|truncate(12)
+        "text": row['id']|truncate(12)
         }
     ]
     }) -}}
@@ -40,41 +40,43 @@
 
 {% block content %}
 
-<span class="govuk-caption-xl">Conservation area</span>
-<h1 class="govuk-heading-xl">{{ con_area['name'] if con_area['name'] else con_area['id']|truncate(16) }}</h1>
+<span class="govuk-caption-xl">{{ data_type }}</span>
+<h1 class="govuk-heading-xl">{{ row['site-address']|truncate(20) }}</h1>
 
-{% set props = ['conservation-area', 'name', 'organisation', 'documentation-url', 'entry-date', 'start-date', 'end-date'] %}
 {% set areaproperties %}
-{% for i in props %}
+{% for i in row.keys() %}
+{% if i not in ["id", "resource", "geometry"] %}
 <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
     {{ i }}
     </dt>
     <dd class="govuk-summary-list__value">
     {% if i == "organisation" %}
-    <a href="https://digital-land.github.io/organisation/{{con_area[i]|replace(':','/')}}" class="govuk-link">{{ con_area[i]|organisation_id_to_name }}</a>
-    <span title="Key in organisation dataset: {{ con_area[i] }}" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Key in the organisation dataset is </span>{{ con_area[i] }})</span>
+    <a href="https://digital-land.github.io/organisation/{{row[i]|replace(':','/')}}" class="govuk-link">{{ row[i]|organisation_id_to_name }}</a>
+    <span title="Key in organisation dataset: {{ row[i] }}" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Key in the organisation dataset is </span>{{ row[i] }})</span>
     {% else %}
-    {{ con_area[i] }}
+    {{ row[i] }}
     {% endif %}
     </dd>
 </div>
+{% endif %}
 {% endfor %}
 {% endset %}
 
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         {{ dlDataRecordPanel({
-            "identifier": con_area['id'],
+            "identifier": row['site'] if row['site'] else row['id'],
             "resource": {
-                "identifier": con_area['resource'],
-                "url": "https://github.com/digital-land/conservation-area-geography-collection/blob/master/collection/resource/" + con_area['resource']
+                "identifier": row['resource'],
+                "url": "https://github.com/digital-land/brownland-land-collection/blob/master/collection/resource/" + row['resource']
             },
             "html": areaproperties
         }) }}
     </div>
 </div>
 
+{% if row["has_geometry"] %}
 {{ dlMap({
     "id": "aMap",
     "classes": "govuk-!-margin-top-4 govuk-!-margin-bottom-2",
@@ -83,12 +85,18 @@
     },
     "height": "460"
 }) }}
-{% endblock content %}
+{% endif %}
+
+{% endblock %}
 
 {% block bodyEnd %}
 {{ super() }}
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    new DLMaps.Map($mapElement).init({})
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        geojsonOptions: {
+            geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
+        }
+    })
 </script>
 {% endblock %}
