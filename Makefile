@@ -5,10 +5,10 @@ collect:
 	wget -O data/dataset.csv https://raw.githubusercontent.com/digital-land/conservation-area-collection/main/index/dataset.csv
 
 render:
-	python render.py
+	digital-land --pipeline-name conservation-area render --dataset-path data/dataset.csv --key-fields "organisation,conservation-area"
 
 local:
-	python render.py --local
+	digital-land --pipeline-name conservation-area render --dataset-path data/dataset.csv --local --key-fields "organisation,conservation-area"
 
 build: clean collect render
 
