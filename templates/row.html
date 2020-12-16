@@ -32,7 +32,7 @@
         "href": urlRoot
         },
         {
-        "text": row['id']|truncate(12)
+        "text": row['slug']|truncate(12)
         }
     ]
     }) -}}
@@ -66,7 +66,7 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         {{ dlDataRecordPanel({
-            "identifier": row['site'] if row['site'] else row['id'],
+            "identifier": row['site'] if row['site'] else row['slug'],
             "resource": {
                 "identifier": row['resource'],
                 "url": "https://github.com/digital-land/brownland-land-collection/blob/master/collection/resource/" + row['resource']

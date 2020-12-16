@@ -37,7 +37,7 @@
       <div id="accordion-default-content-{{loop.index}}" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-{{loop.index}}">
         <ul class="govuk-list govuk-list--bullet">
             {% for row in index['organisation'][org]['rows'] %}
-            <li><a href="{{ urlRoot }}{{ row['id'] }}">{{ row['id'] }}</a></li>
+            <li><a href="{{ urlRoot }}{{ row['slug'] }}">{{ row['slug'] }}</a></li>
             {% endfor %}
         </ul>
       </div>
