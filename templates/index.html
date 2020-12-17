@@ -38,10 +38,10 @@
         <ul class="govuk-list govuk-list--bullet">
             {% for row in index['organisation'][org]['rows'] %}
             {% set ns = namespace(row_name="") %}
-            {% if row['name'] %}
-            {% set ns.row_name = row['name'] + " (" + row['slug']|clean_slug + ")" %}
-            {% else %}
+            {% if row['name'] == row['slug']|clean_slug %}
             {% set ns.row_name = row['slug']|clean_slug %}
+            {% else %}
+            {% set ns.row_name = row['name'] + " (" + row['slug']|clean_slug + ")" %}
             {% endif %}
             <li><a href="{{ urlRoot }}{{ row['slug'] }}">{{ ns.row_name }}</a></li>
             {% endfor %}
