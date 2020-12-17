@@ -27,7 +27,7 @@
 <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
     {% for org in index['organisation']  %}
     <div class="govuk-accordion__section ">
-      <div class="govuk-accordion__section-header">
+      <div class="govuk-accordion__section-header" id="{{ org }}">
         <h2 class="govuk-accordion__section-heading">
           <span class="govuk-accordion__section-button" id="accordion-default-heading-{{loop.index}}">
             {{ org|organisation_id_to_name }}
@@ -39,7 +39,7 @@
             {% for row in index['organisation'][org]['rows'] %}
             {% set ns = namespace(row_name="") %}
             {% if row['name'] %}
-            {% set ns.row_name = row['name'] + " (id: " + row['slug']|clean_slug + ")" %}
+            {% set ns.row_name = row['name'] + " (" + row['slug']|clean_slug + ")" %}
             {% else %}
             {% set ns.row_name = row['slug']|clean_slug %}
             {% endif %}
