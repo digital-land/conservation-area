@@ -45,7 +45,7 @@
 
 {% set areaproperties %}
 {% for i in row.keys() %}
-{% if i not in ["id", "resource", "geometry"] %}
+{% if i not in ["id", "resource", "geometry", "has_geometry"] %}
 <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
     {{ i }}
@@ -69,7 +69,7 @@
             "identifier": row['site'] if row['site'] else row['slug'],
             "resource": {
                 "identifier": row['resource'],
-                "url": "https://github.com/digital-land/brownland-land-collection/blob/master/collection/resource/" + row['resource']
+                "url": "https://github.com/digital-land/" + data_type + "-collection/tree/main/transformed/" + data_type + "/" + row['resource'] + ".csv"
             },
             "html": areaproperties
         }) }}
