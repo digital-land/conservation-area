@@ -37,7 +37,13 @@
       <div id="accordion-default-content-{{loop.index}}" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-{{loop.index}}">
         <ul class="govuk-list govuk-list--bullet">
             {% for row in index['organisation'][org]['rows'] %}
-            <li><a href="{{ urlRoot }}{{ row['slug'] }}">{{ row['slug'] }}</a></li>
+            {% set ns = namespace(row_name="") %}
+            {% if row['name'] %}
+            {% set ns.row_name = row['name'] + " (" + row['slug'] + ")" %}
+            {% else %}
+            {% set ns.row_name = row['slug'] %}
+            {% endif %}
+            <li><a href="{{ urlRoot }}{{ row['slug'] }}">{{ ns.row_name }}</a></li>
             {% endfor %}
         </ul>
       </div>
