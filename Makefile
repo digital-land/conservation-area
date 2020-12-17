@@ -1,17 +1,14 @@
-init:
-	pip3 install -r requirements.txt
+include makerules/makerules.mk
+include makerules/render.mk
+
+DATASET_PATH := data/dataset.csv
+DATASET := conservation-area
 
 collect:
-	wget -O data/dataset.csv https://raw.githubusercontent.com/digital-land/conservation-area-collection/main/dataset/conservation-area.csv
+	wget -O $(DATASET_PATH) https://raw.githubusercontent.com/digital-land/$(DATASET)-collection/main/dataset/$(DATASET).csv
 
-render:
-	python render.py
-
-local:
-	python render.py --local
+local: clean
+	@-mkdir ./docs/
+	digital-land --pipeline-name $(DATASET) render --dataset-path $(DATASET_PATH) --local
 
 build: clean collect render
-
-clean:
-	rm -r ./docs/
-	mkdir docs
