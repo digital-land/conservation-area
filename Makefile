@@ -1,15 +1,4 @@
+DATASET=conservation-area
+
 include makerules/makerules.mk
 include makerules/render.mk
-
-DATASET_DIR := data
-DATASET := conservation-area
-
-collect:
-	mkdir -p data
-	wget -O $(DATASET_PATH) https://raw.githubusercontent.com/digital-land/$(DATASET)-collection/main/dataset/$(DATASET).csv
-
-local: clean
-	@-mkdir ./docs/
-	digital-land --pipeline-name $(DATASET) render --dataset-path $(DATASET_PATH) --local
-
-build: clean collect render

@@ -1,4 +1,4 @@
-name: Build conservation area geography pages
+name: Build pages
 
 on:
   push:
@@ -6,9 +6,10 @@ on:
       - 'docs/**'
       - 'data/**'
     branches:
-      - main
+      - master
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '30 5 * * *'
+  workflow_dispatch:
 
 env:
   DLB_BOT_EMAIL: ${{ secrets.DLB_BOT_EMAIL }}
@@ -30,13 +31,22 @@ jobs:
         git config user.email "${DLB_BOT_EMAIL}"
         git config user.name "${DLB_BOT_USERNAME}"
         git remote set-url origin https://${DLB_BOT_USERNAME}:${DLB_BOT_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        git checkout main
+        git checkout master
+
+    - name: Update makerules
+      run: make makerules
+
+    - name: Commit updated makerules
+      run: make commit-makerules
+
     - name: Install dependencies
       run: make init
-    - name: Build pages
-      run: make build
-    - name: Commit files
-      run: |
-        git add docs
-        git add data
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Build latest conservation area geography pages on $(date +%F)"; git push origin main)
+
+    - name: Force rebuild of pages and dataset
+      run: make clobber
+
+    - name: Build docs
+      run: make render
+
+    - name: Commit docs
+      run: make commit-docs
