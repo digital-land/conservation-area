@@ -31,7 +31,7 @@
         },
         {
         "text": data_type|capitalize,
-        "href": urlRoot
+        "href": "../"
         },
         {
         "text": row_name|truncate(30)
@@ -47,7 +47,7 @@
 
 {% set areaproperties %}
 {% for i in row.keys() %}
-{% if i not in ["id", "resource", "geometry", "has_geometry", "geometry_path"] %}
+{% if i not in ["id", "resource", "geometry", "has_geometry", "geometry_path", "slug"] %}
 <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
     {{ i }}

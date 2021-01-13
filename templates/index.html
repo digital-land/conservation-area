@@ -38,12 +38,18 @@
         <ul class="govuk-list govuk-list--bullet">
             {% for row in index['organisation'][org]['rows'] %}
             {% set ns = namespace(row_name="") %}
-            {% if row['name'] == row['slug']|clean_slug %}
-            {% set ns.row_name = row['slug']|clean_slug %}
+            {% if row['site'] %}
+              {% set ns.row_name = row['site'] %}
+                {% if row['site-address'] %}
+                {% set ns.row_name = ns.row_name + ", " + row['site-address'] %}
+                {% endif %}
+              {% set ns.row_name = ns.row_name + " (" + row['slug']|clean_slug + ")" %}
+            {% elif row['name'] %}
+              {% set ns.row_name = row['slug']|clean_slug + " - " + row['name'] %}
             {% else %}
-            {% set ns.row_name = row['name'] + " (" + row['slug']|clean_slug + ")" %}
+              {% set ns.row_name = row['slug']|clean_slug %}
             {% endif %}
-            <li><a href="{{ urlRoot }}{{ row['slug'] }}">{{ ns.row_name }}</a></li>
+            <li><a href="{{ row['slug'] }}">{{ ns.row_name }}</a></li>
             {% endfor %}
         </ul>
       </div>
