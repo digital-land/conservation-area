@@ -47,7 +47,7 @@
 
 {% set areaproperties %}
 {% for i in row.keys() %}
-{% if i not in ["id", "resource", "geometry", "has_geometry"] %}
+{% if i not in ["id", "resource", "geometry", "has_geometry", "geometry_path"] %}
 <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
     {{ i }}
@@ -83,7 +83,7 @@
     "id": "aMap",
     "classes": "govuk-!-margin-top-4 govuk-!-margin-bottom-2",
     "attributes": {
-        "data-geojson-urls": "geometry.geojson"
+        "data-geojson-urls": row["geometry_path"]
     },
     "height": "460"
 }) }}
