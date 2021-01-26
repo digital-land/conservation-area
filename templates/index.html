@@ -45,11 +45,11 @@
                 {% endif %}
               {% set ns.row_name = ns.row_name + " (" + row['slug']|clean_slug + ")" %}
             {% elif row['name'] %}
-              {% set ns.row_name = row['slug']|clean_slug + " - " + row['name'] %}
+              {% set ns.row_name = row['href']|clean_slug + " - " + row['name'] %}
             {% else %}
-              {% set ns.row_name = row['slug']|clean_slug %}
+              {% set ns.row_name = row['href']|clean_slug %}
             {% endif %}
-            <li><a href="{{ row['slug'] }}">{{ ns.row_name }}</a></li>
+            <li><a href="{{ row['href'] }}">{{ ns.row_name }}</a></li>
             {% endfor %}
         </ul>
       </div>
