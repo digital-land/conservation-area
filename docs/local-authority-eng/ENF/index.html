@@ -2,38 +2,25 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Conservation-area | Digital Land</title>
+    <title> | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<meta name="dl-template" content="dlf-base.html">
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -61,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -100,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -118,271 +96,242 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../../">Conservation Area</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">ENF</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
-<h1 class="govuk-heading-xl">Conservation area</h1>
+<h1 class="govuk-heading-xl"></h1>
 
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">24</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">24</span>
+                    records listed.
+                </p>
+            </div>
 
-<p class="govuk-body">Showing 24 records.</p>
-
-
-
-
-<table class="dl-index-list">
-  <tbody><tr>
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000011">COA00000011</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000011" data-filter="match-content">COA00000011</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">ABBOTSHALL AVENUE COA00000011</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">ABBOTSHALL AVENUE COA00000011</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000012">COA00000012</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CHURCH STREET, EDMONTON COA00000012</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000013">COA00000013</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000012" data-filter="match-content">COA00000012</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CLAY HILL COA00000013</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CHURCH STREET, EDMONTON COA00000012</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000021">COA00000021</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">FORE STREET ANGEL COA00000021</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000014">COA00000014</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000013" data-filter="match-content">COA00000013</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">BUSH HILL PARK COA00000014</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CLAY HILL COA00000013</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000015">COA00000015</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">TURKEY STREET COA00000015</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000017">COA00000017</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000014" data-filter="match-content">COA00000014</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">ENFIELD LOCK COA00000017</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">BUSH HILL PARK COA00000014</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000018">COA00000018</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">ENFIELD TOWN COA00000018</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000019">COA00000019</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000015" data-filter="match-content">COA00000015</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">PONDERS END FLOUR MILLS COA00000019</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">TURKEY STREET COA00000015</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000022">COA00000022</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">FORE STREET NORTH COA00000022</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000023">COA00000023</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000017" data-filter="match-content">COA00000017</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">FORE STREET SOUTH COA00000023</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">ENFIELD LOCK COA00000017</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000024">COA00000024</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">FORTY HILL COA00000024</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000025">COA00000025</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000018" data-filter="match-content">COA00000018</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">VICARS MOOR LANE COA00000025</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">ENFIELD TOWN COA00000018</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000027">COA00000027</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">GRANGE PARK COA00000027</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000029">COA00000029</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000019" data-filter="match-content">COA00000019</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">HADLEY WOOD COA00000029</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">PONDERS END FLOUR MILLS COA00000019</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000030">COA00000030</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">HIGHLANDS COA00000030</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000032">COA00000032</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000021" data-filter="match-content">COA00000021</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">MEADWAY COA00000032</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">FORE STREET ANGEL COA00000021</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000033">COA00000033</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">MONTAGU CEMETERIES COA00000033</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000035">COA00000035</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000022" data-filter="match-content">COA00000022</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SOUTHGATE CIRCUS COA00000035</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">FORE STREET NORTH COA00000022</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000036">COA00000036</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">THE LAKES ESTATE COA00000036</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000037">COA00000037</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000023" data-filter="match-content">COA00000023</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">TRENT PARK COA00000037</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">FORE STREET SOUTH COA00000023</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000038">COA00000038</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SOUTHGATE GREEN COA00000038</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000039">COA00000039</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000024" data-filter="match-content">COA00000024</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">THE CRESCENT COA00000039</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">FORTY HILL COA00000024</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000041">COA00000041</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000025" data-filter="match-content">COA00000025</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">WINCHMORE HILL GREEN COA00000041</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">VICARS MOOR LANE COA00000025</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000027" data-filter="match-content">COA00000027</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">GRANGE PARK COA00000027</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000029" data-filter="match-content">COA00000029</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">HADLEY WOOD COA00000029</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000030" data-filter="match-content">COA00000030</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">HIGHLANDS COA00000030</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000032" data-filter="match-content">COA00000032</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">MEADWAY COA00000032</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000033" data-filter="match-content">COA00000033</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">MONTAGU CEMETERIES COA00000033</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000035" data-filter="match-content">COA00000035</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SOUTHGATE CIRCUS COA00000035</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000036" data-filter="match-content">COA00000036</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">THE LAKES ESTATE COA00000036</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000037" data-filter="match-content">COA00000037</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">TRENT PARK COA00000037</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000038" data-filter="match-content">COA00000038</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SOUTHGATE GREEN COA00000038</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000039" data-filter="match-content">COA00000039</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">THE CRESCENT COA00000039</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000041" data-filter="match-content">COA00000041</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">WINCHMORE HILL GREEN COA00000041</p>
   </td>
 </tr></tbody>
 </table>
 
 
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -415,13 +364,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -429,15 +374,11 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
-
 
 
 

@@ -2,38 +2,25 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Conservation-area | Digital Land</title>
+    <title> | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<meta name="dl-template" content="dlf-base.html">
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -61,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -100,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -118,607 +96,578 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../../">Conservation Area</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">RIC</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
-<h1 class="govuk-heading-xl">Conservation area</h1>
+<h1 class="govuk-heading-xl"></h1>
 
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">72</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">72</span>
+                    records listed.
+                </p>
+            </div>
 
-<p class="govuk-body">Showing 72 records.</p>
-
-
-
-
-<table class="dl-index-list">
-  <tbody><tr>
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000861">COA00000861</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000856" data-filter="match-content">COA00000856</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA40 Popes Avenue Twickenham COA00000861</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA10 Trafalgar Road Twickenham COA00000856</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000856">COA00000856</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000861" data-filter="match-content">COA00000861</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA10 Trafalgar Road Twickenham COA00000856</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA40 Popes Avenue Twickenham COA00000861</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000890">COA00000890</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000865" data-filter="match-content">COA00000865</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA21 Cambridge Park East Twickenham COA00000890</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA39 Blackmores Grove Teddington COA00000865</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000865">COA00000865</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000878" data-filter="match-content">COA00000878</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA39 Blackmores Grove Teddington COA00000865</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA58 Platts Eyot COA00000878</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000878">COA00000878</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000879" data-filter="match-content">COA00000879</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA58 Platts Eyot COA00000878</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA29 Belmont Road Twickenham COA00000879</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000879">COA00000879</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000880" data-filter="match-content">COA00000880</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA29 Belmont Road Twickenham COA00000879</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA46 Rosecroft Gardens Whitton COA00000880</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000880">COA00000880</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000881" data-filter="match-content">COA00000881</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA46 Rosecroft Gardens Whitton COA00000880</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA11 Hampton Court Green COA00000881</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000881">COA00000881</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000882" data-filter="match-content">COA00000882</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA11 Hampton Court Green COA00000881</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA54 Waldegrave Park Teddington COA00000882</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000882">COA00000882</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000884" data-filter="match-content">COA00000884</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA54 Waldegrave Park Teddington COA00000882</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA43 Strawberry Hill Road COA00000884</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000884">COA00000884</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000885" data-filter="match-content">COA00000885</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA43 Strawberry Hill Road COA00000884</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA49 Crown Road St Margarets COA00000885</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000885">COA00000885</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000886" data-filter="match-content">COA00000886</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA49 Crown Road St Margarets COA00000885</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA4 Richmond Riverside COA00000886</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000886">COA00000886</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000887" data-filter="match-content">COA00000887</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA4 Richmond Riverside COA00000886</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA18 Hampton Wick COA00000887</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000887">COA00000887</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000888" data-filter="match-content">COA00000888</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA18 Hampton Wick COA00000887</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA47 Queens Road Twickenham COA00000888</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000888">COA00000888</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000889" data-filter="match-content">COA00000889</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA47 Queens Road Twickenham COA00000888</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA45 Strawberry Vale COA00000889</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000889">COA00000889</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000890" data-filter="match-content">COA00000890</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA45 Strawberry Vale COA00000889</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA21 Cambridge Park East Twickenham COA00000890</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000891">COA00000891</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000891" data-filter="match-content">COA00000891</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA48 Amyand Park Road Twickenham COA00000891</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA48 Amyand Park Road Twickenham COA00000891</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000892">COA00000892</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000892" data-filter="match-content">COA00000892</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA59 Normansfield Teddington COA00000892</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA59 Normansfield Teddington COA00000892</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000893">COA00000893</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000893" data-filter="match-content">COA00000893</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA7 Ham Common COA00000893</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA7 Ham Common COA00000893</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000894">COA00000894</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000894" data-filter="match-content">COA00000894</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA6 Petersham COA00000894</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA6 Petersham COA00000894</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000895">COA00000895</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000895" data-filter="match-content">COA00000895</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA56 Beresford Avenue COA00000895</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA56 Beresford Avenue COA00000895</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000896">COA00000896</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000896" data-filter="match-content">COA00000896</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA20 Lawn Crescent Kew COA00000896</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA20 Lawn Crescent Kew COA00000896</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000897">COA00000897</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000897" data-filter="match-content">COA00000897</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA3 Richmond Green COA00000897</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA3 Richmond Green COA00000897</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000898">COA00000898</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000898" data-filter="match-content">COA00000898</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA63 Royal Botanic Gardens Kew COA00000898</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA63 Royal Botanic Gardens Kew COA00000898</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000899">COA00000899</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000899" data-filter="match-content">COA00000899</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA55 Kew Road COA00000899</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA55 Kew Road COA00000899</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000900">COA00000900</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000900" data-filter="match-content">COA00000900</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA68 Holmesdale Avenue East Sheen COA00000900</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA68 Holmesdale Avenue East Sheen COA00000900</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000901">COA00000901</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000901" data-filter="match-content">COA00000901</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA36 Kew Foot Road COA00000901</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA36 Kew Foot Road COA00000901</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000902">COA00000902</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000902" data-filter="match-content">COA00000902</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA50 Sheendale Road Richmond COA00000902</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA50 Sheendale Road Richmond COA00000902</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000903">COA00000903</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000903" data-filter="match-content">COA00000903</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA2 Kew Green COA00000903</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA2 Kew Green COA00000903</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000904">COA00000904</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000904" data-filter="match-content">COA00000904</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA52 East Sheen Avenue COA00000904</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA52 East Sheen Avenue COA00000904</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000905">COA00000905</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000905" data-filter="match-content">COA00000905</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA64 Sheen Lane East Sheen COA00000905</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA64 Sheen Lane East Sheen COA00000905</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000906">COA00000906</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000906" data-filter="match-content">COA00000906</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA41 Joanna Southcote Chapel COA00000906</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA41 Joanna Southcote Chapel COA00000906</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000907">COA00000907</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000907" data-filter="match-content">COA00000907</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA35 Queens Road Mortlake COA00000907</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA35 Queens Road Mortlake COA00000907</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000908">COA00000908</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000908" data-filter="match-content">COA00000908</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA34 Model Cottages East Sheen COA00000908</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA34 Model Cottages East Sheen COA00000908</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000909">COA00000909</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000909" data-filter="match-content">COA00000909</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA53 White Hart Lane Mortlake COA00000909</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA53 White Hart Lane Mortlake COA00000909</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000910">COA00000910</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000910" data-filter="match-content">COA00000910</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA70 Sheen Lane Mortlake COA00000910</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA70 Sheen Lane Mortlake COA00000910</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000932">COA00000932</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000911" data-filter="match-content">COA00000911</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA19 St Margarets COA00000932</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA67 Parkleys Estate Ham COA00000911</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000911">COA00000911</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000912" data-filter="match-content">COA00000912</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA67 Parkleys Estate Ham COA00000911</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA66 Richmond Road East Twickenham COA00000912</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000912">COA00000912</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000913" data-filter="match-content">COA00000913</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA66 Richmond Road East Twickenham COA00000912</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA61 Bushy Park COA00000913</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000913">COA00000913</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000914" data-filter="match-content">COA00000914</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA61 Bushy Park COA00000913</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA44 Mallard Place Strawberry Hill COA00000914</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000914">COA00000914</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000915" data-filter="match-content">COA00000915</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA44 Mallard Place Strawberry Hill COA00000914</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA42 Mays Road Hampton Hill COA00000915</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000915">COA00000915</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000916" data-filter="match-content">COA00000916</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA42 Mays Road Hampton Hill COA00000915</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA51 Mortlake Green COA00000916</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000916">COA00000916</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000917" data-filter="match-content">COA00000917</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA51 Mortlake Green COA00000916</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA8 Twickenham Riverside COA00000917</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000917">COA00000917</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000918" data-filter="match-content">COA00000918</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA8 Twickenham Riverside COA00000917</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA24 Twickenham Park COA00000918</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000918">COA00000918</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000919" data-filter="match-content">COA00000919</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA24 Twickenham Park COA00000918</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA25 Castelnau COA00000919</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000919">COA00000919</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000920" data-filter="match-content">COA00000920</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA25 Castelnau COA00000919</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA38 High Street Hampton Hill COA00000920</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000938">COA00000938</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000921" data-filter="match-content">COA00000921</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA26 The Grove Teddington COA00000938</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA71 Fieldend Twickenham COA00000921</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000920">COA00000920</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000922" data-filter="match-content">COA00000922</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA38 High Street Hampton Hill COA00000920</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA37 High Street Teddington COA00000922</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000921">COA00000921</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000924" data-filter="match-content">COA00000924</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA71 Fieldend Twickenham COA00000921</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA9 Twickenham Green COA00000924</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000939">COA00000939</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000925" data-filter="match-content">COA00000925</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA27 Teddington Lock COA00000939</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA12 Hampton Village COA00000925</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000922">COA00000922</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000926" data-filter="match-content">COA00000926</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA37 High Street Teddington COA00000922</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA14 Mill Hill COA00000926</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000924">COA00000924</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000927" data-filter="match-content">COA00000927</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA9 Twickenham Green COA00000924</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA15 Kew Gardens Kew COA00000927</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000925">COA00000925</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000930" data-filter="match-content">COA00000930</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA12 Hampton Village COA00000925</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA16 Thorne Passage Mortlake COA00000930</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000926">COA00000926</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000931" data-filter="match-content">COA00000931</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA14 Mill Hill COA00000926</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA72 Hamilton Road Twickenham COA00000931</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000927">COA00000927</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000932" data-filter="match-content">COA00000932</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA15 Kew Gardens Kew COA00000927</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA19 St Margarets COA00000932</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000930">COA00000930</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000933" data-filter="match-content">COA00000933</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA16 Thorne Passage Mortlake COA00000930</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA22 Park Road Teddington COA00000933</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000931">COA00000931</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000934" data-filter="match-content">COA00000934</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA72 Hamilton Road Twickenham COA00000931</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA23 Ham House COA00000934</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000933">COA00000933</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000935" data-filter="match-content">COA00000935</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA22 Park Road Teddington COA00000933</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA62 Richmond Park COA00000935</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000934">COA00000934</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000936" data-filter="match-content">COA00000936</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA23 Ham House COA00000934</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA65 Hanworth Road Hampton COA00000936</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000935">COA00000935</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000937" data-filter="match-content">COA00000937</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA62 Richmond Park COA00000935</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA69 Sheen Common Drive COA00000937</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000936">COA00000936</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000938" data-filter="match-content">COA00000938</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA65 Hanworth Road Hampton COA00000936</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA26 The Grove Teddington COA00000938</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000937">COA00000937</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000939" data-filter="match-content">COA00000939</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA69 Sheen Common Drive COA00000937</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA27 Teddington Lock COA00000939</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000940">COA00000940</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000940" data-filter="match-content">COA00000940</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA28 Broom Water Teddington COA00000940</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA28 Broom Water Teddington COA00000940</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000941">COA00000941</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000941" data-filter="match-content">COA00000941</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA13 Christchurch Road East Sheen COA00000941</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA13 Christchurch Road East Sheen COA00000941</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000943">COA00000943</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000943" data-filter="match-content">COA00000943</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA31 Sheen Road Richmond COA00000943</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA31 Sheen Road Richmond COA00000943</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000944">COA00000944</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000944" data-filter="match-content">COA00000944</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA32 Barnes Common COA00000944</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA32 Barnes Common COA00000944</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000945">COA00000945</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000945" data-filter="match-content">COA00000945</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA33 Mortlake COA00000945</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA33 Mortlake COA00000945</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000946">COA00000946</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000946" data-filter="match-content">COA00000946</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA1 Barnes Green COA00000946</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA1 Barnes Green COA00000946</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000947">COA00000947</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000947" data-filter="match-content">COA00000947</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA57 Old Deer Park COA00000947</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA57 Old Deer Park COA00000947</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000948">COA00000948</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000948" data-filter="match-content">COA00000948</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA5 Richmond Hill COA00000948</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA5 Richmond Hill COA00000948</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000949">COA00000949</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000949" data-filter="match-content">COA00000949</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA60 Hampton Court Park COA00000949</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA60 Hampton Court Park COA00000949</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000950">COA00000950</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000950" data-filter="match-content">COA00000950</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA30 St Matthias Richmond COA00000950</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA30 St Matthias Richmond COA00000950</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000951">COA00000951</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000951" data-filter="match-content">COA00000951</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA17 Central Richmond COA00000951</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA17 Central Richmond COA00000951</p>
   </td>
 </tr></tbody>
 </table>
 
 
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -751,13 +700,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -765,15 +710,11 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
-
 
 
 

@@ -2,38 +2,25 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Conservation-area | Digital Land</title>
+    <title> | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<meta name="dl-template" content="dlf-base.html">
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -61,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -100,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -118,299 +96,270 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../../">Conservation Area</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">HCK</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
-<h1 class="govuk-heading-xl">Conservation area</h1>
+<h1 class="govuk-heading-xl"></h1>
 
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">28</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">28</span>
+                    records listed.
+                </p>
+            </div>
 
-<p class="govuk-body">Showing 28 records.</p>
-
-
-
-
-<table class="dl-index-list">
-  <tbody><tr>
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000058">COA00000058</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000058" data-filter="match-content">COA00000058</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Clapton Common COA00000058</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Clapton Common COA00000058</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000070">COA00000070</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Lea Bridge Conservation Area COA00000070</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000097">COA00000097</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000070" data-filter="match-content">COA00000070</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Albion Square COA00000097</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lea Bridge Conservation Area COA00000070</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000104">COA00000104</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Underwood Street COA00000104</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000091">COA00000091</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000091" data-filter="match-content">COA00000091</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Clapton Square COA00000091</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Clapton Square COA00000091</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000095">COA00000095</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Clissold Park COA00000095</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000096">COA00000096</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000094" data-filter="match-content">COA00000094</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Clapton Pond COA00000096</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hoxton Street COA00000094</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000094">COA00000094</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hoxton Street COA00000094</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000098">COA00000098</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000095" data-filter="match-content">COA00000095</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Town Hall Square COA00000098</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Clissold Park COA00000095</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000100">COA00000100</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Stoke Newington COA00000100</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000101">COA00000101</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000096" data-filter="match-content">COA00000096</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Queensbridge Road COA00000101</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Clapton Pond COA00000096</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000102">COA00000102</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Fremont and Warneford COA00000102</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000103">COA00000103</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000097" data-filter="match-content">COA00000097</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Sun Street COA00000103</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Albion Square COA00000097</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000106">COA00000106</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Graham Road and Mapledene COA00000106</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000107">COA00000107</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000098" data-filter="match-content">COA00000098</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">De Beauvoir COA00000107</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Town Hall Square COA00000098</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000109">COA00000109</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Mare Street COA00000109</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000110">COA00000110</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000100" data-filter="match-content">COA00000100</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Lordship Park COA00000110</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stoke Newington COA00000100</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000111">COA00000111</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Newington Green COA00000111</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000112">COA00000112</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000101" data-filter="match-content">COA00000101</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Dalston Lane (West) COA00000112</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Queensbridge Road COA00000101</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000115">COA00000115</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">South Shoreditch COA00000115</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000114">COA00000114</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000102" data-filter="match-content">COA00000102</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">St Mark&#39;s COA00000114</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Fremont and Warneford COA00000102</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000116">COA00000116</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hackney Road COA00000116</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000117">COA00000117</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000103" data-filter="match-content">COA00000103</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Northwold &amp; Cazenove COA00000117</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sun Street COA00000103</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000118">COA00000118</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Stoke Newington Reservoirs, Filter Beds and New Ri COA00000118</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000122">COA00000122</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000104" data-filter="match-content">COA00000104</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Victoria Park COA00000122</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Underwood Street COA00000104</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000772">COA00000772</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Kingsland COA00000772</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000953">COA00000953</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000106" data-filter="match-content">COA00000106</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Broadway Market COA00000953</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Graham Road and Mapledene COA00000106</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000955">COA00000955</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000107" data-filter="match-content">COA00000107</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Regent&#39;s Canal COA00000955</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">De Beauvoir COA00000107</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000109" data-filter="match-content">COA00000109</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mare Street COA00000109</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000110" data-filter="match-content">COA00000110</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lordship Park COA00000110</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000111" data-filter="match-content">COA00000111</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Newington Green COA00000111</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000112" data-filter="match-content">COA00000112</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Dalston Lane (West) COA00000112</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000114" data-filter="match-content">COA00000114</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">St Mark&#39;s COA00000114</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000115" data-filter="match-content">COA00000115</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South Shoreditch COA00000115</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000116" data-filter="match-content">COA00000116</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hackney Road COA00000116</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000117" data-filter="match-content">COA00000117</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Northwold &amp; Cazenove COA00000117</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000118" data-filter="match-content">COA00000118</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stoke Newington Reservoirs, Filter Beds and New Ri COA00000118</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000122" data-filter="match-content">COA00000122</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Victoria Park COA00000122</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000772" data-filter="match-content">COA00000772</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kingsland COA00000772</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000953" data-filter="match-content">COA00000953</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Broadway Market COA00000953</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000955" data-filter="match-content">COA00000955</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Regent&#39;s Canal COA00000955</p>
   </td>
 </tr></tbody>
 </table>
 
 
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -443,13 +392,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -457,15 +402,11 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
-
 
 
 

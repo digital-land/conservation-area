@@ -2,38 +2,25 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Conservation-area | Digital Land</title>
+    <title> | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<meta name="dl-template" content="dlf-base.html">
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -61,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -100,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -118,236 +96,207 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../../">Conservation Area</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">CAR</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
-<h1 class="govuk-heading-xl">Conservation area</h1>
+<h1 class="govuk-heading-xl"></h1>
 
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">19</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">19</span>
+                    records listed.
+                </p>
+            </div>
 
-<p class="govuk-body">Showing 19 records.</p>
-
-
-
-
-<table class="dl-index-list">
-  <tbody><tr>
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./PORT">PORT</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BOTC" data-filter="match-content">BOTC</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Chatsworh Square/Portland Square</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Botchergate</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./WOOD">WOOD</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Wood Street</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./HOLM">HOLM</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BRAM" data-filter="match-content">BRAM</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Holme Head</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Brampton</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./VICT">VICT</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Victoria Road</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./LONG">LONG</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BURG" data-filter="match-content">BURG</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Longtown</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Burgh by Sands</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BRAM">BRAM</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Brampton</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./TARR">TARR</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./CCEN" data-filter="match-content">CCEN</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Tarraby</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Carlisle City Centre</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./GCOR">GCOR</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Great Corby</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./LBUR">LBUR</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./CUMR" data-filter="match-content">CUMR</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Longburgh</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cumrew</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RICK">RICK</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Rickerby</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./CUMR">CUMR</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./DALS" data-filter="match-content">DALS</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Cumrew</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Dalston</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./CCEN">CCEN</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Carlisle City Centre</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./WETH">WETH</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./GCOR" data-filter="match-content">GCOR</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Wetheral</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Great Corby</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./WAED">WAED</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Warwick On Eden</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SETT">SETT</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./HOLM" data-filter="match-content">HOLM</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Carlisle -Settle</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Holme Head</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./STAN">STAN</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Stanwix</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./DALS">DALS</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./LBUR" data-filter="match-content">LBUR</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Dalston</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Longburgh</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BOTC">BOTC</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Botchergate</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BURG">BURG</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./LONG" data-filter="match-content">LONG</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Burgh by Sands</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Longtown</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./PORT" data-filter="match-content">PORT</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Chatsworh Square/Portland Square</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RICK" data-filter="match-content">RICK</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Rickerby</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SETT" data-filter="match-content">SETT</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Carlisle -Settle</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./STAN" data-filter="match-content">STAN</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stanwix</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./TARR" data-filter="match-content">TARR</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tarraby</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./VICT" data-filter="match-content">VICT</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Victoria Road</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./WAED" data-filter="match-content">WAED</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Warwick On Eden</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./WETH" data-filter="match-content">WETH</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Wetheral</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./WOOD" data-filter="match-content">WOOD</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Wood Street</p>
   </td>
 </tr></tbody>
 </table>
 
 
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -380,13 +329,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -394,15 +339,11 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
-
 
 
 

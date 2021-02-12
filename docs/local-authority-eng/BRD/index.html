@@ -2,38 +2,25 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Conservation-area | Digital Land</title>
+    <title> | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<meta name="dl-template" content="dlf-base.html">
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -61,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -100,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -118,516 +96,487 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../../">Conservation Area</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">BRD</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
-<h1 class="govuk-heading-xl">Conservation area</h1>
+<h1 class="govuk-heading-xl"></h1>
 
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">59</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">59</span>
+                    records listed.
+                </p>
+            </div>
 
-<p class="govuk-body">Showing 59 records.</p>
-
-
-
-
-<table class="dl-index-list">
-  <tbody><tr>
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00021-CONARA">05-00021-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00001-CONARA" data-filter="match-content">05-00001-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hainworth</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Addingham</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00022-CONARA">05-00022-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00002-CONARA" data-filter="match-content">05-00002-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Haworth</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Apsley Crescent</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00023-CONARA">05-00023-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00003-CONARA" data-filter="match-content">05-00003-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Heaton Estates</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Baildon</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00024-CONARA">05-00024-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00004-CONARA" data-filter="match-content">05-00004-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hodgson Fold</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Baildon Station Road</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00025-CONARA">05-00025-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00005-CONARA" data-filter="match-content">05-00005-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Idle And The Green</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ben Rhydding</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00026-CONARA">05-00026-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00006-CONARA" data-filter="match-content">05-00006-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ilkley</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bingley</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00027-CONARA">05-00027-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00007-CONARA" data-filter="match-content">05-00007-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Keighley Town Centre</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Braithwaite</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00029-CONARA">05-00029-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00008-CONARA" data-filter="match-content">05-00008-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Leeds Liverpool Canal</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Brunthwaite</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00030-CONARA">05-00030-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00009-CONARA" data-filter="match-content">05-00009-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Leeming</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Burley In Wharfedale</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00031-CONARA">05-00031-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00010-CONARA" data-filter="match-content">05-00010-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Little Germany</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cathedral Precinct</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00032-CONARA">05-00032-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00011-CONARA" data-filter="match-content">05-00011-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Little Horton Lane</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">City Centre</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00033-CONARA">05-00033-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00012-CONARA" data-filter="match-content">05-00012-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Little Horton Green</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Clayton</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00034-CONARA">05-00034-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00013-CONARA" data-filter="match-content">05-00013-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Little London</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cullingworth</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00035-CONARA">05-00035-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00014-CONARA" data-filter="match-content">05-00014-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Low Utley</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Devonshire Park And Cliffe Castle</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00036-CONARA">05-00036-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00015-CONARA" data-filter="match-content">05-00015-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Lower Wyke</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">East Morton</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00037-CONARA">05-00037-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00016-CONARA" data-filter="match-content">05-00016-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Menston</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Eldon Place</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00038-CONARA">05-00038-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00017-CONARA" data-filter="match-content">05-00017-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Micklethwaite</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Esholt</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00039-CONARA">05-00039-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00018-CONARA" data-filter="match-content">05-00018-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Middleton</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Goitside</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00010-CONARA">05-00010-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00019-CONARA" data-filter="match-content">05-00019-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Cathedral Precinct</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Goose Eye And Laycock</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00016-CONARA">05-00016-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00020-CONARA" data-filter="match-content">05-00020-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Eldon Place</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Great Horton</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00011-CONARA">05-00011-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00021-CONARA" data-filter="match-content">05-00021-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">City Centre</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hainworth</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00012-CONARA">05-00012-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00022-CONARA" data-filter="match-content">05-00022-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Clayton</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Haworth</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00013-CONARA">05-00013-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00023-CONARA" data-filter="match-content">05-00023-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Cullingworth</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Heaton Estates</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00014-CONARA">05-00014-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00024-CONARA" data-filter="match-content">05-00024-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Devonshire Park And Cliffe Castle</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hodgson Fold</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00015-CONARA">05-00015-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00025-CONARA" data-filter="match-content">05-00025-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">East Morton</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Idle And The Green</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00051-CONARA">05-00051-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00026-CONARA" data-filter="match-content">05-00026-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Oxenhope Station Road</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ilkley</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00017-CONARA">05-00017-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00027-CONARA" data-filter="match-content">05-00027-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Esholt</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Keighley Town Centre</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00018-CONARA">05-00018-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00029-CONARA" data-filter="match-content">05-00029-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Goitside</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Leeds Liverpool Canal</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00020-CONARA">05-00020-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00030-CONARA" data-filter="match-content">05-00030-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Great Horton</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Leeming</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00019-CONARA">05-00019-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00031-CONARA" data-filter="match-content">05-00031-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Goose Eye And Laycock</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Little Germany</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00040-CONARA">05-00040-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00032-CONARA" data-filter="match-content">05-00032-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">North Park Road</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Little Horton Lane</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00041-CONARA">05-00041-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00033-CONARA" data-filter="match-content">05-00033-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Oakworth</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Little Horton Green</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00042-CONARA">05-00042-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00034-CONARA" data-filter="match-content">05-00034-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Oxenhope Lower Town</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Little London</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00043-CONARA">05-00043-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00035-CONARA" data-filter="match-content">05-00035-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Oxenhope Upper Town</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Low Utley</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00044-CONARA">05-00044-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00036-CONARA" data-filter="match-content">05-00036-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Queensbury</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lower Wyke</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00045-CONARA">05-00045-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00037-CONARA" data-filter="match-content">05-00037-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ryecroft</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Menston</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00046-CONARA">05-00046-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00038-CONARA" data-filter="match-content">05-00038-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Saltaire</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Micklethwaite</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00047-CONARA">05-00047-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00039-CONARA" data-filter="match-content">05-00039-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Silsden</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Middleton</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00048-CONARA">05-00048-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00040-CONARA" data-filter="match-content">05-00040-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Southfield Square</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">North Park Road</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00049-CONARA">05-00049-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00041-CONARA" data-filter="match-content">05-00041-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">St Pauls</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Oakworth</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00050-CONARA">05-00050-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00042-CONARA" data-filter="match-content">05-00042-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Stanbury</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Oxenhope Lower Town</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00052-CONARA">05-00052-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00043-CONARA" data-filter="match-content">05-00043-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Steeton</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Oxenhope Upper Town</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00054-CONARA">05-00054-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00044-CONARA" data-filter="match-content">05-00044-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Tong</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Queensbury</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00055-CONARA">05-00055-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00045-CONARA" data-filter="match-content">05-00045-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Undercliffe Cemetery</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ryecroft</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00056-CONARA">05-00056-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00046-CONARA" data-filter="match-content">05-00046-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Whetley Grove</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Saltaire</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00060-CONARA">05-00060-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00047-CONARA" data-filter="match-content">05-00047-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Wilsden</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Silsden</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00061-CONARA">05-00061-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00048-CONARA" data-filter="match-content">05-00048-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Wrose</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Southfield Square</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./06-00053-CONARA">06-00053-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00049-CONARA" data-filter="match-content">05-00049-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Thornton</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">St Pauls</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00008-CONARA">05-00008-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00050-CONARA" data-filter="match-content">05-00050-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Brunthwaite</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stanbury</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00001-CONARA">05-00001-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00051-CONARA" data-filter="match-content">05-00051-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Addingham</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Oxenhope Station Road</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00002-CONARA">05-00002-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00052-CONARA" data-filter="match-content">05-00052-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Apsley Crescent</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Steeton</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00003-CONARA">05-00003-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00054-CONARA" data-filter="match-content">05-00054-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Baildon</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tong</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00004-CONARA">05-00004-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00055-CONARA" data-filter="match-content">05-00055-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Baildon Station Road</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Undercliffe Cemetery</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00005-CONARA">05-00005-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00056-CONARA" data-filter="match-content">05-00056-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ben Rhydding</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Whetley Grove</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00006-CONARA">05-00006-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00060-CONARA" data-filter="match-content">05-00060-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Bingley</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Wilsden</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00007-CONARA">05-00007-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00061-CONARA" data-filter="match-content">05-00061-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Braithwaite</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Wrose</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./05-00009-CONARA">05-00009-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./06-00053-CONARA" data-filter="match-content">06-00053-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Burley In Wharfedale</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Thornton</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./10-00001-CONARA">10-00001-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./10-00001-CONARA" data-filter="match-content">10-00001-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Baildon Green</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Baildon Green</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./10-00002-CONARA">10-00002-CONARA</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./10-00002-CONARA" data-filter="match-content">10-00002-CONARA</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Eldwick Beck</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Eldwick Beck</p>
   </td>
 </tr></tbody>
 </table>
 
 
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -660,13 +609,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -674,15 +619,11 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
-
 
 
 

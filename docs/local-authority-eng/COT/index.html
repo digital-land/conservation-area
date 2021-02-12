@@ -2,38 +2,25 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Conservation-area | Digital Land</title>
+    <title> | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<meta name="dl-template" content="dlf-base.html">
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -61,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -100,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -118,1111 +96,1082 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../../">Conservation Area</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">COT</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
-<h1 class="govuk-heading-xl">Conservation area</h1>
+<h1 class="govuk-heading-xl"></h1>
 
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">144</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">144</span>
+                    records listed.
+                </p>
+            </div>
 
-<p class="govuk-body">Showing 144 records.</p>
-
-
-
-
-<table class="dl-index-list">
-  <tbody><tr>
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./123">123</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./0" data-filter="match-content">0</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Culkerton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ebrington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./129">129</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./56" data-filter="match-content">56</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Dowdeswell Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tetbury Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./138">138</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./96" data-filter="match-content">96</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Elkstone Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ampney Crucis Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./151">151</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./97" data-filter="match-content">97</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Harnhill Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bourton On The Hill Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./152">152</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./102" data-filter="match-content">102</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hatherop Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ozleworth Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./153">153</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./103" data-filter="match-content">103</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hazleton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Poulton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./198">198</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./104" data-filter="match-content">104</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Notgrove Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Paxford Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./269">269</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./105" data-filter="match-content">105</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Saintbury Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Preston Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./399">399</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./106" data-filter="match-content">106</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Broadwell Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Quenington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./400">400</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./107" data-filter="match-content">107</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Brockhampton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Rendcomb Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./407">407</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./108" data-filter="match-content">108</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Church Westcote Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Rodmarton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./408">408</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./114" data-filter="match-content">114</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Clapton-on-the-Hill Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Down Ampney Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./423">423</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./115" data-filter="match-content">115</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Adlestrop Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cold Aston Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./455">455</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./116" data-filter="match-content">116</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Westonbirt Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Colesbourne Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./116">116</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./117" data-filter="match-content">117</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Colesbourne Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Coln Rogers Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./120">120</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./118" data-filter="match-content">118</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Compton Abdale Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Coln St Aldwyn Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./121">121</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./119" data-filter="match-content">119</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Condicote Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Coln St Dennis Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./128">128</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./120" data-filter="match-content">120</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Doughton Highgrove Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Compton Abdale Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./134">134</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./121" data-filter="match-content">121</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Eastington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Condicote Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./144">144</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./122" data-filter="match-content">122</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Fossebridge Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cowley Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./147">147</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./123" data-filter="match-content">123</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Great Rissington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Culkerton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./155">155</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./124" data-filter="match-content">124</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hidcote Boyce Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Daglingworth Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./157">157</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./125" data-filter="match-content">125</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Kemble Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Daylesford Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./194">194</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./126" data-filter="match-content">126</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Mickleton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Didmarton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./222">222</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./127" data-filter="match-content">127</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA1: Cirencester Park</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Donnington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./263">263</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./128" data-filter="match-content">128</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Batsford Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Doughton Highgrove Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./271">271</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./129" data-filter="match-content">129</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Sapperton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Dowdeswell Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./307">307</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./130" data-filter="match-content">130</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Blockley Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kemble Station Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./424">424</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./131" data-filter="match-content">131</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ablington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Driffield Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./450">450</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./132" data-filter="match-content">132</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Thames Severn Canal (Sapperton Section) Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Duntisbourne Abbots/Duntisbourne Leer Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./457">457</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./133" data-filter="match-content">133</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Whittington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Duntisbourne Rouse/Middle Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./459">459</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./134" data-filter="match-content">134</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Winson Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Eastington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./462">462</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./135" data-filter="match-content">135</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Wyck Rissington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Eastleach Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./108">108</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./137" data-filter="match-content">137</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Rodmarton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Edgeworth Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./132">132</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./138" data-filter="match-content">138</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Duntisbourne Abbots/Duntisbourne Leer Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Elkstone Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./141">141</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./139" data-filter="match-content">139</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Farmcote Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Evenlode Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./148">148</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./140" data-filter="match-content">140</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Guiting Power Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ewen Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./149">149</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./141" data-filter="match-content">141</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hampen Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Farmcote Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./223">223</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./142" data-filter="match-content">142</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA2: Cirencester Gloucester Street And River Walk</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Farmington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./224">224</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./143" data-filter="match-content">143</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA3: Cirencester Town Centre</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ford Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./262">262</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./144" data-filter="match-content">144</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Barnsley Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Fossebridge Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./273">273</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./145" data-filter="match-content">145</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Sezincote Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Frampton Mansell Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./397">397</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./146" data-filter="match-content">146</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Bourton-on-the-Water Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Great Barrington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./404">404</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./147" data-filter="match-content">147</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Chavenage Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Great Rissington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./409">409</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./148" data-filter="match-content">148</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Coberley Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Guiting Power Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./425">425</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./149" data-filter="match-content">149</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Aldsworth Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hampen Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./429">429</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./150" data-filter="match-content">150</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ampney St Peter Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hampnett Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./444">444</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./151" data-filter="match-content">151</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Stow On The Wold Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Harnhill Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./452">452</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./152" data-filter="match-content">152</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Turkdean Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hatherop Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./461">461</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./153" data-filter="match-content">153</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Withington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hazleton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./463">463</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./154" data-filter="match-content">154</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Yanworth Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hidcote Bartrim Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./96">96</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./155" data-filter="match-content">155</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ampney Crucis Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hidcote Boyce Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./102">102</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./156" data-filter="match-content">156</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ozleworth Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Icomb Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./117">117</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./157" data-filter="match-content">157</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Coln Rogers Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kemble Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./119">119</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./158" data-filter="match-content">158</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Coln St Dennis Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Long Newnton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./133">133</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./159" data-filter="match-content">159</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Duntisbourne Rouse/Middle Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kempsford Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./137">137</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./160" data-filter="match-content">160</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Edgeworth Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kingscote Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./143">143</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./161" data-filter="match-content">161</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ford Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Leighterton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./161">161</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./162" data-filter="match-content">162</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Leighterton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Little Barrington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./162">162</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./163" data-filter="match-content">163</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Little Barrington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Little Rissington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./163">163</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./187" data-filter="match-content">187</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Little Rissington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cutsdean Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./191">191</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./188" data-filter="match-content">188</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Lower Slaughter Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Longborough Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./193">193</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./190" data-filter="match-content">190</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Meysey Hampton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Longfords Mills Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./260">260</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./191" data-filter="match-content">191</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ashley Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lower Slaughter Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./270">270</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./192" data-filter="match-content">192</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Salperton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lower Swell Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./308">308</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./193" data-filter="match-content">193</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Brimpsfield Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Meysey Hampton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./367">367</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./194" data-filter="match-content">194</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Willersey Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mickleton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./398">398</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./195" data-filter="match-content">195</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Broad Campden Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Naunton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./432">432</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./196" data-filter="match-content">196</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Aston Subedge Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Nether Westcote Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./439">439</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./197" data-filter="match-content">197</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Northleach Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">North Cerney Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./125">125</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./198" data-filter="match-content">198</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Daylesford Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Notgrove Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./135">135</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./199" data-filter="match-content">199</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Eastleach Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Oddington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./268">268</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./222" data-filter="match-content">222</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Bledington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA1: Cirencester Park</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./402">402</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./223" data-filter="match-content">223</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Calmsden Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA2: Cirencester Gloucester Street And River Walk</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./447">447</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./224" data-filter="match-content">224</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Tarlton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA3: Cirencester Town Centre</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./449">449</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./225" data-filter="match-content">225</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Thames Severn Canal (Coates Section) Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CA4: Cirencester South</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./453">453</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./259" data-filter="match-content">259</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Upper Slaughter Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Avening Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./456">456</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./260" data-filter="match-content">260</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Weston Subedge Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ashley Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./56">56</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./261" data-filter="match-content">261</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Tetbury Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bagendon Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./107">107</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./262" data-filter="match-content">262</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Rendcomb Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Barnsley Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./114">114</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./263" data-filter="match-content">263</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Down Ampney Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Batsford Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./130">130</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./265" data-filter="match-content">265</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Kemble Station Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Baunton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./131">131</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./266" data-filter="match-content">266</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Driffield Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Beverston Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./140">140</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./267" data-filter="match-content">267</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ewen Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bibury Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./188">188</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./268" data-filter="match-content">268</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Longborough Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bledington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./199">199</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./269" data-filter="match-content">269</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Oddington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Saintbury Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./261">261</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./270" data-filter="match-content">270</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Bagendon Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Salperton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./265">265</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./271" data-filter="match-content">271</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Baunton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sapperton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./266">266</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./272" data-filter="match-content">272</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Beverston Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sevenhampton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./275">275</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./273" data-filter="match-content">273</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Shipton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sezincote Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./396">396</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./274" data-filter="match-content">274</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Caudle Green Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sherborne Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./430">430</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./275" data-filter="match-content">275</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ampney St Mary Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Shipton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./434">434</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./307" data-filter="match-content">307</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Chipping Campden Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Blockley Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./436">436</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./308" data-filter="match-content">308</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Fairford Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Brimpsfield Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./440">440</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./367" data-filter="match-content">367</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Shipton Moyne Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Willersey Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./443">443</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./396" data-filter="match-content">396</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Southrop Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Caudle Green Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./445">445</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./397" data-filter="match-content">397</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Stratton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bourton-on-the-Water Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./451">451</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./398" data-filter="match-content">398</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Todenham Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Broad Campden Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./6914">6914</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./399" data-filter="match-content">399</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Somerford Keynes Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Broadwell Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./97">97</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./400" data-filter="match-content">400</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Bourton On The Hill Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Brockhampton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./104">104</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./401" data-filter="match-content">401</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Paxford Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Calcot Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./105">105</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./402" data-filter="match-content">402</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Preston Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Calmsden Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./115">115</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./404" data-filter="match-content">404</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Cold Aston Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Chavenage Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./124">124</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./405" data-filter="match-content">405</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Daglingworth Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Chedworth Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./142">142</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./406" data-filter="match-content">406</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Farmington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cherington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./145">145</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./407" data-filter="match-content">407</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Frampton Mansell Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Church Westcote Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./146">146</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./408" data-filter="match-content">408</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Great Barrington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Clapton-on-the-Hill Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./154">154</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./409" data-filter="match-content">409</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hidcote Bartrim Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Coberley Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./158">158</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./423" data-filter="match-content">423</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Long Newnton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Adlestrop Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./190">190</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./424" data-filter="match-content">424</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Longfords Mills Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ablington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./192">192</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./425" data-filter="match-content">425</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Lower Swell Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Aldsworth Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./195">195</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./429" data-filter="match-content">429</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Naunton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ampney St Peter Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./196">196</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./430" data-filter="match-content">430</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Nether Westcote Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ampney St Mary Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./225">225</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./431" data-filter="match-content">431</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CA4: Cirencester South</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Aston Magna Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./259">259</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./432" data-filter="match-content">432</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Avening Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Aston Subedge Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./267">267</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./434" data-filter="match-content">434</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Bibury Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Chipping Campden Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./401">401</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./436" data-filter="match-content">436</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Calcot Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Fairford Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./405">405</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./437" data-filter="match-content">437</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Chedworth Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lechlade Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./437">437</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./438" data-filter="match-content">438</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Lechlade Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Moreton-in-Marsh Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./442">442</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./439" data-filter="match-content">439</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">South Cerney Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Northleach Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./446">446</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./440" data-filter="match-content">440</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Syde Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Shipton Moyne Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./454">454</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./442" data-filter="match-content">442</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Upper Swell Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South Cerney Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./458">458</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./443" data-filter="match-content">443</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Windrush Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Southrop Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./460">460</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./444" data-filter="match-content">444</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Winstone Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stow On The Wold Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./103">103</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./445" data-filter="match-content">445</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Poulton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stratton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./106">106</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./446" data-filter="match-content">446</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Quenington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Syde Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./118">118</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./447" data-filter="match-content">447</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Coln St Aldwyn Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tarlton Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./122">122</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./448" data-filter="match-content">448</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Cowley Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Temple Guiting Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./126">126</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./449" data-filter="match-content">449</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Didmarton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Thames Severn Canal (Coates Section) Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./127">127</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./450" data-filter="match-content">450</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Donnington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Thames Severn Canal (Sapperton Section) Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./139">139</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./451" data-filter="match-content">451</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Evenlode Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Todenham Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./150">150</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./452" data-filter="match-content">452</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hampnett Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Turkdean Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./156">156</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./453" data-filter="match-content">453</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Icomb Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Upper Slaughter Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./159">159</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./454" data-filter="match-content">454</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Kempsford Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Upper Swell Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./160">160</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./455" data-filter="match-content">455</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Kingscote Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Westonbirt Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./187">187</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./456" data-filter="match-content">456</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Cutsdean Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Weston Subedge Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./197">197</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./457" data-filter="match-content">457</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">North Cerney Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Whittington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./272">272</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./458" data-filter="match-content">458</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Sevenhampton Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Windrush Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./274">274</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./459" data-filter="match-content">459</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Sherborne Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Winson Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./406">406</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./460" data-filter="match-content">460</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Cherington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Winstone Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./431">431</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./461" data-filter="match-content">461</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Aston Magna Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Withington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./438">438</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./462" data-filter="match-content">462</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Moreton-in-Marsh Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Wyck Rissington Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./448">448</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./463" data-filter="match-content">463</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Temple Guiting Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Yanworth Conservation Area</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./0">0</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./6914" data-filter="match-content">6914</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ebrington Conservation Area</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Somerford Keynes Conservation Area</p>
   </td>
 </tr></tbody>
 </table>
 
 
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -1255,13 +1204,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -1269,15 +1214,11 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
-
 
 
 

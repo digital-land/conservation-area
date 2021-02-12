@@ -2,38 +2,25 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Conservation-area | Digital Land</title>
+    <title> | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<meta name="dl-template" content="dlf-base.html">
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -61,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -100,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -118,292 +96,263 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../../">Conservation Area</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">HRW</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
-<h1 class="govuk-heading-xl">Conservation area</h1>
+<h1 class="govuk-heading-xl"></h1>
 
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">27</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">27</span>
+                    records listed.
+                </p>
+            </div>
 
-<p class="govuk-body">Showing 27 records.</p>
-
-
-
-
-<table class="dl-index-list">
-  <tbody><tr>
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000083">COA00000083</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000083" data-filter="match-content">COA00000083</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Little Common Conservation Area, Stanmore COA00000083</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Little Common Conservation Area, Stanmore COA00000083</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000084">COA00000084</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">The Grimsdyke Estate and Brookshill Conservation A COA00000084</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000089">COA00000089</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000084" data-filter="match-content">COA00000084</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">West Drive Conservation Area COA00000089</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Grimsdyke Estate and Brookshill Conservation A COA00000084</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000125">COA00000125</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Pinnerwood Farm Conservation Area Pinner COA00000125</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000129">COA00000129</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000089" data-filter="match-content">COA00000089</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Waxwell Close Conservation Area Pinner COA00000129</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">West Drive Conservation Area COA00000089</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000135">COA00000135</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">East End Farm Conservation Area Pinner COA00000135</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000143">COA00000143</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000125" data-filter="match-content">COA00000125</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">RAYNERS LANE COA00000143</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Pinnerwood Farm Conservation Area Pinner COA00000125</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000149">COA00000149</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Waxwell Lane Conservation Area Pinner COA00000149</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000160">COA00000160</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000129" data-filter="match-content">COA00000129</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Pinner Hill Estate Conservation Area COA00000160</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Waxwell Close Conservation Area Pinner COA00000129</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000162">COA00000162</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Pinnerwood Park Estate Conservation Area PART 1 COA00000162</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000163">COA00000163</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000135" data-filter="match-content">COA00000135</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">West Towers Conservation Area Pinner COA00000163</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">East End Farm Conservation Area Pinner COA00000135</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000165">COA00000165</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Pinner High Street Conservation Area Pinner COA00000165</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000166">COA00000166</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000143" data-filter="match-content">COA00000143</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Old Church Lane Conservation Area Stanmore COA00000166</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">RAYNERS LANE COA00000143</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000167">COA00000167</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Moss Lane Conservation Area Pinner COA00000167</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000170">COA00000170</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000149" data-filter="match-content">COA00000149</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Stanmore Hill Conservation Area COA00000170</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Waxwell Lane Conservation Area Pinner COA00000149</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000171">COA00000171</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Canons Park Estate Conservation Area COA00000171</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000172">COA00000172</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000160" data-filter="match-content">COA00000160</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Pinnerwood Park Estate Conservation Area PART 2 COA00000172</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Pinner Hill Estate Conservation Area COA00000160</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000174">COA00000174</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Kerry Avenue Conservation Area COA00000174</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000177">COA00000177</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000162" data-filter="match-content">COA00000162</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Tookes Green Conservation Area Pinner COA00000177</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Pinnerwood Park Estate Conservation Area PART 1 COA00000162</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000954">COA00000954</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Roxeth Hill Conservation Area Harrow on the Hill COA00000954</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000960">COA00000960</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000163" data-filter="match-content">COA00000163</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Harrow Park Conservation Area COA00000960</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">West Towers Conservation Area Pinner COA00000163</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000962">COA00000962</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">South Hill Avenue Conservation Area Harrow on the COA00000962</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000964">COA00000964</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000165" data-filter="match-content">COA00000165</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Harrow on the Hill Village Conservation Area COA00000964</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Pinner High Street Conservation Area Pinner COA00000165</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000971">COA00000971</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Harrow School Conservation Area Harrow on the Hill COA00000971</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000972">COA00000972</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000166" data-filter="match-content">COA00000166</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Roxborough Park and The Grove Conservation Area COA00000972</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Old Church Lane Conservation Area Stanmore COA00000166</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000973">COA00000973</a></h4>
-  </td>
-  <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Sudbury Hill Conservation Area Harrow on the Hill COA00000973</p>
-  </td>
-</tr><tr>
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000976">COA00000976</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000167" data-filter="match-content">COA00000167</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Mount Park Estate Conservation Area Harrow on the COA00000976</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Moss Lane Conservation Area Pinner COA00000167</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000170" data-filter="match-content">COA00000170</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stanmore Hill Conservation Area COA00000170</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000171" data-filter="match-content">COA00000171</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Canons Park Estate Conservation Area COA00000171</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000172" data-filter="match-content">COA00000172</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Pinnerwood Park Estate Conservation Area PART 2 COA00000172</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000174" data-filter="match-content">COA00000174</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kerry Avenue Conservation Area COA00000174</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000177" data-filter="match-content">COA00000177</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tookes Green Conservation Area Pinner COA00000177</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000954" data-filter="match-content">COA00000954</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Roxeth Hill Conservation Area Harrow on the Hill COA00000954</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000960" data-filter="match-content">COA00000960</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Harrow Park Conservation Area COA00000960</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000962" data-filter="match-content">COA00000962</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South Hill Avenue Conservation Area Harrow on the COA00000962</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000964" data-filter="match-content">COA00000964</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Harrow on the Hill Village Conservation Area COA00000964</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000971" data-filter="match-content">COA00000971</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Harrow School Conservation Area Harrow on the Hill COA00000971</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000972" data-filter="match-content">COA00000972</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Roxborough Park and The Grove Conservation Area COA00000972</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000973" data-filter="match-content">COA00000973</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sudbury Hill Conservation Area Harrow on the Hill COA00000973</p>
+  </td>
+</tr><tr data-filter="item">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000976" data-filter="match-content">COA00000976</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mount Park Estate Conservation Area Harrow on the COA00000976</p>
   </td>
 </tr></tbody>
 </table>
 
 
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -436,13 +385,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -450,15 +395,11 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
-
 
 
 

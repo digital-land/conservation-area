@@ -2,38 +2,25 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Conservation-area | Digital Land</title>
+    <title> | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<meta name="dl-template" content="dlf-base.html">
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -61,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -100,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -118,334 +96,305 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../../">Conservation Area</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">HIL</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
-<h1 class="govuk-heading-xl">Conservation area</h1>
+<h1 class="govuk-heading-xl"></h1>
 
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">33</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">33</span>
+                    records listed.
+                </p>
+            </div>
 
-<p class="govuk-body">Showing 33 records.</p>
-
-
-
-
-<table class="dl-index-list">
-  <tbody><tr>
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000409">COA00000409</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000288" data-filter="match-content">COA00000288</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Eastcote (Morford Way) COA00000409</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Denham Lock COA00000288</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000288">COA00000288</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000404" data-filter="match-content">COA00000404</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Denham Lock COA00000288</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Widewater Lock COA00000404</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000404">COA00000404</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000407" data-filter="match-content">COA00000407</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Widewater Lock COA00000404</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Springwell Lock COA00000407</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000407">COA00000407</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000409" data-filter="match-content">COA00000409</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Springwell Lock COA00000407</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Eastcote (Morford Way) COA00000409</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000453">COA00000453</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000453" data-filter="match-content">COA00000453</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Uxbridge Moor COA00000453</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Uxbridge Moor COA00000453</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000519">COA00000519</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000468" data-filter="match-content">COA00000468</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Longford Village COA00000519</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ruislip Village COA00000468</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000468">COA00000468</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000469" data-filter="match-content">COA00000469</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ruislip Village COA00000468</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Black Jacks Lock COA00000469</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000469">COA00000469</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000471" data-filter="match-content">COA00000471</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Black Jacks Lock COA00000469</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Old Uxbridge / Windsor Street COA00000471</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000471">COA00000471</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000472" data-filter="match-content">COA00000472</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Old Uxbridge / Windsor Street COA00000471</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Greenway COA00000472</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000472">COA00000472</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000488" data-filter="match-content">COA00000488</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">The Greenway COA00000472</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hillingdon Village COA00000488</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000488">COA00000488</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000491" data-filter="match-content">COA00000491</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hillingdon Village COA00000488</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cowley Lock COA00000491</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000491">COA00000491</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000497" data-filter="match-content">COA00000497</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Cowley Lock COA00000491</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">West Drayton Green COA00000497</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000497">COA00000497</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000499" data-filter="match-content">COA00000499</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">West Drayton Green COA00000497</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Harmondsworth Village COA00000499</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000499">COA00000499</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000500" data-filter="match-content">COA00000500</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Harmondsworth Village COA00000499</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Coppermill Lock COA00000500</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000500">COA00000500</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000503" data-filter="match-content">COA00000503</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Coppermill Lock COA00000500</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ruislip, Manor Way COA00000503</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000503">COA00000503</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000505" data-filter="match-content">COA00000505</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ruislip, Manor Way COA00000503</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cranford Park COA00000505</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000505">COA00000505</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000511" data-filter="match-content">COA00000511</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Cranford Park COA00000505</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ickenham Village COA00000511</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000511">COA00000511</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000512" data-filter="match-content">COA00000512</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Ickenham Village COA00000511</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cowley Church (St. Laurence) COA00000512</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000512">COA00000512</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000513" data-filter="match-content">COA00000513</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Cowley Church (St. Laurence) COA00000512</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Old Uxbridge / Windsor Street COA00000513</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000513">COA00000513</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000514" data-filter="match-content">COA00000514</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Old Uxbridge / Windsor Street COA00000513</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Harefield Village COA00000514</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000514">COA00000514</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000515" data-filter="match-content">COA00000515</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Harefield Village COA00000514</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hayes Village COA00000515</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000515">COA00000515</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000516" data-filter="match-content">COA00000516</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Hayes Village COA00000515</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Northwood, Frithwood COA00000516</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000516">COA00000516</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000517" data-filter="match-content">COA00000517</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Northwood, Frithwood COA00000516</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Botwell: Nestles COA00000517</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000517">COA00000517</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000518" data-filter="match-content">COA00000518</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Botwell: Nestles COA00000517</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Botwell: Thorn EMI COA00000518</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000518">COA00000518</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000519" data-filter="match-content">COA00000519</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Botwell: Thorn EMI COA00000518</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Longford Village COA00000519</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000520">COA00000520</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000520" data-filter="match-content">COA00000520</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Eastcote Village COA00000520</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Eastcote Village COA00000520</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000521">COA00000521</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000521" data-filter="match-content">COA00000521</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">The Glen, Northwood COA00000521</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Glen, Northwood COA00000521</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000522">COA00000522</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000522" data-filter="match-content">COA00000522</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Northwood Town Centre, Green Lane COA00000522</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Northwood Town Centre, Green Lane COA00000522</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000523">COA00000523</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000523" data-filter="match-content">COA00000523</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Rockingham Bridge, Uxbridge COA00000523</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Rockingham Bridge, Uxbridge COA00000523</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000524">COA00000524</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000524" data-filter="match-content">COA00000524</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Uxbridge Lock COA00000524</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Uxbridge Lock COA00000524</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000959">COA00000959</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000959" data-filter="match-content">COA00000959</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Harlington Village COA00000959</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Harlington Village COA00000959</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000961">COA00000961</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000961" data-filter="match-content">COA00000961</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Bulls Bridge COA00000961</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bulls Bridge COA00000961</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000963">COA00000963</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000963" data-filter="match-content">COA00000963</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Eastcote Park Estate COA00000963</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Eastcote Park Estate COA00000963</p>
   </td>
 </tr></tbody>
 </table>
 
 
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -478,13 +427,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -492,15 +437,11 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
-
 
 
 
