@@ -12,7 +12,7 @@
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+    	<meta name="digital-land:template" content="page-per-thing/index.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
 <script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
@@ -119,173 +119,252 @@
     </form>
     <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
-    <div class="index-list-wrapper">
+
+        <div class="index-list-wrapper">
             <div class="count-wrapper">
                 <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">23</span> records.</p>
                 <p class="govuk-visually-hidden">There are
                     <span class="js-accessible-list-count">23</span>
                     records listed.
                 </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
             </div>
-
-            <table class="dl-index-list" data-filter="list">
-  <tbody><tr data-filter="item">
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
+  <tbody>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000243" data-filter="match-content">COA00000243</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000243" data-filter="match-content">conservation-area:COA00000243</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kensal Green COA00000243</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000254" data-filter="match-content">COA00000254</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000254" data-filter="match-content">conservation-area:COA00000254</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Wembley High Street COA00000254</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000324" data-filter="match-content">COA00000324</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000324" data-filter="match-content">conservation-area:COA00000324</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sudbury Cottages COA00000324</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000386" data-filter="match-content">COA00000386</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000386" data-filter="match-content">conservation-area:COA00000386</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lawns Court COA00000386</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000394" data-filter="match-content">COA00000394</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000394" data-filter="match-content">conservation-area:COA00000394</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Neasden COA00000394</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000399" data-filter="match-content">COA00000399</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000399" data-filter="match-content">conservation-area:COA00000399</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Northwick Circle COA00000399</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000400" data-filter="match-content">COA00000400</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000400" data-filter="match-content">conservation-area:COA00000400</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mount Stewart COA00000400</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000402" data-filter="match-content">COA00000402</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000402" data-filter="match-content">conservation-area:COA00000402</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kilburn COA00000402</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000403" data-filter="match-content">COA00000403</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000403" data-filter="match-content">conservation-area:COA00000403</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">St Andrews COA00000403</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000405" data-filter="match-content">COA00000405</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000405" data-filter="match-content">conservation-area:COA00000405</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Harlesden COA00000405</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000406" data-filter="match-content">COA00000406</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000406" data-filter="match-content">conservation-area:COA00000406</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Willesden Green COA00000406</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000408" data-filter="match-content">COA00000408</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000408" data-filter="match-content">conservation-area:COA00000408</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Buck Lane COA00000408</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000410" data-filter="match-content">COA00000410</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000410" data-filter="match-content">conservation-area:COA00000410</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Brondesbury COA00000410</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000411" data-filter="match-content">COA00000411</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000411" data-filter="match-content">conservation-area:COA00000411</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Roe Green COA00000411</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000412" data-filter="match-content">COA00000412</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000412" data-filter="match-content">conservation-area:COA00000412</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mapesbury COA00000412</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000414" data-filter="match-content">COA00000414</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000414" data-filter="match-content">conservation-area:COA00000414</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Queens Park COA00000414</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000415" data-filter="match-content">COA00000415</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000415" data-filter="match-content">conservation-area:COA00000415</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sudbury Court COA00000415</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000416" data-filter="match-content">COA00000416</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000416" data-filter="match-content">conservation-area:COA00000416</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Paddington Cemetery COA00000416</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000417" data-filter="match-content">COA00000417</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000417" data-filter="match-content">conservation-area:COA00000417</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Barn Hill COA00000417</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000418" data-filter="match-content">COA00000418</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000418" data-filter="match-content">conservation-area:COA00000418</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Neasden COA00000418</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000420" data-filter="match-content">COA00000420</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000420" data-filter="match-content">conservation-area:COA00000420</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">North Kilburn COA00000420</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000421" data-filter="match-content">COA00000421</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000421" data-filter="match-content">conservation-area:COA00000421</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Homestead Park COA00000421</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./COA00000422" data-filter="match-content">COA00000422</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./COA00000422" data-filter="match-content">conservation-area:COA00000422</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South Kilburn COA00000422</p>
@@ -293,8 +372,8 @@
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -383,6 +462,15 @@
             list_section_selector: '.index-list-wrapper',
             count_wrapper_selector: '.count-wrapper'
         })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
         </script>
 
   </body>
