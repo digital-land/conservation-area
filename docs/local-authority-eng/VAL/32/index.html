@@ -139,40 +139,26 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:32            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Little Coxwell Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/VAL" class="govuk-link">Vale of White Horse District Council</a>
 <span title="Organisation identifier: local-authority-eng:VAL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:VAL)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                Little Coxwell Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-05            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>name</th>
+                <th>organisation</th>
+                <th>geometry</th>
+                <th>geography</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-09-05</td>
+                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L33">92cd49145a8d...</a></td>
+                <td>32</td>
+                    <td>Little Coxwell Conservation Area</td> 
+                    <td>local-authority-eng:VAL</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.592452 51.639799,-1.592939 51.640459,-1.593127 51.640611,-1.593655 51.639858,-1.593833 51.640144,-1.594419 51.639990,-1.594229 51.639702,-1.595219 51.639499,-1.595858 51.639427,-1.595938 51.639516,-1.596279 51.639447,-1.596259 51.639358,-1.596410 51.639333,-1.596365 51.639223,-1.597352 51.639038,-1.597452 51.639318,-1.598308 51.639124,-1.598427 51.639354,-1.598574 51.639531,-1.598648 51.639559,-1.599413 51.639316,-1.599708 51.639043,-1.599824 51.638863,-1.599484 51.638784,-1.598466 51.638379,-1.598354 51.638314,-1.597470 51.637554,-1.596307 51.637966,-1.595477 51.637927,-1.594914 51.637723,-1.594573 51.637689,-1.594311 51.637700,-1.593964 51.637819,-1.593892 51.637886,-1.594093 51.638035,-1.594280 51.638267,-1.592818 51.638518,-1.592893 51.638729,-1.592935 51.638978,-1.592882 51.639010,-1.592651 51.639072,-1.592244 51.639011,-1.591897 51.639021,-1.590789 51.639167,-1.590848 51.639442,-1.591391 51.639372,-1.591420 51.639459,-1.591795 51.639369,-1.591915 51.639580,-1.592069 51.639540,-1.592257 51.639775,-1.592355 51.639751,-1.592384 51.639799,-1.592452 51.639799)))
+  </div>
+</details>
+                    </td>
+                    <td>conservation-area:32</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

@@ -139,40 +139,26 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:TKE            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                The Tarrant Keyneston Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NDO" class="govuk-link">North Dorset District Council</a>
 <span title="Organisation identifier: local-authority-eng:NDO" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NDO)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                The Tarrant Keyneston Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-06            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>name</th>
+                <th>organisation</th>
+                <th>geometry</th>
+                <th>geography</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-09-06</td>
+                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d40c1cffe7893e1ab03561a5d601f65dbc3ceb2b1fe514bb3d42df9aae1b0bbc.csv#L45">d40c1cffe789...</a></td>
+                <td>44</td>
+                    <td>The Tarrant Keyneston Conservation Area</td> 
+                    <td>local-authority-eng:NDO</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.107066 50.836784,-2.106509 50.837213,-2.106277 50.837130,-2.105893 50.837303,-2.105748 50.837232,-2.105124 50.837522,-2.104847 50.837760,-2.104727 50.837817,-2.104345 50.837906,-2.104369 50.837994,-2.104553 50.838103,-2.104500 50.838130,-2.104003 50.838262,-2.102719 50.838702,-2.102653 50.838647,-2.102417 50.838697,-2.102321 50.838678,-2.101969 50.838770,-2.101668 50.838487,-2.101484 50.838556,-2.101380 50.838561,-2.101109 50.838346,-2.100709 50.838512,-2.100579 50.838344,-2.100544 50.838250,-2.100914 50.838068,-2.101289 50.837946,-2.101746 50.837706,-2.102287 50.837742,-2.102816 50.837645,-2.103047 50.837437,-2.103145 50.837307,-2.103215 50.837140,-2.103415 50.836950,-2.103299 50.836709,-2.103346 50.836585,-2.103540 50.836324,-2.103564 50.836088,-2.103618 50.835919,-2.103879 50.835776,-2.104228 50.835677,-2.105191 50.835304,-2.105482 50.835261,-2.105779 50.835304,-2.106450 50.835296,-2.107276 50.835130,-2.107633 50.835420,-2.107861 50.835546,-2.107774 50.835608,-2.108270 50.835953,-2.107869 50.836272,-2.107362 50.836570,-2.107263 50.836657,-2.107183 50.836617,-2.107012 50.836736,-2.107066 50.836784)))
+  </div>
+</details>
+                    </td>
+                    <td>conservation-area:TKE</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

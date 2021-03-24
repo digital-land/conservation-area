@@ -143,36 +143,22 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Gunnersbury Park COA00000869            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HNS" class="govuk-link">London Borough of Hounslow</a>
 <span title="Organisation identifier: local-authority-eng:HNS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HNS)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-04            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>name</th>
+                <th>geometry</th>
+                <th>geography</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-09-04</td>
+                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L874">f617d13ef7ff...</a></td>
+                <td>873</td>
+                    <td>local-authority-eng:HNS</td> 
+                    <td>Gunnersbury Park COA00000869</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.284378 51.493352,-0.282159 51.494245,-0.282175 51.494478,-0.281303 51.494739,-0.280988 51.496654,-0.280879 51.497039,-0.280808 51.497030,-0.280792 51.497080,-0.280782 51.497262,-0.280577 51.498024,-0.280554 51.498021,-0.280173 51.499410,-0.280102 51.499533,-0.279554 51.501515,-0.279586 51.501731,-0.279837 51.502106,-0.279915 51.502083,-0.280117 51.502300,-0.280796 51.502846,-0.282361 51.502093,-0.282499 51.501984,-0.283417 51.501572,-0.284656 51.501101,-0.285735 51.500782,-0.286797 51.500663,-0.287591 51.500736,-0.288636 51.500847,-0.290228 51.501228,-0.291597 51.501508,-0.292391 51.501586,-0.293923 51.501576,-0.294519 51.501425,-0.299465 51.499734,-0.299435 51.499665,-0.299463 51.499606,-0.299569 51.499548,-0.298706 51.497931,-0.297969 51.496811,-0.297000 51.495654,-0.296208 51.494777,-0.294029 51.492408,-0.293647 51.492011,-0.293490 51.491888,-0.293610 51.491547,-0.292664 51.491557,-0.292284 51.491749,-0.292268 51.491805,-0.292307 51.491836,-0.292314 51.491946,-0.292271 51.492039,-0.290068 51.493319,-0.289339 51.493593,-0.288340 51.493910,-0.288053 51.493929,-0.287970 51.493959,-0.287913 51.494077,-0.287448 51.493616,-0.287351 51.493600,-0.287346 51.493541,-0.287198 51.493346,-0.286866 51.493028,-0.285949 51.492878,-0.284724 51.493223,-0.284378 51.493352)))
+  </div>
+</details>
+                    </td>
+                    <td>conservation-area:COA00000869</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

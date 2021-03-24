@@ -143,36 +143,22 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Checkendon Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SOX" class="govuk-link">South Oxfordshire District Council</a>
 <span title="Organisation identifier: local-authority-eng:SOX" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SOX)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-05            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>name</th>
+                <th>geometry</th>
+                <th>geography</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-09-05</td>
+                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/07b84eadda99567f835a1f5919bd0a2ab48291932ad7cfaae33032ffb48744b3.csv#L48">07b84eadda99...</a></td>
+                <td>47</td>
+                    <td>local-authority-eng:SOX</td> 
+                    <td>Checkendon Conservation Area</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.046240 51.543636,-1.047961 51.544380,-1.048010 51.544337,-1.047948 51.544134,-1.048378 51.543769,-1.048458 51.543808,-1.049428 51.542788,-1.049539 51.542755,-1.049567 51.542661,-1.047925 51.542054,-1.047144 51.542778,-1.045627 51.542084,-1.045487 51.541970,-1.045440 51.541874,-1.045437 51.541731,-1.045524 51.541580,-1.046992 51.540896,-1.046818 51.540767,-1.046396 51.540915,-1.045883 51.540530,-1.045611 51.540846,-1.045006 51.540850,-1.045072 51.540979,-1.044618 51.541237,-1.044763 51.541335,-1.044517 51.541460,-1.044381 51.541372,-1.044276 51.541439,-1.044224 51.541407,-1.044173 51.541440,-1.044226 51.541472,-1.044090 51.541556,-1.043809 51.541417,-1.043570 51.541556,-1.043622 51.541584,-1.043558 51.541759,-1.043412 51.541887,-1.043732 51.542036,-1.043434 51.542216,-1.043562 51.542328,-1.043531 51.542367,-1.042996 51.542729,-1.043414 51.542842,-1.043837 51.542537,-1.044239 51.542632,-1.043945 51.543064,-1.044522 51.543198,-1.044666 51.543364,-1.044940 51.543237,-1.045172 51.543180,-1.045151 51.542941,-1.045302 51.542787,-1.045389 51.542763,-1.045578 51.542823,-1.045646 51.542735,-1.045694 51.542749,-1.046240 51.543636)))
+  </div>
+</details>
+                    </td>
+                    <td>conservation-area:47</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

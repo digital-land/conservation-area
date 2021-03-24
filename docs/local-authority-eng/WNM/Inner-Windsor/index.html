@@ -143,36 +143,22 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Inner Windsor            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WNM" class="govuk-link">Royal Borough of Windsor and Maidenhead</a>
 <span title="Organisation identifier: local-authority-eng:WNM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WNM)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-08            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>name</th>
+                <th>geometry</th>
+                <th>geography</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-09-08</td>
+                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/292ababefd38db91e5f0a1c766db1a6fd1e004b49b399ba5af18c2d6fdb238d9.csv#L18">292ababefd38...</a></td>
+                <td>17</td>
+                    <td>local-authority-eng:WNM</td> 
+                    <td>Inner Windsor</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.611803 51.479080,-0.611793 51.479111,-0.611357 51.479051,-0.611221 51.479360,-0.610192 51.479225,-0.610314 51.478903,-0.610535 51.478491,-0.610507 51.478445,-0.608102 51.478075,-0.607898 51.478252,-0.607084 51.478104,-0.606596 51.478081,-0.606664 51.478272,-0.606544 51.478606,-0.606390 51.478878,-0.605369 51.478652,-0.605307 51.478865,-0.603932 51.478785,-0.604903 51.472715,-0.605708 51.472836,-0.606195 51.472951,-0.606915 51.472968,-0.608324 51.473667,-0.608953 51.473043,-0.609644 51.473310,-0.609845 51.473451,-0.610254 51.473667,-0.610471 51.473739,-0.610086 51.474179,-0.610002 51.474317,-0.616145 51.476036,-0.616405 51.476197,-0.616683 51.476641,-0.616727 51.476786,-0.616587 51.477330,-0.615929 51.477186,-0.615874 51.477280,-0.616022 51.477312,-0.615941 51.477603,-0.615016 51.477542,-0.614963 51.477806,-0.613667 51.477716,-0.613509 51.478451,-0.613123 51.478465,-0.612665 51.478436,-0.612545 51.478900,-0.612099 51.478852,-0.612011 51.479091,-0.611803 51.479080)))
+  </div>
+</details>
+                    </td>
+                    <td>conservation-area:Inner Windsor</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

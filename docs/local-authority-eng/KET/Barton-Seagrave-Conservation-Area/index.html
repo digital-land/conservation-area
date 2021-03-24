@@ -143,36 +143,22 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Barton Seagrave Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/KET" class="govuk-link">Kettering Borough Council</a>
 <span title="Organisation identifier: local-authority-eng:KET" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:KET)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-06            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>name</th>
+                <th>geometry</th>
+                <th>geography</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-09-06</td>
+                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/289ba18eaa6040f3f00d515fe5d0b6c8d0efa94ea4e069ecb8eb7a09013832a3.csv#L5">289ba18eaa60...</a></td>
+                <td>4</td>
+                    <td>local-authority-eng:KET</td> 
+                    <td>Barton Seagrave Conservation Area</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.696327 52.388059,-0.695328 52.388151,-0.695332 52.388012,-0.695353 52.388011,-0.695316 52.387847,-0.695391 52.387818,-0.695369 52.387746,-0.695009 52.387740,-0.694892 52.387380,-0.694864 52.387382,-0.694702 52.386839,-0.693860 52.386792,-0.692730 52.386809,-0.691556 52.386668,-0.691625 52.386092,-0.692163 52.383652,-0.695182 52.384324,-0.695382 52.384341,-0.695218 52.384143,-0.695108 52.383905,-0.695104 52.383876,-0.695169 52.383855,-0.695240 52.383704,-0.695160 52.383508,-0.696230 52.383721,-0.697511 52.383766,-0.697714 52.383818,-0.697678 52.383867,-0.697594 52.383852,-0.697539 52.384176,-0.697966 52.384216,-0.697822 52.384470,-0.698227 52.384561,-0.698832 52.384553,-0.699759 52.384487,-0.700139 52.384504,-0.700365 52.384561,-0.700742 52.384735,-0.701578 52.384967,-0.701574 52.385039,-0.701137 52.385161,-0.699226 52.385879,-0.698672 52.386011,-0.698687 52.386337,-0.698740 52.386369,-0.698753 52.386524,-0.698829 52.386730,-0.698910 52.386831,-0.699150 52.387001,-0.699019 52.387193,-0.698999 52.387270,-0.699065 52.387444,-0.699033 52.387452,-0.699116 52.387596,-0.698972 52.387611,-0.698875 52.387584,-0.698610 52.387656,-0.698512 52.387812,-0.698254 52.387891,-0.696966 52.388039,-0.696700 52.388098,-0.696327 52.388059)))
+  </div>
+</details>
+                    </td>
+                    <td>conservation-area:Barton Seagrave Conservation Area</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

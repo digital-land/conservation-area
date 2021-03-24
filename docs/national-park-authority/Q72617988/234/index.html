@@ -143,36 +143,22 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Bradfield            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/national-park-authority/Q72617988" class="govuk-link">Peak District National Park Authority</a>
 <span title="Organisation identifier: national-park-authority:Q72617988" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>national-park-authority:Q72617988)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-08            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>name</th>
+                <th>geometry</th>
+                <th>geography</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-09-08</td>
+                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/08fbb782cc005066ce927d643cfd0300769648c98e15208300ac52555b0b9f92.csv#L108">08fbb782cc00...</a></td>
+                <td>107</td>
+                    <td>national-park-authority:Q72617988</td> 
+                    <td>Bradfield</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.603422 53.422582,-1.603574 53.422108,-1.603663 53.421959,-1.603794 53.421871,-1.605245 53.422161,-1.605226 53.422100,-1.605570 53.422005,-1.605553 53.421875,-1.606060 53.421843,-1.606003 53.421512,-1.606012 53.420992,-1.606842 53.420946,-1.607271 53.420968,-1.607316 53.421495,-1.607401 53.421491,-1.607408 53.421544,-1.607326 53.421548,-1.607358 53.421695,-1.606598 53.421712,-1.606630 53.421996,-1.607124 53.422583,-1.607298 53.422747,-1.607680 53.423298,-1.607786 53.423401,-1.607459 53.423406,-1.607552 53.423947,-1.607854 53.423879,-1.607987 53.424099,-1.607752 53.424352,-1.607857 53.424558,-1.607562 53.424614,-1.607254 53.424247,-1.607141 53.424269,-1.606889 53.424452,-1.606506 53.424643,-1.606373 53.424747,-1.606337 53.424898,-1.606368 53.425417,-1.606084 53.425447,-1.605870 53.425631,-1.605811 53.425635,-1.605579 53.425181,-1.605430 53.425039,-1.605234 53.424909,-1.604839 53.424718,-1.604628 53.424647,-1.604569 53.424708,-1.604416 53.424661,-1.604246 53.424865,-1.603510 53.424632,-1.604075 53.423985,-1.604168 53.423989,-1.603778 53.423602,-1.604018 53.423311,-1.604016 53.423277,-1.603790 53.423243,-1.603751 53.423227,-1.603754 53.423192,-1.603576 53.423165,-1.603722 53.422616,-1.603422 53.422582)))
+  </div>
+</details>
+                    </td>
+                    <td>conservation-area:234</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

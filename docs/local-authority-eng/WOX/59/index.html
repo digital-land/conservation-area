@@ -143,36 +143,22 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                HANBOROUGH - MILLWOOD END            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WOX" class="govuk-link">West Oxfordshire District Council</a>
 <span title="Organisation identifier: local-authority-eng:WOX" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WOX)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-05            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>name</th>
+                <th>geometry</th>
+                <th>geography</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-09-05</td>
+                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f371b704d21ccfe7b504048f0ff4fdcc434b849a9fb90193bee5c8712f603c12.csv#L49">f371b704d21c...</a></td>
+                <td>48</td>
+                    <td>local-authority-eng:WOX</td> 
+                    <td>HANBOROUGH - MILLWOOD END</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.398152 51.828258,-1.397501 51.827543,-1.397449 51.827545,-1.397347 51.827406,-1.397099 51.827231,-1.396900 51.827304,-1.396804 51.827217,-1.396087 51.827607,-1.395912 51.827506,-1.395549 51.827654,-1.395244 51.827383,-1.395733 51.826991,-1.396151 51.826713,-1.396374 51.826613,-1.396007 51.826209,-1.396554 51.825922,-1.395598 51.825401,-1.395682 51.825317,-1.394979 51.825055,-1.395217 51.824672,-1.396449 51.824902,-1.396603 51.824970,-1.397194 51.824887,-1.397365 51.825147,-1.397806 51.825128,-1.397885 51.825239,-1.397579 51.825340,-1.397583 51.825523,-1.397804 51.825671,-1.398671 51.826540,-1.399378 51.826559,-1.399333 51.826638,-1.399656 51.826647,-1.399672 51.826567,-1.400454 51.826590,-1.400453 51.826558,-1.401223 51.826426,-1.401556 51.826281,-1.401682 51.826187,-1.402133 51.827036,-1.401933 51.827463,-1.402817 51.827579,-1.403578 51.827607,-1.403776 51.827400,-1.404590 51.827560,-1.404430 51.827774,-1.404361 51.827929,-1.404427 51.827927,-1.404458 51.828002,-1.406024 51.827963,-1.406182 51.827980,-1.406239 51.828036,-1.406250 51.828110,-1.406231 51.828196,-1.405889 51.828818,-1.402822 51.828305,-1.402772 51.828407,-1.402228 51.828252,-1.401803 51.828196,-1.401873 51.828114,-1.401371 51.827946,-1.400795 51.827864,-1.400609 51.828317,-1.399214 51.828091,-1.399237 51.827859,-1.399100 51.827840,-1.398780 51.827958,-1.398664 51.828009,-1.398689 51.828025,-1.398152 51.828258)))
+  </div>
+</details>
+                    </td>
+                    <td>conservation-area:59</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

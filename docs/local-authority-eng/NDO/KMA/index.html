@@ -143,36 +143,22 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                The Kington Magna Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NDO" class="govuk-link">North Dorset District Council</a>
 <span title="Organisation identifier: local-authority-eng:NDO" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NDO)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-06            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>name</th>
+                <th>geometry</th>
+                <th>geography</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-09-06</td>
+                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d40c1cffe7893e1ab03561a5d601f65dbc3ceb2b1fe514bb3d42df9aae1b0bbc.csv#L16">d40c1cffe789...</a></td>
+                <td>15</td>
+                    <td>local-authority-eng:NDO</td> 
+                    <td>The Kington Magna Conservation Area</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.331827 51.007427,-2.331716 51.007458,-2.331657 51.007490,-2.331113 51.007813,-2.330533 51.008056,-2.330298 51.007767,-2.329887 51.007865,-2.329788 51.007686,-2.330246 51.007587,-2.329646 51.007305,-2.329760 51.007218,-2.330341 51.006992,-2.330645 51.007097,-2.330843 51.007199,-2.330820 51.007212,-2.330900 51.007199,-2.330843 51.007199,-2.331010 51.007079,-2.331038 51.006904,-2.331023 51.006512,-2.330238 51.006442,-2.330318 51.005776,-2.330392 51.005435,-2.330386 51.005327,-2.330255 51.005130,-2.332153 51.004748,-2.332570 51.004693,-2.333156 51.004535,-2.336165 51.004225,-2.336342 51.004318,-2.336449 51.004714,-2.336463 51.005064,-2.336621 51.005379,-2.336711 51.005491,-2.337006 51.005684,-2.337385 51.006033,-2.337287 51.006183,-2.337279 51.006231,-2.337322 51.006303,-2.337801 51.006568,-2.338075 51.006821,-2.337249 51.007154,-2.336539 51.007533,-2.337405 51.008404,-2.337073 51.008520,-2.336958 51.008379,-2.336521 51.008403,-2.336040 51.008177,-2.335826 51.007953,-2.335697 51.007861,-2.335481 51.007888,-2.335261 51.007864,-2.334877 51.007791,-2.334810 51.007736,-2.334617 51.007723,-2.334434 51.007642,-2.334059 51.007632,-2.334074 51.007422,-2.333875 51.007376,-2.333645 51.007349,-2.332420 51.007355,-2.331827 51.007427)))
+  </div>
+</details>
+                    </td>
+                    <td>conservation-area:KMA</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

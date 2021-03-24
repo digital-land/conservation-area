@@ -143,36 +143,22 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                The Sutton Waldron Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NDO" class="govuk-link">North Dorset District Council</a>
 <span title="Organisation identifier: local-authority-eng:NDO" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NDO)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-06            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +176,46 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>name</th>
+                <th>geometry</th>
+                <th>geography</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-09-06</td>
+                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d40c1cffe7893e1ab03561a5d601f65dbc3ceb2b1fe514bb3d42df9aae1b0bbc.csv#L24">d40c1cffe789...</a></td>
+                <td>23</td>
+                    <td>local-authority-eng:NDO</td> 
+                    <td>The Sutton Waldron Conservation Area</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.195103 50.943563,-2.195060 50.943461,-2.194162 50.943555,-2.194126 50.943438,-2.194144 50.943308,-2.193935 50.943000,-2.194207 50.942925,-2.194048 50.942686,-2.194339 50.942596,-2.194201 50.942458,-2.194367 50.942400,-2.194454 50.942528,-2.194632 50.942477,-2.194659 50.942517,-2.195397 50.942248,-2.195488 50.942344,-2.196346 50.941978,-2.196576 50.941644,-2.196537 50.941378,-2.196562 50.941051,-2.196745 50.940959,-2.196694 50.940502,-2.197561 50.940431,-2.197798 50.940440,-2.197922 50.940483,-2.197981 50.940464,-2.198152 50.940514,-2.198223 50.940633,-2.198531 50.940932,-2.198644 50.941100,-2.199354 50.940925,-2.200024 50.942260,-2.200098 50.942377,-2.200223 50.942491,-2.200187 50.942590,-2.200217 50.942620,-2.200606 50.942545,-2.200795 50.942582,-2.200875 50.942783,-2.201330 50.943285,-2.201404 50.943413,-2.201386 50.943708,-2.201099 50.943649,-2.200793 50.943493,-2.200430 50.943127,-2.200330 50.943100,-2.200128 50.942933,-2.199872 50.943006,-2.199955 50.943122,-2.199734 50.943230,-2.199810 50.943330,-2.199428 50.943461,-2.199497 50.943617,-2.199055 50.943739,-2.198961 50.943753,-2.198931 50.943671,-2.198754 50.943703,-2.198714 50.943667,-2.198218 50.943827,-2.198158 50.943661,-2.197754 50.943774,-2.197642 50.943603,-2.196732 50.943808,-2.196769 50.943881,-2.196059 50.943995,-2.195846 50.944079,-2.195306 50.944056,-2.195281 50.943904,-2.195186 50.943780,-2.195103 50.943563)))
+  </div>
+</details>
+                    </td>
+                    <td>conservation-area:SWA</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +308,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>
