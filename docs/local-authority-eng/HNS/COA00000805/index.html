@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">St Paul&#39;s Church COA00000805</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/HNS/COA00000805</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HNS" class="govuk-link">London Borough of Hounslow</a>
-<span title="Organisation identifier: local-authority-eng:HNS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HNS)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                St Paul&#39;s Church COA00000805            </dd>
@@ -148,6 +161,12 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000805            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HNS" class="govuk-link">London Borough of Hounslow</a>
+<span title="Organisation identifier: local-authority-eng:HNS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HNS)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L810">f617d13ef7ff...</a></td>
-                <td>809</td>
-                    <td>conservation-area:COA00000805</td> 
-                    <td>local-authority-eng:HNS</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L810">f617d13ef7ff...</a></td>
+            <td>809</td>
+                <td>St Paul&#39;s Church COA00000805</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.378802 51.470552,-0.378689 51.470880,-0.379220 51.471055,-0.379081 51.471245,-0.379177 51.471260,-0.378832 51.472153,-0.378346 51.472904,-0.377853 51.473138,-0.377652 51.473071,-0.377604 51.473136,-0.379545 51.473675,-0.381575 51.473921,-0.382194 51.473932,-0.382935 51.473878,-0.383490 51.473789,-0.383961 51.473670,-0.384127 51.473160,-0.383090 51.472821,-0.383591 51.472207,-0.383581 51.472152,-0.383030 51.472006,-0.378892 51.470543,-0.378818 51.470529,-0.378802 51.470552)))
   </div>
 </details>
-                    </td>
-                    <td>St Paul&#39;s Church COA00000805</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:HNS</td> 
+                <td>conservation-area:COA00000805</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

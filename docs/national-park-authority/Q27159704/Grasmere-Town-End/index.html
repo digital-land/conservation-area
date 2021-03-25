@@ -132,13 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Grasmere Town End</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/national-park-authority/Q27159704/Grasmere-Town-End</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Grasmere Town End            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:Grasmere Town End            </dd>
@@ -149,6 +164,10 @@ crossorigin="" />
 <span title="Organisation identifier: national-park-authority:Q27159704" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>national-park-authority:Q27159704)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Grasmere Town End            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-14            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/bd5a54fc8d0377744c5f5c53d6235337e1e9b92aa8552de0e47b414b21d54e76.csv#L8">bd5a54fc8d03...</a></td>
-                <td>7</td>
-                    <td>conservation-area:Grasmere Town End</td> 
-                    <td>national-park-authority:Q27159704</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/bd5a54fc8d0377744c5f5c53d6235337e1e9b92aa8552de0e47b414b21d54e76.csv#L8">bd5a54fc8d03...</a></td>
+            <td>7</td>
+                <td>Grasmere Town End</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-3.017154 54.454875,-3.017398 54.454841,-3.017385 54.454697,-3.017182 54.454184,-3.017623 54.454195,-3.017363 54.454012,-3.017310 54.453595,-3.017660 54.453397,-3.017741 54.453261,-3.018409 54.452561,-3.018184 54.452487,-3.018005 54.452355,-3.017866 54.452337,-3.017808 54.452390,-3.017765 54.452371,-3.017548 54.452403,-3.017209 54.452316,-3.016982 54.452202,-3.016850 54.452069,-3.016824 54.451993,-3.016578 54.451992,-3.016556 54.452606,-3.016689 54.452932,-3.016519 54.452974,-3.016189 54.453144,-3.015802 54.453206,-3.015617 54.453308,-3.015477 54.453272,-3.015442 54.453328,-3.015733 54.453451,-3.016007 54.453740,-3.016135 54.453929,-3.016032 54.453942,-3.015934 54.454040,-3.015918 54.454097,-3.015915 54.454325,-3.016013 54.454561,-3.016068 54.454584,-3.015978 54.454666,-3.015993 54.454716,-3.016154 54.454755,-3.016482 54.454716,-3.017023 54.454972,-3.017154 54.454875)))
   </div>
 </details>
-                    </td>
-                    <td>Grasmere Town End</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>national-park-authority:Q27159704</td> 
+                <td>conservation-area:Grasmere Town End</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

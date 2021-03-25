@@ -132,13 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Staindrop</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/DUR/id90d470c1-87d7-4ed0-924c-2b87d63f008e</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:id90d470c1-87d7-4ed0-924c-2b87d63f008e            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Staindrop            </dd>
@@ -149,6 +164,10 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:DUR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:DUR)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:id90d470c1-87d7-4ed0-924c-2b87d63f008e            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-06            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/65bbb8c0161e34e08b371ff6f5008298526ad271ee885752fe28e8b52b007b5b.csv#L88">65bbb8c0161e...</a></td>
-                <td>87</td>
-                    <td>local-authority-eng:DUR</td> 
-                    <td>Staindrop</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/65bbb8c0161e34e08b371ff6f5008298526ad271ee885752fe28e8b52b007b5b.csv#L88">65bbb8c0161e...</a></td>
+            <td>87</td>
+                <td>Staindrop</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.790302 54.580029,-1.790404 54.579723,-1.790593 54.579713,-1.790592 54.579669,-1.790691 54.579665,-1.791360 54.579697,-1.792523 54.579899,-1.793143 54.580057,-1.793604 54.580036,-1.794168 54.580086,-1.794975 54.580352,-1.795653 54.580688,-1.795781 54.580597,-1.796027 54.580197,-1.796968 54.580496,-1.797597 54.580532,-1.797577 54.580004,-1.797793 54.580019,-1.800131 54.579828,-1.800427 54.579828,-1.800877 54.579890,-1.800806 54.579780,-1.800967 54.579761,-1.800973 54.579608,-1.802063 54.579500,-1.802145 54.579670,-1.802642 54.579580,-1.802710 54.579727,-1.803340 54.579707,-1.804177 54.579628,-1.804149 54.579392,-1.804307 54.579385,-1.804220 54.579125,-1.804453 54.579086,-1.804431 54.579031,-1.804478 54.579020,-1.805168 54.579057,-1.805901 54.579016,-1.807587 54.579043,-1.808087 54.579088,-1.808243 54.579150,-1.808522 54.579097,-1.808630 54.579359,-1.809140 54.579347,-1.809127 54.579316,-1.809981 54.579050,-1.810044 54.578990,-1.810086 54.579034,-1.810425 54.578918,-1.810620 54.579094,-1.810884 54.578969,-1.811442 54.578593,-1.811536 54.578502,-1.811555 54.578422,-1.811532 54.578360,-1.811750 54.578366,-1.811936 54.578448,-1.812250 54.578665,-1.812264 54.578704,-1.813281 54.578617,-1.813437 54.578726,-1.813457 54.578878,-1.811597 54.579257,-1.811757 54.579609,-1.810336 54.579817,-1.810231 54.579961,-1.810356 54.580561,-1.808697 54.580502,-1.808710 54.580614,-1.808586 54.580677,-1.808685 54.581306,-1.808208 54.581262,-1.808143 54.581317,-1.808011 54.581322,-1.807945 54.581594,-1.806723 54.581440,-1.805188 54.581363,-1.804616 54.581427,-1.804046 54.581543,-1.803460 54.581582,-1.801941 54.581514,-1.800612 54.581492,-1.799446 54.581703,-1.798322 54.581648,-1.798132 54.581752,-1.797967 54.581774,-1.797806 54.581859,-1.797692 54.581851,-1.797741 54.581633,-1.797009 54.581610,-1.795968 54.581631,-1.795557 54.581768,-1.795157 54.581801,-1.794851 54.581480,-1.794589 54.580896,-1.794515 54.580834,-1.792708 54.580447,-1.790548 54.580132,-1.790288 54.580067,-1.790302 54.580029)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:id90d470c1-87d7-4ed0-924c-2b87d63f008e</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:DUR</td> 
+                <td>conservation-area:id90d470c1-87d7-4ed0-924c-2b87d63f008e</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

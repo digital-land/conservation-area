@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Fulham Park Gardens</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/HMF/40</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-10-01</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/aa0fe3d625d728dad166b5111d2b92acf103e63a10376999c365d847ad4ac2e1.csv#L29">aa0fe3d625d7...</a></td>
-                <td>28</td>
-                    <td>conservation-area:40</td> 
-                    <td>local-authority-eng:HMF</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-10-01</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/aa0fe3d625d728dad166b5111d2b92acf103e63a10376999c365d847ad4ac2e1.csv#L29">aa0fe3d625d7...</a></td>
+            <td>28</td>
+                <td>Fulham Park Gardens</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,16 +231,16 @@ crossorigin="" />
     MULTIPOLYGON (((-5.466222 54.566096,-5.466307 54.566006,-5.466408 54.565811,-5.466487 54.565174,-5.466023 54.565233,-5.465731 54.565225,-5.463742 54.564799,-5.462582 54.564634,-5.462079 54.564515,-5.462029 54.564613,-5.460886 54.565373,-5.461207 54.565509,-5.460183 54.566164,-5.459542 54.566612,-5.460297 54.567181,-5.459615 54.567519,-5.460074 54.567857,-5.460638 54.568142,-5.461133 54.568044,-5.462427 54.567901,-5.463049 54.567793,-5.463581 54.567639,-5.463958 54.567463,-5.465186 54.566614,-5.465543 54.566433,-5.466008 54.566267,-5.466222 54.566096)))
   </div>
 </details>
-                    </td>
-                    <td>Fulham Park Gardens</td> 
-            </tr>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea334324dcd3fd201bee9d821e187efada1132da3bc3b071b3ce91033ac17576.csv#L31">ea334324dcd3...</a></td>
-                <td>30</td>
-                    <td>conservation-area:40</td> 
-                    <td>local-authority-eng:HMF</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:HMF</td> 
+                <td>conservation-area:40</td> 
+        </tr>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea334324dcd3fd201bee9d821e187efada1132da3bc3b071b3ce91033ac17576.csv#L31">ea334324dcd3...</a></td>
+            <td>30</td>
+                <td>Putney Bridge</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -228,12 +250,15 @@ crossorigin="" />
     MULTIPOLYGON (((-5.467194 54.566173,-5.468218 54.566168,-5.469367 54.566040,-5.469359 54.566004,-5.470241 54.565957,-5.472357 54.565537,-5.471658 54.564626,-5.471138 54.564004,-5.470715 54.563540,-5.470547 54.563397,-5.468577 54.564258,-5.469076 54.564923,-5.468694 54.565087,-5.468085 54.565122,-5.468119 54.566033,-5.467178 54.566103,-5.467194 54.566173)))
   </div>
 </details>
-                    </td>
-                    <td>Putney Bridge</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:HMF</td> 
+                <td>conservation-area:40</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -335,5 +360,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

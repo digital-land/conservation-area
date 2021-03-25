@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">FORE STREET ANGEL COA00000021</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/ENF/COA00000021</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -141,13 +160,13 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:ENF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:ENF)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                FORE STREET ANGEL COA00000021            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000021            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                FORE STREET ANGEL COA00000021            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L16">f617d13ef7ff...</a></td>
-                <td>15</td>
-                    <td>conservation-area:COA00000021</td> 
-                    <td>local-authority-eng:ENF</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L16">f617d13ef7ff...</a></td>
+            <td>15</td>
+                <td>FORE STREET ANGEL COA00000021</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.063753 51.619029,-0.063891 51.618598,-0.063402 51.618510,-0.063485 51.618462,-0.063468 51.618446,-0.063554 51.618208,-0.063601 51.618192,-0.063665 51.618016,-0.063610 51.618007,-0.063621 51.617980,-0.063800 51.618009,-0.063879 51.617756,-0.063945 51.617767,-0.064008 51.617580,-0.063934 51.617570,-0.064000 51.617415,-0.063982 51.617393,-0.064278 51.616821,-0.063819 51.616735,-0.064161 51.615584,-0.064743 51.615665,-0.064749 51.615762,-0.064908 51.615750,-0.065033 51.615487,-0.064860 51.615442,-0.064858 51.615399,-0.065377 51.615388,-0.065377 51.614982,-0.065241 51.614972,-0.065244 51.614911,-0.064500 51.614876,-0.064564 51.614277,-0.064711 51.614292,-0.064793 51.614242,-0.064908 51.614247,-0.065009 51.613702,-0.065066 51.613706,-0.065087 51.613608,-0.065136 51.613611,-0.065202 51.613562,-0.065247 51.613372,-0.065247 51.613300,-0.064724 51.613313,-0.064825 51.612852,-0.064833 51.612401,-0.064199 51.612375,-0.064167 51.612755,-0.064264 51.612765,-0.064263 51.612808,-0.064218 51.613198,-0.064068 51.613499,-0.064103 51.613501,-0.064084 51.613617,-0.063739 51.613582,-0.063758 51.613729,-0.063783 51.613731,-0.063731 51.614093,-0.063780 51.614096,-0.063750 51.614206,-0.063835 51.614223,-0.063757 51.614296,-0.063885 51.614308,-0.063872 51.614370,-0.064398 51.614433,-0.064345 51.614937,-0.063479 51.614828,-0.063448 51.614906,-0.063392 51.615120,-0.063695 51.615142,-0.063643 51.615326,-0.063715 51.615333,-0.063773 51.615426,-0.063717 51.615592,-0.063416 51.615563,-0.063396 51.615605,-0.063309 51.616239,-0.063556 51.616253,-0.063510 51.616449,-0.063233 51.616441,-0.063192 51.616606,-0.063246 51.616611,-0.063232 51.616644,-0.063254 51.616647,-0.063204 51.616882,-0.063701 51.616940,-0.063101 51.618232,-0.061899 51.618053,-0.061879 51.618131,-0.061902 51.618360,-0.061808 51.618798,-0.062833 51.618963,-0.062858 51.618904,-0.063753 51.619029)))
   </div>
 </details>
-                    </td>
-                    <td>FORE STREET ANGEL COA00000021</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:ENF</td> 
+                <td>conservation-area:COA00000021</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

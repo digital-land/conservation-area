@@ -132,18 +132,37 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Epsom Town Centre</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/EPS/5</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Epsom Town Centre            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/EPS" class="govuk-link">Epsom and Ewell Borough Council</a>
 <span title="Organisation identifier: local-authority-eng:EPS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EPS)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Epsom Town Centre            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea0b362c33ce972a2379e42ff1876599848a2c785708d39b12dde5e19480427f.csv#L7">ea0b362c33ce...</a></td>
-                <td>6</td>
-                    <td>conservation-area:5</td> 
-                    <td>local-authority-eng:EPS</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea0b362c33ce972a2379e42ff1876599848a2c785708d39b12dde5e19480427f.csv#L7">ea0b362c33ce...</a></td>
+            <td>6</td>
+                <td>Epsom Town Centre</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.267431 51.332616,-0.267083 51.332662,-0.267110 51.332891,-0.267299 51.332877,-0.267352 51.333065,-0.267486 51.333052,-0.267501 51.333097,-0.267733 51.333049,-0.267732 51.332952,-0.267873 51.332978,-0.267833 51.332885,-0.267892 51.332874,-0.267857 51.332786,-0.268022 51.332764,-0.268074 51.332896,-0.268688 51.332740,-0.268733 51.332802,-0.268723 51.332751,-0.268868 51.332731,-0.268875 51.332768,-0.269192 51.332723,-0.269182 51.332685,-0.269749 51.332615,-0.269735 51.332573,-0.269797 51.332565,-0.269785 51.332528,-0.269965 51.332500,-0.269991 51.332579,-0.270118 51.332561,-0.270136 51.332608,-0.270272 51.332614,-0.270323 51.332416,-0.270423 51.332409,-0.270401 51.332311,-0.270430 51.332055,-0.270478 51.332048,-0.270510 51.331840,-0.270480 51.331728,-0.270597 51.331618,-0.270553 51.331530,-0.270574 51.331523,-0.270415 51.331552,-0.270388 51.331495,-0.270426 51.331481,-0.270413 51.331439,-0.270360 51.331437,-0.270339 51.331405,-0.270647 51.331348,-0.270847 51.331654,-0.271223 51.331582,-0.271286 51.331681,-0.271086 51.331729,-0.271104 51.331927,-0.271177 51.331922,-0.271204 51.332004,-0.271317 51.332126,-0.271502 51.332518,-0.272192 51.332449,-0.272243 51.332603,-0.273123 51.332508,-0.272995 51.332719,-0.272819 51.332832,-0.272962 51.332970,-0.271552 51.333518,-0.271495 51.333496,-0.271648 51.333263,-0.271612 51.333257,-0.271632 51.333214,-0.271542 51.333198,-0.271542 51.333135,-0.271451 51.333109,-0.271126 51.333097,-0.271181 51.333267,-0.270861 51.333348,-0.270970 51.333574,-0.270664 51.333633,-0.270628 51.333638,-0.270596 51.333569,-0.270454 51.333188,-0.270209 51.333218,-0.270230 51.333298,-0.270082 51.333314,-0.270072 51.333283,-0.269539 51.333346,-0.269579 51.333480,-0.269415 51.333502,-0.269325 51.333491,-0.269314 51.333458,-0.269034 51.333501,-0.269014 51.333458,-0.268899 51.333480,-0.268936 51.333572,-0.268814 51.333599,-0.268869 51.333692,-0.268725 51.333714,-0.268711 51.333678,-0.268520 51.333706,-0.268480 51.333601,-0.268315 51.333467,-0.268029 51.333513,-0.268043 51.333564,-0.267943 51.333576,-0.267965 51.333639,-0.267814 51.333662,-0.267747 51.333518,-0.267542 51.333550,-0.267648 51.333816,-0.267307 51.333859,-0.267258 51.333739,-0.266842 51.333801,-0.264999 51.334330,-0.264717 51.334365,-0.264386 51.334334,-0.264375 51.334358,-0.264303 51.334360,-0.264245 51.334449,-0.262568 51.334550,-0.261307 51.334697,-0.261264 51.334589,-0.261702 51.334524,-0.261716 51.334496,-0.261673 51.334405,-0.262807 51.334229,-0.262669 51.333834,-0.262704 51.333779,-0.262962 51.333823,-0.263217 51.333588,-0.263788 51.333888,-0.264061 51.333675,-0.264141 51.333690,-0.264104 51.333718,-0.264187 51.333764,-0.264414 51.333637,-0.264809 51.333581,-0.264865 51.333617,-0.265074 51.333477,-0.265005 51.333420,-0.265216 51.333234,-0.265437 51.333298,-0.266175 51.333224,-0.266135 51.333082,-0.266430 51.333071,-0.266420 51.332666,-0.266887 51.332675,-0.266855 51.332324,-0.267569 51.332212,-0.267480 51.332294,-0.267525 51.332321,-0.267578 51.332475,-0.267431 51.332616)))
   </div>
 </details>
-                    </td>
-                    <td>Epsom Town Centre</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:EPS</td> 
+                <td>conservation-area:5</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

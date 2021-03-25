@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Kettering Town Centre Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/KET/Kettering-Town-Centre-Conservation-Area</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Kettering Town Centre Conservation Area            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:Kettering Town Centre Conservation Area            </dd>
@@ -145,10 +168,6 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:KET" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:KET)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Kettering Town Centre Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-06            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/289ba18eaa6040f3f00d515fe5d0b6c8d0efa94ea4e069ecb8eb7a09013832a3.csv#L2">289ba18eaa60...</a></td>
-                <td>1</td>
-                    <td>Kettering Town Centre Conservation Area</td> 
-                    <td>local-authority-eng:KET</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/289ba18eaa6040f3f00d515fe5d0b6c8d0efa94ea4e069ecb8eb7a09013832a3.csv#L2">289ba18eaa60...</a></td>
+            <td>1</td>
+                <td>Kettering Town Centre Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.728462 52.399413,-0.728695 52.399400,-0.728725 52.399366,-0.728707 52.399089,-0.728361 52.399141,-0.728322 52.398902,-0.728526 52.398898,-0.728527 52.398860,-0.728474 52.398823,-0.728316 52.398832,-0.728243 52.398441,-0.728829 52.398354,-0.728794 52.398206,-0.729589 52.398116,-0.729967 52.398037,-0.730290 52.398030,-0.730692 52.397934,-0.730541 52.397346,-0.730082 52.397402,-0.729799 52.397323,-0.729554 52.397318,-0.729335 52.397235,-0.728768 52.397297,-0.728753 52.397095,-0.728480 52.397134,-0.728431 52.397008,-0.728367 52.397016,-0.728335 52.396930,-0.728398 52.396920,-0.728360 52.396838,-0.728625 52.396821,-0.728554 52.396625,-0.728502 52.396322,-0.728305 52.396336,-0.728203 52.395843,-0.729555 52.395805,-0.729516 52.395432,-0.729223 52.395287,-0.730128 52.394577,-0.729185 52.394142,-0.729613 52.393796,-0.729469 52.393720,-0.729796 52.393436,-0.729648 52.393214,-0.729046 52.393429,-0.728518 52.392673,-0.729298 52.392430,-0.729241 52.392297,-0.729008 52.392337,-0.728895 52.392191,-0.728822 52.391944,-0.728984 52.391951,-0.728977 52.391612,-0.728783 52.391600,-0.728875 52.391077,-0.729317 52.391113,-0.729606 52.391234,-0.730464 52.391046,-0.730482 52.390263,-0.730236 52.389586,-0.727991 52.389825,-0.727951 52.389825,-0.727939 52.389696,-0.727144 52.389835,-0.727385 52.390334,-0.726997 52.390405,-0.726964 52.390336,-0.726656 52.390397,-0.727205 52.391565,-0.727048 52.391594,-0.727113 52.391738,-0.726645 52.391827,-0.726722 52.391996,-0.727033 52.391942,-0.727213 52.392332,-0.726795 52.392406,-0.727081 52.393062,-0.725941 52.393254,-0.726122 52.393699,-0.726650 52.393626,-0.726778 52.393952,-0.727068 52.393920,-0.727101 52.394030,-0.727148 52.394025,-0.727189 52.394258,-0.726660 52.394317,-0.726751 52.394639,-0.726417 52.394676,-0.726530 52.394966,-0.726283 52.395001,-0.726113 52.395007,-0.725897 52.394311,-0.724486 52.394530,-0.724612 52.394840,-0.724298 52.394875,-0.724385 52.395003,-0.724434 52.395165,-0.723577 52.395253,-0.723716 52.395616,-0.723277 52.395682,-0.723641 52.396766,-0.723961 52.396720,-0.724050 52.396961,-0.724059 52.397072,-0.723620 52.397135,-0.723713 52.397386,-0.724150 52.397326,-0.724240 52.397559,-0.724178 52.397568,-0.724213 52.397661,-0.724276 52.397651,-0.724362 52.397814,-0.724762 52.397726,-0.724937 52.397966,-0.724764 52.398028,-0.724795 52.398082,-0.724821 52.398120,-0.724997 52.398074,-0.725172 52.398333,-0.725025 52.398359,-0.725105 52.398537,-0.725326 52.398494,-0.725361 52.398609,-0.725285 52.398622,-0.725381 52.398834,-0.725414 52.398828,-0.725431 52.398881,-0.725401 52.398887,-0.725405 52.398943,-0.725455 52.399091,-0.723946 52.399327,-0.724002 52.399439,-0.723876 52.399462,-0.724063 52.399978,-0.724465 52.399927,-0.724538 52.400151,-0.724359 52.400171,-0.724453 52.400487,-0.724988 52.400433,-0.725026 52.400513,-0.725351 52.400478,-0.725366 52.400604,-0.725289 52.400709,-0.725145 52.400763,-0.724175 52.400861,-0.724140 52.400771,-0.723115 52.401016,-0.723242 52.401344,-0.723372 52.401353,-0.723555 52.401299,-0.723815 52.401849,-0.723420 52.401916,-0.723569 52.402277,-0.724930 52.402063,-0.724868 52.401942,-0.725179 52.401891,-0.725077 52.401629,-0.725033 52.401637,-0.724953 52.401455,-0.724913 52.401462,-0.724859 52.401342,-0.724646 52.401281,-0.724610 52.401203,-0.725272 52.401079,-0.725515 52.401633,-0.725830 52.401546,-0.725787 52.401192,-0.726257 52.401201,-0.726411 52.401158,-0.726486 52.401262,-0.726835 52.401172,-0.726578 52.400801,-0.727592 52.400540,-0.727579 52.400517,-0.727616 52.400489,-0.727819 52.400409,-0.727937 52.400310,-0.728232 52.399996,-0.728484 52.399944,-0.728666 52.399868,-0.728463 52.399886,-0.728425 52.399757,-0.728462 52.399413),(-0.727337 52.399031,-0.727884 52.398940,-0.727965 52.399122,-0.727849 52.399146,-0.727899 52.399404,-0.727786 52.399598,-0.727704 52.399578,-0.727604 52.399704,-0.727465 52.399652,-0.727412 52.399743,-0.727247 52.399742,-0.727293 52.399873,-0.726889 52.400001,-0.726885 52.400037,-0.726628 52.400049,-0.726639 52.400135,-0.726429 52.400201,-0.726287 52.400203,-0.726302 52.400094,-0.726352 52.400095,-0.726341 52.399936,-0.726473 52.399934,-0.726491 52.399774,-0.726343 52.399763,-0.726310 52.399393,-0.726642 52.399367,-0.726547 52.399120,-0.726740 52.399101,-0.726686 52.398888,-0.727212 52.398764,-0.727337 52.399031)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:Kettering Town Centre Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:KET</td> 
+                <td>conservation-area:Kettering Town Centre Conservation Area</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

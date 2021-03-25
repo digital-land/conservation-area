@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Eydon</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SNR/Eydon</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -139,15 +158,15 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:Eydon            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Eydon            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SNR" class="govuk-link">South Northamptonshire Council</a>
 <span title="Organisation identifier: local-authority-eng:SNR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SNR)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Eydon            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/1eb168a7b080c36e8d4fe76ca9c7ad289dafab2bf9dff9171e5dee013b3ce1e2.csv#L27">1eb168a7b080...</a></td>
-                <td>26</td>
-                    <td>Eydon</td> 
-                    <td>local-authority-eng:SNR</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/1eb168a7b080c36e8d4fe76ca9c7ad289dafab2bf9dff9171e5dee013b3ce1e2.csv#L27">1eb168a7b080...</a></td>
+            <td>26</td>
+                <td>Eydon</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.208720 52.145615,-1.208904 52.145560,-1.209473 52.145620,-1.209582 52.145378,-1.210047 52.145377,-1.210040 52.145288,-1.210098 52.145158,-1.211201 52.145234,-1.210871 52.146104,-1.210889 52.146131,-1.210998 52.146140,-1.210960 52.146494,-1.210804 52.146696,-1.210678 52.147028,-1.211207 52.147082,-1.211100 52.147399,-1.210786 52.148115,-1.210836 52.148117,-1.210823 52.148164,-1.211106 52.148189,-1.210998 52.148843,-1.210029 52.148769,-1.209919 52.149273,-1.209964 52.149292,-1.209945 52.149380,-1.209656 52.149793,-1.209407 52.149993,-1.208700 52.150096,-1.207589 52.150132,-1.207563 52.149765,-1.207506 52.149695,-1.207338 52.149679,-1.206853 52.149744,-1.206906 52.149626,-1.206888 52.149461,-1.207080 52.149442,-1.206734 52.149099,-1.206742 52.149022,-1.206581 52.148791,-1.207254 52.148793,-1.207240 52.148489,-1.207394 52.148486,-1.207475 52.148044,-1.207809 52.148048,-1.207820 52.147846,-1.207512 52.147869,-1.206784 52.147824,-1.206777 52.147782,-1.206843 52.147769,-1.206886 52.147509,-1.207367 52.147576,-1.208002 52.147615,-1.208013 52.147451,-1.208103 52.147455,-1.208167 52.147206,-1.208170 52.147148,-1.208100 52.147127,-1.208114 52.147035,-1.208167 52.147026,-1.208082 52.146815,-1.208104 52.146268,-1.207850 52.146219,-1.207388 52.146070,-1.207352 52.146019,-1.207362 52.145963,-1.207439 52.145866,-1.207999 52.145947,-1.208015 52.145779,-1.208518 52.145768,-1.208472 52.145641,-1.208724 52.145641,-1.208720 52.145615)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:Eydon</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:SNR</td> 
+                <td>conservation-area:Eydon</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

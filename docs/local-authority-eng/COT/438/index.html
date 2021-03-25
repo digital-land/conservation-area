@@ -132,9 +132,34 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Moreton-in-Marsh Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/COT/438</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/COT" class="govuk-link">Cotswold District Council</a>
+<span title="Organisation identifier: local-authority-eng:COT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:COT)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:438            </dd>
@@ -142,12 +167,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Moreton-in-Marsh Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/COT" class="govuk-link">Cotswold District Council</a>
-<span title="Organisation identifier: local-authority-eng:COT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:COT)</span>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-11</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L143">5a098a0110b3...</a></td>
-                <td>142</td>
-                    <td>local-authority-eng:COT</td> 
-                    <td>Moreton-in-Marsh Conservation Area</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-11</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L143">5a098a0110b3...</a></td>
+            <td>142</td>
+                <td>Moreton-in-Marsh Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.704984 51.990211,-1.704973 51.990308,-1.705292 51.990349,-1.705216 51.990604,-1.704995 51.990577,-1.704976 51.990642,-1.704889 51.990632,-1.704798 51.990979,-1.704176 51.992499,-1.703503 51.992452,-1.703377 51.992684,-1.703538 51.992697,-1.703499 51.992872,-1.703244 51.992883,-1.703228 51.993125,-1.703472 51.993111,-1.703625 51.993137,-1.704024 51.993025,-1.704202 51.992907,-1.704453 51.992823,-1.704585 51.992817,-1.704779 51.992915,-1.704941 51.992894,-1.705074 51.992921,-1.705232 51.992863,-1.705558 51.993240,-1.705477 51.993495,-1.705482 51.993739,-1.705330 51.994421,-1.705307 51.994702,-1.705112 51.994910,-1.704981 51.994964,-1.704640 51.994988,-1.704340 51.994965,-1.704231 51.994926,-1.704172 51.994863,-1.704197 51.994602,-1.702892 51.993866,-1.702586 51.994069,-1.702266 51.994120,-1.702159 51.993867,-1.701766 51.993645,-1.701984 51.993465,-1.702208 51.992832,-1.701069 51.992715,-1.700994 51.992654,-1.700813 51.992349,-1.700696 51.992107,-1.700922 51.992139,-1.701096 51.991956,-1.701253 51.991698,-1.701371 51.991297,-1.701376 51.991203,-1.701196 51.991186,-1.700983 51.990663,-1.701363 51.990669,-1.701370 51.990467,-1.701153 51.990467,-1.701133 51.990024,-1.700560 51.990098,-1.700449 51.989882,-1.700461 51.989767,-1.700551 51.989544,-1.700621 51.989056,-1.700768 51.988896,-1.700758 51.988567,-1.700440 51.988579,-1.700425 51.988341,-1.700145 51.988291,-1.700314 51.987874,-1.700443 51.987897,-1.700546 51.987642,-1.700683 51.987672,-1.700785 51.987441,-1.701125 51.987509,-1.701239 51.987339,-1.702887 51.987514,-1.702873 51.987570,-1.703305 51.987631,-1.703293 51.987685,-1.703590 51.987745,-1.703653 51.987775,-1.703687 51.987854,-1.703895 51.987861,-1.704141 51.987144,-1.704505 51.987139,-1.704450 51.987315,-1.704865 51.987344,-1.704921 51.987581,-1.705556 51.987589,-1.705555 51.987915,-1.705267 51.987917,-1.705285 51.988533,-1.704180 51.988551,-1.704162 51.989021,-1.704446 51.989027,-1.704749 51.988938,-1.705038 51.988910,-1.705316 51.988691,-1.705531 51.988572,-1.706139 51.988372,-1.706479 51.988311,-1.706612 51.988316,-1.706600 51.988494,-1.706168 51.988632,-1.706504 51.989000,-1.706228 51.989115,-1.706183 51.989160,-1.706064 51.989128,-1.705915 51.989331,-1.705445 51.989328,-1.705153 51.989271,-1.705155 51.989505,-1.705054 51.989817,-1.704984 51.990211)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:438</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:COT</td> 
+                <td>conservation-area:438</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Bradfield</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/national-park-authority/Q72617988/135</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/national-park-authority/Q72617988" class="govuk-link">Peak District National Park Authority</a>
-<span title="Organisation identifier: national-park-authority:Q72617988" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>national-park-authority:Q72617988)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:135            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Bradfield            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:135            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/national-park-authority/Q72617988" class="govuk-link">Peak District National Park Authority</a>
+<span title="Organisation identifier: national-park-authority:Q72617988" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>national-park-authority:Q72617988)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-08</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/08fbb782cc005066ce927d643cfd0300769648c98e15208300ac52555b0b9f92.csv#L10">08fbb782cc00...</a></td>
-                <td>9</td>
-                    <td>conservation-area:135</td> 
-                    <td>national-park-authority:Q72617988</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-08</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/08fbb782cc005066ce927d643cfd0300769648c98e15208300ac52555b0b9f92.csv#L10">08fbb782cc00...</a></td>
+            <td>9</td>
+                <td>Bradfield</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.595465 53.426898,-1.595533 53.426967,-1.595651 53.427001,-1.595670 53.427067,-1.595987 53.427275,-1.596656 53.427674,-1.597036 53.427449,-1.597248 53.427612,-1.597162 53.427652,-1.597218 53.427695,-1.597187 53.427711,-1.597598 53.428011,-1.597962 53.427888,-1.598123 53.428035,-1.598855 53.428443,-1.598980 53.428595,-1.598982 53.428652,-1.598939 53.428644,-1.598926 53.428705,-1.600011 53.428658,-1.600025 53.428695,-1.600335 53.428709,-1.600665 53.428845,-1.600748 53.428893,-1.600865 53.429135,-1.600911 53.429578,-1.600998 53.429604,-1.601173 53.429530,-1.601653 53.429460,-1.602131 53.429455,-1.602152 53.429483,-1.601900 53.429710,-1.601890 53.429690,-1.601406 53.429745,-1.601192 53.429853,-1.601044 53.429983,-1.601090 53.429976,-1.601233 53.430110,-1.601265 53.430187,-1.601238 53.430336,-1.601000 53.430522,-1.600918 53.430548,-1.600657 53.430574,-1.600450 53.430539,-1.600192 53.430343,-1.600180 53.430302,-1.600365 53.429998,-1.600497 53.429511,-1.598795 53.429403,-1.598720 53.429637,-1.598128 53.429584,-1.598073 53.429395,-1.597820 53.429516,-1.597645 53.429658,-1.597479 53.429729,-1.597378 53.429824,-1.597214 53.429889,-1.597125 53.430007,-1.596809 53.430241,-1.596209 53.429968,-1.596473 53.429852,-1.596554 53.429769,-1.596808 53.429736,-1.597096 53.429644,-1.597046 53.429587,-1.596687 53.429390,-1.596659 53.429040,-1.596724 53.429038,-1.596697 53.428945,-1.596795 53.428911,-1.596835 53.428749,-1.597246 53.428571,-1.597178 53.428533,-1.597244 53.428472,-1.597296 53.428209,-1.596983 53.428068,-1.596708 53.428017,-1.596231 53.427988,-1.596135 53.427916,-1.596200 53.427852,-1.596255 53.427671,-1.595343 53.427156,-1.595458 53.427098,-1.595323 53.426960,-1.595465 53.426898)))
   </div>
 </details>
-                    </td>
-                    <td>Bradfield</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>national-park-authority:Q72617988</td> 
+                <td>conservation-area:135</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

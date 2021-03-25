@@ -132,9 +132,34 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Witton-le-Wear</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/DUR/id56c11166-668a-47fc-b757-659d14d30a63</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/DUR" class="govuk-link">Durham County Council</a>
+<span title="Organisation identifier: local-authority-eng:DUR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:DUR)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Witton-le-Wear            </dd>
@@ -142,12 +167,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:id56c11166-668a-47fc-b757-659d14d30a63            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/DUR" class="govuk-link">Durham County Council</a>
-<span title="Organisation identifier: local-authority-eng:DUR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:DUR)</span>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/65bbb8c0161e34e08b371ff6f5008298526ad271ee885752fe28e8b52b007b5b.csv#L49">65bbb8c0161e...</a></td>
-                <td>48</td>
-                    <td>conservation-area:id56c11166-668a-47fc-b757-659d14d30a63</td> 
-                    <td>local-authority-eng:DUR</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/65bbb8c0161e34e08b371ff6f5008298526ad271ee885752fe28e8b52b007b5b.csv#L49">65bbb8c0161e...</a></td>
+            <td>48</td>
+                <td>Witton-le-Wear</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.776092 54.670996,-1.776469 54.671511,-1.776769 54.672046,-1.777533 54.673233,-1.778398 54.674399,-1.779236 54.675336,-1.779436 54.675507,-1.780153 54.676327,-1.781172 54.676469,-1.781166 54.676513,-1.781226 54.676525,-1.781119 54.676775,-1.780429 54.676779,-1.780507 54.676862,-1.779681 54.676932,-1.779505 54.676984,-1.779066 54.676987,-1.778947 54.677022,-1.778129 54.677466,-1.777974 54.677169,-1.777108 54.677318,-1.776777 54.676758,-1.775085 54.676946,-1.773990 54.677137,-1.773078 54.677341,-1.773628 54.677977,-1.773987 54.678502,-1.772430 54.678922,-1.772239 54.678498,-1.771895 54.678023,-1.771612 54.677756,-1.771474 54.677823,-1.770583 54.676992,-1.770461 54.676852,-1.770445 54.676783,-1.770323 54.676760,-1.769401 54.676334,-1.768799 54.676569,-1.768731 54.676519,-1.768618 54.676562,-1.768447 54.676539,-1.767984 54.676316,-1.767533 54.675989,-1.767475 54.676045,-1.766879 54.676246,-1.766669 54.676212,-1.766653 54.676149,-1.766708 54.676032,-1.766482 54.675985,-1.766436 54.675894,-1.766271 54.675847,-1.766507 54.675603,-1.766759 54.675233,-1.766882 54.674760,-1.767010 54.673964,-1.767268 54.673244,-1.767366 54.673092,-1.767737 54.672714,-1.768067 54.672504,-1.768864 54.672178,-1.769460 54.671982,-1.770626 54.671636,-1.771227 54.671516,-1.771814 54.671432,-1.773111 54.671347,-1.776092 54.670996)))
   </div>
 </details>
-                    </td>
-                    <td>Witton-le-Wear</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:DUR</td> 
+                <td>conservation-area:id56c11166-668a-47fc-b757-659d14d30a63</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

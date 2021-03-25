@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Old Lakenham</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/NOW/CA10</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NOW" class="govuk-link">Norwich City Council</a>
-<span title="Organisation identifier: local-authority-eng:NOW" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NOW)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Old Lakenham            </dd>
@@ -148,6 +161,12 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:CA10            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NOW" class="govuk-link">Norwich City Council</a>
+<span title="Organisation identifier: local-authority-eng:NOW" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NOW)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/2dd4ae5e5703701db8dce75887fd6a9006de5058f11ce5a6c707ca962df755ce.csv#L11">2dd4ae5e5703...</a></td>
-                <td>10</td>
-                    <td>conservation-area:CA10</td> 
-                    <td>local-authority-eng:NOW</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/2dd4ae5e5703701db8dce75887fd6a9006de5058f11ce5a6c707ca962df755ce.csv#L11">2dd4ae5e5703...</a></td>
+            <td>10</td>
+                <td>Old Lakenham</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((1.298353 52.605608,1.298325 52.605637,1.298074 52.605520,1.297724 52.605272,1.297142 52.605576,1.297295 52.605698,1.296899 52.605915,1.297177 52.606141,1.297013 52.606259,1.296688 52.606418,1.296856 52.606569,1.297132 52.606879,1.297121 52.606898,1.297205 52.606931,1.297188 52.606982,1.297228 52.607171,1.298310 52.607116,1.298269 52.606988,1.298503 52.606938,1.298177 52.606506,1.298526 52.606330,1.298922 52.605990,1.299932 52.606258,1.299959 52.606275,1.299912 52.606330,1.299945 52.606343,1.300028 52.606295,1.300158 52.606347,1.300359 52.606584,1.300311 52.606603,1.300327 52.606631,1.300394 52.606647,1.299906 52.606863,1.299897 52.607003,1.299842 52.607041,1.300697 52.607409,1.300560 52.607536,1.300629 52.607568,1.300624 52.607602,1.300753 52.607658,1.300857 52.607665,1.300845 52.607819,1.300679 52.607843,1.300538 52.607932,1.300828 52.608192,1.301025 52.608071,1.301563 52.608222,1.302181 52.608610,1.302325 52.608651,1.302790 52.608905,1.303193 52.609493,1.303428 52.609708,1.304606 52.609114,1.304524 52.609075,1.304574 52.609006,1.304920 52.609031,1.304983 52.609011,1.304787 52.608902,1.304259 52.608708,1.304403 52.608620,1.304100 52.608586,1.303023 52.608265,1.302727 52.608098,1.302382 52.607956,1.302310 52.607766,1.302328 52.607612,1.302304 52.607422,1.302181 52.607318,1.302196 52.607241,1.302157 52.607134,1.302152 52.606963,1.301794 52.606618,1.301596 52.606573,1.301180 52.606354,1.300694 52.605901,1.300411 52.605752,1.300126 52.605696,1.299698 52.605538,1.299720 52.605462,1.299813 52.605366,1.299820 52.605243,1.299914 52.605047,1.299741 52.604912,1.299567 52.604900,1.298632 52.605403,1.298353 52.605608)))
   </div>
 </details>
-                    </td>
-                    <td>Old Lakenham</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:NOW</td> 
+                <td>conservation-area:CA10</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

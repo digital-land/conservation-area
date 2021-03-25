@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Botchergate</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CAR/BOTC</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CAR" class="govuk-link">Carlisle City Council</a>
-<span title="Organisation identifier: local-authority-eng:CAR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CAR)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:BOTC            </dd>
@@ -148,6 +161,12 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Botchergate            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CAR" class="govuk-link">Carlisle City Council</a>
+<span title="Organisation identifier: local-authority-eng:CAR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CAR)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a5b8dc2a4704d27f33ec45c031b18b956459366ed188dc749747d703e0acb44f.csv#L19">a5b8dc2a4704...</a></td>
-                <td>18</td>
-                    <td>Botchergate</td> 
-                    <td>local-authority-eng:CAR</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a5b8dc2a4704d27f33ec45c031b18b956459366ed188dc749747d703e0acb44f.csv#L19">a5b8dc2a4704...</a></td>
+            <td>18</td>
+                <td>Botchergate</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-2.932213 54.890884,-2.932035 54.891046,-2.932286 54.891169,-2.931968 54.891400,-2.931923 54.891379,-2.931662 54.891626,-2.931867 54.891704,-2.931819 54.891745,-2.931727 54.891703,-2.931619 54.891786,-2.931465 54.891717,-2.931491 54.891698,-2.930594 54.891297,-2.930084 54.891642,-2.929421 54.891308,-2.929908 54.890985,-2.929645 54.890850,-2.929802 54.890745,-2.929572 54.890626,-2.928917 54.891047,-2.928705 54.890946,-2.928547 54.891054,-2.928348 54.890954,-2.929055 54.890464,-2.928047 54.889964,-2.927816 54.889886,-2.927737 54.889937,-2.927378 54.889809,-2.927515 54.889727,-2.927379 54.889663,-2.927460 54.889597,-2.927387 54.889561,-2.927488 54.889482,-2.926977 54.889323,-2.926998 54.889305,-2.926836 54.889243,-2.926766 54.889151,-2.926522 54.889061,-2.926560 54.889029,-2.926096 54.888791,-2.925978 54.888737,-2.925643 54.888995,-2.925236 54.888832,-2.925379 54.888717,-2.925234 54.888653,-2.925264 54.888632,-2.925215 54.888587,-2.924860 54.888422,-2.924760 54.888420,-2.924234 54.888162,-2.925606 54.887192,-2.925627 54.887002,-2.925586 54.886774,-2.925587 54.886505,-2.925775 54.885690,-2.925062 54.885369,-2.924558 54.885102,-2.924667 54.885054,-2.925800 54.885593,-2.926045 54.884759,-2.926287 54.884105,-2.926584 54.884173,-2.926518 54.884300,-2.926435 54.885151,-2.926349 54.885244,-2.926233 54.885287,-2.926169 54.885422,-2.926063 54.885530,-2.925914 54.886118,-2.927065 54.886493,-2.927045 54.886498,-2.927299 54.886745,-2.927263 54.886758,-2.927503 54.886955,-2.926389 54.887321,-2.926439 54.887442,-2.926539 54.887423,-2.926607 54.887503,-2.926665 54.887484,-2.926783 54.887609,-2.927232 54.887467,-2.927422 54.887741,-2.927815 54.888111,-2.927328 54.888287,-2.927497 54.888410,-2.927646 54.888357,-2.927750 54.888455,-2.927233 54.888637,-2.927276 54.888680,-2.927253 54.888690,-2.927441 54.888848,-2.927680 54.888976,-2.927769 54.888932,-2.927939 54.889055,-2.927981 54.889041,-2.928265 54.889225,-2.928311 54.889292,-2.928585 54.889487,-2.929020 54.889277,-2.928927 54.889211,-2.929479 54.888953,-2.929840 54.889372,-2.929228 54.889728,-2.929165 54.889763,-2.929117 54.889733,-2.929084 54.889711,-2.929117 54.889733,-2.929228 54.889803,-2.929239 54.889810,-2.929353 54.889747,-2.929497 54.889831,-2.929597 54.889774,-2.929761 54.889865,-2.930295 54.889538,-2.931424 54.890418,-2.932213 54.890884)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:BOTC</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CAR</td> 
+                <td>conservation-area:BOTC</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

@@ -132,13 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Lumbutts and Mankinholes</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CLD/14</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Lumbutts and Mankinholes            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CLD" class="govuk-link">Calderdale Metropolitan Borough Council</a>
@@ -149,6 +164,10 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:14            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Lumbutts and Mankinholes            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-06            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/2f93bac6d19d0d7f9ab8d4274985120fd2fd27552fa415a3465d1f8341a8fde0.csv#L9">2f93bac6d19d...</a></td>
-                <td>8</td>
-                    <td>conservation-area:14</td> 
-                    <td>local-authority-eng:CLD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/2f93bac6d19d0d7f9ab8d4274985120fd2fd27552fa415a3465d1f8341a8fde0.csv#L9">2f93bac6d19d...</a></td>
+            <td>8</td>
+                <td>Lumbutts and Mankinholes</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-2.083606 53.708087,-2.084942 53.708223,-2.084897 53.704920,-2.083509 53.704947,-2.081978 53.705352,-2.079348 53.705890,-2.077580 53.706319,-2.077037 53.705383,-2.074843 53.704989,-2.074806 53.704822,-2.074841 53.704686,-2.074768 53.704570,-2.074765 53.704460,-2.074716 53.704416,-2.075555 53.702610,-2.075441 53.702571,-2.075431 53.702535,-2.074935 53.702223,-2.074743 53.702022,-2.074616 53.701941,-2.074200 53.701813,-2.073606 53.701786,-2.072909 53.701686,-2.072604 53.701545,-2.072459 53.701434,-2.071379 53.700982,-2.070920 53.700708,-2.068543 53.699521,-2.067317 53.701805,-2.067026 53.701774,-2.066718 53.701604,-2.066501 53.701565,-2.064913 53.701507,-2.064946 53.701737,-2.064881 53.701997,-2.064570 53.702511,-2.064378 53.703041,-2.064105 53.703518,-2.063606 53.703995,-2.063374 53.704109,-2.063219 53.704142,-2.061986 53.704058,-2.061525 53.704131,-2.061023 53.704300,-2.060487 53.704302,-2.060458 53.704340,-2.060475 53.704386,-2.060685 53.704475,-2.060787 53.704556,-2.060833 53.704695,-2.060860 53.704704,-2.060818 53.704766,-2.059798 53.704443,-2.058627 53.704325,-2.057738 53.704251,-2.056251 53.704326,-2.056335 53.704847,-2.056839 53.706887,-2.058112 53.708192,-2.059566 53.707657,-2.060286 53.708887,-2.059965 53.708997,-2.060130 53.709383,-2.060305 53.709394,-2.061229 53.711799,-2.061489 53.712561,-2.061953 53.712463,-2.061910 53.712624,-2.064315 53.712061,-2.066261 53.711458,-2.066558 53.711644,-2.066775 53.711656,-2.067936 53.711234,-2.071445 53.710451,-2.071611 53.710540,-2.071729 53.710649,-2.071855 53.710846,-2.071873 53.710931,-2.071829 53.711228,-2.071838 53.711687,-2.071713 53.712041,-2.071648 53.712126,-2.073339 53.712006,-2.073658 53.711705,-2.073848 53.711584,-2.073963 53.711383,-2.074186 53.711106,-2.074615 53.710676,-2.074260 53.710452,-2.074484 53.710324,-2.074614 53.710034,-2.074934 53.709833,-2.075466 53.710269,-2.075688 53.710600,-2.075784 53.710911,-2.076074 53.710961,-2.076297 53.710935,-2.076525 53.710968,-2.076811 53.710960,-2.077090 53.711000,-2.077360 53.711083,-2.077558 53.711082,-2.077611 53.711019,-2.077393 53.710853,-2.077230 53.710519,-2.077152 53.710223,-2.077175 53.710173,-2.076746 53.709575,-2.076904 53.709528,-2.077626 53.709067,-2.079610 53.708308,-2.079290 53.708049,-2.081756 53.707988,-2.081749 53.708065,-2.083244 53.708058,-2.083606 53.708087)))
   </div>
 </details>
-                    </td>
-                    <td>Lumbutts and Mankinholes</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CLD</td> 
+                <td>conservation-area:14</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

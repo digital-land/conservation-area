@@ -132,9 +132,34 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Great Wakering CA</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/ROC/9</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/ROC" class="govuk-link">Rochford District Council</a>
+<span title="Organisation identifier: local-authority-eng:ROC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:ROC)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Great Wakering CA            </dd>
@@ -142,12 +167,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:9            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/ROC" class="govuk-link">Rochford District Council</a>
-<span title="Organisation identifier: local-authority-eng:ROC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:ROC)</span>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-09</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a8e8751a4415515b24f6761c15f37f92deb0a4101618354158a292546c2acfad.csv#L10">a8e8751a4415...</a></td>
-                <td>9</td>
-                    <td>conservation-area:9</td> 
-                    <td>local-authority-eng:ROC</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-09</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a8e8751a4415515b24f6761c15f37f92deb0a4101618354158a292546c2acfad.csv#L10">a8e8751a4415...</a></td>
+            <td>9</td>
+                <td>Great Wakering CA</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((0.795536 51.553529,0.795566 51.553621,0.796714 51.553483,0.798127 51.553375,0.798174 51.553647,0.798983 51.553656,0.799397 51.553624,0.799838 51.553512,0.800173 51.553471,0.800464 51.553475,0.801763 51.553377,0.801850 51.553629,0.801493 51.553617,0.801484 51.553877,0.802473 51.553918,0.802501 51.553722,0.802973 51.553739,0.802950 51.553395,0.802909 51.553397,0.802896 51.553302,0.803409 51.553229,0.803778 51.553288,0.803831 51.553166,0.804230 51.553150,0.804235 51.553183,0.804405 51.553216,0.804441 51.553135,0.804700 51.553202,0.804661 51.553270,0.804657 51.553616,0.805628 51.553656,0.805646 51.553495,0.806174 51.553517,0.806157 51.553683,0.806707 51.553705,0.806742 51.553883,0.807201 51.553871,0.807237 51.553598,0.806969 51.553579,0.806980 51.553359,0.807008 51.553364,0.807013 51.553321,0.807450 51.553370,0.807452 51.553392,0.808670 51.553509,0.808659 51.553428,0.808704 51.553352,0.809344 51.553406,0.809674 51.553534,0.809841 51.553403,0.810333 51.553902,0.810580 51.554020,0.810589 51.554224,0.810620 51.554258,0.810294 51.554593,0.811498 51.554658,0.811489 51.553934,0.811457 51.553935,0.811448 51.553848,0.811456 51.553483,0.811309 51.553410,0.811206 51.552154,0.810075 51.552112,0.810311 51.552361,0.809798 51.552604,0.809069 51.552573,0.808046 51.552706,0.807606 51.552698,0.806568 51.552650,0.804895 51.552468,0.804323 51.552453,0.804330 51.552392,0.803194 51.552401,0.803201 51.552468,0.802734 51.552629,0.802178 51.552675,0.801516 51.552699,0.801508 51.552677,0.799365 51.552840,0.799353 51.552765,0.798613 51.552801,0.798605 51.553013,0.798455 51.553017,0.798462 51.553070,0.798115 51.553093,0.798120 51.552977,0.797369 51.552937,0.797337 51.552952,0.797336 51.553145,0.796968 51.553191,0.796962 51.553130,0.796888 51.553132,0.796884 51.553032,0.796323 51.553031,0.796328 51.552827,0.795709 51.552823,0.795581 51.553157,0.795524 51.553398,0.795536 51.553529)))
   </div>
 </details>
-                    </td>
-                    <td>Great Wakering CA</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:ROC</td> 
+                <td>conservation-area:9</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

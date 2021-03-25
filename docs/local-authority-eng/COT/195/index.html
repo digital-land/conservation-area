@@ -132,13 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Naunton Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/COT/195</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Naunton Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:195            </dd>
@@ -149,6 +164,10 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:COT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:COT)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Naunton Conservation Area            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-11            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-11</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L113">5a098a0110b3...</a></td>
-                <td>112</td>
-                    <td>conservation-area:195</td> 
-                    <td>local-authority-eng:COT</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-11</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L113">5a098a0110b3...</a></td>
+            <td>112</td>
+                <td>Naunton Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.838639 51.909981,-1.838473 51.910014,-1.837407 51.910034,-1.837383 51.909960,-1.837207 51.909965,-1.837107 51.910236,-1.837050 51.910233,-1.837058 51.910189,-1.836903 51.910175,-1.836704 51.910107,-1.836655 51.910319,-1.835699 51.910222,-1.833249 51.910094,-1.832712 51.910016,-1.832683 51.909904,-1.832296 51.909928,-1.831637 51.910030,-1.831631 51.910079,-1.831561 51.910116,-1.831295 51.910082,-1.830628 51.910090,-1.830636 51.910319,-1.829627 51.910427,-1.829499 51.910708,-1.829121 51.911312,-1.829040 51.911491,-1.828770 51.911837,-1.828628 51.912118,-1.827670 51.911996,-1.827617 51.911939,-1.827563 51.911681,-1.827467 51.911632,-1.826366 51.911482,-1.825265 51.911387,-1.825100 51.911316,-1.824418 51.911167,-1.824224 51.911081,-1.824163 51.911131,-1.823303 51.910699,-1.823287 51.910631,-1.823074 51.910456,-1.822694 51.909883,-1.823525 51.909602,-1.824228 51.909209,-1.824738 51.909289,-1.825226 51.909299,-1.825209 51.909063,-1.825393 51.909044,-1.825631 51.909045,-1.825636 51.909086,-1.826693 51.909002,-1.826943 51.909037,-1.828205 51.908993,-1.829117 51.908878,-1.829196 51.908843,-1.829783 51.909096,-1.829941 51.909217,-1.830064 51.909362,-1.830579 51.909250,-1.830863 51.909145,-1.831545 51.909034,-1.831928 51.908826,-1.832186 51.908575,-1.832325 51.908534,-1.832320 51.908445,-1.832209 51.908359,-1.831980 51.907999,-1.831868 51.907642,-1.832322 51.907786,-1.832595 51.907786,-1.834015 51.907213,-1.834211 51.907193,-1.834221 51.907039,-1.835693 51.907020,-1.838050 51.907188,-1.839530 51.907183,-1.841946 51.907371,-1.841760 51.908289,-1.841209 51.908295,-1.841206 51.908487,-1.840927 51.908532,-1.840937 51.908577,-1.840726 51.908631,-1.840448 51.908631,-1.840064 51.908741,-1.840132 51.908839,-1.840126 51.908918,-1.840399 51.909278,-1.840103 51.909466,-1.839371 51.909625,-1.839137 51.909876,-1.838639 51.909981)))
   </div>
 </details>
-                    </td>
-                    <td>Naunton Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:COT</td> 
+                <td>conservation-area:195</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

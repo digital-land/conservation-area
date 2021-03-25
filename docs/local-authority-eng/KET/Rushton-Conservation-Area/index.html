@@ -132,18 +132,37 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Rushton Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/KET/Rushton-Conservation-Area</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Rushton Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/KET" class="govuk-link">Kettering Borough Council</a>
 <span title="Organisation identifier: local-authority-eng:KET" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:KET)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Rushton Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/289ba18eaa6040f3f00d515fe5d0b6c8d0efa94ea4e069ecb8eb7a09013832a3.csv#L17">289ba18eaa60...</a></td>
-                <td>16</td>
-                    <td>conservation-area:Rushton Conservation Area</td> 
-                    <td>local-authority-eng:KET</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/289ba18eaa6040f3f00d515fe5d0b6c8d0efa94ea4e069ecb8eb7a09013832a3.csv#L17">289ba18eaa60...</a></td>
+            <td>16</td>
+                <td>Rushton Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.760855 52.439143,-0.760705 52.439115,-0.760645 52.439213,-0.759777 52.439023,-0.759814 52.438940,-0.759716 52.438922,-0.759778 52.438917,-0.759766 52.438876,-0.759792 52.438862,-0.759536 52.438572,-0.759568 52.438324,-0.759553 52.438086,-0.759539 52.437996,-0.759465 52.437926,-0.759211 52.437733,-0.759132 52.437630,-0.758914 52.437633,-0.758342 52.437784,-0.758040 52.437425,-0.757489 52.436877,-0.757372 52.436687,-0.757366 52.436505,-0.757543 52.436051,-0.757712 52.435728,-0.761153 52.435765,-0.761169 52.435904,-0.761282 52.435960,-0.762158 52.435908,-0.762705 52.435995,-0.762929 52.435928,-0.763229 52.435923,-0.763828 52.435518,-0.764077 52.435407,-0.764830 52.435237,-0.765585 52.435175,-0.765685 52.435131,-0.765649 52.435080,-0.765673 52.435036,-0.765788 52.434959,-0.765928 52.434964,-0.765939 52.435281,-0.766038 52.435714,-0.766402 52.436898,-0.767097 52.437564,-0.766588 52.437716,-0.767186 52.438192,-0.764490 52.439168,-0.763403 52.438433,-0.763333 52.438465,-0.762956 52.438190,-0.762813 52.438258,-0.762756 52.438214,-0.762572 52.438301,-0.761822 52.438500,-0.761969 52.438684,-0.761576 52.438797,-0.761601 52.438862,-0.761432 52.438849,-0.761495 52.439031,-0.761230 52.439068,-0.761191 52.439104,-0.761077 52.439057,-0.760979 52.439172,-0.760855 52.439143)))
   </div>
 </details>
-                    </td>
-                    <td>Rushton Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:KET</td> 
+                <td>conservation-area:Rushton Conservation Area</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

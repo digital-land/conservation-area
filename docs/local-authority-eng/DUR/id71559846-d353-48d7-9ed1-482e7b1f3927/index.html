@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Easington Village</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/DUR/id71559846-d353-48d7-9ed1-482e7b1f3927</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Easington Village            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:id71559846-d353-48d7-9ed1-482e7b1f3927            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:DUR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:DUR)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:id71559846-d353-48d7-9ed1-482e7b1f3927            </dd>
+            <dd class="govuk-summary-list__value">                Easington Village            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/65bbb8c0161e34e08b371ff6f5008298526ad271ee885752fe28e8b52b007b5b.csv#L19">65bbb8c0161e...</a></td>
-                <td>18</td>
-                    <td>conservation-area:id71559846-d353-48d7-9ed1-482e7b1f3927</td> 
-                    <td>local-authority-eng:DUR</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/65bbb8c0161e34e08b371ff6f5008298526ad271ee885752fe28e8b52b007b5b.csv#L19">65bbb8c0161e...</a></td>
+            <td>18</td>
+                <td>Easington Village</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.356816 54.782475,-1.356778 54.782533,-1.356796 54.782574,-1.357108 54.783037,-1.358180 54.782862,-1.358287 54.782928,-1.358396 54.783072,-1.358699 54.783795,-1.358827 54.784001,-1.358903 54.784197,-1.359974 54.784072,-1.360136 54.784448,-1.360867 54.784355,-1.360900 54.784558,-1.361456 54.784492,-1.362388 54.784542,-1.363634 54.784659,-1.363619 54.784807,-1.363736 54.784817,-1.363687 54.785135,-1.363470 54.785122,-1.363430 54.785037,-1.363288 54.785058,-1.363312 54.785120,-1.362543 54.785156,-1.362355 54.785238,-1.362394 54.785139,-1.362381 54.784968,-1.362135 54.784895,-1.361603 54.784897,-1.361497 54.784853,-1.361125 54.784867,-1.361169 54.785045,-1.360809 54.785102,-1.360611 54.785102,-1.360558 54.785054,-1.359318 54.785153,-1.359260 54.785100,-1.358958 54.785127,-1.358946 54.785096,-1.357709 54.785272,-1.357675 54.785175,-1.356950 54.785264,-1.356959 54.785307,-1.356750 54.785343,-1.356775 54.785404,-1.356179 54.785456,-1.356018 54.785271,-1.356112 54.785240,-1.355917 54.784899,-1.355334 54.785026,-1.354965 54.785090,-1.354866 54.785081,-1.353980 54.785247,-1.353911 54.785318,-1.353923 54.785505,-1.353985 54.785579,-1.354146 54.785621,-1.354162 54.785951,-1.353832 54.785924,-1.353822 54.785956,-1.353343 54.785882,-1.353355 54.785861,-1.353221 54.785836,-1.353262 54.785691,-1.352894 54.785697,-1.352967 54.785418,-1.352339 54.785447,-1.352128 54.784848,-1.351607 54.783985,-1.351518 54.783620,-1.351395 54.783371,-1.351542 54.783348,-1.351602 54.783264,-1.352370 54.783175,-1.352480 54.783023,-1.352670 54.782969,-1.352663 54.782909,-1.352921 54.782870,-1.353297 54.782763,-1.353476 54.782980,-1.354162 54.782845,-1.354155 54.782822,-1.354191 54.782817,-1.354189 54.782703,-1.354442 54.782710,-1.354461 54.782761,-1.355031 54.782606,-1.355141 54.782622,-1.355488 54.782562,-1.355598 54.782668,-1.355860 54.782602,-1.356109 54.782814,-1.356168 54.782829,-1.356176 54.782693,-1.356262 54.782396,-1.356816 54.782475)))
   </div>
 </details>
-                    </td>
-                    <td>Easington Village</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:DUR</td> 
+                <td>conservation-area:id71559846-d353-48d7-9ed1-482e7b1f3927</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

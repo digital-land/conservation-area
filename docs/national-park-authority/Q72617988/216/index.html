@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Upper Elkstone</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/national-park-authority/Q72617988/216</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Upper Elkstone            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:216            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: national-park-authority:Q72617988" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>national-park-authority:Q72617988)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:216            </dd>
+            <dd class="govuk-summary-list__value">                Upper Elkstone            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-08</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/08fbb782cc005066ce927d643cfd0300769648c98e15208300ac52555b0b9f92.csv#L90">08fbb782cc00...</a></td>
-                <td>89</td>
-                    <td>conservation-area:216</td> 
-                    <td>national-park-authority:Q72617988</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-08</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/08fbb782cc005066ce927d643cfd0300769648c98e15208300ac52555b0b9f92.csv#L90">08fbb782cc00...</a></td>
+            <td>89</td>
+                <td>Upper Elkstone</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.919032 53.128556,-1.919280 53.128701,-1.919368 53.128792,-1.919447 53.128781,-1.919483 53.128812,-1.919474 53.128916,-1.919697 53.129166,-1.920139 53.129362,-1.919851 53.129590,-1.919549 53.129431,-1.919022 53.129269,-1.918905 53.129322,-1.918946 53.129373,-1.918723 53.129437,-1.918768 53.129494,-1.918667 53.129523,-1.918638 53.129487,-1.918677 53.129475,-1.918540 53.129272,-1.918207 53.128850,-1.918129 53.128878,-1.918048 53.128809,-1.917961 53.128865,-1.917526 53.128973,-1.917481 53.128704,-1.917409 53.128566,-1.917379 53.128410,-1.917179 53.128433,-1.917180 53.128279,-1.916964 53.128272,-1.916959 53.128326,-1.916772 53.128319,-1.916777 53.128264,-1.916631 53.128272,-1.916374 53.127799,-1.916387 53.127693,-1.916331 53.127653,-1.916352 53.127551,-1.916070 53.127251,-1.916093 53.127042,-1.916731 53.127035,-1.916620 53.126795,-1.916872 53.126698,-1.917010 53.126691,-1.917163 53.126596,-1.917203 53.126511,-1.917274 53.126524,-1.917328 53.126470,-1.917496 53.126517,-1.917524 53.126416,-1.917458 53.126355,-1.917427 53.126207,-1.918859 53.126016,-1.919059 53.126029,-1.919079 53.126053,-1.919019 53.126786,-1.918892 53.127161,-1.918987 53.127250,-1.918877 53.127289,-1.918989 53.127822,-1.919300 53.128130,-1.918815 53.128194,-1.918844 53.128363,-1.918971 53.128491,-1.919224 53.128358,-1.919345 53.128377,-1.919032 53.128556)))
   </div>
 </details>
-                    </td>
-                    <td>Upper Elkstone</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>national-park-authority:Q72617988</td> 
+                <td>conservation-area:216</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

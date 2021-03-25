@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">COA00000714</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/BEX/COA00000714</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                COA00000714            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:COA00000714            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BEX" class="govuk-link">London Borough of Bexley</a>
 <span title="Organisation identifier: local-authority-eng:BEX" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BEX)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:COA00000714            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                COA00000714            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L719">f617d13ef7ff...</a></td>
-                <td>718</td>
-                    <td>conservation-area:COA00000714</td> 
-                    <td>local-authority-eng:BEX</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L719">f617d13ef7ff...</a></td>
+            <td>718</td>
+                <td>COA00000714</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((0.095521 51.432010,0.095635 51.431647,0.095211 51.431550,0.094463 51.432185,0.094472 51.431865,0.094955 51.431482,0.094943 51.431285,0.095128 51.431281,0.095131 51.431116,0.094492 51.431096,0.094510 51.430761,0.094431 51.430762,0.094427 51.430656,0.094515 51.430648,0.094559 51.429561,0.094831 51.429501,0.095557 51.429751,0.095953 51.429549,0.096166 51.429652,0.096634 51.429712,0.096632 51.429782,0.096895 51.429757,0.096873 51.429278,0.096944 51.429244,0.096940 51.428984,0.096737 51.428960,0.096718 51.428622,0.096672 51.428402,0.096281 51.427990,0.096146 51.427800,0.096091 51.427659,0.096238 51.427591,0.096079 51.426554,0.096767 51.426494,0.096749 51.426318,0.096798 51.426224,0.096994 51.426117,0.097277 51.426104,0.097514 51.426168,0.097566 51.426339,0.097555 51.426776,0.097093 51.426835,0.097191 51.427222,0.097249 51.427328,0.097870 51.427284,0.097988 51.427309,0.098066 51.427866,0.098199 51.428208,0.098748 51.428192,0.098802 51.428022,0.098855 51.427627,0.098833 51.427217,0.098883 51.426621,0.099738 51.426560,0.100807 51.426609,0.100946 51.427163,0.101165 51.427722,0.101179 51.427933,0.101137 51.428095,0.102212 51.428019,0.102252 51.428182,0.101100 51.428294,0.101103 51.428475,0.101379 51.429027,0.100508 51.429068,0.100518 51.429830,0.100813 51.429829,0.100860 51.430142,0.101081 51.430164,0.101142 51.430819,0.101256 51.430826,0.101258 51.431129,0.101174 51.431130,0.101164 51.431365,0.098750 51.431330,0.098749 51.431431,0.098510 51.431427,0.098531 51.431889,0.098488 51.432088,0.097998 51.432262,0.098095 51.431805,0.097235 51.431832,0.097172 51.431971,0.096877 51.431992,0.096852 51.432223,0.096435 51.432171,0.095865 51.432011,0.095521 51.432010)))
   </div>
 </details>
-                    </td>
-                    <td>COA00000714</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BEX</td> 
+                <td>conservation-area:COA00000714</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

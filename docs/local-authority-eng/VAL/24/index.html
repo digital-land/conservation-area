@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">East Hanney Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/VAL/24</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:24            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/VAL" class="govuk-link">Vale of White Horse District Council</a>
@@ -145,10 +168,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                East Hanney Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:24            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-05            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L25">92cd49145a8d...</a></td>
-                <td>24</td>
-                    <td>conservation-area:24</td> 
-                    <td>local-authority-eng:VAL</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L25">92cd49145a8d...</a></td>
+            <td>24</td>
+                <td>East Hanney Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.399151 51.631913,-1.398884 51.631869,-1.398711 51.632303,-1.399197 51.632371,-1.398965 51.632639,-1.398798 51.632598,-1.398672 51.632879,-1.398088 51.632760,-1.398077 51.632780,-1.397579 51.632708,-1.397406 51.633078,-1.397251 51.633575,-1.397079 51.633773,-1.396831 51.634213,-1.395807 51.634282,-1.395797 51.634008,-1.395974 51.633618,-1.395374 51.633525,-1.394997 51.634399,-1.394241 51.634378,-1.394303 51.634753,-1.393894 51.635020,-1.394263 51.635243,-1.394095 51.635340,-1.394212 51.635419,-1.394150 51.635647,-1.394384 51.635738,-1.394795 51.635833,-1.394579 51.636090,-1.395417 51.636228,-1.395262 51.636588,-1.395136 51.636578,-1.395075 51.636725,-1.394984 51.636753,-1.394943 51.636887,-1.394666 51.636881,-1.394584 51.637223,-1.395060 51.637256,-1.394996 51.637544,-1.394747 51.637543,-1.394635 51.638291,-1.394645 51.639033,-1.395278 51.639012,-1.395327 51.638031,-1.395914 51.638136,-1.396371 51.638166,-1.396628 51.637537,-1.396658 51.637398,-1.397303 51.637450,-1.397440 51.637407,-1.397882 51.637474,-1.398704 51.637497,-1.398721 51.637393,-1.399877 51.637354,-1.399950 51.636927,-1.400496 51.636505,-1.400642 51.636115,-1.400706 51.635644,-1.400863 51.635202,-1.400429 51.635128,-1.400083 51.635114,-1.400099 51.635190,-1.400258 51.635417,-1.400309 51.635565,-1.400313 51.635707,-1.400264 51.635874,-1.399183 51.635798,-1.397367 51.635524,-1.397370 51.635279,-1.397437 51.635085,-1.396927 51.635046,-1.397005 51.634706,-1.397717 51.634851,-1.398306 51.634893,-1.398421 51.634500,-1.397940 51.634437,-1.398148 51.634084,-1.398100 51.634012,-1.398128 51.633809,-1.398100 51.633716,-1.399306 51.632946,-1.399541 51.633062,-1.399910 51.632768,-1.400110 51.632661,-1.400136 51.632468,-1.400473 51.632484,-1.400792 51.632447,-1.400771 51.632364,-1.401004 51.631987,-1.401086 51.631747,-1.401273 51.631635,-1.401959 51.631567,-1.402013 51.631612,-1.402055 51.631591,-1.402097 51.631624,-1.402812 51.631364,-1.402874 51.631190,-1.402954 51.631071,-1.402524 51.631007,-1.402129 51.631201,-1.401767 51.631296,-1.401748 51.631274,-1.401660 51.631298,-1.401403 51.631114,-1.401630 51.630966,-1.401636 51.630934,-1.401556 51.630879,-1.400736 51.631011,-1.400494 51.630965,-1.400252 51.631468,-1.399866 51.631405,-1.399770 51.631641,-1.399818 51.631648,-1.399677 51.631997,-1.399151 51.631913)),((-1.404878 51.632520,-1.405173 51.632528,-1.405176 51.632278,-1.405506 51.632286,-1.405492 51.632125,-1.405518 51.632077,-1.405548 51.631613,-1.405344 51.631574,-1.405528 51.631096,-1.405664 51.630910,-1.405003 51.630756,-1.404756 51.631081,-1.404661 51.631257,-1.404629 51.631333,-1.404810 51.631594,-1.404854 51.632085,-1.404853 51.632518,-1.404878 51.632520)))
   </div>
 </details>
-                    </td>
-                    <td>East Hanney Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:VAL</td> 
+                <td>conservation-area:24</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

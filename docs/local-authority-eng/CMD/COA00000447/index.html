@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Kings Cross St Pancras COA00000447</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CMD/COA00000447</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CMD" class="govuk-link">London Borough of Camden</a>
-<span title="Organisation identifier: local-authority-eng:CMD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CMD)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000447            </dd>
@@ -148,6 +161,12 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Kings Cross St Pancras COA00000447            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CMD" class="govuk-link">London Borough of Camden</a>
+<span title="Organisation identifier: local-authority-eng:CMD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CMD)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L452">f617d13ef7ff...</a></td>
-                <td>451</td>
-                    <td>Kings Cross St Pancras COA00000447</td> 
-                    <td>local-authority-eng:CMD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L452">f617d13ef7ff...</a></td>
+            <td>451</td>
+                <td>Kings Cross St Pancras COA00000447</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.115869 51.529636,-0.115910 51.529778,-0.116060 51.529913,-0.116818 51.530216,-0.118059 51.530568,-0.119866 51.530944,-0.122589 51.530751,-0.122343 51.534999,-0.123333 51.535024,-0.123580 51.534983,-0.125182 51.534586,-0.127101 51.534002,-0.127434 51.534516,-0.127347 51.534549,-0.127834 51.535123,-0.128358 51.535658,-0.128585 51.535685,-0.128660 51.535761,-0.128722 51.535943,-0.128873 51.536219,-0.128928 51.536415,-0.128968 51.536646,-0.128896 51.536911,-0.129594 51.537125,-0.129624 51.537034,-0.129782 51.537145,-0.130056 51.537255,-0.130221 51.537244,-0.130633 51.537069,-0.131118 51.537538,-0.132759 51.536883,-0.132709 51.536543,-0.133112 51.536523,-0.133170 51.537030,-0.133248 51.537020,-0.133543 51.537478,-0.133680 51.537801,-0.133676 51.537857,-0.134369 51.537658,-0.134271 51.537535,-0.134729 51.537355,-0.133766 51.536233,-0.133231 51.535535,-0.133490 51.535490,-0.133495 51.535447,-0.133169 51.535149,-0.133280 51.535069,-0.133906 51.534813,-0.131873 51.532842,-0.131657 51.532930,-0.131701 51.532972,-0.130646 51.533362,-0.130772 51.533566,-0.129767 51.534075,-0.129571 51.533939,-0.129578 51.533899,-0.129524 51.533845,-0.128043 51.532716,-0.127932 51.532493,-0.128556 51.532239,-0.128361 51.532079,-0.127816 51.532285,-0.126907 51.530528,-0.126529 51.529113,-0.126311 51.528925,-0.126059 51.529002,-0.125729 51.528633,-0.124630 51.529065,-0.124579 51.529115,-0.124241 51.529252,-0.124271 51.529387,-0.123763 51.529603,-0.123806 51.529644,-0.123498 51.529764,-0.123029 51.529329,-0.122445 51.529558,-0.122686 51.529798,-0.122074 51.530042,-0.121789 51.529763,-0.122017 51.529664,-0.120985 51.528649,-0.120134 51.528669,-0.119597 51.528750,-0.119528 51.528687,-0.119181 51.528708,-0.117143 51.529134,-0.117473 51.529324,-0.117375 51.529344,-0.117402 51.529401,-0.116357 51.529598,-0.116341 51.529567,-0.115869 51.529636)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000447</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CMD</td> 
+                <td>conservation-area:COA00000447</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

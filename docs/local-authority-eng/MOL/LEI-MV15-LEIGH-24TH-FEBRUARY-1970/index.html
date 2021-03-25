@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">MV15 LEIGH 24TH FEBRUARY 1970</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/MOL/LEI-MV15-LEIGH-24TH-FEBRUARY-1970</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -141,13 +160,13 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:MOL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:MOL)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:LEI MV15 LEIGH 24TH FEBRUARY 1970            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                MV15 LEIGH 24TH FEBRUARY 1970            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:LEI MV15 LEIGH 24TH FEBRUARY 1970            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f3969617c89ddb64fee83ce19fb5628301f0e1f853159ee6057958693d806da7.csv#L26">f3969617c89d...</a></td>
-                <td>25</td>
-                    <td>MV15 LEIGH 24TH FEBRUARY 1970</td> 
-                    <td>local-authority-eng:MOL</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f3969617c89ddb64fee83ce19fb5628301f0e1f853159ee6057958693d806da7.csv#L26">f3969617c89d...</a></td>
+            <td>25</td>
+                <td>MV15 LEIGH 24TH FEBRUARY 1970</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.248176 51.212574,-0.248147 51.212520,-0.248291 51.212535,-0.248487 51.212476,-0.248525 51.212530,-0.249477 51.212285,-0.249717 51.212179,-0.249406 51.211519,-0.249093 51.209858,-0.248885 51.209268,-0.248896 51.209067,-0.248864 51.208916,-0.250047 51.208602,-0.250919 51.208264,-0.251478 51.208205,-0.251404 51.207778,-0.251258 51.207578,-0.251226 51.207482,-0.250713 51.206970,-0.250180 51.207127,-0.249871 51.206771,-0.249692 51.206716,-0.249311 51.206684,-0.249375 51.207219,-0.248836 51.207244,-0.248507 51.207323,-0.247868 51.206876,-0.247504 51.207060,-0.247436 51.207055,-0.247025 51.207802,-0.247030 51.207893,-0.246954 51.208020,-0.246910 51.208188,-0.246922 51.208315,-0.246731 51.208362,-0.246917 51.212268,-0.247931 51.212631,-0.248176 51.212574)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:LEI MV15 LEIGH 24TH FEBRUARY 1970</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:MOL</td> 
+                <td>conservation-area:LEI MV15 LEIGH 24TH FEBRUARY 1970</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

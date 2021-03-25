@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Queensbridge Road COA00000101</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/HCK/COA00000101</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:COA00000101            </dd>
+            <dd class="govuk-summary-list__value">                Queensbridge Road COA00000101            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:HCK" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HCK)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Queensbridge Road COA00000101            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:COA00000101            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L110">f617d13ef7ff...</a></td>
-                <td>109</td>
-                    <td>Queensbridge Road COA00000101</td> 
-                    <td>local-authority-eng:HCK</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L110">f617d13ef7ff...</a></td>
+            <td>109</td>
+                <td>Queensbridge Road COA00000101</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.070341 51.537906,-0.069600 51.537902,-0.069548 51.539375,-0.069517 51.539375,-0.069483 51.539888,-0.069399 51.539889,-0.069380 51.540148,-0.069413 51.540182,-0.069397 51.540410,-0.069614 51.540413,-0.069606 51.540653,-0.069463 51.540651,-0.069375 51.541664,-0.069459 51.541662,-0.069464 51.541769,-0.069412 51.542248,-0.069417 51.542488,-0.069380 51.542488,-0.069385 51.542788,-0.069364 51.542790,-0.069365 51.542865,-0.069402 51.542887,-0.069409 51.543071,-0.069380 51.543072,-0.069381 51.543596,-0.069502 51.543595,-0.069507 51.544000,-0.069410 51.544002,-0.069445 51.544305,-0.069468 51.544315,-0.069406 51.544317,-0.069411 51.544366,-0.069282 51.544382,-0.069293 51.544528,-0.069360 51.544527,-0.069394 51.544894,-0.069326 51.544898,-0.069329 51.544930,-0.069141 51.544942,-0.069174 51.545199,-0.069291 51.545200,-0.069332 51.545544,-0.069273 51.545706,-0.069770 51.545781,-0.069811 51.545676,-0.069878 51.544508,-0.069964 51.542353,-0.070341 51.537906)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000101</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:HCK</td> 
+                <td>conservation-area:COA00000101</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

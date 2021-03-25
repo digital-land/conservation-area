@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Pinner Hill Estate Conservation Area COA00000160</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/HRW/COA00000160</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Pinner Hill Estate Conservation Area COA00000160            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:COA00000160            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:HRW" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HRW)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:COA00000160            </dd>
+            <dd class="govuk-summary-list__value">                Pinner Hill Estate Conservation Area COA00000160            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L165">f617d13ef7ff...</a></td>
-                <td>164</td>
-                    <td>conservation-area:COA00000160</td> 
-                    <td>local-authority-eng:HRW</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L165">f617d13ef7ff...</a></td>
+            <td>164</td>
+                <td>Pinner Hill Estate Conservation Area COA00000160</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.403938 51.613191,-0.404010 51.613194,-0.403988 51.612699,-0.403643 51.611627,-0.403413 51.610627,-0.403444 51.610009,-0.403277 51.609166,-0.403114 51.608907,-0.402836 51.608585,-0.402648 51.608213,-0.402617 51.608108,-0.402629 51.607907,-0.402569 51.607643,-0.402214 51.606699,-0.400407 51.606073,-0.398212 51.605360,-0.398102 51.605107,-0.399053 51.605089,-0.399052 51.604653,-0.397854 51.604676,-0.398080 51.605550,-0.397925 51.605567,-0.397920 51.605518,-0.396871 51.605682,-0.396350 51.605730,-0.396346 51.606113,-0.397262 51.606064,-0.397395 51.606548,-0.397187 51.607262,-0.397267 51.607565,-0.396989 51.607590,-0.396969 51.607655,-0.397219 51.608009,-0.397523 51.610016,-0.397507 51.610313,-0.397946 51.610917,-0.398225 51.610543,-0.398678 51.610704,-0.399143 51.610827,-0.399491 51.610963,-0.399538 51.611023,-0.399596 51.611211,-0.399385 51.611434,-0.399000 51.611442,-0.398928 51.611485,-0.399024 51.611817,-0.398484 51.611878,-0.398983 51.612643,-0.399251 51.612580,-0.399304 51.612643,-0.399458 51.613090,-0.399959 51.613046,-0.400043 51.613339,-0.400885 51.613283,-0.401067 51.613229,-0.401090 51.613135,-0.401199 51.613161,-0.402143 51.613174,-0.402137 51.613200,-0.403938 51.613191)))
   </div>
 </details>
-                    </td>
-                    <td>Pinner Hill Estate Conservation Area COA00000160</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:HRW</td> 
+                <td>conservation-area:COA00000160</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

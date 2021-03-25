@@ -132,9 +132,34 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">HADLEY WOOD COA00000029</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/ENF/COA00000029</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/ENF" class="govuk-link">London Borough of Enfield</a>
+<span title="Organisation identifier: local-authority-eng:ENF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:ENF)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000029            </dd>
@@ -142,12 +167,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                HADLEY WOOD COA00000029            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/ENF" class="govuk-link">London Borough of Enfield</a>
-<span title="Organisation identifier: local-authority-eng:ENF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:ENF)</span>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L33">f617d13ef7ff...</a></td>
-                <td>32</td>
-                    <td>local-authority-eng:ENF</td> 
-                    <td>HADLEY WOOD COA00000029</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L33">f617d13ef7ff...</a></td>
+            <td>32</td>
+                <td>HADLEY WOOD COA00000029</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.177437 51.668144,-0.177909 51.668717,-0.178293 51.668443,-0.178718 51.668058,-0.179028 51.667668,-0.179175 51.667338,-0.179265 51.667186,-0.179345 51.667121,-0.179321 51.666962,-0.179081 51.666971,-0.179171 51.666778,-0.179204 51.666581,-0.179170 51.666335,-0.179060 51.666107,-0.179550 51.665968,-0.179345 51.665692,-0.179291 51.665707,-0.179025 51.665353,-0.177870 51.665650,-0.177943 51.666036,-0.177736 51.666078,-0.177827 51.666356,-0.177814 51.666478,-0.177074 51.666601,-0.177163 51.667037,-0.176911 51.667177,-0.174931 51.667198,-0.175023 51.667449,-0.174146 51.667400,-0.173347 51.667229,-0.171110 51.667014,-0.171029 51.666517,-0.169720 51.666692,-0.170008 51.666998,-0.170151 51.667225,-0.170318 51.667374,-0.170829 51.667559,-0.170615 51.668110,-0.171135 51.668188,-0.171149 51.668153,-0.171653 51.668233,-0.171670 51.668191,-0.172200 51.668267,-0.172069 51.668617,-0.171707 51.668701,-0.171216 51.668712,-0.170081 51.668606,-0.169563 51.668595,-0.170073 51.669806,-0.173714 51.669145,-0.174855 51.669083,-0.174769 51.668496,-0.175225 51.668472,-0.175255 51.668346,-0.176551 51.668273,-0.177383 51.668084,-0.177437 51.668144)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000029</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:ENF</td> 
+                <td>conservation-area:COA00000029</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

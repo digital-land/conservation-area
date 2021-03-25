@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Rothwell Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/KET/Rothwell-Conservation-Area</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/KET" class="govuk-link">Kettering Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:KET" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:KET)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:Rothwell Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Rothwell Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:Rothwell Conservation Area            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/KET" class="govuk-link">Kettering Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:KET" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:KET)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/289ba18eaa6040f3f00d515fe5d0b6c8d0efa94ea4e069ecb8eb7a09013832a3.csv#L16">289ba18eaa60...</a></td>
-                <td>15</td>
-                    <td>conservation-area:Rothwell Conservation Area</td> 
-                    <td>local-authority-eng:KET</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/289ba18eaa6040f3f00d515fe5d0b6c8d0efa94ea4e069ecb8eb7a09013832a3.csv#L16">289ba18eaa60...</a></td>
+            <td>15</td>
+                <td>Rothwell Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.799934 52.423965,-0.799911 52.423854,-0.799720 52.423866,-0.799726 52.423658,-0.799601 52.423662,-0.799611 52.423341,-0.799327 52.423332,-0.799323 52.423231,-0.798798 52.423244,-0.798799 52.423196,-0.798496 52.423197,-0.798495 52.423133,-0.797962 52.423164,-0.797964 52.422932,-0.798076 52.422753,-0.798330 52.422830,-0.798404 52.422709,-0.798535 52.422667,-0.798671 52.422703,-0.798700 52.422753,-0.798683 52.422648,-0.798871 52.422612,-0.798845 52.422554,-0.799239 52.422488,-0.799285 52.422378,-0.799190 52.422342,-0.799042 52.422199,-0.798924 52.422157,-0.799051 52.421721,-0.799469 52.421900,-0.799617 52.421869,-0.800081 52.421715,-0.799915 52.421370,-0.800483 52.421293,-0.800450 52.421093,-0.800312 52.421062,-0.800181 52.420496,-0.801523 52.420163,-0.801719 52.420160,-0.802951 52.421576,-0.803638 52.421316,-0.803788 52.421286,-0.803862 52.421540,-0.804190 52.421510,-0.804199 52.421795,-0.804124 52.421801,-0.804143 52.421853,-0.803950 52.421882,-0.803979 52.421935,-0.804016 52.421927,-0.804127 52.422221,-0.804003 52.422230,-0.804150 52.422382,-0.804288 52.422335,-0.804680 52.422597,-0.805062 52.422970,-0.805257 52.423390,-0.805488 52.423764,-0.805376 52.423826,-0.804724 52.423993,-0.804333 52.423533,-0.803705 52.423202,-0.803495 52.423059,-0.803405 52.423158,-0.803283 52.423131,-0.803264 52.423198,-0.802952 52.423197,-0.802791 52.423401,-0.802650 52.423464,-0.802079 52.423519,-0.801217 52.423471,-0.801241 52.423553,-0.801150 52.423563,-0.801167 52.423637,-0.801085 52.423641,-0.800868 52.423622,-0.800877 52.423492,-0.800744 52.423498,-0.800670 52.423504,-0.800663 52.423578,-0.800527 52.423624,-0.799999 52.423644,-0.800010 52.424037,-0.799948 52.424046,-0.799934 52.423965)))
   </div>
 </details>
-                    </td>
-                    <td>Rothwell Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:KET</td> 
+                <td>conservation-area:Rothwell Conservation Area</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

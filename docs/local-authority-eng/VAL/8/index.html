@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Bourton Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/VAL/8</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L9">92cd49145a8d...</a></td>
-                <td>8</td>
-                    <td>conservation-area:8</td> 
-                    <td>local-authority-eng:VAL</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L9">92cd49145a8d...</a></td>
+            <td>8</td>
+                <td>Bourton Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.670129 51.584746,-1.670288 51.584811,-1.670943 51.584892,-1.671173 51.584811,-1.671273 51.584726,-1.671503 51.584799,-1.671717 51.584731,-1.671750 51.584644,-1.672838 51.584429,-1.673008 51.584287,-1.672964 51.584244,-1.672870 51.584247,-1.672852 51.584218,-1.672915 51.584121,-1.672838 51.584002,-1.672860 51.583944,-1.672837 51.583909,-1.672706 51.583930,-1.672575 51.583321,-1.673006 51.583352,-1.673139 51.583045,-1.672255 51.582961,-1.671193 51.582960,-1.670968 51.582882,-1.670697 51.582846,-1.670318 51.582878,-1.669865 51.582750,-1.669592 51.582634,-1.668750 51.582085,-1.668930 51.582005,-1.670138 51.581688,-1.671418 51.581243,-1.670509 51.580165,-1.671885 51.579441,-1.671727 51.579348,-1.672567 51.578256,-1.672052 51.578141,-1.671534 51.577887,-1.670899 51.577518,-1.670811 51.577458,-1.671095 51.577299,-1.670542 51.576979,-1.670209 51.577206,-1.670456 51.577369,-1.670432 51.577451,-1.668488 51.579071,-1.667923 51.579613,-1.667450 51.579440,-1.666449 51.580340,-1.665920 51.580094,-1.665921 51.580055,-1.665169 51.579651,-1.663906 51.579063,-1.663162 51.579649,-1.663758 51.579979,-1.664275 51.580324,-1.664053 51.580452,-1.664062 51.580487,-1.664170 51.580529,-1.663952 51.580771,-1.664714 51.581330,-1.664844 51.581455,-1.665228 51.581643,-1.665310 51.581715,-1.665992 51.581436,-1.666513 51.581722,-1.666178 51.582070,-1.666112 51.582195,-1.666398 51.582294,-1.666338 51.582466,-1.666150 51.583409,-1.664788 51.583918,-1.664928 51.584035,-1.666365 51.583488,-1.666266 51.583796,-1.666951 51.583878,-1.667064 51.583515,-1.669199 51.584307,-1.669603 51.584506,-1.669919 51.584765,-1.670129 51.584746)))
   </div>
 </details>
-                    </td>
-                    <td>Bourton Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:VAL</td> 
+                <td>conservation-area:8</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

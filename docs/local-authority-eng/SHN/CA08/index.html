@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">George Street Quarter</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SHN/CA08</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/041560991f8c2e27de78b0e49e9e9f2282879bdad6564681568d5ddd2bd4de33.csv#L8">041560991f8c...</a></td>
-                <td>7</td>
-                    <td>conservation-area:CA08</td> 
-                    <td>local-authority-eng:SHN</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/041560991f8c2e27de78b0e49e9e9f2282879bdad6564681568d5ddd2bd4de33.csv#L8">041560991f8c...</a></td>
+            <td>7</td>
+                <td>George Street Quarter</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-2.733044 53.454106,-2.731177 53.453724,-2.731695 53.453372,-2.730964 53.453348,-2.730710 53.453882,-2.730221 53.453799,-2.730658 53.452889,-2.730437 53.452812,-2.730284 53.452946,-2.730251 53.452938,-2.730294 53.452887,-2.729925 53.452787,-2.730284 53.452352,-2.730351 53.452371,-2.730313 53.452489,-2.730463 53.452474,-2.730516 53.452518,-2.730728 53.452560,-2.730820 53.452479,-2.730908 53.452368,-2.731096 53.451991,-2.731091 53.451515,-2.731219 53.451472,-2.731552 53.451379,-2.731818 53.451361,-2.732201 53.451414,-2.732375 53.451402,-2.732640 53.451528,-2.733633 53.451696,-2.733685 53.451765,-2.733285 53.452184,-2.732909 53.452479,-2.732910 53.452506,-2.732824 53.452543,-2.732044 53.453166,-2.732342 53.453243,-2.732321 53.453291,-2.732390 53.453302,-2.732307 53.453512,-2.734094 53.453757,-2.733781 53.454250,-2.733044 53.454106)))
   </div>
 </details>
-                    </td>
-                    <td>George Street Quarter</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:SHN</td> 
+                <td>conservation-area:CA08</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

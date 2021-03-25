@@ -132,16 +132,35 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Shurlock Row</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/WNM/Shurlock-Row</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:Shurlock Row            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Shurlock Row            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:Shurlock Row            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-08</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/292ababefd38db91e5f0a1c766db1a6fd1e004b49b399ba5af18c2d6fdb238d9.csv#L10">292ababefd38...</a></td>
-                <td>9</td>
-                    <td>local-authority-eng:WNM</td> 
-                    <td>Shurlock Row</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-08</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/292ababefd38db91e5f0a1c766db1a6fd1e004b49b399ba5af18c2d6fdb238d9.csv#L10">292ababefd38...</a></td>
+            <td>9</td>
+                <td>Shurlock Row</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.800107 51.465657,-0.799390 51.465822,-0.799406 51.465666,-0.798730 51.465496,-0.798426 51.465293,-0.799117 51.465054,-0.800059 51.464645,-0.801559 51.464313,-0.802214 51.464255,-0.802005 51.463389,-0.801833 51.463006,-0.801687 51.461961,-0.800490 51.461851,-0.800267 51.460933,-0.800076 51.460957,-0.799919 51.459960,-0.801105 51.459592,-0.800738 51.459358,-0.800984 51.459332,-0.801196 51.459341,-0.801932 51.459497,-0.801985 51.459426,-0.802383 51.459539,-0.802364 51.459567,-0.802657 51.459676,-0.802842 51.459687,-0.802720 51.459955,-0.804337 51.460104,-0.804367 51.460187,-0.805655 51.460068,-0.807174 51.460005,-0.807245 51.460591,-0.807199 51.460568,-0.806907 51.460593,-0.806870 51.460858,-0.806553 51.460813,-0.805974 51.460823,-0.805962 51.460906,-0.805413 51.460925,-0.805333 51.461407,-0.805032 51.461383,-0.805052 51.461273,-0.804102 51.461376,-0.803577 51.461386,-0.803648 51.461438,-0.803232 51.461625,-0.803360 51.462034,-0.803021 51.462066,-0.803227 51.462769,-0.803182 51.462799,-0.803442 51.462958,-0.804220 51.462927,-0.804262 51.462866,-0.804504 51.462915,-0.804459 51.463339,-0.804392 51.463412,-0.804392 51.464344,-0.804175 51.464687,-0.804242 51.464779,-0.803420 51.465281,-0.803130 51.465288,-0.802954 51.465324,-0.802873 51.465233,-0.800706 51.465888,-0.800494 51.465575,-0.800107 51.465657)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:Shurlock Row</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:WNM</td> 
+                <td>conservation-area:Shurlock Row</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

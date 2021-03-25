@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Oxenhope Upper Town</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/BRD/05-00043-CONARA</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BRD" class="govuk-link">City of Bradford Metropolitan District Council</a>
-<span title="Organisation identifier: local-authority-eng:BRD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRD)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Oxenhope Upper Town            </dd>
@@ -148,6 +161,12 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:05/00043/CONARA            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BRD" class="govuk-link">City of Bradford Metropolitan District Council</a>
+<span title="Organisation identifier: local-authority-eng:BRD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRD)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-02-07</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/806e837b4d1619f30bbf5b0b0e66ad1057df13ea4750511a6b43bce4e0e12f70.csv#L35">806e837b4d16...</a></td>
-                <td>34</td>
-                    <td>conservation-area:05/00043/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-02-07</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/806e837b4d1619f30bbf5b0b0e66ad1057df13ea4750511a6b43bce4e0e12f70.csv#L35">806e837b4d16...</a></td>
+            <td>34</td>
+                <td>Oxenhope Upper Town</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,16 +231,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.956705 53.807227,-1.956837 53.807143,-1.956529 53.807009,-1.954879 53.807800,-1.954822 53.807919,-1.954848 53.808011,-1.954516 53.807914,-1.954288 53.808039,-1.954735 53.808203,-1.954296 53.808639,-1.954255 53.808626,-1.954226 53.808658,-1.954264 53.808680,-1.953945 53.809005,-1.954303 53.809097,-1.954103 53.809377,-1.953859 53.809319,-1.953783 53.809436,-1.953696 53.809430,-1.953684 53.809393,-1.953599 53.809402,-1.953604 53.809482,-1.953330 53.809496,-1.953257 53.809465,-1.953288 53.809435,-1.953165 53.809381,-1.953131 53.809409,-1.953020 53.809362,-1.952871 53.809476,-1.952670 53.809537,-1.952722 53.809585,-1.952396 53.809769,-1.952328 53.809720,-1.952257 53.809752,-1.952444 53.809871,-1.951785 53.810139,-1.951812 53.810198,-1.951738 53.810216,-1.951779 53.810278,-1.951055 53.810427,-1.951362 53.810400,-1.951590 53.810320,-1.951767 53.810298,-1.951885 53.810425,-1.952005 53.810461,-1.952312 53.810378,-1.952487 53.810697,-1.952527 53.810804,-1.952468 53.810818,-1.952486 53.810843,-1.952539 53.810830,-1.952584 53.810917,-1.952858 53.810858,-1.952903 53.810923,-1.952884 53.810948,-1.952943 53.810985,-1.952959 53.811034,-1.953436 53.810915,-1.954715 53.810497,-1.954604 53.810379,-1.954598 53.810322,-1.954704 53.810298,-1.955592 53.810343,-1.955839 53.810556,-1.955932 53.810550,-1.955921 53.810470,-1.957578 53.810640,-1.957534 53.810732,-1.957675 53.810763,-1.958013 53.810788,-1.958022 53.810741,-1.958189 53.810782,-1.958245 53.810741,-1.958278 53.810745,-1.958269 53.810777,-1.958464 53.810784,-1.958480 53.810724,-1.958978 53.810769,-1.959222 53.810817,-1.959346 53.811007,-1.959435 53.811085,-1.960445 53.811134,-1.960847 53.811227,-1.960935 53.811238,-1.960970 53.811210,-1.961020 53.811264,-1.961141 53.811283,-1.961069 53.811368,-1.961732 53.811584,-1.963175 53.811878,-1.962553 53.812610,-1.962355 53.812964,-1.962669 53.812968,-1.962879 53.812917,-1.963408 53.812398,-1.963687 53.812330,-1.963795 53.812365,-1.963912 53.812476,-1.964067 53.812712,-1.964094 53.812897,-1.964135 53.812940,-1.964296 53.812949,-1.964712 53.812888,-1.965294 53.812950,-1.965547 53.812917,-1.965851 53.813036,-1.966220 53.813030,-1.965935 53.812700,-1.965428 53.812308,-1.964839 53.812047,-1.964022 53.811791,-1.964206 53.811606,-1.963901 53.811493,-1.963676 53.811685,-1.961474 53.811107,-1.961498 53.811077,-1.961453 53.811057,-1.960622 53.810907,-1.959510 53.810636,-1.959647 53.810334,-1.959443 53.810264,-1.959492 53.810207,-1.959255 53.810186,-1.959189 53.810149,-1.958576 53.810100,-1.958558 53.810258,-1.958517 53.810309,-1.956264 53.810059,-1.955958 53.809984,-1.956433 53.809197,-1.955674 53.809093,-1.955600 53.809294,-1.955195 53.809228,-1.955496 53.808797,-1.955504 53.808633,-1.955400 53.808419,-1.955879 53.808116,-1.955925 53.808153,-1.956177 53.808018,-1.955802 53.807811,-1.956705 53.807227)))
   </div>
 </details>
-                    </td>
-                    <td>Oxenhope Upper Town</td> 
-            </tr>            <tr>
-                <td>2021-02-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d3dcd8bbb587b2739ebae2b65c6cf648fe026abbe37c8d6e5bd44862ce4a0d38.csv#L35">d3dcd8bbb587...</a></td>
-                <td>34</td>
-                    <td>conservation-area:05/00043/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00043/CONARA</td> 
+        </tr>        <tr>
+            <td>2021-02-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d3dcd8bbb587b2739ebae2b65c6cf648fe026abbe37c8d6e5bd44862ce4a0d38.csv#L35">d3dcd8bbb587...</a></td>
+            <td>34</td>
+                <td>Oxenhope Upper Town</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -228,16 +250,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.957000 53.807000,-1.956000 53.807000,-1.955000 53.808000,-1.954000 53.808000,-1.955000 53.808000,-1.954000 53.809000,-1.953000 53.809000,-1.953000 53.810000,-1.953000 53.810000,-1.953000 53.810000,-1.953000 53.810000,-1.953000 53.810000,-1.953000 53.810000,-1.953000 53.810000,-1.952000 53.810000,-1.951000 53.810000,-1.952000 53.810000,-1.952000 53.811000,-1.954000 53.811000,-1.955000 53.810000,-1.956000 53.810000,-1.956000 53.811000,-1.956000 53.810000,-1.956000 53.811000,-1.957000 53.811000,-1.957000 53.811000,-1.957000 53.811000,-1.957000 53.811000,-1.957000 53.811000,-1.957000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.960000 53.811000,-1.961000 53.811000,-1.962000 53.812000,-1.963000 53.812000,-1.963000 53.813000,-1.962000 53.813000,-1.963000 53.813000,-1.963000 53.812000,-1.964000 53.812000,-1.964000 53.813000,-1.966000 53.813000,-1.966000 53.812000,-1.964000 53.812000,-1.964000 53.811000,-1.964000 53.812000,-1.963000 53.811000,-1.962000 53.811000,-1.962000 53.811000,-1.961000 53.811000,-1.960000 53.811000,-1.960000 53.810000,-1.956000 53.810000,-1.956000 53.809000,-1.955000 53.809000,-1.956000 53.809000,-1.955000 53.809000,-1.955000 53.808000,-1.956000 53.808000,-1.956000 53.807000,-1.957000 53.807000)))
   </div>
 </details>
-                    </td>
-                    <td>Oxenhope Upper Town</td> 
-            </tr>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/fb9cd1432bfe914f997d1e67b281902c4a7af3a789bb31847dd1a6da40af0712.csv#L35">fb9cd1432bfe...</a></td>
-                <td>34</td>
-                    <td>conservation-area:05/00043/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00043/CONARA</td> 
+        </tr>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/fb9cd1432bfe914f997d1e67b281902c4a7af3a789bb31847dd1a6da40af0712.csv#L35">fb9cd1432bfe...</a></td>
+            <td>34</td>
+                <td>Oxenhope Upper Town</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -247,16 +269,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.956705 53.807227,-1.956837 53.807143,-1.956529 53.807009,-1.954879 53.807800,-1.954822 53.807919,-1.954848 53.808011,-1.954516 53.807914,-1.954288 53.808039,-1.954735 53.808203,-1.954296 53.808639,-1.954255 53.808626,-1.954226 53.808658,-1.954264 53.808680,-1.953945 53.809005,-1.954303 53.809097,-1.954103 53.809377,-1.953859 53.809319,-1.953783 53.809436,-1.953696 53.809430,-1.953684 53.809393,-1.953599 53.809402,-1.953604 53.809482,-1.953330 53.809496,-1.953257 53.809465,-1.953288 53.809435,-1.953165 53.809381,-1.953131 53.809409,-1.953020 53.809362,-1.952871 53.809476,-1.952670 53.809537,-1.952722 53.809585,-1.952396 53.809769,-1.952328 53.809720,-1.952257 53.809752,-1.952444 53.809871,-1.951785 53.810139,-1.951812 53.810198,-1.951738 53.810216,-1.951779 53.810278,-1.951055 53.810427,-1.951362 53.810400,-1.951590 53.810320,-1.951767 53.810298,-1.951885 53.810425,-1.952005 53.810461,-1.952312 53.810378,-1.952487 53.810697,-1.952527 53.810804,-1.952468 53.810818,-1.952486 53.810843,-1.952539 53.810830,-1.952584 53.810917,-1.952858 53.810858,-1.952903 53.810923,-1.952884 53.810948,-1.952943 53.810985,-1.952959 53.811034,-1.953436 53.810915,-1.954715 53.810497,-1.954604 53.810379,-1.954598 53.810322,-1.954704 53.810298,-1.955592 53.810343,-1.955839 53.810556,-1.955932 53.810550,-1.955921 53.810470,-1.957578 53.810640,-1.957534 53.810732,-1.957675 53.810763,-1.958013 53.810788,-1.958022 53.810741,-1.958189 53.810782,-1.958245 53.810741,-1.958278 53.810745,-1.958269 53.810777,-1.958464 53.810784,-1.958480 53.810724,-1.958978 53.810769,-1.959222 53.810817,-1.959346 53.811007,-1.959435 53.811085,-1.960445 53.811134,-1.960847 53.811227,-1.960935 53.811238,-1.960970 53.811210,-1.961020 53.811264,-1.961141 53.811283,-1.961069 53.811368,-1.961732 53.811584,-1.963175 53.811878,-1.962553 53.812610,-1.962355 53.812964,-1.962669 53.812968,-1.962879 53.812917,-1.963408 53.812398,-1.963687 53.812330,-1.963795 53.812365,-1.963912 53.812476,-1.964067 53.812712,-1.964094 53.812897,-1.964135 53.812940,-1.964296 53.812949,-1.964712 53.812888,-1.965294 53.812950,-1.965547 53.812917,-1.965851 53.813036,-1.966220 53.813030,-1.965935 53.812700,-1.965428 53.812308,-1.964839 53.812047,-1.964022 53.811791,-1.964206 53.811606,-1.963901 53.811493,-1.963676 53.811685,-1.961474 53.811107,-1.961498 53.811077,-1.961453 53.811057,-1.960622 53.810907,-1.959510 53.810636,-1.959647 53.810334,-1.959443 53.810264,-1.959492 53.810207,-1.959255 53.810186,-1.959189 53.810149,-1.958576 53.810100,-1.958558 53.810258,-1.958517 53.810309,-1.956264 53.810059,-1.955958 53.809984,-1.956433 53.809197,-1.955674 53.809093,-1.955600 53.809294,-1.955195 53.809228,-1.955496 53.808797,-1.955504 53.808633,-1.955400 53.808419,-1.955879 53.808116,-1.955925 53.808153,-1.956177 53.808018,-1.955802 53.807811,-1.956705 53.807227)))
   </div>
 </details>
-                    </td>
-                    <td>Oxenhope Upper Town</td> 
-            </tr>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a9f8d4ff0fbd665a8aa98a5650466ed4d125448551dbe7989cf3ece1e22923cb.csv#L35">a9f8d4ff0fbd...</a></td>
-                <td>34</td>
-                    <td>conservation-area:05/00043/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00043/CONARA</td> 
+        </tr>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a9f8d4ff0fbd665a8aa98a5650466ed4d125448551dbe7989cf3ece1e22923cb.csv#L35">a9f8d4ff0fbd...</a></td>
+            <td>34</td>
+                <td>Oxenhope Upper Town</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -266,12 +288,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.957000 53.807000,-1.956000 53.807000,-1.955000 53.808000,-1.954000 53.808000,-1.955000 53.808000,-1.954000 53.809000,-1.953000 53.809000,-1.953000 53.810000,-1.953000 53.810000,-1.953000 53.810000,-1.953000 53.810000,-1.953000 53.810000,-1.953000 53.810000,-1.953000 53.810000,-1.952000 53.810000,-1.951000 53.810000,-1.952000 53.810000,-1.952000 53.811000,-1.954000 53.811000,-1.955000 53.810000,-1.956000 53.810000,-1.956000 53.811000,-1.956000 53.810000,-1.956000 53.811000,-1.957000 53.811000,-1.957000 53.811000,-1.957000 53.811000,-1.957000 53.811000,-1.957000 53.811000,-1.957000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.958000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.959000 53.811000,-1.960000 53.811000,-1.961000 53.811000,-1.962000 53.812000,-1.963000 53.812000,-1.963000 53.813000,-1.962000 53.813000,-1.963000 53.813000,-1.963000 53.812000,-1.964000 53.812000,-1.964000 53.813000,-1.966000 53.813000,-1.966000 53.812000,-1.964000 53.812000,-1.964000 53.811000,-1.964000 53.812000,-1.963000 53.811000,-1.962000 53.811000,-1.962000 53.811000,-1.961000 53.811000,-1.960000 53.811000,-1.960000 53.810000,-1.956000 53.810000,-1.956000 53.809000,-1.955000 53.809000,-1.956000 53.809000,-1.955000 53.809000,-1.955000 53.808000,-1.956000 53.808000,-1.956000 53.807000,-1.957000 53.807000)))
   </div>
 </details>
-                    </td>
-                    <td>Oxenhope Upper Town</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00043/CONARA</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -373,5 +398,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

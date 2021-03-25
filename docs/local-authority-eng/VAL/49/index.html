@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">West Hendred Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/VAL/49</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                West Hendred Conservation Area            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/VAL" class="govuk-link">Vale of White Horse District Council</a>
@@ -145,10 +168,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:49            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                West Hendred Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-05            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L50">92cd49145a8d...</a></td>
-                <td>49</td>
-                    <td>West Hendred Conservation Area</td> 
-                    <td>local-authority-eng:VAL</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L50">92cd49145a8d...</a></td>
+            <td>49</td>
+                <td>West Hendred Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.353648 51.595930,-1.353229 51.595641,-1.353545 51.595504,-1.353469 51.595437,-1.353691 51.595326,-1.353656 51.595263,-1.353180 51.595033,-1.353407 51.594894,-1.353713 51.594865,-1.354333 51.594939,-1.355152 51.594767,-1.355540 51.594808,-1.356256 51.594733,-1.356188 51.594523,-1.355838 51.594553,-1.355729 51.594036,-1.355179 51.594018,-1.354972 51.594105,-1.354757 51.594125,-1.354701 51.594111,-1.354632 51.593930,-1.354731 51.593000,-1.354949 51.592925,-1.355332 51.592669,-1.355402 51.592668,-1.355483 51.592618,-1.355558 51.592530,-1.355554 51.592301,-1.355662 51.592200,-1.355720 51.592084,-1.356311 51.591847,-1.356697 51.591307,-1.356755 51.591280,-1.356830 51.591168,-1.356873 51.590773,-1.356126 51.590426,-1.356066 51.590231,-1.355761 51.590114,-1.355329 51.590477,-1.354798 51.590837,-1.354599 51.590916,-1.354505 51.591035,-1.354341 51.591107,-1.353543 51.591314,-1.352362 51.591426,-1.352559 51.591935,-1.352767 51.592318,-1.350507 51.592744,-1.350343 51.592815,-1.350049 51.593279,-1.349371 51.593532,-1.349785 51.594244,-1.349087 51.595108,-1.348531 51.595332,-1.348739 51.595577,-1.348504 51.595731,-1.350252 51.596545,-1.351106 51.596559,-1.351134 51.596553,-1.351170 51.596402,-1.352145 51.596161,-1.352520 51.596820,-1.353333 51.596643,-1.353079 51.596243,-1.353648 51.595930)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:49</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:VAL</td> 
+                <td>conservation-area:49</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

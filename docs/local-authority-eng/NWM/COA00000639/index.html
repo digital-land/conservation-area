@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Stratford St.Johns COA00000639</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/NWM/COA00000639</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NWM" class="govuk-link">London Borough of Newham</a>
-<span title="Organisation identifier: local-authority-eng:NWM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NWM)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                Stratford St.Johns COA00000639            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000639            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                Stratford St.Johns COA00000639            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NWM" class="govuk-link">London Borough of Newham</a>
+<span title="Organisation identifier: local-authority-eng:NWM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NWM)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L641">f617d13ef7ff...</a></td>
-                <td>640</td>
-                    <td>Stratford St.Johns COA00000639</td> 
-                    <td>local-authority-eng:NWM</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L641">f617d13ef7ff...</a></td>
+            <td>640</td>
+                <td>Stratford St.Johns COA00000639</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((0.000283 51.539456,0.000478 51.539655,0.000448 51.539667,0.000492 51.539709,0.000438 51.539730,0.000581 51.539874,0.000916 51.540121,0.001047 51.540045,0.001086 51.540053,0.001123 51.540067,0.001095 51.540100,0.001475 51.540263,0.001556 51.540171,0.001738 51.540236,0.002157 51.539825,0.002658 51.540058,0.003050 51.540019,0.003347 51.540172,0.003314 51.540209,0.003282 51.540380,0.002951 51.540336,0.002850 51.540640,0.002756 51.540818,0.003488 51.541176,0.003741 51.540826,0.004234 51.540982,0.004006 51.541267,0.005416 51.541736,0.005277 51.542253,0.004826 51.542246,0.004317 51.543160,0.004642 51.543658,0.004677 51.543843,0.004846 51.544139,0.004771 51.544281,0.004442 51.544225,0.004445 51.544259,0.004023 51.544306,0.003898 51.544639,0.003567 51.544608,0.003721 51.544212,0.004020 51.544186,0.003572 51.543399,0.003326 51.543062,0.002930 51.542602,0.002492 51.542241,0.001879 51.541536,0.001369 51.541170,0.001271 51.541217,0.001126 51.541209,0.000872 51.540912,-0.000006 51.540266,-0.000262 51.539958,-0.000693 51.540087,-0.001045 51.539980,-0.001395 51.538721,-0.001094 51.538570,-0.000798 51.538350,-0.000460 51.538572,0.000058 51.539021,-0.000078 51.539075,0.000283 51.539456)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000639</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:NWM</td> 
+                <td>conservation-area:COA00000639</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

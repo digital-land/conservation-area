@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Menston</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/BRD/05-00037-CONARA</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BRD" class="govuk-link">City of Bradford Metropolitan District Council</a>
-<span title="Organisation identifier: local-authority-eng:BRD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRD)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:05/00037/CONARA            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Menston            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:05/00037/CONARA            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BRD" class="govuk-link">City of Bradford Metropolitan District Council</a>
+<span title="Organisation identifier: local-authority-eng:BRD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRD)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-02-07</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/806e837b4d1619f30bbf5b0b0e66ad1057df13ea4750511a6b43bce4e0e12f70.csv#L17">806e837b4d16...</a></td>
-                <td>16</td>
-                    <td>conservation-area:05/00037/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-02-07</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/806e837b4d1619f30bbf5b0b0e66ad1057df13ea4750511a6b43bce4e0e12f70.csv#L17">806e837b4d16...</a></td>
+            <td>16</td>
+                <td>Menston</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,16 +231,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.747005 53.892586,-1.746986 53.892631,-1.747064 53.892649,-1.747546 53.891838,-1.747443 53.891835,-1.747383 53.891787,-1.747142 53.891722,-1.747340 53.891492,-1.747178 53.891447,-1.747118 53.891512,-1.746986 53.891473,-1.746897 53.891551,-1.746596 53.891468,-1.746757 53.891299,-1.746803 53.891307,-1.746882 53.891222,-1.746989 53.891186,-1.747024 53.891094,-1.746999 53.891085,-1.747080 53.890969,-1.746948 53.890942,-1.747078 53.890779,-1.746828 53.890701,-1.746397 53.891122,-1.745923 53.890938,-1.746086 53.890761,-1.745399 53.890546,-1.745367 53.890588,-1.745170 53.890558,-1.745069 53.890636,-1.744970 53.890597,-1.745128 53.890465,-1.744977 53.890426,-1.744847 53.890479,-1.744729 53.890471,-1.744497 53.890668,-1.744942 53.890832,-1.744170 53.891220,-1.744659 53.891556,-1.744144 53.891815,-1.744160 53.891858,-1.744438 53.891778,-1.744800 53.891968,-1.744933 53.892194,-1.744811 53.892452,-1.744877 53.892480,-1.744869 53.892524,-1.744809 53.892541,-1.744791 53.893015,-1.744908 53.893057,-1.745059 53.893045,-1.745542 53.892407,-1.745814 53.892163,-1.746066 53.892248,-1.746112 53.892194,-1.746642 53.892378,-1.746523 53.892505,-1.746646 53.892533,-1.746686 53.892474,-1.747029 53.892558,-1.747005 53.892586)))
   </div>
 </details>
-                    </td>
-                    <td>Menston</td> 
-            </tr>            <tr>
-                <td>2021-02-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d3dcd8bbb587b2739ebae2b65c6cf648fe026abbe37c8d6e5bd44862ce4a0d38.csv#L17">d3dcd8bbb587...</a></td>
-                <td>16</td>
-                    <td>conservation-area:05/00037/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00037/CONARA</td> 
+        </tr>        <tr>
+            <td>2021-02-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d3dcd8bbb587b2739ebae2b65c6cf648fe026abbe37c8d6e5bd44862ce4a0d38.csv#L17">d3dcd8bbb587...</a></td>
+            <td>16</td>
+                <td>Menston</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -228,16 +250,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.747000 53.893000,-1.747000 53.892000,-1.748000 53.892000,-1.747000 53.892000,-1.747000 53.891000,-1.747000 53.892000,-1.747000 53.891000,-1.747000 53.892000,-1.747000 53.891000,-1.745000 53.891000,-1.745000 53.890000,-1.745000 53.891000,-1.744000 53.891000,-1.745000 53.891000,-1.744000 53.891000,-1.745000 53.892000,-1.744000 53.892000,-1.745000 53.892000,-1.745000 53.893000,-1.746000 53.892000,-1.747000 53.892000,-1.747000 53.893000)))
   </div>
 </details>
-                    </td>
-                    <td>Menston</td> 
-            </tr>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/fb9cd1432bfe914f997d1e67b281902c4a7af3a789bb31847dd1a6da40af0712.csv#L17">fb9cd1432bfe...</a></td>
-                <td>16</td>
-                    <td>conservation-area:05/00037/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00037/CONARA</td> 
+        </tr>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/fb9cd1432bfe914f997d1e67b281902c4a7af3a789bb31847dd1a6da40af0712.csv#L17">fb9cd1432bfe...</a></td>
+            <td>16</td>
+                <td>Menston</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -247,16 +269,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.747005 53.892586,-1.746986 53.892631,-1.747064 53.892649,-1.747546 53.891838,-1.747443 53.891835,-1.747383 53.891787,-1.747142 53.891722,-1.747340 53.891492,-1.747178 53.891447,-1.747118 53.891512,-1.746986 53.891473,-1.746897 53.891551,-1.746596 53.891468,-1.746757 53.891299,-1.746803 53.891307,-1.746882 53.891222,-1.746989 53.891186,-1.747024 53.891094,-1.746999 53.891085,-1.747080 53.890969,-1.746948 53.890942,-1.747078 53.890779,-1.746828 53.890701,-1.746397 53.891122,-1.745923 53.890938,-1.746086 53.890761,-1.745399 53.890546,-1.745367 53.890588,-1.745170 53.890558,-1.745069 53.890636,-1.744970 53.890597,-1.745128 53.890465,-1.744977 53.890426,-1.744847 53.890479,-1.744729 53.890471,-1.744497 53.890668,-1.744942 53.890832,-1.744170 53.891220,-1.744659 53.891556,-1.744144 53.891815,-1.744160 53.891858,-1.744438 53.891778,-1.744800 53.891968,-1.744933 53.892194,-1.744811 53.892452,-1.744877 53.892480,-1.744869 53.892524,-1.744809 53.892541,-1.744791 53.893015,-1.744908 53.893057,-1.745059 53.893045,-1.745542 53.892407,-1.745814 53.892163,-1.746066 53.892248,-1.746112 53.892194,-1.746642 53.892378,-1.746523 53.892505,-1.746646 53.892533,-1.746686 53.892474,-1.747029 53.892558,-1.747005 53.892586)))
   </div>
 </details>
-                    </td>
-                    <td>Menston</td> 
-            </tr>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a9f8d4ff0fbd665a8aa98a5650466ed4d125448551dbe7989cf3ece1e22923cb.csv#L17">a9f8d4ff0fbd...</a></td>
-                <td>16</td>
-                    <td>conservation-area:05/00037/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00037/CONARA</td> 
+        </tr>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a9f8d4ff0fbd665a8aa98a5650466ed4d125448551dbe7989cf3ece1e22923cb.csv#L17">a9f8d4ff0fbd...</a></td>
+            <td>16</td>
+                <td>Menston</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -266,12 +288,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.747000 53.893000,-1.747000 53.892000,-1.748000 53.892000,-1.747000 53.892000,-1.747000 53.891000,-1.747000 53.892000,-1.747000 53.891000,-1.747000 53.892000,-1.747000 53.891000,-1.745000 53.891000,-1.745000 53.890000,-1.745000 53.891000,-1.744000 53.891000,-1.745000 53.891000,-1.744000 53.891000,-1.745000 53.892000,-1.744000 53.892000,-1.745000 53.892000,-1.745000 53.893000,-1.746000 53.892000,-1.747000 53.892000,-1.747000 53.893000)))
   </div>
 </details>
-                    </td>
-                    <td>Menston</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00037/CONARA</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -373,5 +398,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

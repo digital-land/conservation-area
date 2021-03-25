@@ -132,13 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Little Germany</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/BRD/05-00031-CONARA</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:05/00031/CONARA            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Little Germany            </dd>
@@ -149,6 +164,10 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BRD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRD)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:05/00031/CONARA            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2021-02-07            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-02-07</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/806e837b4d1619f30bbf5b0b0e66ad1057df13ea4750511a6b43bce4e0e12f70.csv#L11">806e837b4d16...</a></td>
-                <td>10</td>
-                    <td>local-authority-eng:BRD</td> 
-                    <td>Little Germany</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-02-07</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/806e837b4d1619f30bbf5b0b0e66ad1057df13ea4750511a6b43bce4e0e12f70.csv#L11">806e837b4d16...</a></td>
+            <td>10</td>
+                <td>Little Germany</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,16 +231,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.747050 53.793455,-1.746449 53.793371,-1.746015 53.793361,-1.745457 53.793294,-1.745332 53.793349,-1.744766 53.793923,-1.743546 53.793509,-1.743420 53.793634,-1.743359 53.793680,-1.743325 53.793669,-1.743221 53.793757,-1.743266 53.793774,-1.743177 53.793870,-1.743224 53.793938,-1.743611 53.794043,-1.743521 53.794129,-1.743584 53.794153,-1.743321 53.794423,-1.744029 53.794679,-1.743783 53.794945,-1.743795 53.795034,-1.743903 53.795089,-1.743744 53.795240,-1.744364 53.796399,-1.744489 53.796455,-1.744608 53.796454,-1.745336 53.796191,-1.747164 53.795316,-1.747758 53.794995,-1.748065 53.794899,-1.748879 53.794760,-1.748744 53.794486,-1.748567 53.794516,-1.748473 53.794575,-1.748405 53.794565,-1.747496 53.793719,-1.747585 53.793684,-1.747637 53.793713,-1.747730 53.793639,-1.747050 53.793455)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:05/00031/CONARA</td> 
-            </tr>            <tr>
-                <td>2021-02-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d3dcd8bbb587b2739ebae2b65c6cf648fe026abbe37c8d6e5bd44862ce4a0d38.csv#L11">d3dcd8bbb587...</a></td>
-                <td>10</td>
-                    <td>local-authority-eng:BRD</td> 
-                    <td>Little Germany</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00031/CONARA</td> 
+        </tr>        <tr>
+            <td>2021-02-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d3dcd8bbb587b2739ebae2b65c6cf648fe026abbe37c8d6e5bd44862ce4a0d38.csv#L11">d3dcd8bbb587...</a></td>
+            <td>10</td>
+                <td>Little Germany</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -228,16 +250,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.747000 53.793000,-1.745000 53.793000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.744000 53.794000,-1.743000 53.794000,-1.744000 53.794000,-1.743000 53.794000,-1.744000 53.795000,-1.744000 53.796000,-1.747000 53.796000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.748000 53.795000,-1.749000 53.795000,-1.749000 53.794000,-1.749000 53.795000,-1.748000 53.795000,-1.748000 53.794000,-1.747000 53.794000,-1.748000 53.794000,-1.747000 53.794000,-1.747000 53.793000)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:05/00031/CONARA</td> 
-            </tr>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/fb9cd1432bfe914f997d1e67b281902c4a7af3a789bb31847dd1a6da40af0712.csv#L11">fb9cd1432bfe...</a></td>
-                <td>10</td>
-                    <td>local-authority-eng:BRD</td> 
-                    <td>Little Germany</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00031/CONARA</td> 
+        </tr>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/fb9cd1432bfe914f997d1e67b281902c4a7af3a789bb31847dd1a6da40af0712.csv#L11">fb9cd1432bfe...</a></td>
+            <td>10</td>
+                <td>Little Germany</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -247,16 +269,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.747050 53.793455,-1.746449 53.793371,-1.746015 53.793361,-1.745457 53.793294,-1.745332 53.793349,-1.744766 53.793923,-1.743546 53.793509,-1.743420 53.793634,-1.743359 53.793680,-1.743325 53.793669,-1.743221 53.793757,-1.743266 53.793774,-1.743177 53.793870,-1.743224 53.793938,-1.743611 53.794043,-1.743521 53.794129,-1.743584 53.794153,-1.743321 53.794423,-1.744029 53.794679,-1.743783 53.794945,-1.743795 53.795034,-1.743903 53.795089,-1.743744 53.795240,-1.744364 53.796399,-1.744489 53.796455,-1.744608 53.796454,-1.745336 53.796191,-1.747164 53.795316,-1.747758 53.794995,-1.748065 53.794899,-1.748879 53.794760,-1.748744 53.794486,-1.748567 53.794516,-1.748473 53.794575,-1.748405 53.794565,-1.747496 53.793719,-1.747585 53.793684,-1.747637 53.793713,-1.747730 53.793639,-1.747050 53.793455)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:05/00031/CONARA</td> 
-            </tr>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a9f8d4ff0fbd665a8aa98a5650466ed4d125448551dbe7989cf3ece1e22923cb.csv#L11">a9f8d4ff0fbd...</a></td>
-                <td>10</td>
-                    <td>local-authority-eng:BRD</td> 
-                    <td>Little Germany</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00031/CONARA</td> 
+        </tr>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a9f8d4ff0fbd665a8aa98a5650466ed4d125448551dbe7989cf3ece1e22923cb.csv#L11">a9f8d4ff0fbd...</a></td>
+            <td>10</td>
+                <td>Little Germany</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -266,12 +288,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.747000 53.793000,-1.745000 53.793000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.745000 53.794000,-1.744000 53.794000,-1.743000 53.794000,-1.744000 53.794000,-1.743000 53.794000,-1.744000 53.795000,-1.744000 53.796000,-1.747000 53.796000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.747000 53.795000,-1.748000 53.795000,-1.749000 53.795000,-1.749000 53.794000,-1.749000 53.795000,-1.748000 53.795000,-1.748000 53.794000,-1.747000 53.794000,-1.748000 53.794000,-1.747000 53.794000,-1.747000 53.793000)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:05/00031/CONARA</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00031/CONARA</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -373,5 +398,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">PORT ISAAC</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CON/69</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-02-18</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/de0b99137124fb1332b821c6f2f0a8f4af643c28bf2eb859e4ef5a38843446fc.csv#L70">de0b99137124...</a></td>
-                <td>69</td>
-                    <td>conservation-area:69</td> 
-                    <td>local-authority-eng:CON</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-02-18</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/de0b99137124fb1332b821c6f2f0a8f4af643c28bf2eb859e4ef5a38843446fc.csv#L70">de0b99137124...</a></td>
+            <td>69</td>
+                <td>PORT ISAAC</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-4.831962 50.595705,-4.831480 50.595632,-4.831161 50.595476,-4.831059 50.595467,-4.831040 50.595549,-4.830790 50.595055,-4.830808 50.594710,-4.830779 50.594673,-4.830031 50.594161,-4.830049 50.594150,-4.829719 50.593906,-4.829848 50.593894,-4.828150 50.592453,-4.828079 50.592357,-4.827947 50.592244,-4.827905 50.592254,-4.827392 50.591805,-4.827558 50.591763,-4.828478 50.592009,-4.828854 50.592142,-4.828907 50.592060,-4.829002 50.592081,-4.829300 50.591298,-4.829456 50.591282,-4.829570 50.591097,-4.829571 50.590998,-4.829440 50.590665,-4.830618 50.590132,-4.830680 50.590255,-4.831716 50.590169,-4.832398 50.589910,-4.832439 50.590115,-4.832522 50.590267,-4.833013 50.590625,-4.833350 50.590979,-4.833747 50.591255,-4.835171 50.591705,-4.835825 50.591953,-4.835841 50.591993,-4.835617 50.592031,-4.835816 50.592458,-4.834967 50.592629,-4.835129 50.593025,-4.834699 50.593491,-4.834555 50.593411,-4.834370 50.593458,-4.834333 50.593361,-4.833746 50.593387,-4.833557 50.593446,-4.833352 50.593573,-4.833233 50.593708,-4.833189 50.593832,-4.833030 50.593805,-4.832950 50.593826,-4.832940 50.593852,-4.833028 50.593871,-4.833054 50.593929,-4.832851 50.594059,-4.832856 50.594168,-4.833162 50.594446,-4.833112 50.594522,-4.833225 50.594505,-4.833329 50.594543,-4.833102 50.594622,-4.833102 50.594685,-4.833250 50.594640,-4.833436 50.594652,-4.833415 50.594716,-4.833277 50.594750,-4.833428 50.594814,-4.833120 50.594825,-4.833164 50.594851,-4.833163 50.594929,-4.833108 50.594959,-4.833055 50.594939,-4.832991 50.595010,-4.833155 50.595022,-4.833295 50.595074,-4.833141 50.595177,-4.833033 50.595166,-4.832824 50.595286,-4.832535 50.595371,-4.832533 50.595477,-4.832395 50.595439,-4.832365 50.595541,-4.832204 50.595362,-4.832111 50.595386,-4.832089 50.595486,-4.832116 50.595562,-4.831962 50.595705)))
   </div>
 </details>
-                    </td>
-                    <td>PORT ISAAC</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CON</td> 
+                <td>conservation-area:69</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

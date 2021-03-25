@@ -132,13 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Stanmore Hill Conservation Area COA00000170</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/HRW/COA00000170</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:COA00000170            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Stanmore Hill Conservation Area COA00000170            </dd>
@@ -149,6 +164,10 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:HRW" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HRW)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:COA00000170            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-04            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L174">f617d13ef7ff...</a></td>
-                <td>173</td>
-                    <td>local-authority-eng:HRW</td> 
-                    <td>Stanmore Hill Conservation Area COA00000170</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L174">f617d13ef7ff...</a></td>
+            <td>173</td>
+                <td>Stanmore Hill Conservation Area COA00000170</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.318286 51.622363,-0.318006 51.621999,-0.318590 51.621801,-0.318421 51.621582,-0.317764 51.621733,-0.317732 51.621598,-0.317755 51.621455,-0.317734 51.621355,-0.317362 51.620828,-0.318044 51.620540,-0.317945 51.620463,-0.317691 51.620428,-0.317318 51.620429,-0.317236 51.620289,-0.317172 51.620302,-0.317065 51.620199,-0.317005 51.620209,-0.316964 51.620082,-0.317052 51.620025,-0.317031 51.619950,-0.316905 51.619887,-0.316801 51.619517,-0.317251 51.619454,-0.317244 51.619354,-0.316792 51.619405,-0.316619 51.618791,-0.316520 51.618130,-0.316405 51.617700,-0.316331 51.617496,-0.316005 51.617038,-0.316609 51.616987,-0.316588 51.616879,-0.316654 51.616873,-0.316660 51.616839,-0.315285 51.616625,-0.315241 51.616675,-0.315358 51.616701,-0.315519 51.616830,-0.315256 51.616960,-0.315279 51.616978,-0.315305 51.616998,-0.315564 51.616863,-0.315826 51.617076,-0.315975 51.617248,-0.315357 51.617414,-0.315353 51.617442,-0.315755 51.617840,-0.315353 51.617978,-0.315457 51.618037,-0.315525 51.618173,-0.315301 51.618252,-0.315815 51.618753,-0.315397 51.618906,-0.315595 51.619165,-0.315444 51.619218,-0.315385 51.619160,-0.315315 51.619171,-0.315256 51.619143,-0.315140 51.619199,-0.315173 51.619273,-0.315065 51.619390,-0.315035 51.619531,-0.314781 51.619710,-0.314147 51.619423,-0.314314 51.619332,-0.314255 51.619288,-0.314209 51.619272,-0.313998 51.619389,-0.313445 51.619011,-0.314019 51.618697,-0.313433 51.618155,-0.313152 51.618298,-0.313045 51.618211,-0.312544 51.617941,-0.312142 51.618127,-0.312343 51.618281,-0.312081 51.618417,-0.312556 51.618805,-0.312483 51.618841,-0.313396 51.619585,-0.313593 51.619694,-0.313463 51.619779,-0.314004 51.620070,-0.314196 51.619938,-0.314689 51.620218,-0.314403 51.620452,-0.314793 51.620666,-0.315074 51.620473,-0.315694 51.620847,-0.315148 51.621198,-0.315279 51.621276,-0.314981 51.621471,-0.315425 51.621692,-0.315660 51.621513,-0.316287 51.621144,-0.317250 51.621731,-0.317510 51.621921,-0.317995 51.622470,-0.318286 51.622363),(-0.315430 51.619769,-0.315050 51.620066,-0.314703 51.619878,-0.315120 51.619582,-0.315430 51.619769),(-0.316214 51.620071,-0.315615 51.620394,-0.315266 51.620188,-0.315587 51.619997,-0.315640 51.619908,-0.315682 51.619932,-0.315953 51.619787,-0.316087 51.619869,-0.316214 51.620071)),((-0.312220 51.618538,-0.312219 51.618537,-0.312219 51.618538,-0.312220 51.618538)),((-0.314251 51.619287,-0.314243 51.619283,-0.314247 51.619285,-0.314251 51.619287)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000170</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:HRW</td> 
+                <td>conservation-area:COA00000170</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

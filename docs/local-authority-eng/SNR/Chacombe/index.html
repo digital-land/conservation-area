@@ -132,13 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Chacombe</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SNR/Chacombe</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Chacombe            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:Chacombe            </dd>
@@ -149,6 +164,10 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:SNR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SNR)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Chacombe            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-06            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/1eb168a7b080c36e8d4fe76ca9c7ad289dafab2bf9dff9171e5dee013b3ce1e2.csv#L8">1eb168a7b080...</a></td>
-                <td>7</td>
-                    <td>conservation-area:Chacombe</td> 
-                    <td>local-authority-eng:SNR</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/1eb168a7b080c36e8d4fe76ca9c7ad289dafab2bf9dff9171e5dee013b3ce1e2.csv#L8">1eb168a7b080...</a></td>
+            <td>7</td>
+                <td>Chacombe</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.280949 52.090143,-1.281065 52.090009,-1.281109 52.089887,-1.281152 52.089752,-1.281146 52.089575,-1.280872 52.089623,-1.280841 52.089540,-1.280503 52.089547,-1.280418 52.089349,-1.280443 52.089297,-1.280645 52.089251,-1.280252 52.089135,-1.280305 52.089051,-1.280166 52.089017,-1.280148 52.088966,-1.280761 52.089128,-1.280910 52.088990,-1.281128 52.089138,-1.281197 52.089288,-1.281065 52.089370,-1.281264 52.089522,-1.281567 52.089663,-1.281915 52.089682,-1.281847 52.089586,-1.281674 52.089450,-1.281837 52.089406,-1.281622 52.089198,-1.281719 52.089162,-1.281392 52.088870,-1.281482 52.088831,-1.281376 52.088713,-1.281393 52.088461,-1.281508 52.088302,-1.282453 52.087898,-1.283037 52.088484,-1.283287 52.088919,-1.284173 52.088746,-1.284967 52.089214,-1.285333 52.089135,-1.285410 52.089360,-1.285425 52.089756,-1.285500 52.089969,-1.285553 52.090075,-1.285667 52.090058,-1.285838 52.090109,-1.285868 52.090232,-1.290250 52.089870,-1.290563 52.089796,-1.291380 52.089482,-1.291648 52.089929,-1.291479 52.089979,-1.291362 52.090064,-1.291405 52.090159,-1.291414 52.090387,-1.291337 52.090629,-1.291410 52.090883,-1.291294 52.091023,-1.291349 52.091212,-1.291106 52.091751,-1.290883 52.091745,-1.290806 52.091805,-1.289498 52.091759,-1.289412 52.091745,-1.289415 52.091712,-1.289087 52.091698,-1.289083 52.091754,-1.288664 52.091706,-1.288288 52.091741,-1.288229 52.091768,-1.288117 52.091948,-1.288058 52.091987,-1.287805 52.092016,-1.287512 52.092218,-1.287344 52.092242,-1.287224 52.092244,-1.287151 52.091959,-1.285564 52.092162,-1.285513 52.092032,-1.285153 52.092125,-1.285419 52.092578,-1.285679 52.093113,-1.286106 52.093367,-1.285879 52.093371,-1.285759 52.093427,-1.285725 52.093511,-1.285636 52.093519,-1.285583 52.093483,-1.285589 52.093376,-1.285446 52.093351,-1.285387 52.093245,-1.285267 52.093230,-1.285186 52.093264,-1.285089 52.093418,-1.284984 52.093407,-1.284479 52.093482,-1.284119 52.093462,-1.283974 52.093512,-1.283696 52.093513,-1.283630 52.093539,-1.283600 52.093625,-1.283453 52.093663,-1.283198 52.093609,-1.283194 52.093080,-1.282964 52.093031,-1.282887 52.093082,-1.282717 52.093043,-1.282643 52.092499,-1.282538 52.092467,-1.282512 52.092205,-1.282231 52.092127,-1.282110 52.091959,-1.281648 52.091960,-1.281495 52.092099,-1.281040 52.092194,-1.281240 52.092396,-1.281147 52.092443,-1.280850 52.092723,-1.280459 52.092589,-1.280410 52.092473,-1.280247 52.092337,-1.280144 52.092333,-1.280534 52.091503,-1.280541 52.091236,-1.280419 52.090987,-1.280163 52.090646,-1.280208 52.090630,-1.279967 52.090308,-1.280311 52.090269,-1.280593 52.090160,-1.280735 52.090066,-1.280949 52.090143)))
   </div>
 </details>
-                    </td>
-                    <td>Chacombe</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:SNR</td> 
+                <td>conservation-area:Chacombe</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

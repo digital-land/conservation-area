@@ -132,18 +132,37 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Old Humberstone</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/LCE/OH</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Old Humberstone            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LCE" class="govuk-link">Leicester City Council</a>
 <span title="Organisation identifier: local-authority-eng:LCE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LCE)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Old Humberstone            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-11-29</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/7b83162b4a995c21dc119b2595faf050ed16f16f023dfcfcf58dd7379bf3d50b.csv#L20">7b83162b4a99...</a></td>
-                <td>19</td>
-                    <td>conservation-area:OH</td> 
-                    <td>local-authority-eng:LCE</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-11-29</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/7b83162b4a995c21dc119b2595faf050ed16f16f023dfcfcf58dd7379bf3d50b.csv#L20">7b83162b4a99...</a></td>
+            <td>19</td>
+                <td>Old Humberstone</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.078786 52.647226,-1.078049 52.646952,-1.078027 52.646979,-1.077610 52.646809,-1.077830 52.646589,-1.076352 52.646522,-1.076288 52.646659,-1.075945 52.646666,-1.075940 52.646795,-1.075435 52.646737,-1.075446 52.646683,-1.074892 52.646631,-1.075107 52.645879,-1.075119 52.645749,-1.074912 52.645744,-1.074716 52.645880,-1.074392 52.645917,-1.074279 52.645881,-1.074145 52.645912,-1.073929 52.645778,-1.073685 52.645751,-1.073598 52.646263,-1.073656 52.646231,-1.073622 52.646585,-1.073682 52.646770,-1.073789 52.646802,-1.073672 52.646973,-1.073849 52.647207,-1.073881 52.647528,-1.073434 52.647567,-1.072803 52.647534,-1.072548 52.647615,-1.072343 52.647723,-1.072173 52.647834,-1.072111 52.647929,-1.072129 52.648665,-1.072710 52.648727,-1.072740 52.648647,-1.073264 52.648664,-1.073312 52.648623,-1.073797 52.648643,-1.074963 52.648831,-1.075098 52.648800,-1.075157 52.648830,-1.075121 52.648930,-1.075201 52.648941,-1.075307 52.648758,-1.075909 52.648297,-1.076119 52.648182,-1.076868 52.648278,-1.076958 52.648068,-1.078028 52.648184,-1.076779 52.648558,-1.076549 52.649260,-1.076207 52.649651,-1.075760 52.651202,-1.075914 52.651243,-1.076712 52.651617,-1.076715 52.651981,-1.077183 52.651949,-1.077137 52.651690,-1.077457 52.651665,-1.077579 52.651588,-1.077537 52.651393,-1.078789 52.651298,-1.079674 52.650412,-1.080127 52.650053,-1.080345 52.649766,-1.081022 52.649708,-1.084204 52.650447,-1.084187 52.650473,-1.084307 52.650498,-1.084530 52.650418,-1.084657 52.650445,-1.084738 52.650316,-1.084672 52.650300,-1.084770 52.650161,-1.084652 52.650109,-1.085015 52.649541,-1.082295 52.648891,-1.082696 52.648286,-1.081513 52.648136,-1.081270 52.648188,-1.081110 52.648040,-1.080843 52.647993,-1.080735 52.648284,-1.080565 52.648288,-1.079407 52.647935,-1.079358 52.647802,-1.079428 52.647707,-1.079320 52.647595,-1.079109 52.647465,-1.079144 52.647442,-1.079304 52.647514,-1.079407 52.647440,-1.079346 52.647409,-1.079622 52.647205,-1.079519 52.647147,-1.079780 52.646966,-1.079999 52.646858,-1.079767 52.646706,-1.079073 52.647098,-1.078786 52.647226)))
   </div>
 </details>
-                    </td>
-                    <td>Old Humberstone</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:LCE</td> 
+                <td>conservation-area:OH</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

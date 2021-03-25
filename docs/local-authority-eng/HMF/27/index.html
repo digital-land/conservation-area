@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Queen&#39;s Club Gardens</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/HMF/27</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-10-01</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/aa0fe3d625d728dad166b5111d2b92acf103e63a10376999c365d847ad4ac2e1.csv#L38">aa0fe3d625d7...</a></td>
-                <td>37</td>
-                    <td>conservation-area:27</td> 
-                    <td>local-authority-eng:HMF</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-10-01</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/aa0fe3d625d728dad166b5111d2b92acf103e63a10376999c365d847ad4ac2e1.csv#L38">aa0fe3d625d7...</a></td>
+            <td>37</td>
+                <td>Queen&#39;s Club Gardens</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,16 +231,16 @@ crossorigin="" />
     MULTIPOLYGON (((-5.435929 54.565949,-5.435642 54.566407,-5.435411 54.566705,-5.435679 54.566766,-5.435709 54.566730,-5.436233 54.566861,-5.436199 54.566902,-5.438239 54.567339,-5.438506 54.567421,-5.438694 54.567090,-5.438924 54.567047,-5.439036 54.566945,-5.439096 54.566966,-5.440334 54.565844,-5.440278 54.565825,-5.440540 54.565472,-5.437528 54.564751,-5.437794 54.564212,-5.437766 54.564205,-5.437884 54.564043,-5.437810 54.564026,-5.437899 54.563901,-5.437592 54.563828,-5.434255 54.563300,-5.434312 54.563380,-5.434152 54.563744,-5.434263 54.563765,-5.434059 54.564275,-5.433811 54.564459,-5.433719 54.564467,-5.433140 54.565326,-5.435929 54.565949)))
   </div>
 </details>
-                    </td>
-                    <td>Queen&#39;s Club Gardens</td> 
-            </tr>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea334324dcd3fd201bee9d821e187efada1132da3bc3b071b3ce91033ac17576.csv#L32">ea334324dcd3...</a></td>
-                <td>31</td>
-                    <td>conservation-area:27</td> 
-                    <td>local-authority-eng:HMF</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:HMF</td> 
+                <td>conservation-area:27</td> 
+        </tr>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea334324dcd3fd201bee9d821e187efada1132da3bc3b071b3ce91033ac17576.csv#L32">ea334324dcd3...</a></td>
+            <td>31</td>
+                <td>Barons Court</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -228,12 +250,15 @@ crossorigin="" />
     MULTIPOLYGON (((-5.430692 54.567327,-5.430463 54.567740,-5.430309 54.567721,-5.430365 54.567632,-5.429558 54.567508,-5.429297 54.568125,-5.428964 54.568716,-5.429660 54.568864,-5.429798 54.568588,-5.430148 54.568072,-5.430529 54.568147,-5.430263 54.568666,-5.431675 54.568972,-5.432647 54.569131,-5.433000 54.569161,-5.433034 54.569278,-5.433171 54.569383,-5.433558 54.569257,-5.433747 54.569418,-5.434019 54.569489,-5.434231 54.569173,-5.433839 54.569092,-5.433904 54.568656,-5.434546 54.567940,-5.435225 54.566931,-5.435305 54.566853,-5.435243 54.566832,-5.435307 54.566738,-5.435371 54.566754,-5.435504 54.566592,-5.435929 54.565949,-5.433140 54.565326,-5.433719 54.564467,-5.433811 54.564459,-5.434059 54.564275,-5.434263 54.563765,-5.434151 54.563740,-5.434313 54.563377,-5.434193 54.563220,-5.434229 54.563138,-5.434202 54.563134,-5.434304 54.562920,-5.433841 54.562848,-5.433686 54.562712,-5.435191 54.560799,-5.435074 54.560662,-5.433018 54.559925,-5.432378 54.560706,-5.431884 54.560583,-5.431033 54.560288,-5.430454 54.561060,-5.429465 54.561251,-5.429591 54.561483,-5.429647 54.561681,-5.429615 54.562886,-5.429671 54.563377,-5.429777 54.563829,-5.430509 54.563825,-5.430881 54.564887,-5.430979 54.565284,-5.431037 54.565813,-5.430999 54.566390,-5.430902 54.566821,-5.430692 54.567327)))
   </div>
 </details>
-                    </td>
-                    <td>Barons Court</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:HMF</td> 
+                <td>conservation-area:27</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -335,5 +360,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

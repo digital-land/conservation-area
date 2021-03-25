@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Marsh Baldon Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SOX/11</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -141,13 +160,13 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:SOX" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SOX)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Marsh Baldon Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:11            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Marsh Baldon Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/07b84eadda99567f835a1f5919bd0a2ab48291932ad7cfaae33032ffb48744b3.csv#L12">07b84eadda99...</a></td>
-                <td>11</td>
-                    <td>conservation-area:11</td> 
-                    <td>local-authority-eng:SOX</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/07b84eadda99567f835a1f5919bd0a2ab48291932ad7cfaae33032ffb48744b3.csv#L12">07b84eadda99...</a></td>
+            <td>11</td>
+                <td>Marsh Baldon Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.186711 51.692667,-1.187060 51.692647,-1.187083 51.692562,-1.187409 51.692573,-1.187457 51.692745,-1.187824 51.692688,-1.188066 51.693007,-1.188570 51.692923,-1.188360 51.692522,-1.188360 51.692501,-1.188708 51.692482,-1.188519 51.692107,-1.188869 51.692072,-1.189170 51.691961,-1.189546 51.691961,-1.189506 51.691643,-1.189473 51.691644,-1.189464 51.691463,-1.189408 51.691461,-1.189399 51.691144,-1.189486 51.691124,-1.189403 51.690771,-1.189361 51.690779,-1.189014 51.689982,-1.189202 51.689939,-1.189039 51.689504,-1.188692 51.689275,-1.188800 51.689212,-1.189270 51.689105,-1.189166 51.688981,-1.188800 51.688706,-1.189522 51.688293,-1.189797 51.688582,-1.189907 51.688535,-1.189795 51.688391,-1.189916 51.688342,-1.189770 51.688166,-1.190114 51.688006,-1.191211 51.687903,-1.191315 51.687864,-1.191415 51.687657,-1.191239 51.687422,-1.190502 51.687475,-1.190384 51.687451,-1.190208 51.687203,-1.190150 51.686960,-1.190033 51.686738,-1.189868 51.686540,-1.189761 51.686482,-1.189028 51.686401,-1.187854 51.686404,-1.187861 51.686545,-1.187772 51.686766,-1.188005 51.687199,-1.187607 51.687316,-1.187553 51.687374,-1.187621 51.687535,-1.187715 51.687542,-1.187855 51.687681,-1.187955 51.687845,-1.188245 51.688090,-1.188255 51.688120,-1.187803 51.688230,-1.188209 51.688970,-1.187827 51.689173,-1.187717 51.689037,-1.187563 51.689101,-1.187405 51.688936,-1.186504 51.689221,-1.186437 51.688982,-1.185830 51.689005,-1.185900 51.689233,-1.185463 51.689277,-1.185429 51.689081,-1.185152 51.689108,-1.185121 51.689132,-1.185179 51.689460,-1.185216 51.689460,-1.185228 51.689614,-1.184920 51.689669,-1.184858 51.689594,-1.184250 51.689568,-1.184236 51.689882,-1.184158 51.689885,-1.184168 51.690144,-1.183981 51.690158,-1.184022 51.690369,-1.184083 51.690428,-1.184134 51.690558,-1.184131 51.690646,-1.183885 51.690648,-1.183821 51.690756,-1.182671 51.690813,-1.182083 51.691191,-1.182306 51.691441,-1.182775 51.692304,-1.182825 51.692444,-1.182857 51.692790,-1.182421 51.692837,-1.182895 51.693873,-1.183032 51.694116,-1.183300 51.694484,-1.182861 51.695087,-1.183047 51.695587,-1.183181 51.695515,-1.184076 51.695379,-1.183962 51.694943,-1.183982 51.694449,-1.183949 51.694158,-1.183635 51.694207,-1.183541 51.694126,-1.183285 51.693723,-1.183085 51.693194,-1.184683 51.692942,-1.185027 51.692860,-1.184993 51.692645,-1.186022 51.692682,-1.186711 51.692667)))
   </div>
 </details>
-                    </td>
-                    <td>Marsh Baldon Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:SOX</td> 
+                <td>conservation-area:11</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

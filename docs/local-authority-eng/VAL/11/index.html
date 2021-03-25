@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Childrey Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/VAL/11</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:11            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Childrey Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/VAL" class="govuk-link">Vale of White Horse District Council</a>
 <span title="Organisation identifier: local-authority-eng:VAL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:VAL)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Childrey Conservation Area            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:11            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L12">92cd49145a8d...</a></td>
-                <td>11</td>
-                    <td>local-authority-eng:VAL</td> 
-                    <td>Childrey Conservation Area</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L12">92cd49145a8d...</a></td>
+            <td>11</td>
+                <td>Childrey Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.477434 51.583891,-1.476883 51.583885,-1.476952 51.584059,-1.476852 51.584221,-1.476548 51.584169,-1.476478 51.584184,-1.476422 51.584335,-1.476421 51.584593,-1.476716 51.584528,-1.477066 51.584736,-1.477929 51.584535,-1.477908 51.584474,-1.478277 51.584298,-1.478638 51.584254,-1.478675 51.584447,-1.478922 51.584444,-1.478982 51.584687,-1.478834 51.584861,-1.478937 51.585215,-1.478622 51.585248,-1.478709 51.585846,-1.478599 51.586070,-1.479152 51.586196,-1.479018 51.586623,-1.479016 51.586710,-1.479165 51.586721,-1.479130 51.586873,-1.478981 51.586860,-1.478908 51.587092,-1.478465 51.587051,-1.477836 51.587052,-1.477713 51.587441,-1.478389 51.587500,-1.479017 51.587607,-1.479011 51.587855,-1.479589 51.587915,-1.480416 51.587911,-1.480424 51.588021,-1.481386 51.588054,-1.481182 51.588672,-1.481662 51.588711,-1.481740 51.588463,-1.481814 51.588471,-1.481933 51.588024,-1.482192 51.588006,-1.482419 51.587688,-1.482474 51.587654,-1.482438 51.587427,-1.482500 51.586833,-1.482531 51.586838,-1.482678 51.586660,-1.482095 51.586503,-1.481836 51.586477,-1.481889 51.586407,-1.481865 51.586075,-1.481803 51.585776,-1.481249 51.585832,-1.481194 51.585209,-1.481275 51.585137,-1.481414 51.584708,-1.480490 51.584618,-1.480521 51.584446,-1.480550 51.584449,-1.480614 51.584116,-1.480921 51.584110,-1.481358 51.584029,-1.481339 51.583972,-1.481672 51.583935,-1.481769 51.584300,-1.482990 51.584319,-1.483055 51.584036,-1.482981 51.583775,-1.483006 51.583772,-1.482975 51.583616,-1.482636 51.583630,-1.482614 51.583656,-1.482289 51.583698,-1.481631 51.583716,-1.480635 51.583887,-1.480625 51.583833,-1.480261 51.583860,-1.480495 51.583362,-1.480556 51.582665,-1.480697 51.582511,-1.480811 51.582502,-1.480859 51.582468,-1.480838 51.582375,-1.480936 51.582251,-1.480963 51.582086,-1.480978 51.581775,-1.480416 51.581730,-1.480320 51.582033,-1.480042 51.582218,-1.480221 51.582299,-1.480274 51.582457,-1.480178 51.582778,-1.480095 51.582793,-1.479976 51.583027,-1.479761 51.583063,-1.479744 51.583152,-1.479710 51.583165,-1.479751 51.583353,-1.479751 51.583722,-1.479729 51.583745,-1.479619 51.583767,-1.479119 51.583701,-1.478956 51.583713,-1.478985 51.583779,-1.477434 51.583891)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:11</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:VAL</td> 
+                <td>conservation-area:11</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

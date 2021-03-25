@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Aston</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/national-park-authority/Q72617988/181</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:181            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Aston            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/national-park-authority/Q72617988" class="govuk-link">Peak District National Park Authority</a>
 <span title="Organisation identifier: national-park-authority:Q72617988" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>national-park-authority:Q72617988)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Aston            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:181            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-08</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/08fbb782cc005066ce927d643cfd0300769648c98e15208300ac52555b0b9f92.csv#L55">08fbb782cc00...</a></td>
-                <td>54</td>
-                    <td>national-park-authority:Q72617988</td> 
-                    <td>Aston</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-08</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/08fbb782cc005066ce927d643cfd0300769648c98e15208300ac52555b0b9f92.csv#L55">08fbb782cc00...</a></td>
+            <td>54</td>
+                <td>Aston</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.722644 53.351720,-1.722749 53.351725,-1.722916 53.351803,-1.723597 53.351915,-1.723657 53.351688,-1.724169 53.351728,-1.724725 53.351819,-1.724702 53.351862,-1.724816 53.351879,-1.724844 53.352127,-1.725916 53.352065,-1.727911 53.352089,-1.728107 53.352097,-1.728165 53.352176,-1.728127 53.352278,-1.728023 53.352401,-1.727650 53.352648,-1.727439 53.352715,-1.726701 53.352733,-1.726696 53.352768,-1.726063 53.352698,-1.725341 53.352532,-1.723749 53.352071,-1.723482 53.352038,-1.722889 53.351887,-1.722845 53.351970,-1.722781 53.351961,-1.722833 53.351861,-1.722681 53.351837,-1.722534 53.351948,-1.722422 53.351951,-1.722364 53.352128,-1.722586 53.352150,-1.722567 53.352209,-1.721955 53.352157,-1.721066 53.352024,-1.720834 53.352269,-1.720754 53.352225,-1.720906 53.352112,-1.721012 53.351983,-1.720855 53.352002,-1.720818 53.351942,-1.720429 53.351876,-1.720356 53.351916,-1.719493 53.351906,-1.719388 53.351770,-1.719253 53.351767,-1.719249 53.351694,-1.720143 53.351750,-1.720675 53.351871,-1.721281 53.351739,-1.721226 53.351652,-1.721440 53.351600,-1.721415 53.351562,-1.721485 53.351545,-1.721549 53.351672,-1.721756 53.351666,-1.721729 53.351507,-1.721843 53.351500,-1.721892 53.351679,-1.722009 53.351671,-1.722034 53.351710,-1.722398 53.351739,-1.722609 53.351746,-1.722644 53.351720)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:181</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>national-park-authority:Q72617988</td> 
+                <td>conservation-area:181</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

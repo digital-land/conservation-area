@@ -132,18 +132,37 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Cogenhoe</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SNR/Cogenhoe</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Cogenhoe            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SNR" class="govuk-link">South Northamptonshire Council</a>
 <span title="Organisation identifier: local-authority-eng:SNR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SNR)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Cogenhoe            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/1eb168a7b080c36e8d4fe76ca9c7ad289dafab2bf9dff9171e5dee013b3ce1e2.csv#L54">1eb168a7b080...</a></td>
-                <td>53</td>
-                    <td>conservation-area:Cogenhoe</td> 
-                    <td>local-authority-eng:SNR</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/1eb168a7b080c36e8d4fe76ca9c7ad289dafab2bf9dff9171e5dee013b3ce1e2.csv#L54">1eb168a7b080...</a></td>
+            <td>53</td>
+                <td>Cogenhoe</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.782500 52.238176,-0.782549 52.238016,-0.781801 52.237935,-0.781894 52.237782,-0.781787 52.237714,-0.781517 52.237650,-0.780743 52.237532,-0.780284 52.237523,-0.779721 52.237443,-0.779169 52.237569,-0.780964 52.236780,-0.781132 52.236794,-0.781205 52.236752,-0.781266 52.236801,-0.781424 52.236806,-0.781939 52.236932,-0.784007 52.237287,-0.784043 52.237200,-0.784971 52.237275,-0.785001 52.237194,-0.785225 52.237195,-0.785160 52.237719,-0.784815 52.237725,-0.784018 52.237545,-0.783687 52.237772,-0.783583 52.238003,-0.783590 52.238141,-0.783676 52.238300,-0.784339 52.238146,-0.784605 52.238538,-0.784817 52.238486,-0.784907 52.238654,-0.785121 52.238609,-0.785364 52.239225,-0.785379 52.239360,-0.785783 52.239218,-0.786018 52.239186,-0.786569 52.239948,-0.786407 52.239984,-0.786252 52.239845,-0.785358 52.239998,-0.785528 52.240416,-0.785567 52.240626,-0.785380 52.240639,-0.785404 52.240798,-0.785373 52.240856,-0.785244 52.240963,-0.785093 52.240969,-0.785275 52.241076,-0.786181 52.241080,-0.786683 52.241611,-0.785537 52.241581,-0.785492 52.241806,-0.785492 52.242035,-0.785350 52.242144,-0.785145 52.242192,-0.785143 52.242116,-0.784737 52.242109,-0.784687 52.241752,-0.784624 52.241627,-0.784154 52.241705,-0.784172 52.241585,-0.783670 52.241552,-0.783626 52.241718,-0.783400 52.241693,-0.783431 52.241385,-0.783215 52.241401,-0.783212 52.241441,-0.782883 52.241544,-0.782809 52.241308,-0.782829 52.241253,-0.782905 52.241206,-0.783156 52.241162,-0.783976 52.241169,-0.784319 52.240893,-0.783250 52.240758,-0.783248 52.240422,-0.783292 52.240366,-0.783175 52.240308,-0.783136 52.240237,-0.783003 52.239565,-0.783126 52.239410,-0.783077 52.239344,-0.783005 52.239031,-0.783224 52.238970,-0.783306 52.238976,-0.783335 52.238887,-0.783308 52.238730,-0.783390 52.238720,-0.783376 52.238589,-0.783412 52.238585,-0.783409 52.238417,-0.783012 52.238464,-0.782428 52.238412,-0.782500 52.238176)))
   </div>
 </details>
-                    </td>
-                    <td>Cogenhoe</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:SNR</td> 
+                <td>conservation-area:Cogenhoe</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

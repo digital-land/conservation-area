@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Hammersmith Town Hall</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/HMF/20</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Hammersmith Town Hall            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:20            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:HMF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HMF)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:20            </dd>
+            <dd class="govuk-summary-list__value">                Hammersmith Town Hall            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-10-01</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/aa0fe3d625d728dad166b5111d2b92acf103e63a10376999c365d847ad4ac2e1.csv#L18">aa0fe3d625d7...</a></td>
-                <td>17</td>
-                    <td>conservation-area:20</td> 
-                    <td>local-authority-eng:HMF</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-10-01</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/aa0fe3d625d728dad166b5111d2b92acf103e63a10376999c365d847ad4ac2e1.csv#L18">aa0fe3d625d7...</a></td>
+            <td>17</td>
+                <td>Hammersmith Town Hall</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,16 +231,16 @@ crossorigin="" />
     MULTIPOLYGON (((-5.424941 54.553725,-5.426015 54.553774,-5.426052 54.554132,-5.425999 54.554480,-5.427298 54.554575,-5.428034 54.554567,-5.428280 54.553772,-5.428425 54.552396,-5.428356 54.552075,-5.427886 54.550523,-5.424698 54.550807,-5.424785 54.551090,-5.424899 54.551088,-5.424959 54.551128,-5.424969 54.551211,-5.425001 54.551209,-5.425009 54.551251,-5.425117 54.551243,-5.425173 54.551377,-5.424838 54.551385,-5.424862 54.551479,-5.425070 54.551475,-5.425105 54.551646,-5.425202 54.551644,-5.425216 54.551779,-5.425412 54.551787,-5.425434 54.551998,-5.425182 54.552016,-5.425227 54.552168,-5.425142 54.552169,-5.425141 54.552227,-5.425361 54.552230,-5.425355 54.552381,-5.425318 54.552381,-5.425309 54.552805,-5.425214 54.552804,-5.425213 54.552947,-5.425535 54.552964,-5.425521 54.553060,-5.425401 54.553054,-5.425411 54.553358,-5.424970 54.553336,-5.424941 54.553725)))
   </div>
 </details>
-                    </td>
-                    <td>Hammersmith Town Hall</td> 
-            </tr>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea334324dcd3fd201bee9d821e187efada1132da3bc3b071b3ce91033ac17576.csv#L10">ea334324dcd3...</a></td>
-                <td>9</td>
-                    <td>conservation-area:20</td> 
-                    <td>local-authority-eng:HMF</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:HMF</td> 
+                <td>conservation-area:20</td> 
+        </tr>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea334324dcd3fd201bee9d821e187efada1132da3bc3b071b3ce91033ac17576.csv#L10">ea334324dcd3...</a></td>
+            <td>9</td>
+                <td>Hammersmith Grove</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -228,12 +250,15 @@ crossorigin="" />
     MULTIPOLYGON (((-5.416307 54.554825,-5.416319 54.554789,-5.413285 54.554458,-5.413343 54.554279,-5.412866 54.554235,-5.412821 54.554371,-5.412430 54.554327,-5.412475 54.554196,-5.411035 54.554037,-5.410871 54.554506,-5.410514 54.554465,-5.410418 54.554759,-5.410879 54.554786,-5.410824 54.554962,-5.410367 54.554913,-5.410350 54.554963,-5.409581 54.554856,-5.409181 54.555677,-5.409841 54.555714,-5.409867 54.555585,-5.410166 54.555592,-5.411277 54.555660,-5.411237 54.555772,-5.411507 54.555786,-5.412498 54.555566,-5.414115 54.555423,-5.415178 54.555479,-5.420884 54.556050,-5.421343 54.556020,-5.421455 54.555679,-5.421133 54.555643,-5.421289 54.555174,-5.418134 54.554819,-5.418067 54.555020,-5.416307 54.554825)))
   </div>
 </details>
-                    </td>
-                    <td>Hammersmith Grove</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:HMF</td> 
+                <td>conservation-area:20</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -335,5 +360,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

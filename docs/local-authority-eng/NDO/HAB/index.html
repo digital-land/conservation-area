@@ -132,16 +132,35 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">The Hazelbury Bryan Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/NDO/HAB</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                The Hazelbury Bryan Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:HAB            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                The Hazelbury Bryan Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d40c1cffe7893e1ab03561a5d601f65dbc3ceb2b1fe514bb3d42df9aae1b0bbc.csv#L35">d40c1cffe789...</a></td>
-                <td>34</td>
-                    <td>conservation-area:HAB</td> 
-                    <td>local-authority-eng:NDO</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d40c1cffe7893e1ab03561a5d601f65dbc3ceb2b1fe514bb3d42df9aae1b0bbc.csv#L35">d40c1cffe789...</a></td>
+            <td>34</td>
+                <td>The Hazelbury Bryan Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-2.368397 50.874349,-2.368194 50.874433,-2.368110 50.874430,-2.368026 50.874363,-2.367776 50.874559,-2.367711 50.874647,-2.367597 50.874599,-2.367312 50.875217,-2.367227 50.875687,-2.366574 50.875575,-2.366792 50.875415,-2.367154 50.875069,-2.367190 50.874726,-2.367167 50.874482,-2.367016 50.873983,-2.366929 50.873994,-2.366895 50.873893,-2.366983 50.873881,-2.366921 50.873710,-2.366331 50.873812,-2.366076 50.873341,-2.365056 50.873631,-2.364482 50.873909,-2.364439 50.873905,-2.364570 50.873445,-2.364298 50.873399,-2.364513 50.872603,-2.364859 50.872603,-2.364737 50.872188,-2.364764 50.872183,-2.364746 50.872086,-2.364680 50.872015,-2.364595 50.871816,-2.364577 50.871723,-2.364609 50.871558,-2.364520 50.871495,-2.364433 50.871284,-2.364913 50.871205,-2.365277 50.871100,-2.365497 50.871347,-2.365961 50.871228,-2.365872 50.871094,-2.365786 50.871050,-2.365762 50.871001,-2.366828 50.870741,-2.367105 50.871021,-2.367243 50.871237,-2.367316 50.871249,-2.367319 50.871323,-2.367629 50.871979,-2.367458 50.872151,-2.367225 50.872285,-2.367282 50.872354,-2.367229 50.872366,-2.367412 50.872577,-2.367418 50.872631,-2.367361 50.872679,-2.367698 50.873062,-2.368122 50.873889,-2.368265 50.874076,-2.368035 50.874162,-2.368207 50.874337,-2.368397 50.874349)))
   </div>
 </details>
-                    </td>
-                    <td>The Hazelbury Bryan Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:NDO</td> 
+                <td>conservation-area:HAB</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

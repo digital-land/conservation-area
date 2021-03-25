@@ -132,13 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">MV23 LEATHERHEAD 26TH MARCH 1974</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/MOL/LEA-MV23-LEATHERHEAD-26TH-MARCH-1974</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:LEA MV23 LEATHERHEAD 26TH MARCH 1974            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                MV23 LEATHERHEAD 26TH MARCH 1974            </dd>
@@ -149,6 +164,10 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:MOL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:MOL)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:LEA MV23 LEATHERHEAD 26TH MARCH 1974            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-05            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f3969617c89ddb64fee83ce19fb5628301f0e1f853159ee6057958693d806da7.csv#L37">f3969617c89d...</a></td>
-                <td>36</td>
-                    <td>local-authority-eng:MOL</td> 
-                    <td>MV23 LEATHERHEAD 26TH MARCH 1974</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f3969617c89ddb64fee83ce19fb5628301f0e1f853159ee6057958693d806da7.csv#L37">f3969617c89d...</a></td>
+            <td>36</td>
+                <td>MV23 LEATHERHEAD 26TH MARCH 1974</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.327189 51.290109,-0.327271 51.290639,-0.327468 51.291289,-0.327048 51.291358,-0.327183 51.291557,-0.327041 51.291633,-0.326562 51.291814,-0.326505 51.291751,-0.325199 51.292232,-0.326158 51.293416,-0.326199 51.293319,-0.326364 51.293148,-0.326370 51.293095,-0.327129 51.292893,-0.327345 51.293142,-0.327304 51.293157,-0.327400 51.293252,-0.327543 51.293489,-0.327440 51.293507,-0.327563 51.293674,-0.327838 51.293616,-0.328323 51.294299,-0.329090 51.294117,-0.329120 51.294083,-0.329964 51.293756,-0.329489 51.293252,-0.330451 51.292925,-0.330031 51.292855,-0.329751 51.292744,-0.329515 51.292601,-0.328920 51.292111,-0.328495 51.291676,-0.327975 51.291209,-0.327731 51.290887,-0.327677 51.290721,-0.327686 51.290525,-0.327795 51.290287,-0.327828 51.290074,-0.327189 51.290109)),((-0.331119 51.294290,-0.331091 51.294275,-0.330967 51.294354,-0.330764 51.294237,-0.330442 51.294455,-0.330469 51.294481,-0.330171 51.294620,-0.330079 51.294541,-0.329376 51.294871,-0.328992 51.294985,-0.329124 51.295138,-0.329186 51.295332,-0.329635 51.295273,-0.329783 51.295323,-0.330328 51.295198,-0.330367 51.295267,-0.330476 51.295249,-0.330492 51.295273,-0.331200 51.295077,-0.331472 51.294933,-0.331740 51.295159,-0.332019 51.295026,-0.332658 51.294617,-0.332075 51.294230,-0.331752 51.294412,-0.331508 51.294247,-0.331226 51.294348,-0.331119 51.294290)),((-0.330619 51.296189,-0.330782 51.296146,-0.330754 51.296069,-0.331036 51.296076,-0.330817 51.295896,-0.330130 51.295745,-0.330018 51.295659,-0.329807 51.295752,-0.329676 51.295886,-0.330042 51.296328,-0.330349 51.296326,-0.330643 51.296218,-0.330619 51.296189)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:LEA MV23 LEATHERHEAD 26TH MARCH 1974</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:MOL</td> 
+                <td>conservation-area:LEA MV23 LEATHERHEAD 26TH MARCH 1974</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

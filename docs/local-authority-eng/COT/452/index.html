@@ -132,16 +132,35 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Turkdean Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/COT/452</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Turkdean Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:452            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Turkdean Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-11</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L50">5a098a0110b3...</a></td>
-                <td>49</td>
-                    <td>conservation-area:452</td> 
-                    <td>local-authority-eng:COT</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-11</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L50">5a098a0110b3...</a></td>
+            <td>49</td>
+                <td>Turkdean Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.851554 51.853475,-1.851629 51.853460,-1.851748 51.853623,-1.851386 51.853724,-1.851486 51.853880,-1.851731 51.853922,-1.851929 51.854316,-1.851906 51.854332,-1.852184 51.854609,-1.850832 51.854979,-1.850819 51.854942,-1.850934 51.854915,-1.850649 51.854406,-1.850863 51.854349,-1.850819 51.854285,-1.850130 51.854416,-1.849736 51.854342,-1.849513 51.854530,-1.849003 51.854215,-1.848888 51.854230,-1.848729 51.854341,-1.848872 51.854512,-1.847785 51.854897,-1.847580 51.855242,-1.847604 51.855279,-1.847442 51.855300,-1.847072 51.855262,-1.846783 51.855277,-1.846636 51.855386,-1.846717 51.855605,-1.846831 51.855692,-1.846593 51.855834,-1.845966 51.856055,-1.846064 51.856193,-1.845524 51.856409,-1.846064 51.856865,-1.846105 51.856920,-1.846079 51.856975,-1.846259 51.857074,-1.846319 51.857031,-1.846444 51.857097,-1.846390 51.857133,-1.846449 51.857193,-1.845652 51.857769,-1.845535 51.857701,-1.844989 51.857909,-1.844843 51.857751,-1.844795 51.857763,-1.844667 51.857559,-1.844766 51.857515,-1.844654 51.857464,-1.843302 51.858022,-1.842906 51.857681,-1.843717 51.857368,-1.843719 51.857333,-1.843553 51.857187,-1.843594 51.857166,-1.843315 51.856931,-1.843997 51.856487,-1.843578 51.856194,-1.844650 51.855627,-1.843825 51.855238,-1.843656 51.855179,-1.843597 51.855201,-1.843082 51.854868,-1.843079 51.854800,-1.843405 51.854528,-1.843403 51.854481,-1.843329 51.854433,-1.843417 51.854364,-1.844467 51.854447,-1.844866 51.854353,-1.845793 51.853701,-1.845091 51.853191,-1.844416 51.852800,-1.843724 51.852329,-1.843209 51.852136,-1.843050 51.851277,-1.843170 51.851230,-1.843501 51.851368,-1.844371 51.851850,-1.845175 51.852396,-1.845806 51.852667,-1.846678 51.852807,-1.847299 51.852330,-1.848272 51.852911,-1.848563 51.853189,-1.848592 51.853264,-1.849377 51.853810,-1.850391 51.853542,-1.851341 51.853509,-1.851554 51.853475)))
   </div>
 </details>
-                    </td>
-                    <td>Turkdean Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:COT</td> 
+                <td>conservation-area:452</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

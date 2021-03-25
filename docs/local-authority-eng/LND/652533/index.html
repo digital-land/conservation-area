@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">St Paul&#39;s Cathedral</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/LND/652533</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-01-20</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/808cfac550bcebba7d1890c4b2af5a1265901f5fe570e4db8457c8e74fa18834.csv#L8">808cfac550bc...</a></td>
-                <td>7</td>
-                    <td>St Paul&#39;s Cathedral</td> 
-                    <td>local-authority-eng:LND</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-01-20</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/808cfac550bcebba7d1890c4b2af5a1265901f5fe570e4db8457c8e74fa18834.csv#L8">808cfac550bc...</a></td>
+            <td>7</td>
+                <td>St Paul&#39;s Cathedral</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.103501 51.513091,-0.103266 51.513054,-0.103206 51.513173,-0.103064 51.513241,-0.102773 51.513501,-0.102703 51.513668,-0.102754 51.513698,-0.102884 51.513697,-0.102750 51.514034,-0.102565 51.514005,-0.102322 51.514997,-0.101868 51.514941,-0.101041 51.514946,-0.101060 51.514844,-0.100733 51.514839,-0.100715 51.514481,-0.100790 51.514207,-0.100739 51.513855,-0.100437 51.513863,-0.100111 51.514049,-0.099629 51.514137,-0.099674 51.514399,-0.099318 51.514422,-0.099312 51.514387,-0.098757 51.514427,-0.098747 51.514366,-0.097222 51.514442,-0.096905 51.514416,-0.096896 51.514304,-0.096846 51.514209,-0.096460 51.513839,-0.096355 51.513566,-0.096357 51.513396,-0.096428 51.513013,-0.096563 51.512808,-0.097275 51.512872,-0.100568 51.513049,-0.100590 51.512533,-0.100560 51.512249,-0.100535 51.512248,-0.100551 51.512069,-0.101836 51.512143,-0.101737 51.512467,-0.101502 51.512658,-0.101607 51.512703,-0.101594 51.512743,-0.102458 51.512805,-0.102455 51.512686,-0.103469 51.512678,-0.103501 51.513091)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:652533</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:LND</td> 
+                <td>conservation-area:652533</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

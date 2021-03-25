@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">PAPPLEWICK C.A.</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/GED/94</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:94            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                PAPPLEWICK C.A.            </dd>
@@ -145,10 +168,6 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:GED" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:GED)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:94            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-08            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-08</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/6a34a68f0b12965629a24437ecdd4dc5cc25999a272b8866e83285a1e4c23803.csv#L6">6a34a68f0b12...</a></td>
-                <td>5</td>
-                    <td>conservation-area:94</td> 
-                    <td>local-authority-eng:GED</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-08</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/6a34a68f0b12965629a24437ecdd4dc5cc25999a272b8866e83285a1e4c23803.csv#L6">6a34a68f0b12...</a></td>
+            <td>5</td>
+                <td>PAPPLEWICK C.A.</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.181527 53.062326,-1.181661 53.062035,-1.182249 53.062127,-1.183318 53.061770,-1.183343 53.061703,-1.183796 53.061882,-1.184604 53.062884,-1.184683 53.062900,-1.186252 53.062709,-1.188626 53.062634,-1.188733 53.062686,-1.188820 53.062842,-1.188908 53.062921,-1.189482 53.063180,-1.189666 53.063509,-1.189888 53.063552,-1.190007 53.063360,-1.190138 53.063262,-1.190453 53.063131,-1.190528 53.062989,-1.190661 53.062898,-1.190858 53.062667,-1.190990 53.062601,-1.191055 53.062501,-1.191005 53.062376,-1.191139 53.062237,-1.191147 53.062168,-1.191344 53.062092,-1.191439 53.061932,-1.191473 53.061791,-1.191387 53.061644,-1.191540 53.061503,-1.191941 53.061571,-1.194032 53.061719,-1.194396 53.061720,-1.194554 53.061679,-1.194866 53.061415,-1.194939 53.061335,-1.194931 53.061253,-1.194781 53.061125,-1.194614 53.061061,-1.194851 53.060544,-1.194807 53.060411,-1.194664 53.060238,-1.194727 53.060237,-1.194728 53.059511,-1.194692 53.059445,-1.194720 53.059429,-1.194718 53.059375,-1.194669 53.059026,-1.194496 53.058551,-1.194110 53.057800,-1.193862 53.057109,-1.193025 53.057275,-1.191959 53.057323,-1.191438 53.057288,-1.191007 53.057211,-1.190125 53.056954,-1.189627 53.057048,-1.188995 53.057080,-1.188682 53.057341,-1.188643 53.057420,-1.188704 53.057533,-1.188977 53.057698,-1.188371 53.057835,-1.187817 53.057913,-1.187631 53.057836,-1.186812 53.057926,-1.185633 53.057410,-1.185572 53.057326,-1.185419 53.057341,-1.184917 53.057233,-1.184455 53.057178,-1.183638 53.057185,-1.183588 53.057055,-1.183180 53.057054,-1.183155 53.057040,-1.183181 53.056894,-1.183241 53.056861,-1.183263 53.056672,-1.183367 53.056619,-1.183502 53.055968,-1.183677 53.055881,-1.183662 53.055324,-1.184092 53.055326,-1.184098 53.054454,-1.184250 53.054449,-1.184228 53.054124,-1.184407 53.053923,-1.183790 53.053918,-1.183773 53.053773,-1.183443 53.053765,-1.183382 53.053792,-1.182642 53.053842,-1.182634 53.053714,-1.182031 53.053696,-1.181988 53.053741,-1.181863 53.054785,-1.181336 53.055823,-1.180954 53.055786,-1.180927 53.055899,-1.181023 53.055909,-1.181035 53.055935,-1.180981 53.056187,-1.181101 53.056246,-1.180787 53.056827,-1.180706 53.056815,-1.180454 53.057572,-1.181553 53.057701,-1.181328 53.059124,-1.181315 53.059359,-1.181432 53.059950,-1.181668 53.060539,-1.181815 53.061143,-1.181770 53.061265,-1.181647 53.061377,-1.181024 53.061693,-1.181009 53.061738,-1.180208 53.062330,-1.180392 53.062391,-1.180988 53.062328,-1.181527 53.062326)))
   </div>
 </details>
-                    </td>
-                    <td>PAPPLEWICK C.A.</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:GED</td> 
+                <td>conservation-area:94</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Warley</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CLD/10</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CLD" class="govuk-link">Calderdale Metropolitan Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:CLD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CLD)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:10            </dd>
@@ -148,6 +161,12 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Warley            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CLD" class="govuk-link">Calderdale Metropolitan Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:CLD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CLD)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/2f93bac6d19d0d7f9ab8d4274985120fd2fd27552fa415a3465d1f8341a8fde0.csv#L5">2f93bac6d19d...</a></td>
-                <td>4</td>
-                    <td>Warley</td> 
-                    <td>local-authority-eng:CLD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/2f93bac6d19d0d7f9ab8d4274985120fd2fd27552fa415a3465d1f8341a8fde0.csv#L5">2f93bac6d19d...</a></td>
+            <td>4</td>
+                <td>Warley</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.922369 53.723888,-1.921649 53.724111,-1.921477 53.724129,-1.921620 53.723974,-1.921710 53.723812,-1.922007 53.723021,-1.922016 53.722814,-1.921937 53.722194,-1.921505 53.720777,-1.921290 53.719523,-1.921236 53.719397,-1.921079 53.719271,-1.920817 53.719139,-1.919187 53.718644,-1.917639 53.718031,-1.917641 53.717968,-1.917560 53.717933,-1.917220 53.717983,-1.917156 53.717765,-1.917259 53.717671,-1.917295 53.717493,-1.917267 53.717456,-1.917126 53.717472,-1.916974 53.717041,-1.917546 53.716774,-1.917483 53.716656,-1.914823 53.716282,-1.914383 53.716295,-1.912560 53.716563,-1.912449 53.716609,-1.912558 53.716876,-1.910237 53.716867,-1.910013 53.717048,-1.909865 53.717219,-1.909536 53.717124,-1.909430 53.717327,-1.908958 53.717709,-1.907585 53.718616,-1.907117 53.718875,-1.905665 53.719255,-1.902432 53.719932,-1.902704 53.720461,-1.902112 53.720457,-1.901973 53.720944,-1.902716 53.720996,-1.902573 53.721280,-1.902389 53.721775,-1.902445 53.722000,-1.902578 53.722270,-1.902242 53.722795,-1.901930 53.723081,-1.902240 53.723256,-1.901407 53.723410,-1.900545 53.723472,-1.901284 53.723513,-1.903790 53.723840,-1.906526 53.723903,-1.908043 53.724032,-1.909553 53.724068,-1.909860 53.724049,-1.912009 53.723701,-1.913674 53.723494,-1.916478 53.723424,-1.918646 53.723626,-1.920078 53.723973,-1.920029 53.724047,-1.920188 53.724089,-1.920152 53.724137,-1.920952 53.724363,-1.921384 53.724327,-1.921673 53.724429,-1.922093 53.724443,-1.922055 53.724344,-1.922255 53.724254,-1.922369 53.723888)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:10</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CLD</td> 
+                <td>conservation-area:10</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Acomb Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/YOR/3091</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/YOR" class="govuk-link">City of York Council</a>
-<span title="Organisation identifier: local-authority-eng:YOR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:YOR)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:3091            </dd>
@@ -148,6 +161,12 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Acomb Conservation Area            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/YOR" class="govuk-link">City of York Council</a>
+<span title="Organisation identifier: local-authority-eng:YOR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:YOR)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-03-20</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/cfad1e96827ef950d31639bc716d84bcb61b716a3cf12eeeea481a734464c72e.csv#L3">cfad1e96827e...</a></td>
-                <td>2</td>
-                    <td>Acomb Conservation Area</td> 
-                    <td>local-authority-eng:YOR</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-03-20</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/cfad1e96827ef950d31639bc716d84bcb61b716a3cf12eeeea481a734464c72e.csv#L3">cfad1e96827e...</a></td>
+            <td>2</td>
+                <td>Acomb Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.134156 53.954667,-1.133374 53.954162,-1.133372 53.954089,-1.132787 53.953639,-1.132848 53.953409,-1.132815 53.953304,-1.132679 53.953134,-1.132597 53.953085,-1.132380 53.953055,-1.132213 53.952971,-1.131913 53.952676,-1.131168 53.952081,-1.130427 53.952381,-1.130992 53.952890,-1.130583 53.953031,-1.130743 53.953185,-1.129103 53.953768,-1.127744 53.954130,-1.127270 53.954287,-1.126637 53.954366,-1.126178 53.954375,-1.125282 53.954746,-1.124108 53.955171,-1.124400 53.955461,-1.126441 53.954724,-1.126448 53.955120,-1.126543 53.955459,-1.125837 53.955582,-1.125120 53.955751,-1.124589 53.955811,-1.124599 53.955962,-1.125319 53.955921,-1.125419 53.955984,-1.125554 53.956518,-1.125607 53.956541,-1.126615 53.956497,-1.126641 53.956530,-1.128319 53.956357,-1.128268 53.956216,-1.128643 53.956227,-1.129233 53.956091,-1.129317 53.956008,-1.129311 53.955921,-1.129265 53.955796,-1.129158 53.955668,-1.129505 53.955595,-1.129513 53.955692,-1.130185 53.955693,-1.130250 53.956041,-1.131325 53.955937,-1.131393 53.955932,-1.131405 53.955972,-1.131828 53.955924,-1.132146 53.956058,-1.132323 53.955871,-1.132508 53.955858,-1.132741 53.955910,-1.133176 53.955640,-1.132800 53.955400,-1.133002 53.955351,-1.134156 53.954667)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:3091</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:YOR</td> 
+                <td>conservation-area:3091</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

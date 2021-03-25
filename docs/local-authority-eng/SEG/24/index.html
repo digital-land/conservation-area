@@ -132,13 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Bridgwater Central Area &amp; Dock</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SEG/24</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:24            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Bridgwater Central Area &amp; Dock            </dd>
@@ -149,6 +164,10 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:SEG" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SEG)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:24            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-11            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-11</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/1ee42cdabb3d317f243dcd6cb14da53092083ed9a87c863eab49662b23591999.csv#L12">1ee42cdabb3d...</a></td>
-                <td>11</td>
-                    <td>local-authority-eng:SEG</td> 
-                    <td>Bridgwater Central Area &amp; Dock</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-11</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/1ee42cdabb3d317f243dcd6cb14da53092083ed9a87c863eab49662b23591999.csv#L12">1ee42cdabb3d...</a></td>
+            <td>11</td>
+                <td>Bridgwater Central Area &amp; Dock</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-3.004616 51.133968,-3.004373 51.133967,-3.004401 51.134048,-3.004051 51.134047,-3.003574 51.133932,-3.002743 51.133817,-3.002776 51.133643,-3.002741 51.133417,-3.002641 51.133181,-3.002429 51.132899,-3.002124 51.132601,-3.001190 51.131891,-3.000958 51.131910,-3.001011 51.131746,-3.001146 51.131670,-3.001095 51.131581,-3.000915 51.131585,-3.000801 51.131505,-3.000588 51.130691,-3.000853 51.130450,-3.001018 51.129554,-3.000756 51.129585,-3.000705 51.129306,-3.000606 51.129316,-3.000580 51.129230,-3.000503 51.129236,-3.000457 51.129071,-3.000536 51.129068,-3.000357 51.128775,-3.000291 51.128765,-2.999878 51.128386,-2.999828 51.128418,-2.999732 51.128358,-2.999764 51.128337,-2.999495 51.128153,-2.999248 51.128318,-2.999310 51.128389,-2.999248 51.128429,-2.999044 51.128304,-2.999032 51.128269,-2.999077 51.128240,-2.999138 51.128203,-2.999171 51.128224,-2.999355 51.128103,-2.999239 51.127873,-2.999197 51.127881,-2.999177 51.127838,-2.999215 51.127831,-2.999178 51.127754,-2.998978 51.127764,-2.998925 51.127631,-2.999469 51.127531,-2.999263 51.127087,-2.999288 51.127031,-2.999821 51.126750,-3.000414 51.126500,-3.000704 51.127080,-3.001156 51.126934,-3.002116 51.126785,-3.002166 51.126747,-3.002905 51.126541,-3.002940 51.126562,-3.003175 51.126500,-3.003155 51.126473,-3.004060 51.126205,-3.004368 51.126679,-3.004945 51.126565,-3.004968 51.126534,-3.005196 51.126523,-3.004958 51.126027,-3.005014 51.125983,-3.005182 51.125966,-3.005336 51.125994,-3.005469 51.125962,-3.005438 51.125916,-3.005744 51.125908,-3.006053 51.125798,-3.006183 51.125803,-3.006457 51.125922,-3.007290 51.126447,-3.007696 51.126665,-3.007348 51.127065,-3.007287 51.127067,-3.007274 51.127528,-3.007710 51.127602,-3.007714 51.127776,-3.007549 51.127905,-3.007456 51.127958,-3.007424 51.127934,-3.007354 51.127970,-3.007298 51.127929,-3.007213 51.127972,-3.007238 51.127991,-3.007079 51.128053,-3.007018 51.128008,-3.006939 51.128050,-3.007022 51.128133,-3.006797 51.128243,-3.006753 51.128210,-3.006676 51.128249,-3.006488 51.128128,-3.005965 51.128371,-3.005902 51.128325,-3.005142 51.128666,-3.005505 51.129014,-3.005578 51.129007,-3.005709 51.129115,-3.005761 51.129206,-3.005723 51.129226,-3.006056 51.129563,-3.005800 51.129649,-3.005694 51.129653,-3.005055 51.129892,-3.004564 51.130020,-3.004241 51.130077,-3.004178 51.129954,-3.003162 51.130170,-3.003196 51.130279,-3.002477 51.130386,-3.002517 51.130766,-3.001915 51.130772,-3.001937 51.131356,-3.002020 51.131629,-3.002081 51.131716,-3.002249 51.131704,-3.002489 51.131616,-3.002770 51.131464,-3.003242 51.131505,-3.003540 51.131464,-3.003777 51.131387,-3.003978 51.131430,-3.004257 51.131394,-3.004313 51.131559,-3.004524 51.131810,-3.004757 51.131837,-3.005104 51.131822,-3.006117 51.131606,-3.006898 51.131546,-3.009161 51.130867,-3.009180 51.130822,-3.010223 51.131023,-3.009834 51.131557,-3.009492 51.131875,-3.009707 51.132082,-3.009263 51.132264,-3.008838 51.132350,-3.009048 51.132678,-3.008867 51.132944,-3.007670 51.133229,-3.006011 51.133836,-3.005840 51.133648,-3.005836 51.133608,-3.005706 51.133616,-3.005490 51.133486,-3.005434 51.133491,-3.005178 51.133690,-3.005105 51.133664,-3.004883 51.133814,-3.004844 51.133872,-3.004679 51.133856,-3.004616 51.133968)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:24</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:SEG</td> 
+                <td>conservation-area:24</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

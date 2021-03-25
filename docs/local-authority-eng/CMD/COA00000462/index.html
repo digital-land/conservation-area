@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Seven Dials (Covent Garden) COA00000462</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CMD/COA00000462</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Seven Dials (Covent Garden) COA00000462            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:COA00000462            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:CMD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CMD)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:COA00000462            </dd>
+            <dd class="govuk-summary-list__value">                Seven Dials (Covent Garden) COA00000462            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L471">f617d13ef7ff...</a></td>
-                <td>470</td>
-                    <td>conservation-area:COA00000462</td> 
-                    <td>local-authority-eng:CMD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L471">f617d13ef7ff...</a></td>
+            <td>470</td>
+                <td>Seven Dials (Covent Garden) COA00000462</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.119669 51.515418,-0.120494 51.515912,-0.120236 51.516066,-0.120452 51.516223,-0.120388 51.516254,-0.120543 51.516379,-0.120395 51.516438,-0.120616 51.516683,-0.120640 51.516673,-0.120763 51.516796,-0.120865 51.516759,-0.120966 51.516871,-0.121105 51.517161,-0.121151 51.517179,-0.121685 51.517067,-0.121607 51.516934,-0.122111 51.516819,-0.122260 51.516918,-0.122376 51.516831,-0.122667 51.516720,-0.122930 51.516582,-0.122767 51.516474,-0.123478 51.516045,-0.123673 51.516164,-0.123729 51.516132,-0.123957 51.516292,-0.123980 51.516279,-0.124263 51.516102,-0.123848 51.515824,-0.123555 51.515586,-0.125014 51.514818,-0.125803 51.515262,-0.126122 51.515555,-0.126256 51.515800,-0.126720 51.515717,-0.126885 51.515567,-0.126940 51.515271,-0.127004 51.515128,-0.127142 51.514950,-0.127936 51.514199,-0.128620 51.513679,-0.128565 51.513721,-0.128833 51.513846,-0.128899 51.513798,-0.129154 51.513989,-0.129497 51.513866,-0.129281 51.513479,-0.129063 51.513454,-0.128497 51.513190,-0.127685 51.512682,-0.127327 51.512673,-0.127196 51.512703,-0.127088 51.512836,-0.126858 51.513021,-0.126586 51.513187,-0.124529 51.514133,-0.123572 51.514715,-0.123409 51.514784,-0.122880 51.515138,-0.122093 51.514614,-0.121825 51.514867,-0.120738 51.514674,-0.119669 51.515418)))
   </div>
 </details>
-                    </td>
-                    <td>Seven Dials (Covent Garden) COA00000462</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CMD</td> 
+                <td>conservation-area:COA00000462</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

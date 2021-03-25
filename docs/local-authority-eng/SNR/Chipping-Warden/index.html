@@ -132,9 +132,34 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Chipping Warden</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SNR/Chipping-Warden</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SNR" class="govuk-link">South Northamptonshire Council</a>
+<span title="Organisation identifier: local-authority-eng:SNR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SNR)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:Chipping Warden            </dd>
@@ -142,12 +167,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Chipping Warden            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SNR" class="govuk-link">South Northamptonshire Council</a>
-<span title="Organisation identifier: local-authority-eng:SNR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SNR)</span>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/1eb168a7b080c36e8d4fe76ca9c7ad289dafab2bf9dff9171e5dee013b3ce1e2.csv#L39">1eb168a7b080...</a></td>
-                <td>38</td>
-                    <td>local-authority-eng:SNR</td> 
-                    <td>Chipping Warden</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/1eb168a7b080c36e8d4fe76ca9c7ad289dafab2bf9dff9171e5dee013b3ce1e2.csv#L39">1eb168a7b080...</a></td>
+            <td>38</td>
+                <td>Chipping Warden</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.274108 52.133871,-1.274347 52.134032,-1.274221 52.134109,-1.273909 52.133987,-1.273743 52.134081,-1.273588 52.134310,-1.273882 52.134366,-1.274000 52.134497,-1.274487 52.134395,-1.274656 52.134561,-1.274039 52.134688,-1.274156 52.134938,-1.274121 52.134944,-1.274252 52.135125,-1.273310 52.135242,-1.273498 52.135788,-1.273244 52.135806,-1.273214 52.135750,-1.272364 52.135835,-1.272374 52.136122,-1.272405 52.136121,-1.272443 52.136553,-1.272569 52.137132,-1.271939 52.137224,-1.272023 52.137509,-1.272162 52.137582,-1.272294 52.137769,-1.272205 52.137795,-1.272275 52.137967,-1.272252 52.138201,-1.272145 52.138246,-1.271469 52.138291,-1.271425 52.137855,-1.271470 52.137805,-1.271475 52.137511,-1.271594 52.137001,-1.271715 52.136177,-1.271139 52.136223,-1.271119 52.136373,-1.270848 52.136357,-1.270874 52.136197,-1.270848 52.135806,-1.270118 52.135815,-1.269908 52.135621,-1.270080 52.135498,-1.270708 52.135203,-1.271370 52.134981,-1.271180 52.134738,-1.271896 52.134523,-1.271419 52.133686,-1.271514 52.133663,-1.271422 52.133561,-1.271560 52.133530,-1.271273 52.133037,-1.271825 52.132894,-1.271508 52.132234,-1.272049 52.132058,-1.272195 52.131847,-1.272321 52.132001,-1.272435 52.132272,-1.272983 52.132318,-1.273249 52.132381,-1.273321 52.132433,-1.273814 52.132508,-1.273801 52.132694,-1.273045 52.132654,-1.273202 52.133000,-1.273319 52.133064,-1.273762 52.133517,-1.274210 52.133354,-1.274103 52.133254,-1.274257 52.133053,-1.275009 52.133086,-1.275119 52.133132,-1.275120 52.133180,-1.275001 52.133213,-1.275052 52.133271,-1.274985 52.133300,-1.275067 52.133399,-1.275063 52.133432,-1.274936 52.133471,-1.274983 52.133522,-1.274310 52.133765,-1.274108 52.133871)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:Chipping Warden</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:SNR</td> 
+                <td>conservation-area:Chipping Warden</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

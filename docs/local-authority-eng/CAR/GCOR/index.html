@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Great Corby</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CAR/GCOR</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:GCOR            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Great Corby            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CAR" class="govuk-link">Carlisle City Council</a>
 <span title="Organisation identifier: local-authority-eng:CAR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CAR)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Great Corby            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:GCOR            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a5b8dc2a4704d27f33ec45c031b18b956459366ed188dc749747d703e0acb44f.csv#L9">a5b8dc2a4704...</a></td>
-                <td>8</td>
-                    <td>local-authority-eng:CAR</td> 
-                    <td>Great Corby</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a5b8dc2a4704d27f33ec45c031b18b956459366ed188dc749747d703e0acb44f.csv#L9">a5b8dc2a4704...</a></td>
+            <td>8</td>
+                <td>Great Corby</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-2.829459 54.883843,-2.828450 54.883943,-2.828230 54.883887,-2.827440 54.883996,-2.826917 54.884111,-2.826307 54.884386,-2.826604 54.884644,-2.825786 54.884934,-2.825861 54.885059,-2.825867 54.885128,-2.824776 54.885523,-2.824324 54.885332,-2.824179 54.885077,-2.823906 54.884456,-2.823305 54.883929,-2.822528 54.883378,-2.821284 54.883889,-2.821042 54.883883,-2.821370 54.884169,-2.820783 54.884333,-2.820642 54.884164,-2.820209 54.884332,-2.820416 54.884566,-2.820514 54.884796,-2.819107 54.884932,-2.818281 54.885062,-2.818199 54.884875,-2.818288 54.884863,-2.818082 54.884386,-2.817813 54.884526,-2.817253 54.883427,-2.817207 54.882871,-2.817544 54.882908,-2.817610 54.882470,-2.817988 54.882493,-2.817941 54.882811,-2.820097 54.882966,-2.820268 54.882621,-2.820638 54.882691,-2.821020 54.882185,-2.821195 54.882243,-2.821847 54.881640,-2.821832 54.881338,-2.821952 54.881146,-2.822715 54.880591,-2.823383 54.880054,-2.823691 54.879896,-2.824131 54.879765,-2.824836 54.879698,-2.825132 54.879104,-2.825213 54.878753,-2.825893 54.878811,-2.826650 54.878707,-2.826750 54.878737,-2.826854 54.878846,-2.826865 54.878936,-2.826817 54.879069,-2.827055 54.879206,-2.827269 54.880228,-2.827209 54.880358,-2.827204 54.880489,-2.827457 54.880889,-2.827556 54.881013,-2.827653 54.881075,-2.827625 54.881103,-2.827665 54.881165,-2.827605 54.881200,-2.827584 54.881284,-2.827721 54.881447,-2.827705 54.881502,-2.827832 54.881693,-2.827846 54.881787,-2.827818 54.881827,-2.827935 54.882131,-2.828005 54.882753,-2.828084 54.882840,-2.828111 54.882928,-2.829459 54.883843)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:GCOR</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CAR</td> 
+                <td>conservation-area:GCOR</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

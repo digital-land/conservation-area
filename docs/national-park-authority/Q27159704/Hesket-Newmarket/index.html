@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Hesket Newmarket</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/national-park-authority/Q27159704/Hesket-Newmarket</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Hesket Newmarket            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:Hesket Newmarket            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: national-park-authority:Q27159704" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>national-park-authority:Q27159704)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:Hesket Newmarket            </dd>
+            <dd class="govuk-summary-list__value">                Hesket Newmarket            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/bd5a54fc8d0377744c5f5c53d6235337e1e9b92aa8552de0e47b414b21d54e76.csv#L18">bd5a54fc8d03...</a></td>
-                <td>17</td>
-                    <td>conservation-area:Hesket Newmarket</td> 
-                    <td>national-park-authority:Q27159704</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/bd5a54fc8d0377744c5f5c53d6235337e1e9b92aa8552de0e47b414b21d54e76.csv#L18">bd5a54fc8d03...</a></td>
+            <td>17</td>
+                <td>Hesket Newmarket</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-3.014772 54.735636,-3.016320 54.736048,-3.016892 54.736272,-3.016741 54.736425,-3.016942 54.736655,-3.016987 54.736640,-3.017007 54.736917,-3.016923 54.737089,-3.017297 54.737304,-3.017534 54.737159,-3.017923 54.737055,-3.018534 54.737418,-3.018206 54.737533,-3.019341 54.738155,-3.019394 54.738075,-3.020180 54.738313,-3.021302 54.738468,-3.022524 54.738484,-3.022796 54.738852,-3.022601 54.738984,-3.022812 54.739085,-3.022324 54.739500,-3.022475 54.739564,-3.022760 54.739482,-3.023025 54.739266,-3.023212 54.739006,-3.023355 54.738873,-3.023828 54.738608,-3.023943 54.738591,-3.023955 54.738658,-3.024676 54.738607,-3.025221 54.738653,-3.026073 54.738568,-3.026175 54.738696,-3.026571 54.738567,-3.026609 54.738622,-3.026899 54.738525,-3.027107 54.738754,-3.027503 54.738628,-3.027376 54.738536,-3.027169 54.738312,-3.027958 54.737959,-3.027637 54.737738,-3.027174 54.737851,-3.027072 54.737836,-3.026851 54.737636,-3.026792 54.737330,-3.026677 54.737250,-3.026615 54.737481,-3.025609 54.737279,-3.025607 54.737336,-3.025281 54.737226,-3.025178 54.737384,-3.024618 54.737248,-3.024663 54.737205,-3.024561 54.737157,-3.024344 54.737312,-3.024413 54.737354,-3.024196 54.737503,-3.023712 54.737373,-3.023356 54.737626,-3.023014 54.737548,-3.022332 54.737498,-3.022233 54.737754,-3.021440 54.737736,-3.021014 54.737816,-3.020318 54.737875,-3.020301 54.737832,-3.019487 54.737431,-3.019444 54.737460,-3.019171 54.737370,-3.019312 54.737308,-3.019192 54.737212,-3.018413 54.736771,-3.018142 54.736926,-3.017269 54.736216,-3.017215 54.736240,-3.016832 54.735897,-3.016890 54.735868,-3.016437 54.735594,-3.015813 54.735297,-3.014772 54.735636)))
   </div>
 </details>
-                    </td>
-                    <td>Hesket Newmarket</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>national-park-authority:Q27159704</td> 
+                <td>conservation-area:Hesket Newmarket</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

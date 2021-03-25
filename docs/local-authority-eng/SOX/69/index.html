@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Kingston Blount Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SOX/69</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Kingston Blount Conservation Area            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:69            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:SOX" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SOX)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:69            </dd>
+            <dd class="govuk-summary-list__value">                Kingston Blount Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/07b84eadda99567f835a1f5919bd0a2ab48291932ad7cfaae33032ffb48744b3.csv#L70">07b84eadda99...</a></td>
-                <td>69</td>
-                    <td>conservation-area:69</td> 
-                    <td>local-authority-eng:SOX</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/07b84eadda99567f835a1f5919bd0a2ab48291932ad7cfaae33032ffb48744b3.csv#L70">07b84eadda99...</a></td>
+            <td>69</td>
+                <td>Kingston Blount Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.936013 51.691323,-0.936789 51.691194,-0.936330 51.690500,-0.936646 51.690387,-0.937046 51.690678,-0.937112 51.690617,-0.937115 51.690564,-0.937237 51.690493,-0.937112 51.690422,-0.937373 51.690239,-0.936664 51.689630,-0.936287 51.689453,-0.935820 51.689100,-0.935403 51.688733,-0.934942 51.688201,-0.934758 51.687901,-0.934728 51.687793,-0.934758 51.687665,-0.934891 51.687559,-0.934921 51.687470,-0.934790 51.687281,-0.934550 51.686287,-0.934415 51.686156,-0.932526 51.686823,-0.931964 51.687067,-0.931427 51.686670,-0.931247 51.686574,-0.931116 51.686606,-0.930287 51.686996,-0.930501 51.687155,-0.930971 51.687336,-0.931021 51.687376,-0.931048 51.687471,-0.930894 51.687749,-0.930658 51.687929,-0.930831 51.688043,-0.930612 51.688156,-0.930566 51.688095,-0.930510 51.688082,-0.930443 51.688116,-0.930781 51.688364,-0.931039 51.688642,-0.931245 51.688606,-0.931366 51.688747,-0.931470 51.688783,-0.931601 51.688782,-0.931923 51.689001,-0.931460 51.689209,-0.930455 51.689281,-0.930764 51.689641,-0.930880 51.689632,-0.930943 51.689707,-0.931044 51.689683,-0.931100 51.689749,-0.931409 51.689686,-0.931458 51.689771,-0.930961 51.689877,-0.931083 51.690039,-0.931443 51.689930,-0.931452 51.689949,-0.931678 51.689895,-0.931755 51.689920,-0.932363 51.689738,-0.932389 51.689770,-0.932934 51.689702,-0.933506 51.689568,-0.933982 51.689805,-0.934196 51.690068,-0.935053 51.690183,-0.935198 51.690271,-0.935133 51.690327,-0.934557 51.690520,-0.933988 51.690765,-0.933812 51.690636,-0.933729 51.690626,-0.933415 51.690782,-0.933530 51.690922,-0.933919 51.690813,-0.934110 51.690984,-0.934543 51.690787,-0.934810 51.690620,-0.935126 51.690924,-0.935358 51.691431,-0.936013 51.691323)))
   </div>
 </details>
-                    </td>
-                    <td>Kingston Blount Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:SOX</td> 
+                <td>conservation-area:69</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

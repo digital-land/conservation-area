@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">33</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SHF/33</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SHF" class="govuk-link">Sheffield City Council</a>
-<span title="Organisation identifier: local-authority-eng:SHF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SHF)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                33            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:33            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                33            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SHF" class="govuk-link">Sheffield City Council</a>
+<span title="Organisation identifier: local-authority-eng:SHF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SHF)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-02-16</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/6efd914060c754cf9455f39e8dea8b097b47c55fa430e399852e34832920fcf9.csv#L34">6efd914060c7...</a></td>
-                <td>33</td>
-                    <td>conservation-area:33</td> 
-                    <td>local-authority-eng:SHF</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-02-16</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/6efd914060c754cf9455f39e8dea8b097b47c55fa430e399852e34832920fcf9.csv#L34">6efd914060c7...</a></td>
+            <td>33</td>
+                <td>33</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,16 +231,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.496320 53.365782,-1.496317 53.365676,-1.496361 53.365598,-1.496614 53.365438,-1.496736 53.365430,-1.496809 53.365491,-1.497204 53.365465,-1.497355 53.365398,-1.498062 53.365208,-1.497971 53.364994,-1.498499 53.364909,-1.498690 53.364901,-1.498701 53.364924,-1.499051 53.364865,-1.499188 53.365163,-1.499382 53.365137,-1.499679 53.365192,-1.500156 53.365349,-1.500144 53.365451,-1.500728 53.365229,-1.500978 53.365080,-1.501132 53.365079,-1.501335 53.365290,-1.502651 53.364706,-1.502728 53.364665,-1.502644 53.364589,-1.502973 53.364441,-1.503097 53.364518,-1.504401 53.363924,-1.504762 53.363878,-1.504731 53.363702,-1.505179 53.363673,-1.505235 53.363614,-1.505214 53.363581,-1.505391 53.363515,-1.506107 53.363475,-1.506099 53.363437,-1.506248 53.363407,-1.506046 53.363027,-1.505850 53.363091,-1.505812 53.363030,-1.505627 53.363069,-1.505369 53.362639,-1.505307 53.362634,-1.505235 53.362513,-1.504754 53.362600,-1.504793 53.362666,-1.504557 53.362723,-1.504801 53.363135,-1.504667 53.363165,-1.504744 53.363187,-1.504284 53.363261,-1.504039 53.363097,-1.503767 53.363006,-1.503444 53.362967,-1.503052 53.362989,-1.502963 53.362517,-1.502422 53.362628,-1.501943 53.362421,-1.502167 53.362223,-1.502131 53.362207,-1.502464 53.361981,-1.502141 53.361772,-1.502592 53.361551,-1.502574 53.361535,-1.503109 53.361319,-1.503302 53.361483,-1.504329 53.361112,-1.502841 53.359596,-1.502767 53.359582,-1.502444 53.359340,-1.503778 53.358729,-1.503633 53.358597,-1.502077 53.357902,-1.502402 53.357608,-1.502690 53.357414,-1.501613 53.356944,-1.500951 53.356691,-1.500302 53.356468,-1.499323 53.356185,-1.499404 53.356237,-1.499413 53.356343,-1.499134 53.356663,-1.498948 53.356661,-1.497262 53.356440,-1.497233 53.356431,-1.497291 53.356220,-1.497193 53.356201,-1.496279 53.356135,-1.495062 53.355939,-1.494735 53.356010,-1.492272 53.355709,-1.491780 53.355639,-1.491341 53.355534,-1.491101 53.355443,-1.491047 53.355382,-1.489971 53.355591,-1.489821 53.355642,-1.489690 53.355752,-1.489341 53.355731,-1.489351 53.355855,-1.489024 53.355862,-1.489035 53.355963,-1.488967 53.356001,-1.488643 53.355993,-1.488288 53.355934,-1.487855 53.356503,-1.487690 53.356857,-1.487687 53.356924,-1.486111 53.356795,-1.485790 53.357207,-1.485893 53.357248,-1.485788 53.357399,-1.485749 53.357448,-1.485632 53.357409,-1.485468 53.357617,-1.485519 53.357632,-1.485490 53.357684,-1.485464 53.357714,-1.485409 53.357697,-1.485298 53.357837,-1.485335 53.357847,-1.485276 53.357923,-1.485239 53.357913,-1.484989 53.358228,-1.485191 53.358276,-1.484981 53.358597,-1.486928 53.359069,-1.486601 53.359462,-1.486224 53.359348,-1.485874 53.359782,-1.485364 53.359652,-1.485368 53.359763,-1.485338 53.359763,-1.485397 53.360760,-1.485424 53.360934,-1.485469 53.361002,-1.485454 53.361073,-1.485516 53.361318,-1.485512 53.361431,-1.482704 53.361254,-1.482691 53.361224,-1.482495 53.361214,-1.482440 53.361426,-1.482128 53.361755,-1.481963 53.361891,-1.481912 53.361878,-1.481920 53.361938,-1.481818 53.361944,-1.481399 53.361805,-1.481370 53.362601,-1.478330 53.362586,-1.478328 53.362956,-1.477922 53.362959,-1.477932 53.363238,-1.478022 53.363259,-1.478026 53.363302,-1.478234 53.363228,-1.478556 53.363195,-1.479229 53.363262,-1.479618 53.363338,-1.479768 53.364849,-1.479846 53.365045,-1.480151 53.365005,-1.480200 53.365155,-1.480172 53.365211,-1.480084 53.365225,-1.480105 53.365283,-1.479827 53.365234,-1.479823 53.365258,-1.479647 53.365241,-1.479562 53.365813,-1.479592 53.366141,-1.479625 53.366260,-1.480423 53.366297,-1.480374 53.366899,-1.481154 53.366906,-1.481096 53.366753,-1.481554 53.366691,-1.481674 53.366968,-1.482000 53.366923,-1.482022 53.367189,-1.482729 53.367096,-1.482694 53.366986,-1.482780 53.366964,-1.482772 53.366750,-1.482661 53.366382,-1.483379 53.366421,-1.483160 53.366085,-1.483580 53.365858,-1.485396 53.366017,-1.485730 53.366219,-1.485675 53.366269,-1.486244 53.366674,-1.486443 53.366518,-1.486507 53.366534,-1.486564 53.366490,-1.486733 53.366563,-1.486871 53.366522,-1.487028 53.366636,-1.487133 53.366885,-1.487095 53.366948,-1.487014 53.366978,-1.485659 53.366871,-1.484870 53.366917,-1.484925 53.367064,-1.485193 53.367313,-1.485279 53.367462,-1.485186 53.367501,-1.485021 53.367424,-1.484789 53.367516,-1.484419 53.367475,-1.484186 53.367569,-1.484218 53.367597,-1.483824 53.367759,-1.483132 53.367141,-1.482534 53.367217,-1.484133 53.368630,-1.484555 53.368458,-1.484691 53.368576,-1.485163 53.368367,-1.485803 53.368887,-1.486017 53.368685,-1.486227 53.368572,-1.486955 53.368360,-1.488467 53.367688,-1.488624 53.367592,-1.488977 53.367242,-1.490713 53.367457,-1.490738 53.367373,-1.490620 53.366781,-1.490857 53.366720,-1.490899 53.366768,-1.490980 53.367083,-1.491306 53.367129,-1.491300 53.367088,-1.493008 53.366579,-1.492981 53.366412,-1.494380 53.366360,-1.494364 53.366128,-1.494497 53.366127,-1.494490 53.366030,-1.494859 53.366028,-1.494857 53.365936,-1.495005 53.365934,-1.495004 53.365852,-1.495628 53.365848,-1.496327 53.365790,-1.496320 53.365782),(-1.496321 53.365789,-1.496320 53.365782,-1.496320 53.365782,-1.496321 53.365789),(-1.485697 53.368800,-1.485699 53.368800,-1.485698 53.368801,-1.485697 53.368800)))
   </div>
 </details>
-                    </td>
-                    <td>33</td> 
-            </tr>            <tr>
-                <td>2021-02-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/267b98c4539b0eb607324dabe79b6757544847972b5facedd9c88ef418dd4e81.csv#L34">267b98c4539b...</a></td>
-                <td>33</td>
-                    <td>conservation-area:33</td> 
-                    <td>local-authority-eng:SHF</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:SHF</td> 
+                <td>conservation-area:33</td> 
+        </tr>        <tr>
+            <td>2021-02-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/267b98c4539b0eb607324dabe79b6757544847972b5facedd9c88ef418dd4e81.csv#L34">267b98c4539b...</a></td>
+            <td>33</td>
+                <td>33</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -228,16 +250,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.530728 53.344687,-1.530787 53.344781,-1.530683 53.345095,-1.531061 53.345155,-1.531430 53.344806,-1.531846 53.344310,-1.531991 53.344231,-1.533061 53.344239,-1.534101 53.344334,-1.534518 53.344330,-1.534480 53.343661,-1.531075 53.343596,-1.530870 53.344165,-1.530647 53.344179,-1.530818 53.344297,-1.530676 53.344466,-1.530598 53.344639,-1.530616 53.344681,-1.530728 53.344687)))
   </div>
 </details>
-                    </td>
-                    <td>33</td> 
-            </tr>            <tr>
-                <td>2020-09-08</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f92d3042cbf2099d950733d3cbe2bfbfda4c154c8389ae08e8a65f2f7601708e.csv#L34">f92d3042cbf2...</a></td>
-                <td>33</td>
-                    <td>conservation-area:33</td> 
-                    <td>local-authority-eng:SHF</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:SHF</td> 
+                <td>conservation-area:33</td> 
+        </tr>        <tr>
+            <td>2020-09-08</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f92d3042cbf2099d950733d3cbe2bfbfda4c154c8389ae08e8a65f2f7601708e.csv#L34">f92d3042cbf2...</a></td>
+            <td>33</td>
+                <td>Whirlow</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -247,12 +269,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.530728 53.344687,-1.530787 53.344781,-1.530683 53.345095,-1.531061 53.345155,-1.531430 53.344806,-1.531846 53.344310,-1.531991 53.344231,-1.533061 53.344239,-1.534101 53.344334,-1.534518 53.344330,-1.534480 53.343661,-1.531075 53.343596,-1.530870 53.344165,-1.530647 53.344179,-1.530818 53.344297,-1.530676 53.344466,-1.530598 53.344639,-1.530616 53.344681,-1.530728 53.344687)))
   </div>
 </details>
-                    </td>
-                    <td>Whirlow</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:SHF</td> 
+                <td>conservation-area:33</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -354,5 +379,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

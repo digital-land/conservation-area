@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">CHURCH STREET CROWTHORNE</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/BRC/5</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BRC" class="govuk-link">Bracknell Forest Council</a>
-<span title="Organisation identifier: local-authority-eng:BRC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRC)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                CHURCH STREET CROWTHORNE            </dd>
@@ -148,6 +161,12 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:5            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BRC" class="govuk-link">Bracknell Forest Council</a>
+<span title="Organisation identifier: local-authority-eng:BRC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRC)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/56645ee4f6e3ee9252a322dfbc89624f0675ecbd123929c7807c4cd452447735.csv#L6">56645ee4f6e3...</a></td>
-                <td>5</td>
-                    <td>conservation-area:5</td> 
-                    <td>local-authority-eng:BRC</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/56645ee4f6e3ee9252a322dfbc89624f0675ecbd123929c7807c4cd452447735.csv#L6">56645ee4f6e3...</a></td>
+            <td>5</td>
+                <td>CHURCH STREET CROWTHORNE</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.795529 51.367995,-0.795507 51.367988,-0.795634 51.367823,-0.795133 51.367682,-0.795231 51.367573,-0.795280 51.367460,-0.795203 51.367436,-0.795243 51.367385,-0.794904 51.367313,-0.794918 51.367293,-0.794669 51.367219,-0.794871 51.366924,-0.794795 51.366890,-0.794802 51.366858,-0.794711 51.366831,-0.794908 51.366597,-0.794926 51.366512,-0.795188 51.366176,-0.795825 51.366366,-0.795840 51.366344,-0.796257 51.366494,-0.796292 51.366474,-0.796380 51.366501,-0.796171 51.366765,-0.795966 51.366723,-0.795871 51.366872,-0.796045 51.366927,-0.795790 51.367256,-0.796225 51.367493,-0.796205 51.367515,-0.796477 51.367584,-0.796476 51.367677,-0.799745 51.368317,-0.799519 51.368358,-0.798675 51.368729,-0.798674 51.368886,-0.798698 51.368900,-0.798657 51.368977,-0.799035 51.369199,-0.798452 51.369536,-0.798290 51.369436,-0.798519 51.369291,-0.798356 51.369187,-0.798261 51.369243,-0.797872 51.368992,-0.797636 51.369091,-0.796640 51.368467,-0.796432 51.368589,-0.796115 51.368407,-0.796289 51.368299,-0.795822 51.368023,-0.795645 51.368253,-0.795462 51.368384,-0.795393 51.368353,-0.795588 51.368253,-0.795740 51.368059,-0.795529 51.367995)),((-0.795507 51.367988,-0.795504 51.367992,-0.795507 51.367988,-0.795507 51.367988)))
   </div>
 </details>
-                    </td>
-                    <td>CHURCH STREET CROWTHORNE</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BRC</td> 
+                <td>conservation-area:5</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

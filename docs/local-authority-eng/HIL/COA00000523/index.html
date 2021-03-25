@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Rockingham Bridge, Uxbridge COA00000523</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/HIL/COA00000523</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L529">f617d13ef7ff...</a></td>
-                <td>528</td>
-                    <td>Rockingham Bridge, Uxbridge COA00000523</td> 
-                    <td>local-authority-eng:HIL</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L529">f617d13ef7ff...</a></td>
+            <td>528</td>
+                <td>Rockingham Bridge, Uxbridge COA00000523</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.485404 51.545666,-0.485138 51.545217,-0.485127 51.544877,-0.484745 51.544908,-0.484734 51.544679,-0.484996 51.544655,-0.484874 51.544090,-0.484813 51.544028,-0.484374 51.543854,-0.484309 51.543918,-0.484080 51.543923,-0.484078 51.543871,-0.484148 51.543820,-0.483917 51.543746,-0.483693 51.543519,-0.483724 51.543307,-0.483245 51.543379,-0.483281 51.543430,-0.482364 51.543567,-0.482391 51.543680,-0.482352 51.543686,-0.482415 51.543851,-0.481646 51.543995,-0.481713 51.544135,-0.481798 51.544222,-0.482450 51.544677,-0.482665 51.544742,-0.482694 51.544830,-0.482619 51.544879,-0.482391 51.545265,-0.482381 51.545328,-0.482738 51.545798,-0.482777 51.545957,-0.483143 51.546531,-0.483293 51.546845,-0.483466 51.547335,-0.483515 51.547338,-0.483727 51.547552,-0.483467 51.548446,-0.483517 51.548543,-0.483612 51.548607,-0.484628 51.548849,-0.485671 51.547746,-0.486038 51.547286,-0.486320 51.546748,-0.485807 51.546651,-0.485987 51.546139,-0.485492 51.546170,-0.485296 51.546032,-0.485213 51.545931,-0.485511 51.545848,-0.485404 51.545666)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000523</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:HIL</td> 
+                <td>conservation-area:COA00000523</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

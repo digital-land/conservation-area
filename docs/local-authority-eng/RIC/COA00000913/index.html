@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">CA61 Bushy Park COA00000913</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/RIC/COA00000913</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:COA00000913            </dd>
+            <dd class="govuk-summary-list__value">                CA61 Bushy Park COA00000913            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:RIC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:RIC)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                CA61 Bushy Park COA00000913            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:COA00000913            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L917">f617d13ef7ff...</a></td>
-                <td>916</td>
-                    <td>CA61 Bushy Park COA00000913</td> 
-                    <td>local-authority-eng:RIC</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L917">f617d13ef7ff...</a></td>
+            <td>916</td>
+                <td>CA61 Bushy Park COA00000913</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.359045 51.420298,-0.359055 51.419758,-0.359003 51.419092,-0.358886 51.418674,-0.358416 51.417984,-0.358342 51.417962,-0.357909 51.417231,-0.357076 51.417080,-0.357102 51.416696,-0.357080 51.416659,-0.357106 51.416650,-0.357150 51.416405,-0.357356 51.416057,-0.357708 51.415566,-0.357888 51.415240,-0.358035 51.414809,-0.358132 51.414112,-0.358163 51.413714,-0.357262 51.413302,-0.357441 51.412667,-0.357279 51.412650,-0.357288 51.412618,-0.356845 51.412571,-0.356894 51.412462,-0.356843 51.412456,-0.356868 51.412363,-0.356843 51.412349,-0.355870 51.412256,-0.355963 51.411874,-0.356030 51.411757,-0.354165 51.411158,-0.352869 51.410795,-0.352440 51.410632,-0.350070 51.409548,-0.347867 51.408381,-0.347499 51.408215,-0.346847 51.407987,-0.346019 51.409064,-0.346042 51.409121,-0.345911 51.409333,-0.345612 51.409557,-0.345028 51.409887,-0.344522 51.409562,-0.343059 51.408745,-0.341444 51.407877,-0.340093 51.407194,-0.337015 51.406735,-0.336841 51.406896,-0.336663 51.406871,-0.336652 51.406835,-0.336403 51.406754,-0.335324 51.406658,-0.335271 51.406618,-0.335021 51.406631,-0.335010 51.406683,-0.334962 51.406659,-0.334758 51.406669,-0.334735 51.406644,-0.333795 51.406691,-0.331112 51.406890,-0.327836 51.407215,-0.327900 51.407522,-0.327136 51.407569,-0.327078 51.407290,-0.323601 51.407630,-0.322507 51.407765,-0.315883 51.410131,-0.312265 51.411072,-0.314012 51.412317,-0.314844 51.413437,-0.314961 51.413540,-0.317452 51.414242,-0.317639 51.414307,-0.317742 51.414407,-0.318053 51.414435,-0.318316 51.414557,-0.318491 51.414746,-0.318724 51.415398,-0.318737 51.415452,-0.318545 51.415498,-0.318941 51.416173,-0.319473 51.416815,-0.319726 51.416967,-0.320362 51.417148,-0.321440 51.417703,-0.322238 51.418054,-0.325027 51.419066,-0.326981 51.419645,-0.327694 51.419951,-0.328414 51.420183,-0.329008 51.420249,-0.329814 51.420408,-0.332170 51.420744,-0.333642 51.420837,-0.335199 51.421058,-0.335211 51.421310,-0.336150 51.421467,-0.336242 51.421409,-0.336480 51.421447,-0.336501 51.421528,-0.337664 51.421727,-0.337967 51.421307,-0.338085 51.421195,-0.338056 51.421190,-0.338283 51.420720,-0.338358 51.420732,-0.338397 51.420643,-0.339764 51.420847,-0.339774 51.420811,-0.340931 51.421009,-0.340973 51.420948,-0.341098 51.420492,-0.341430 51.420515,-0.341323 51.420923,-0.341600 51.420956,-0.341623 51.420918,-0.341708 51.420943,-0.341844 51.421034,-0.341907 51.421165,-0.341896 51.421307,-0.341787 51.421615,-0.341759 51.421964,-0.341614 51.422272,-0.341684 51.422370,-0.341837 51.422447,-0.342455 51.422551,-0.343429 51.422487,-0.343643 51.422581,-0.343798 51.422529,-0.345279 51.422699,-0.345240 51.422803,-0.345294 51.423401,-0.345323 51.423623,-0.345394 51.423850,-0.345859 51.424828,-0.346123 51.425257,-0.346238 51.425386,-0.346519 51.425591,-0.347049 51.425807,-0.348285 51.426136,-0.349372 51.426378,-0.351082 51.426663,-0.352922 51.426889,-0.353938 51.426954,-0.354426 51.426927,-0.354808 51.426821,-0.355276 51.426571,-0.356145 51.425948,-0.357041 51.425191,-0.357624 51.424589,-0.358275 51.423763,-0.358656 51.422685,-0.358888 51.421716,-0.358987 51.421154,-0.359045 51.420298)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000913</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:RIC</td> 
+                <td>conservation-area:COA00000913</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

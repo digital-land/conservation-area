@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Rainford Area 2</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SHN/CA07</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/041560991f8c2e27de78b0e49e9e9f2282879bdad6564681568d5ddd2bd4de33.csv#L7">041560991f8c...</a></td>
-                <td>6</td>
-                    <td>conservation-area:CA07</td> 
-                    <td>local-authority-eng:SHN</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/041560991f8c2e27de78b0e49e9e9f2282879bdad6564681568d5ddd2bd4de33.csv#L7">041560991f8c...</a></td>
+            <td>6</td>
+                <td>Rainford Area 2</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-2.783339 53.496421,-2.783001 53.496400,-2.782882 53.496305,-2.782898 53.496274,-2.782635 53.496082,-2.782386 53.495959,-2.782281 53.495986,-2.782040 53.496270,-2.781935 53.496204,-2.781142 53.495987,-2.781149 53.495869,-2.780911 53.495863,-2.780875 53.495830,-2.780639 53.495802,-2.780660 53.495656,-2.780499 53.495650,-2.780496 53.495561,-2.780589 53.495326,-2.780548 53.495311,-2.780587 53.495260,-2.780751 53.495311,-2.780868 53.495253,-2.780751 53.495004,-2.780676 53.495014,-2.780559 53.494718,-2.780501 53.494690,-2.780465 53.494596,-2.780522 53.494553,-2.780524 53.494229,-2.779661 53.493721,-2.779885 53.493544,-2.780247 53.493705,-2.780280 53.493676,-2.780325 53.493695,-2.780497 53.493473,-2.780533 53.493468,-2.780692 53.493518,-2.780631 53.493778,-2.780820 53.493804,-2.781178 53.493788,-2.781233 53.494042,-2.781344 53.494034,-2.781361 53.494227,-2.781336 53.494275,-2.781174 53.494299,-2.781150 53.494663,-2.781034 53.494664,-2.781031 53.494742,-2.781113 53.494806,-2.782130 53.495450,-2.782854 53.495231,-2.782979 53.495375,-2.783999 53.496002,-2.783456 53.496422,-2.783339 53.496421)))
   </div>
 </details>
-                    </td>
-                    <td>Rainford Area 2</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:SHN</td> 
+                <td>conservation-area:CA07</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Brentham Garden Estate COA00000510</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/EAL/COA00000510</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Brentham Garden Estate COA00000510            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000510            </dd>
@@ -145,10 +168,6 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:EAL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EAL)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Brentham Garden Estate COA00000510            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-04            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L517">f617d13ef7ff...</a></td>
-                <td>516</td>
-                    <td>Brentham Garden Estate COA00000510</td> 
-                    <td>local-authority-eng:EAL</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L517">f617d13ef7ff...</a></td>
+            <td>516</td>
+                <td>Brentham Garden Estate COA00000510</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.310100 51.526780,-0.308900 51.526916,-0.308919 51.526891,-0.308825 51.525882,-0.308782 51.525788,-0.308732 51.525761,-0.308675 51.525394,-0.307037 51.525337,-0.305779 51.525795,-0.305881 51.525282,-0.305788 51.524727,-0.304337 51.524856,-0.303159 51.525144,-0.303661 51.526094,-0.303692 51.526206,-0.303644 51.526765,-0.303593 51.526809,-0.303134 51.526741,-0.302776 51.527054,-0.303119 51.527489,-0.303493 51.527847,-0.303800 51.528290,-0.303887 51.528266,-0.303905 51.528292,-0.305146 51.527945,-0.305395 51.528308,-0.306046 51.528150,-0.306267 51.528561,-0.306255 51.528601,-0.306360 51.528766,-0.306339 51.528768,-0.306497 51.528993,-0.306868 51.529685,-0.306942 51.529948,-0.307045 51.530594,-0.307126 51.530682,-0.308234 51.530112,-0.308919 51.530071,-0.309141 51.529844,-0.309354 51.529742,-0.310198 51.529645,-0.310642 51.529641,-0.311373 51.529779,-0.311412 51.529901,-0.311261 51.530310,-0.311273 51.530374,-0.311347 51.530427,-0.311813 51.530415,-0.312232 51.530501,-0.312354 51.530485,-0.312463 51.530045,-0.312528 51.529983,-0.312686 51.529942,-0.312706 51.529767,-0.312680 51.529320,-0.312560 51.529155,-0.312474 51.528894,-0.312418 51.528615,-0.312446 51.528611,-0.312362 51.528327,-0.312400 51.528209,-0.311785 51.526525,-0.311042 51.526672,-0.310100 51.526780)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000510</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:EAL</td> 
+                <td>conservation-area:COA00000510</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

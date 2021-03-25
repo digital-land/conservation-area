@@ -132,9 +132,34 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Sutton Courtenay Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/VAL/44</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/VAL" class="govuk-link">Vale of White Horse District Council</a>
+<span title="Organisation identifier: local-authority-eng:VAL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:VAL)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Sutton Courtenay Conservation Area            </dd>
@@ -142,12 +167,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:44            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/VAL" class="govuk-link">Vale of White Horse District Council</a>
-<span title="Organisation identifier: local-authority-eng:VAL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:VAL)</span>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L45">92cd49145a8d...</a></td>
-                <td>44</td>
-                    <td>conservation-area:44</td> 
-                    <td>local-authority-eng:VAL</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L45">92cd49145a8d...</a></td>
+            <td>44</td>
+                <td>Sutton Courtenay Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.281013 51.642264,-1.280843 51.641892,-1.279730 51.642055,-1.279213 51.642012,-1.279361 51.641789,-1.278547 51.641616,-1.278202 51.641848,-1.277967 51.641725,-1.277541 51.641988,-1.277513 51.641940,-1.276769 51.641654,-1.276862 51.641555,-1.276950 51.641585,-1.277125 51.641548,-1.277324 51.641438,-1.277946 51.640802,-1.278043 51.640672,-1.277509 51.640548,-1.277672 51.640345,-1.277882 51.640443,-1.278071 51.640285,-1.278494 51.639572,-1.278701 51.639627,-1.279008 51.639221,-1.278958 51.639208,-1.279028 51.639090,-1.278843 51.639049,-1.278864 51.638952,-1.279083 51.638581,-1.279203 51.638241,-1.279157 51.638229,-1.279246 51.637915,-1.279284 51.637867,-1.279424 51.637900,-1.279517 51.637758,-1.278725 51.637528,-1.279068 51.636734,-1.279771 51.636862,-1.279853 51.636688,-1.279948 51.636709,-1.280326 51.636041,-1.279174 51.635948,-1.279154 51.636096,-1.278446 51.636081,-1.278415 51.636253,-1.277836 51.636210,-1.277769 51.636526,-1.277991 51.636506,-1.278186 51.636529,-1.278117 51.636773,-1.277732 51.636731,-1.277665 51.636981,-1.277277 51.637843,-1.278023 51.637981,-1.277565 51.638844,-1.275506 51.638443,-1.274994 51.639661,-1.275586 51.639827,-1.276299 51.639980,-1.275981 51.640815,-1.275858 51.641058,-1.275611 51.641360,-1.275399 51.641546,-1.275335 51.641582,-1.274369 51.641397,-1.273979 51.642153,-1.272672 51.641927,-1.272504 51.642274,-1.272252 51.642452,-1.271590 51.643866,-1.270432 51.643678,-1.270268 51.644101,-1.270001 51.644086,-1.269612 51.645124,-1.269889 51.645169,-1.269799 51.645377,-1.269844 51.645384,-1.269676 51.645921,-1.268137 51.645792,-1.265947 51.645742,-1.265964 51.646252,-1.266167 51.646884,-1.266186 51.647091,-1.266076 51.647658,-1.265851 51.648494,-1.265659 51.648991,-1.265438 51.649243,-1.265412 51.649455,-1.265449 51.649454,-1.265454 51.649516,-1.265568 51.649657,-1.265728 51.649608,-1.265853 51.649524,-1.266042 51.649268,-1.266030 51.648994,-1.266130 51.648788,-1.266150 51.648629,-1.266234 51.648486,-1.266524 51.648231,-1.267052 51.647957,-1.267514 51.647880,-1.267999 51.647753,-1.268141 51.647689,-1.268497 51.647629,-1.269309 51.647834,-1.269741 51.647766,-1.270026 51.647648,-1.270240 51.647620,-1.270455 51.647493,-1.270708 51.647394,-1.271089 51.647322,-1.271814 51.647279,-1.272548 51.647362,-1.272815 51.647297,-1.273021 51.647109,-1.273331 51.646942,-1.273431 51.646816,-1.273343 51.646710,-1.273304 51.646593,-1.272987 51.646229,-1.272981 51.646149,-1.273739 51.645832,-1.274067 51.645745,-1.274158 51.645620,-1.273880 51.645247,-1.274095 51.645121,-1.274175 51.645151,-1.274706 51.644934,-1.275035 51.644861,-1.275352 51.644871,-1.275739 51.644970,-1.275843 51.644793,-1.275921 51.644758,-1.276801 51.644504,-1.277472 51.644439,-1.277621 51.644372,-1.277924 51.644431,-1.278123 51.644394,-1.278365 51.644411,-1.278633 51.644298,-1.278969 51.644367,-1.279169 51.644284,-1.279469 51.644271,-1.279686 51.644182,-1.280023 51.644169,-1.280068 51.644137,-1.280080 51.644062,-1.279943 51.643929,-1.279990 51.643778,-1.279939 51.643624,-1.279949 51.643565,-1.280019 51.643422,-1.280321 51.643325,-1.280254 51.643211,-1.280335 51.643071,-1.280463 51.643020,-1.281038 51.642957,-1.281216 51.642972,-1.281425 51.642843,-1.281489 51.642765,-1.281489 51.642671,-1.281408 51.642562,-1.281067 51.642378,-1.281013 51.642264)))
   </div>
 </details>
-                    </td>
-                    <td>Sutton Courtenay Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:VAL</td> 
+                <td>conservation-area:44</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

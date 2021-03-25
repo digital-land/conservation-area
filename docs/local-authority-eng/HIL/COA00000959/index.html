@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Harlington Village COA00000959</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/HIL/COA00000959</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HIL" class="govuk-link">London Borough of Hillingdon</a>
-<span title="Organisation identifier: local-authority-eng:HIL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HIL)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                Harlington Village COA00000959            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000959            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                Harlington Village COA00000959            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HIL" class="govuk-link">London Borough of Hillingdon</a>
+<span title="Organisation identifier: local-authority-eng:HIL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HIL)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L963">f617d13ef7ff...</a></td>
-                <td>962</td>
-                    <td>Harlington Village COA00000959</td> 
-                    <td>local-authority-eng:HIL</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L963">f617d13ef7ff...</a></td>
+            <td>962</td>
+                <td>Harlington Village COA00000959</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.436341 51.492299,-0.435226 51.492151,-0.435374 51.491804,-0.435565 51.491514,-0.435113 51.491460,-0.435359 51.490916,-0.435331 51.490859,-0.435485 51.490341,-0.435668 51.490296,-0.436065 51.489282,-0.436117 51.489103,-0.435907 51.489053,-0.435972 51.488912,-0.436183 51.488953,-0.436405 51.488653,-0.436976 51.488755,-0.437007 51.488587,-0.436931 51.488568,-0.437328 51.488657,-0.437371 51.488485,-0.437411 51.488489,-0.437503 51.488308,-0.437614 51.487765,-0.436680 51.487532,-0.436696 51.487103,-0.436658 51.487096,-0.436719 51.486890,-0.437328 51.486907,-0.436967 51.486819,-0.437003 51.486591,-0.436551 51.486577,-0.436190 51.486525,-0.436101 51.486486,-0.435978 51.486522,-0.435778 51.486198,-0.435335 51.486296,-0.435133 51.486034,-0.434671 51.486123,-0.434738 51.486455,-0.434720 51.486602,-0.435272 51.486566,-0.435385 51.486660,-0.434758 51.486808,-0.434946 51.487056,-0.434870 51.487065,-0.434767 51.487441,-0.435010 51.487397,-0.435180 51.487739,-0.435133 51.487777,-0.435192 51.487834,-0.435020 51.487983,-0.435092 51.488097,-0.434886 51.488387,-0.434554 51.488345,-0.434540 51.488317,-0.434029 51.488206,-0.434049 51.488083,-0.433568 51.487992,-0.433498 51.488246,-0.433874 51.488327,-0.434311 51.488370,-0.434362 51.488664,-0.434223 51.488728,-0.433817 51.489554,-0.434343 51.489646,-0.434344 51.489608,-0.434540 51.489630,-0.434326 51.490138,-0.434330 51.490115,-0.432749 51.489922,-0.432666 51.490233,-0.433714 51.490370,-0.434194 51.490476,-0.434111 51.490676,-0.434186 51.490711,-0.434120 51.490861,-0.434044 51.490870,-0.433946 51.491067,-0.434322 51.491138,-0.434164 51.491344,-0.433776 51.491613,-0.433257 51.491766,-0.433062 51.491980,-0.430462 51.492215,-0.429849 51.492377,-0.429425 51.492606,-0.429178 51.492810,-0.428968 51.493091,-0.428864 51.493438,-0.433121 51.493740,-0.433146 51.493710,-0.433403 51.493686,-0.434760 51.493808,-0.435003 51.493367,-0.435024 51.493188,-0.435265 51.492766,-0.436076 51.492947,-0.436285 51.492581,-0.436341 51.492299),(-0.436620 51.487551,-0.436620 51.487551,-0.436601 51.487581,-0.436619 51.487551,-0.436626 51.487542,-0.436620 51.487551)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000959</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:HIL</td> 
+                <td>conservation-area:COA00000959</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

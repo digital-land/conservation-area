@@ -132,18 +132,37 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">DUNSFOLD</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/WAE/P31-3-5</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:P31/3/5            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WAE" class="govuk-link">Waverley Borough Council</a>
 <span title="Organisation identifier: local-authority-eng:WAE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WAE)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:P31/3/5            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/e6efbb94bde40d6af0921d80ea089e9c5a296ada743f7c5da6b85a020e9de4b8.csv#L7">e6efbb94bde4...</a></td>
-                <td>6</td>
-                    <td>DUNSFOLD</td> 
-                    <td>local-authority-eng:WAE</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/e6efbb94bde40d6af0921d80ea089e9c5a296ada743f7c5da6b85a020e9de4b8.csv#L7">e6efbb94bde4...</a></td>
+            <td>6</td>
+                <td>DUNSFOLD</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.563563 51.120149,-0.563830 51.120158,-0.563862 51.120056,-0.564269 51.119761,-0.565043 51.119377,-0.565543 51.119178,-0.565525 51.119009,-0.565366 51.118592,-0.565919 51.118382,-0.565541 51.117470,-0.566117 51.117276,-0.566137 51.117059,-0.566114 51.116804,-0.565102 51.116691,-0.565050 51.116637,-0.564989 51.115687,-0.564917 51.115680,-0.565422 51.114699,-0.565418 51.114591,-0.565355 51.114414,-0.565357 51.114386,-0.565421 51.114388,-0.565425 51.114318,-0.563640 51.113686,-0.563523 51.113705,-0.563348 51.113657,-0.563136 51.113961,-0.562534 51.114089,-0.562291 51.113974,-0.561546 51.114555,-0.561940 51.114803,-0.561838 51.115073,-0.562259 51.115243,-0.561836 51.115626,-0.561639 51.115752,-0.562055 51.116053,-0.562424 51.116415,-0.562000 51.116591,-0.562168 51.116887,-0.562668 51.116803,-0.562748 51.116870,-0.563263 51.117871,-0.563249 51.118144,-0.563078 51.118713,-0.562772 51.118971,-0.562767 51.119056,-0.561851 51.119242,-0.561916 51.119454,-0.562716 51.119521,-0.562664 51.119627,-0.562596 51.120437,-0.562965 51.120454,-0.563216 51.120414,-0.563533 51.120545,-0.563563 51.120149)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:P31/3/5</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:WAE</td> 
+                <td>conservation-area:P31/3/5</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">The Shillingstone Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/NDO/SHI</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                The Shillingstone Conservation Area            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:SHI            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:NDO" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NDO)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:SHI            </dd>
+            <dd class="govuk-summary-list__value">                The Shillingstone Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d40c1cffe7893e1ab03561a5d601f65dbc3ceb2b1fe514bb3d42df9aae1b0bbc.csv#L5">d40c1cffe789...</a></td>
-                <td>4</td>
-                    <td>conservation-area:SHI</td> 
-                    <td>local-authority-eng:NDO</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d40c1cffe7893e1ab03561a5d601f65dbc3ceb2b1fe514bb3d42df9aae1b0bbc.csv#L5">d40c1cffe789...</a></td>
+            <td>4</td>
+                <td>The Shillingstone Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-2.249045 50.896119,-2.249047 50.896382,-2.249108 50.896529,-2.249217 50.896764,-2.249402 50.896967,-2.250600 50.896802,-2.252144 50.896482,-2.252315 50.896493,-2.252547 50.896580,-2.252721 50.896590,-2.253349 50.896462,-2.254537 50.896131,-2.254664 50.896680,-2.254541 50.896704,-2.253984 50.896977,-2.253205 50.897206,-2.253047 50.897339,-2.252250 50.897744,-2.251122 50.898562,-2.251386 50.898848,-2.251365 50.898950,-2.250962 50.899549,-2.250759 50.899947,-2.251245 50.900276,-2.252189 50.900728,-2.252103 50.900779,-2.252600 50.901106,-2.253277 50.900568,-2.253491 50.900336,-2.253619 50.900002,-2.253559 50.899929,-2.253365 50.899851,-2.253377 50.899730,-2.253443 50.899668,-2.253618 50.899726,-2.253704 50.899848,-2.253819 50.899937,-2.254261 50.900242,-2.254354 50.900256,-2.254539 50.900378,-2.254803 50.900603,-2.254562 50.900637,-2.253820 50.900602,-2.253484 50.900690,-2.253106 50.900985,-2.251904 50.901782,-2.252204 50.902231,-2.252577 50.903090,-2.252282 50.903110,-2.252363 50.903390,-2.252050 50.903552,-2.250422 50.903835,-2.250455 50.903881,-2.250620 50.903953,-2.250962 50.904257,-2.250763 50.904375,-2.250036 50.903834,-2.249032 50.903230,-2.248505 50.902837,-2.246707 50.901737,-2.245932 50.901173,-2.245322 50.900797,-2.245194 50.900684,-2.244899 50.900554,-2.243870 50.899879,-2.243121 50.899301,-2.243025 50.899219,-2.242999 50.899149,-2.241971 50.898305,-2.241120 50.897547,-2.241365 50.897091,-2.241802 50.896598,-2.242079 50.896341,-2.243045 50.896765,-2.243714 50.896091,-2.243720 50.896052,-2.243660 50.895991,-2.243329 50.895815,-2.243597 50.895615,-2.243654 50.895618,-2.244114 50.895886,-2.243963 50.896040,-2.244503 50.896298,-2.245086 50.896517,-2.245209 50.896484,-2.245329 50.896388,-2.245955 50.895735,-2.246323 50.895420,-2.246591 50.895516,-2.246829 50.895657,-2.247105 50.895769,-2.247538 50.895929,-2.248189 50.896111,-2.249045 50.896119)))
   </div>
 </details>
-                    </td>
-                    <td>The Shillingstone Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:NDO</td> 
+                <td>conservation-area:SHI</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

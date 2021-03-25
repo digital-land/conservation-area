@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Northleach Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/COT/439</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-11</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L71">5a098a0110b3...</a></td>
-                <td>70</td>
-                    <td>conservation-area:439</td> 
-                    <td>local-authority-eng:COT</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-11</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L71">5a098a0110b3...</a></td>
+            <td>70</td>
+                <td>Northleach Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.832199 51.827911,-1.832667 51.828013,-1.832642 51.828062,-1.832977 51.828134,-1.833069 51.828030,-1.833296 51.827558,-1.833473 51.827663,-1.833629 51.827701,-1.833991 51.827767,-1.834162 51.827766,-1.834380 51.827853,-1.835180 51.828013,-1.835562 51.828215,-1.835665 51.828211,-1.837363 51.828611,-1.837419 51.828448,-1.837699 51.828128,-1.837813 51.828150,-1.837853 51.828073,-1.838209 51.828167,-1.839324 51.828294,-1.839390 51.828400,-1.839490 51.828919,-1.839763 51.828891,-1.840506 51.828626,-1.840582 51.828717,-1.840728 51.828674,-1.841378 51.829326,-1.841556 51.829526,-1.841560 51.829572,-1.839775 51.829899,-1.839508 51.829910,-1.839774 51.830377,-1.839729 51.830905,-1.840045 51.830989,-1.839918 51.831159,-1.840165 51.831242,-1.840216 51.831186,-1.840443 51.831303,-1.840254 51.831531,-1.842848 51.832452,-1.842396 51.832676,-1.842331 51.832646,-1.841785 51.832934,-1.839953 51.832220,-1.839912 51.832299,-1.839417 51.832010,-1.839080 51.832198,-1.838710 51.832086,-1.837705 51.831728,-1.836930 51.831377,-1.837434 51.831092,-1.837301 51.831001,-1.837568 51.830849,-1.837160 51.830626,-1.836363 51.831048,-1.835983 51.830802,-1.835756 51.830559,-1.835734 51.830570,-1.835183 51.830114,-1.835219 51.830096,-1.835120 51.830025,-1.835580 51.829788,-1.835415 51.829656,-1.835562 51.829567,-1.835168 51.829312,-1.835044 51.829371,-1.834970 51.829333,-1.834912 51.829389,-1.834621 51.829335,-1.834644 51.829270,-1.834518 51.829212,-1.833825 51.829072,-1.833774 51.829101,-1.833349 51.829038,-1.833234 51.829292,-1.833107 51.829272,-1.833239 51.828937,-1.833114 51.828917,-1.833098 51.828954,-1.832834 51.828903,-1.832917 51.828713,-1.832772 51.828687,-1.832850 51.828588,-1.832701 51.828554,-1.832678 51.828595,-1.832568 51.828544,-1.832480 51.828732,-1.831772 51.828636,-1.831790 51.828594,-1.831687 51.828574,-1.831658 51.828618,-1.831536 51.828597,-1.831426 51.828815,-1.831270 51.828786,-1.831273 51.828760,-1.830934 51.828722,-1.830534 51.828632,-1.830847 51.828039,-1.831755 51.828218,-1.831796 51.828076,-1.832065 51.828118,-1.832199 51.827911)))
   </div>
 </details>
-                    </td>
-                    <td>Northleach Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:COT</td> 
+                <td>conservation-area:439</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Tintwistle</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/national-park-authority/Q72617988/144</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-08</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/08fbb782cc005066ce927d643cfd0300769648c98e15208300ac52555b0b9f92.csv#L19">08fbb782cc00...</a></td>
-                <td>18</td>
-                    <td>conservation-area:144</td> 
-                    <td>national-park-authority:Q72617988</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-08</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/08fbb782cc005066ce927d643cfd0300769648c98e15208300ac52555b0b9f92.csv#L19">08fbb782cc00...</a></td>
+            <td>18</td>
+                <td>Tintwistle</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.971593 53.471975,-1.971646 53.472104,-1.971654 53.472253,-1.971713 53.472312,-1.971225 53.472461,-1.970022 53.472570,-1.969944 53.472775,-1.969243 53.472812,-1.969192 53.473025,-1.968573 53.472802,-1.968492 53.472897,-1.968444 53.472890,-1.968359 53.473009,-1.968316 53.473019,-1.967810 53.473626,-1.967760 53.473647,-1.967537 53.473606,-1.967534 53.473677,-1.967289 53.473682,-1.967285 53.473746,-1.967106 53.473751,-1.966938 53.474032,-1.966897 53.474265,-1.966776 53.474545,-1.966667 53.474738,-1.966531 53.474815,-1.964048 53.475080,-1.962349 53.475039,-1.962419 53.475156,-1.962122 53.475221,-1.961815 53.475434,-1.961733 53.475341,-1.961361 53.475501,-1.961210 53.475489,-1.961051 53.475339,-1.960641 53.475318,-1.960627 53.475241,-1.960208 53.475214,-1.959455 53.475332,-1.958989 53.475494,-1.959037 53.475121,-1.959224 53.474719,-1.959011 53.474658,-1.958394 53.475086,-1.958322 53.475152,-1.958342 53.475170,-1.958211 53.475276,-1.958092 53.475300,-1.957929 53.475212,-1.957631 53.474611,-1.956967 53.474884,-1.957019 53.474933,-1.956319 53.475356,-1.955826 53.475752,-1.955715 53.475786,-1.955347 53.476062,-1.955072 53.476310,-1.955013 53.476297,-1.954566 53.476578,-1.954520 53.476577,-1.954350 53.476455,-1.954101 53.476214,-1.956856 53.474802,-1.957380 53.474590,-1.958496 53.474262,-1.958568 53.474226,-1.958465 53.474098,-1.958700 53.474025,-1.958847 53.473981,-1.958972 53.474135,-1.961759 53.473328,-1.961754 53.473286,-1.962026 53.473240,-1.962351 53.473123,-1.963779 53.472520,-1.963928 53.472722,-1.964000 53.472710,-1.964106 53.472889,-1.964226 53.472872,-1.964245 53.472917,-1.965025 53.472844,-1.964822 53.472445,-1.964352 53.472395,-1.964310 53.472314,-1.964316 53.472220,-1.964286 53.472195,-1.964329 53.472103,-1.964904 53.471904,-1.966547 53.471721,-1.968305 53.471400,-1.968650 53.471257,-1.970211 53.471560,-1.970319 53.471529,-1.971035 53.471699,-1.971429 53.471749,-1.971438 53.471784,-1.971548 53.471823,-1.971593 53.471975)))
   </div>
 </details>
-                    </td>
-                    <td>Tintwistle</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>national-park-authority:Q72617988</td> 
+                <td>conservation-area:144</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

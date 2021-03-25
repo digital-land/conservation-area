@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">CASTLE HILL DUDLEY</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/DUD/87</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/DUD" class="govuk-link">Dudley Metropolitan Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:DUD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:DUD)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                CASTLE HILL DUDLEY            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:87            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                CASTLE HILL DUDLEY            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/DUD" class="govuk-link">Dudley Metropolitan Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:DUD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:DUD)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-11-27</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/926130c38856c112ce2c67b5ef742a5e59a53772542a4eb44d433c2552fd0c26.csv#L19">926130c38856...</a></td>
-                <td>18</td>
-                    <td>CASTLE HILL DUDLEY</td> 
-                    <td>local-authority-eng:DUD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-11-27</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/926130c38856c112ce2c67b5ef742a5e59a53772542a4eb44d433c2552fd0c26.csv#L19">926130c38856...</a></td>
+            <td>18</td>
+                <td>CASTLE HILL DUDLEY</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-2.083877 52.524025,-2.083205 52.524035,-2.082368 52.523744,-2.082305 52.523629,-2.081937 52.523230,-2.081864 52.523157,-2.081818 52.523172,-2.081630 52.522993,-2.081519 52.522670,-2.081385 52.522590,-2.081302 52.522475,-2.081196 52.522395,-2.081080 52.522211,-2.081030 52.522054,-2.080705 52.522090,-2.080601 52.521832,-2.080564 52.521593,-2.080593 52.521588,-2.080559 52.521452,-2.080515 52.521407,-2.080365 52.520626,-2.080207 52.520268,-2.079879 52.519939,-2.079581 52.519550,-2.079439 52.519209,-2.079050 52.518777,-2.078929 52.518418,-2.078031 52.517571,-2.077591 52.517335,-2.077350 52.517069,-2.076917 52.516445,-2.076658 52.514897,-2.076627 52.514502,-2.076650 52.514151,-2.076683 52.514010,-2.076729 52.513998,-2.076838 52.513789,-2.076865 52.513711,-2.076798 52.513696,-2.076893 52.513486,-2.077000 52.513489,-2.077225 52.513111,-2.080023 52.512304,-2.080334 52.512307,-2.081166 52.512559,-2.080713 52.512942,-2.081273 52.513096,-2.081671 52.513389,-2.082041 52.513849,-2.082214 52.514387,-2.082279 52.514763,-2.082253 52.514773,-2.082258 52.514819,-2.082342 52.514887,-2.082453 52.515102,-2.082446 52.515149,-2.082363 52.515210,-2.082180 52.515238,-2.081931 52.515604,-2.082035 52.515713,-2.082080 52.515826,-2.081923 52.516292,-2.081937 52.516854,-2.082011 52.517106,-2.082028 52.517298,-2.082189 52.517580,-2.082254 52.517772,-2.082253 52.517977,-2.082165 52.518101,-2.082255 52.518287,-2.082396 52.518397,-2.082531 52.518595,-2.082579 52.518787,-2.082550 52.518925,-2.082748 52.519455,-2.083349 52.519300,-2.083397 52.519370,-2.083385 52.519502,-2.083450 52.520098,-2.083415 52.520120,-2.083560 52.521496,-2.083592 52.521495,-2.083621 52.521555,-2.083665 52.521552,-2.083788 52.522022,-2.083600 52.522049,-2.083635 52.522501,-2.083909 52.522736,-2.084124 52.522986,-2.084313 52.523480,-2.084403 52.523576,-2.084698 52.523769,-2.084782 52.523893,-2.083877 52.524025)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:87</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:DUD</td> 
+                <td>conservation-area:87</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

@@ -132,16 +132,35 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Stamford Green</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/EPS/16</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:16            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Stamford Green            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:16            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea0b362c33ce972a2379e42ff1876599848a2c785708d39b12dde5e19480427f.csv#L22">ea0b362c33ce...</a></td>
-                <td>21</td>
-                    <td>local-authority-eng:EPS</td> 
-                    <td>Stamford Green</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea0b362c33ce972a2379e42ff1876599848a2c785708d39b12dde5e19480427f.csv#L22">ea0b362c33ce...</a></td>
+            <td>21</td>
+                <td>Stamford Green</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.278727 51.329703,-0.280262 51.328710,-0.283020 51.328667,-0.283171 51.329014,-0.283158 51.329071,-0.283205 51.329236,-0.283392 51.329572,-0.283592 51.329622,-0.283852 51.330000,-0.284078 51.330124,-0.284812 51.330289,-0.284959 51.330342,-0.284987 51.330386,-0.284988 51.330678,-0.284294 51.331148,-0.283593 51.331849,-0.283662 51.331873,-0.284022 51.331803,-0.284464 51.331580,-0.284779 51.331642,-0.285122 51.331518,-0.285225 51.331549,-0.285616 51.331903,-0.286208 51.331787,-0.286346 51.331797,-0.286487 51.331927,-0.286480 51.332290,-0.286349 51.332402,-0.286036 51.332521,-0.285379 51.334199,-0.285921 51.334291,-0.285702 51.334885,-0.285097 51.334797,-0.284961 51.335088,-0.284563 51.335506,-0.284083 51.335206,-0.283811 51.335462,-0.283132 51.335277,-0.283116 51.335209,-0.282264 51.334999,-0.282083 51.334990,-0.282077 51.335252,-0.280875 51.334917,-0.280641 51.334988,-0.278509 51.335368,-0.278119 51.334972,-0.277178 51.335359,-0.277063 51.335418,-0.277046 51.335437,-0.277089 51.335480,-0.276928 51.335581,-0.276572 51.335567,-0.276482 51.335532,-0.276379 51.335434,-0.276168 51.335567,-0.275880 51.335260,-0.275641 51.335124,-0.275485 51.335220,-0.275280 51.335293,-0.275195 51.335237,-0.275043 51.335262,-0.274956 51.335233,-0.274714 51.335023,-0.274696 51.334971,-0.274471 51.334822,-0.274533 51.334741,-0.274512 51.334605,-0.274539 51.334595,-0.274549 51.334329,-0.274366 51.334318,-0.274409 51.334140,-0.273289 51.333865,-0.273072 51.334266,-0.272634 51.334237,-0.272652 51.334069,-0.272555 51.334048,-0.272598 51.333821,-0.272633 51.333821,-0.272634 51.333693,-0.272335 51.333658,-0.272081 51.333683,-0.272124 51.333955,-0.271905 51.334000,-0.271710 51.333792,-0.271660 51.333695,-0.272546 51.333266,-0.273008 51.333365,-0.273406 51.333025,-0.273642 51.332875,-0.274096 51.332682,-0.274046 51.333216,-0.274796 51.333658,-0.275079 51.333722,-0.275106 51.333701,-0.275758 51.333721,-0.275870 51.333658,-0.276393 51.333758,-0.278929 51.333749,-0.278941 51.333850,-0.279833 51.333762,-0.279860 51.333916,-0.280762 51.333858,-0.280895 51.333787,-0.280928 51.333638,-0.280832 51.333555,-0.280930 51.333456,-0.281070 51.333181,-0.282161 51.332807,-0.281680 51.331740,-0.281359 51.330813,-0.281102 51.330306,-0.281014 51.330205,-0.280400 51.330089,-0.280298 51.330129,-0.280191 51.330001,-0.277927 51.330790,-0.277651 51.330451,-0.278727 51.329703)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:16</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:EPS</td> 
+                <td>conservation-area:16</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

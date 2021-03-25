@@ -132,18 +132,37 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Fitzjohns Netherhall</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CMD/kml-56</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:kml_56            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CMD" class="govuk-link">London Borough of Camden</a>
 <span title="Organisation identifier: local-authority-eng:CMD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CMD)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:kml_56            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-12</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/b85206c928baa3c519e8d7f6f8c0ea378bfad2f8eeacc65b2a1c0be8250f1e9f.csv#L203">b85206c928ba...</a></td>
-                <td>202</td>
-                    <td>Fitzjohns Netherhall</td> 
-                    <td>local-authority-eng:CMD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-12</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/b85206c928baa3c519e8d7f6f8c0ea378bfad2f8eeacc65b2a1c0be8250f1e9f.csv#L203">b85206c928ba...</a></td>
+            <td>202</td>
+                <td>Fitzjohns Netherhall</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.180794 51.548560,-0.180116 51.548705,-0.180186 51.548901,-0.180214 51.549362,-0.179994 51.549363,-0.179994 51.549482,-0.180077 51.549473,-0.180075 51.549769,-0.179736 51.549763,-0.179726 51.550122,-0.179931 51.551536,-0.179860 51.551559,-0.179875 51.551842,-0.179325 51.552021,-0.179274 51.551967,-0.178176 51.552286,-0.178196 51.552317,-0.177806 51.552432,-0.177832 51.552471,-0.177351 51.552623,-0.176685 51.552925,-0.176935 51.553168,-0.177161 51.553335,-0.177239 51.553415,-0.177204 51.553432,-0.177567 51.553724,-0.177278 51.553890,-0.177650 51.554149,-0.177997 51.553925,-0.178425 51.554218,-0.178249 51.554313,-0.178962 51.554903,-0.178299 51.555155,-0.177977 51.554838,-0.177351 51.555075,-0.177318 51.555046,-0.177370 51.555025,-0.176843 51.554554,-0.176514 51.554692,-0.176012 51.554332,-0.175944 51.554370,-0.175780 51.554255,-0.176095 51.554080,-0.175844 51.553885,-0.175877 51.553861,-0.175427 51.553475,-0.175476 51.553418,-0.175322 51.553236,-0.175012 51.553324,-0.174830 51.553067,-0.174959 51.553029,-0.174602 51.552465,-0.172459 51.553167,-0.172824 51.553337,-0.172701 51.553438,-0.173098 51.553641,-0.173312 51.553479,-0.173914 51.553851,-0.173734 51.553969,-0.173549 51.553851,-0.173400 51.553934,-0.173377 51.554002,-0.173206 51.554124,-0.173193 51.554166,-0.173200 51.554233,-0.173312 51.554353,-0.173100 51.554517,-0.172372 51.554221,-0.172006 51.554516,-0.170864 51.554015,-0.171291 51.553652,-0.171433 51.553716,-0.171469 51.553684,-0.171617 51.553751,-0.171888 51.553521,-0.171473 51.553330,-0.171941 51.552934,-0.171758 51.552866,-0.170517 51.553153,-0.169621 51.553193,-0.169244 51.553241,-0.169131 51.553174,-0.169261 51.553061,-0.169375 51.552842,-0.169351 51.552767,-0.169187 51.552659,-0.170058 51.552304,-0.170002 51.551811,-0.169840 51.551662,-0.169625 51.551334,-0.169736 51.550461,-0.169822 51.550363,-0.170298 51.550462,-0.170900 51.550185,-0.170867 51.550151,-0.171564 51.549831,-0.172741 51.550201,-0.172770 51.550193,-0.172482 51.550109,-0.172543 51.549912,-0.172939 51.549935,-0.172926 51.550024,-0.173436 51.550046,-0.173434 51.550077,-0.173582 51.550083,-0.173587 51.549979,-0.173726 51.549984,-0.173736 51.549816,-0.174109 51.549802,-0.174111 51.549768,-0.174829 51.549661,-0.174789 51.547097,-0.175706 51.547095,-0.175656 51.546014,-0.175718 51.545959,-0.175731 51.545878,-0.176180 51.545776,-0.176562 51.545895,-0.177111 51.545870,-0.177759 51.545911,-0.178043 51.545892,-0.177998 51.545998,-0.178087 51.546017,-0.178201 51.546131,-0.178073 51.546180,-0.178666 51.546814,-0.178416 51.546906,-0.178550 51.547040,-0.178435 51.547083,-0.178513 51.547290,-0.178749 51.547435,-0.178891 51.547385,-0.179074 51.547575,-0.179748 51.547323,-0.180690 51.548344,-0.180843 51.548543,-0.180794 51.548560)),((-0.169847 51.550350,-0.169846 51.550350,-0.169846 51.550350,-0.169847 51.550350)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:kml_56</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CMD</td> 
+                <td>conservation-area:kml_56</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

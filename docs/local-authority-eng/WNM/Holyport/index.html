@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Holyport</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/WNM/Holyport</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -139,15 +158,15 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Holyport            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:Holyport            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WNM" class="govuk-link">Royal Borough of Windsor and Maidenhead</a>
 <span title="Organisation identifier: local-authority-eng:WNM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WNM)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:Holyport            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-08</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/292ababefd38db91e5f0a1c766db1a6fd1e004b49b399ba5af18c2d6fdb238d9.csv#L11">292ababefd38...</a></td>
-                <td>10</td>
-                    <td>conservation-area:Holyport</td> 
-                    <td>local-authority-eng:WNM</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-08</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/292ababefd38db91e5f0a1c766db1a6fd1e004b49b399ba5af18c2d6fdb238d9.csv#L11">292ababefd38...</a></td>
+            <td>10</td>
+                <td>Holyport</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.716263 51.497786,-0.716239 51.497601,-0.716137 51.497646,-0.715857 51.497656,-0.715805 51.497611,-0.715808 51.497537,-0.715314 51.497699,-0.714694 51.497096,-0.714855 51.496956,-0.715965 51.496323,-0.716139 51.496143,-0.716256 51.495828,-0.715936 51.495827,-0.714854 51.495222,-0.714468 51.495483,-0.712913 51.496331,-0.712502 51.496136,-0.712202 51.496059,-0.712337 51.495911,-0.711079 51.495213,-0.712449 51.494504,-0.712286 51.494393,-0.712943 51.493968,-0.712870 51.493942,-0.712653 51.493985,-0.712378 51.493918,-0.712046 51.493773,-0.710440 51.493239,-0.710381 51.492900,-0.710455 51.492532,-0.710426 51.492053,-0.710499 51.491875,-0.710416 51.491774,-0.710241 51.491668,-0.709297 51.490775,-0.710427 51.490078,-0.710273 51.489783,-0.710619 51.489708,-0.710866 51.489985,-0.710948 51.489964,-0.711062 51.490058,-0.711376 51.489809,-0.711752 51.489619,-0.712109 51.489800,-0.712578 51.489981,-0.713003 51.490081,-0.713364 51.489502,-0.713636 51.488942,-0.714391 51.489069,-0.715877 51.489124,-0.715484 51.489473,-0.716431 51.489684,-0.716574 51.489253,-0.717454 51.489370,-0.717663 51.489434,-0.718258 51.489761,-0.718972 51.490490,-0.718871 51.490536,-0.718889 51.490570,-0.719006 51.490680,-0.719083 51.490657,-0.719420 51.490949,-0.719760 51.490789,-0.720696 51.490176,-0.721499 51.489719,-0.722244 51.488889,-0.722983 51.488903,-0.723565 51.488718,-0.723740 51.488846,-0.723642 51.489120,-0.724417 51.489422,-0.724136 51.489662,-0.724047 51.490043,-0.723651 51.490605,-0.723801 51.490872,-0.723749 51.490957,-0.723519 51.491162,-0.723499 51.491259,-0.724079 51.491488,-0.723988 51.491632,-0.724125 51.491665,-0.723977 51.491847,-0.723860 51.491929,-0.723820 51.492141,-0.723242 51.492030,-0.722980 51.492245,-0.722773 51.492330,-0.722325 51.492632,-0.722061 51.492760,-0.721942 51.492868,-0.721806 51.493100,-0.720919 51.493993,-0.721490 51.494144,-0.722070 51.494205,-0.722273 51.494254,-0.723513 51.494256,-0.723260 51.494696,-0.722813 51.495159,-0.722634 51.495462,-0.722543 51.495524,-0.722399 51.495706,-0.722366 51.495828,-0.722346 51.496221,-0.722403 51.496470,-0.722357 51.496990,-0.722360 51.497848,-0.721941 51.497845,-0.721619 51.497792,-0.720663 51.497526,-0.720410 51.497518,-0.718133 51.497580,-0.718096 51.497774,-0.717345 51.497745,-0.717372 51.497683,-0.717123 51.497708,-0.716822 51.497788,-0.716432 51.497763,-0.716263 51.497786)))
   </div>
 </details>
-                    </td>
-                    <td>Holyport</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:WNM</td> 
+                <td>conservation-area:Holyport</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

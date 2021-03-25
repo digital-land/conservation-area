@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Barn Hill COA00000417</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/BEN/COA00000417</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -139,15 +158,15 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000417            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Barn Hill COA00000417            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BEN" class="govuk-link">London Borough of Brent</a>
 <span title="Organisation identifier: local-authority-eng:BEN" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BEN)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Barn Hill COA00000417            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L419">f617d13ef7ff...</a></td>
-                <td>418</td>
-                    <td>local-authority-eng:BEN</td> 
-                    <td>Barn Hill COA00000417</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L419">f617d13ef7ff...</a></td>
+            <td>418</td>
+                <td>Barn Hill COA00000417</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.274979 51.568662,-0.275004 51.568712,-0.275107 51.568744,-0.275155 51.568824,-0.275268 51.569369,-0.275275 51.569686,-0.275323 51.569875,-0.275431 51.570028,-0.275637 51.570210,-0.276200 51.570487,-0.275819 51.570834,-0.276745 51.570810,-0.276877 51.570846,-0.276929 51.570917,-0.276952 51.571213,-0.276990 51.571226,-0.277348 51.571308,-0.278044 51.571276,-0.278375 51.571779,-0.279162 51.571584,-0.279699 51.571511,-0.280117 51.571499,-0.280981 51.571566,-0.282072 51.571808,-0.281999 51.572017,-0.282402 51.572193,-0.282627 51.572405,-0.282759 51.572607,-0.283296 51.572479,-0.283484 51.572378,-0.283903 51.572411,-0.283915 51.572356,-0.285206 51.572442,-0.285292 51.572051,-0.285034 51.572056,-0.285099 51.571633,-0.284895 51.571631,-0.284986 51.571242,-0.285218 51.571046,-0.285639 51.570897,-0.287178 51.570682,-0.286831 51.570349,-0.286367 51.569738,-0.285761 51.569637,-0.285372 51.569052,-0.285506 51.569017,-0.285119 51.568654,-0.284941 51.568725,-0.284530 51.568490,-0.284610 51.568415,-0.283676 51.568103,-0.283805 51.567919,-0.283262 51.567788,-0.283500 51.567483,-0.282991 51.567216,-0.283127 51.567056,-0.282192 51.566511,-0.282095 51.566501,-0.282040 51.566661,-0.281007 51.566491,-0.280163 51.566269,-0.279842 51.566155,-0.278873 51.565955,-0.278998 51.565602,-0.276668 51.565406,-0.276472 51.565438,-0.276485 51.565598,-0.276426 51.565599,-0.276096 51.565920,-0.275851 51.566383,-0.275609 51.566999,-0.275265 51.567517,-0.275113 51.567658,-0.274979 51.568662)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000417</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BEN</td> 
+                <td>conservation-area:COA00000417</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

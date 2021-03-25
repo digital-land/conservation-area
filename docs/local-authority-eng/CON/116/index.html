@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">BOTALLACK &amp; TRUTHWALL</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CON/116</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -139,15 +158,15 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                BOTALLACK &amp; TRUTHWALL            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:116            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CON" class="govuk-link">Cornwall Council</a>
 <span title="Organisation identifier: local-authority-eng:CON" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CON)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:116            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-02-18</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/de0b99137124fb1332b821c6f2f0a8f4af643c28bf2eb859e4ef5a38843446fc.csv#L117">de0b99137124...</a></td>
-                <td>116</td>
-                    <td>conservation-area:116</td> 
-                    <td>local-authority-eng:CON</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-02-18</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/de0b99137124fb1332b821c6f2f0a8f4af643c28bf2eb859e4ef5a38843446fc.csv#L117">de0b99137124...</a></td>
+            <td>116</td>
+                <td>BOTALLACK &amp; TRUTHWALL</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-5.682288 50.134763,-5.682004 50.134733,-5.681825 50.134562,-5.682077 50.133651,-5.682175 50.133507,-5.682287 50.133188,-5.683374 50.133355,-5.684188 50.133340,-5.684643 50.133601,-5.684811 50.133661,-5.684850 50.133638,-5.684974 50.133725,-5.685020 50.133810,-5.684964 50.133881,-5.685367 50.133982,-5.685237 50.134150,-5.685227 50.134218,-5.684847 50.134440,-5.684722 50.134468,-5.684370 50.134722,-5.684074 50.135012,-5.683944 50.135192,-5.684105 50.135234,-5.684168 50.135282,-5.684169 50.135442,-5.684051 50.135515,-5.683919 50.135546,-5.683958 50.135664,-5.683820 50.135708,-5.683883 50.136006,-5.684101 50.136641,-5.684213 50.136655,-5.684231 50.136687,-5.684950 50.136731,-5.685157 50.136846,-5.685175 50.136891,-5.685405 50.136920,-5.685720 50.136823,-5.686207 50.136845,-5.687183 50.136928,-5.688118 50.137121,-5.687997 50.137480,-5.687891 50.137470,-5.687881 50.137517,-5.687537 50.137519,-5.687481 50.137555,-5.686930 50.137567,-5.686845 50.137614,-5.686470 50.137562,-5.686364 50.137596,-5.686181 50.137741,-5.685900 50.137796,-5.685504 50.137959,-5.685520 50.138002,-5.685655 50.138070,-5.685383 50.138278,-5.685408 50.138361,-5.685496 50.138417,-5.685817 50.138479,-5.685825 50.138539,-5.686008 50.138558,-5.685968 50.138800,-5.686162 50.138817,-5.686218 50.138887,-5.686177 50.139019,-5.686113 50.139068,-5.686083 50.139051,-5.686061 50.139090,-5.686015 50.139079,-5.685916 50.139367,-5.685321 50.139251,-5.685321 50.139326,-5.685181 50.139325,-5.685169 50.139371,-5.684620 50.139365,-5.682336 50.138741,-5.681610 50.138695,-5.680887 50.138603,-5.680864 50.138636,-5.680762 50.138609,-5.680737 50.138646,-5.679547 50.138413,-5.679624 50.138002,-5.681017 50.137996,-5.681369 50.137936,-5.681958 50.137706,-5.682319 50.137494,-5.682514 50.137337,-5.683062 50.136648,-5.683104 50.136589,-5.683004 50.136573,-5.683007 50.136533,-5.683088 50.136401,-5.683023 50.136354,-5.683010 50.136289,-5.683040 50.136222,-5.683120 50.136161,-5.681450 50.136184,-5.681436 50.135844,-5.681941 50.135767,-5.682085 50.135815,-5.683514 50.135734,-5.683705 50.135503,-5.683643 50.135149,-5.683414 50.135025,-5.683317 50.135025,-5.683367 50.134975,-5.683075 50.134853,-5.682288 50.134763)))
   </div>
 </details>
-                    </td>
-                    <td>BOTALLACK &amp; TRUTHWALL</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CON</td> 
+                <td>conservation-area:116</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

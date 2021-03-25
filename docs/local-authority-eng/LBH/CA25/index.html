@@ -132,18 +132,37 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Minet Estate</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/LBH/CA25</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Minet Estate            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LBH" class="govuk-link">London Borough of Lambeth</a>
 <span title="Organisation identifier: local-authority-eng:LBH" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LBH)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Minet Estate            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f498f7e6f6eab582c68aa42a62bf61b74a01cf938d664fe44aaa0bb5ba23d845.csv#L58">f498f7e6f6ea...</a></td>
-                <td>57</td>
-                    <td>conservation-area:CA25</td> 
-                    <td>local-authority-eng:LBH</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f498f7e6f6eab582c68aa42a62bf61b74a01cf938d664fe44aaa0bb5ba23d845.csv#L58">f498f7e6f6ea...</a></td>
+            <td>57</td>
+                <td>Minet Estate</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.102971 51.475517,-0.103270 51.475913,-0.103439 51.475768,-0.103591 51.475686,-0.103388 51.475363,-0.103602 51.475314,-0.103947 51.475299,-0.104032 51.475448,-0.104716 51.475068,-0.104913 51.475010,-0.105211 51.474978,-0.106027 51.474700,-0.105999 51.474536,-0.105876 51.474335,-0.105869 51.474259,-0.105951 51.474143,-0.106412 51.473881,-0.106948 51.473301,-0.106952 51.473186,-0.107445 51.473168,-0.107466 51.473047,-0.107364 51.471874,-0.107697 51.471838,-0.108003 51.471581,-0.108306 51.471735,-0.109184 51.471100,-0.109321 51.471077,-0.109455 51.471140,-0.110113 51.471067,-0.110015 51.470812,-0.110292 51.470771,-0.110375 51.471031,-0.111753 51.470859,-0.111642 51.470584,-0.111452 51.470612,-0.111383 51.470458,-0.111376 51.470355,-0.111128 51.470363,-0.109224 51.470605,-0.109200 51.470537,-0.108454 51.470623,-0.107977 51.470580,-0.107798 51.470417,-0.108332 51.470082,-0.108336 51.469337,-0.107991 51.469344,-0.107600 51.469433,-0.107827 51.470331,-0.107193 51.470592,-0.107130 51.470573,-0.106926 51.470268,-0.105911 51.470494,-0.105843 51.470362,-0.105518 51.470349,-0.105255 51.470061,-0.104875 51.470180,-0.104967 51.470286,-0.104198 51.470244,-0.104223 51.470135,-0.103892 51.470123,-0.103883 51.470170,-0.102965 51.470127,-0.102971 51.470104,-0.102391 51.470120,-0.102297 51.470382,-0.102648 51.470415,-0.102290 51.470988,-0.101904 51.471508,-0.101009 51.472486,-0.100473 51.472904,-0.100264 51.472887,-0.100150 51.472811,-0.099480 51.472894,-0.099669 51.473298,-0.100275 51.473921,-0.100650 51.474356,-0.100701 51.474539,-0.100647 51.474891,-0.101161 51.474921,-0.101219 51.474604,-0.101612 51.474629,-0.102136 51.474975,-0.102170 51.475025,-0.101581 51.475158,-0.101553 51.475459,-0.101514 51.475461,-0.101455 51.475781,-0.102093 51.475712,-0.102971 51.475517)))
   </div>
 </details>
-                    </td>
-                    <td>Minet Estate</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:LBH</td> 
+                <td>conservation-area:CA25</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

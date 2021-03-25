@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Burley In Wharfedale</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/BRD/05-00009-CONARA</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:05/00009/CONARA            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Burley In Wharfedale            </dd>
@@ -145,10 +168,6 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BRD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRD)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:05/00009/CONARA            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2021-02-07            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-02-07</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/806e837b4d1619f30bbf5b0b0e66ad1057df13ea4750511a6b43bce4e0e12f70.csv#L58">806e837b4d16...</a></td>
-                <td>57</td>
-                    <td>conservation-area:05/00009/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-02-07</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/806e837b4d1619f30bbf5b0b0e66ad1057df13ea4750511a6b43bce4e0e12f70.csv#L58">806e837b4d16...</a></td>
+            <td>57</td>
+                <td>Burley In Wharfedale</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,16 +231,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.744271 53.912254,-1.743715 53.912105,-1.743729 53.912043,-1.743392 53.912011,-1.743520 53.911425,-1.742620 53.911330,-1.742716 53.911112,-1.742803 53.910740,-1.742829 53.910741,-1.743059 53.910352,-1.741644 53.910114,-1.741191 53.910067,-1.741152 53.910250,-1.741206 53.910449,-1.741258 53.910545,-1.741475 53.910768,-1.741321 53.910872,-1.740643 53.910876,-1.739845 53.911103,-1.738985 53.911479,-1.738437 53.911666,-1.738250 53.911798,-1.738175 53.911948,-1.738190 53.912093,-1.738224 53.912115,-1.738191 53.912133,-1.739561 53.912988,-1.740474 53.913321,-1.740501 53.913368,-1.740734 53.913393,-1.741053 53.913512,-1.741244 53.913650,-1.741366 53.913683,-1.741470 53.913659,-1.741552 53.913678,-1.741981 53.913944,-1.743217 53.914320,-1.743336 53.914294,-1.743559 53.914346,-1.745534 53.914867,-1.746055 53.915017,-1.747311 53.915469,-1.747893 53.914696,-1.746139 53.914249,-1.746352 53.913950,-1.746577 53.913981,-1.746674 53.913917,-1.747650 53.914154,-1.747783 53.913956,-1.748209 53.914041,-1.748249 53.913956,-1.748519 53.914066,-1.749191 53.914232,-1.748871 53.914700,-1.749447 53.915118,-1.750721 53.915471,-1.751033 53.915448,-1.750930 53.915606,-1.751294 53.915688,-1.751427 53.915487,-1.751659 53.915266,-1.752048 53.914723,-1.752442 53.914883,-1.752642 53.915043,-1.752578 53.915070,-1.755004 53.916600,-1.755033 53.916586,-1.755403 53.916911,-1.755347 53.916946,-1.755461 53.917009,-1.755691 53.916848,-1.755801 53.916904,-1.756000 53.917077,-1.756480 53.916841,-1.756137 53.916587,-1.755880 53.916843,-1.755701 53.916715,-1.755972 53.916502,-1.755327 53.916201,-1.754817 53.915888,-1.755072 53.915500,-1.755264 53.915499,-1.755735 53.915608,-1.755714 53.915653,-1.755735 53.915657,-1.755827 53.915500,-1.755905 53.915193,-1.754072 53.914923,-1.754227 53.914505,-1.753886 53.914456,-1.753924 53.914361,-1.753777 53.914341,-1.753864 53.914264,-1.753889 53.914024,-1.752673 53.913907,-1.752763 53.913745,-1.752973 53.913551,-1.753148 53.913330,-1.751392 53.912905,-1.751647 53.912558,-1.751381 53.912485,-1.751568 53.912237,-1.751214 53.912142,-1.751095 53.912417,-1.749961 53.912405,-1.749998 53.911586,-1.749951 53.911586,-1.749861 53.911140,-1.749506 53.911125,-1.748938 53.911162,-1.747146 53.911071,-1.747152 53.911031,-1.746782 53.911014,-1.746769 53.911112,-1.746156 53.911086,-1.746159 53.911176,-1.745297 53.911161,-1.745146 53.912382,-1.744271 53.912254)))
   </div>
 </details>
-                    </td>
-                    <td>Burley In Wharfedale</td> 
-            </tr>            <tr>
-                <td>2021-02-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d3dcd8bbb587b2739ebae2b65c6cf648fe026abbe37c8d6e5bd44862ce4a0d38.csv#L58">d3dcd8bbb587...</a></td>
-                <td>57</td>
-                    <td>conservation-area:05/00009/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00009/CONARA</td> 
+        </tr>        <tr>
+            <td>2021-02-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d3dcd8bbb587b2739ebae2b65c6cf648fe026abbe37c8d6e5bd44862ce4a0d38.csv#L58">d3dcd8bbb587...</a></td>
+            <td>57</td>
+                <td>Burley In Wharfedale</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -228,16 +250,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.744000 53.912000,-1.743000 53.912000,-1.744000 53.911000,-1.743000 53.911000,-1.743000 53.910000,-1.741000 53.910000,-1.741000 53.911000,-1.739000 53.911000,-1.739000 53.912000,-1.738000 53.912000,-1.739000 53.912000,-1.739000 53.913000,-1.741000 53.913000,-1.741000 53.914000,-1.744000 53.914000,-1.745000 53.915000,-1.745000 53.915000,-1.746000 53.915000,-1.746000 53.915000,-1.746000 53.915000,-1.746000 53.915000,-1.746000 53.915000,-1.746000 53.915000,-1.747000 53.915000,-1.748000 53.915000,-1.747000 53.915000,-1.747000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.747000 53.914000,-1.749000 53.914000,-1.749000 53.915000,-1.751000 53.915000,-1.751000 53.916000,-1.751000 53.915000,-1.753000 53.915000,-1.753000 53.916000,-1.755000 53.916000,-1.755000 53.917000,-1.756000 53.917000,-1.756000 53.916000,-1.755000 53.916000,-1.755000 53.915000,-1.755000 53.916000,-1.756000 53.916000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.755000 53.915000,-1.754000 53.915000,-1.754000 53.914000,-1.753000 53.914000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.752000 53.913000,-1.751000 53.913000,-1.752000 53.913000,-1.751000 53.913000,-1.751000 53.912000,-1.752000 53.912000,-1.752000 53.912000,-1.751000 53.912000,-1.750000 53.912000,-1.750000 53.911000,-1.745000 53.911000,-1.745000 53.912000,-1.744000 53.912000)))
   </div>
 </details>
-                    </td>
-                    <td>Burley In Wharfedale</td> 
-            </tr>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/fb9cd1432bfe914f997d1e67b281902c4a7af3a789bb31847dd1a6da40af0712.csv#L58">fb9cd1432bfe...</a></td>
-                <td>57</td>
-                    <td>conservation-area:05/00009/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00009/CONARA</td> 
+        </tr>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/fb9cd1432bfe914f997d1e67b281902c4a7af3a789bb31847dd1a6da40af0712.csv#L58">fb9cd1432bfe...</a></td>
+            <td>57</td>
+                <td>Burley In Wharfedale</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -247,16 +269,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.744271 53.912254,-1.743715 53.912105,-1.743729 53.912043,-1.743392 53.912011,-1.743520 53.911425,-1.742620 53.911330,-1.742716 53.911112,-1.742803 53.910740,-1.742829 53.910741,-1.743059 53.910352,-1.741644 53.910114,-1.741191 53.910067,-1.741152 53.910250,-1.741206 53.910449,-1.741258 53.910545,-1.741475 53.910768,-1.741321 53.910872,-1.740643 53.910876,-1.739845 53.911103,-1.738985 53.911479,-1.738437 53.911666,-1.738250 53.911798,-1.738175 53.911948,-1.738190 53.912093,-1.738224 53.912115,-1.738191 53.912133,-1.739561 53.912988,-1.740474 53.913321,-1.740501 53.913368,-1.740734 53.913393,-1.741053 53.913512,-1.741244 53.913650,-1.741366 53.913683,-1.741470 53.913659,-1.741552 53.913678,-1.741981 53.913944,-1.743217 53.914320,-1.743336 53.914294,-1.743559 53.914346,-1.745534 53.914867,-1.746055 53.915017,-1.747311 53.915469,-1.747893 53.914696,-1.746139 53.914249,-1.746352 53.913950,-1.746577 53.913981,-1.746674 53.913917,-1.747650 53.914154,-1.747783 53.913956,-1.748209 53.914041,-1.748249 53.913956,-1.748519 53.914066,-1.749191 53.914232,-1.748871 53.914700,-1.749447 53.915118,-1.750721 53.915471,-1.751033 53.915448,-1.750930 53.915606,-1.751294 53.915688,-1.751427 53.915487,-1.751659 53.915266,-1.752048 53.914723,-1.752442 53.914883,-1.752642 53.915043,-1.752578 53.915070,-1.755004 53.916600,-1.755033 53.916586,-1.755403 53.916911,-1.755347 53.916946,-1.755461 53.917009,-1.755691 53.916848,-1.755801 53.916904,-1.756000 53.917077,-1.756480 53.916841,-1.756137 53.916587,-1.755880 53.916843,-1.755701 53.916715,-1.755972 53.916502,-1.755327 53.916201,-1.754817 53.915888,-1.755072 53.915500,-1.755264 53.915499,-1.755735 53.915608,-1.755714 53.915653,-1.755735 53.915657,-1.755827 53.915500,-1.755905 53.915193,-1.754072 53.914923,-1.754227 53.914505,-1.753886 53.914456,-1.753924 53.914361,-1.753777 53.914341,-1.753864 53.914264,-1.753889 53.914024,-1.752673 53.913907,-1.752763 53.913745,-1.752973 53.913551,-1.753148 53.913330,-1.751392 53.912905,-1.751647 53.912558,-1.751381 53.912485,-1.751568 53.912237,-1.751214 53.912142,-1.751095 53.912417,-1.749961 53.912405,-1.749998 53.911586,-1.749951 53.911586,-1.749861 53.911140,-1.749506 53.911125,-1.748938 53.911162,-1.747146 53.911071,-1.747152 53.911031,-1.746782 53.911014,-1.746769 53.911112,-1.746156 53.911086,-1.746159 53.911176,-1.745297 53.911161,-1.745146 53.912382,-1.744271 53.912254)))
   </div>
 </details>
-                    </td>
-                    <td>Burley In Wharfedale</td> 
-            </tr>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a9f8d4ff0fbd665a8aa98a5650466ed4d125448551dbe7989cf3ece1e22923cb.csv#L58">a9f8d4ff0fbd...</a></td>
-                <td>57</td>
-                    <td>conservation-area:05/00009/CONARA</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00009/CONARA</td> 
+        </tr>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a9f8d4ff0fbd665a8aa98a5650466ed4d125448551dbe7989cf3ece1e22923cb.csv#L58">a9f8d4ff0fbd...</a></td>
+            <td>57</td>
+                <td>Burley In Wharfedale</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -266,12 +288,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.744000 53.912000,-1.743000 53.912000,-1.744000 53.911000,-1.743000 53.911000,-1.743000 53.910000,-1.741000 53.910000,-1.741000 53.911000,-1.739000 53.911000,-1.739000 53.912000,-1.738000 53.912000,-1.739000 53.912000,-1.739000 53.913000,-1.741000 53.913000,-1.741000 53.914000,-1.744000 53.914000,-1.745000 53.915000,-1.745000 53.915000,-1.746000 53.915000,-1.746000 53.915000,-1.746000 53.915000,-1.746000 53.915000,-1.746000 53.915000,-1.746000 53.915000,-1.747000 53.915000,-1.748000 53.915000,-1.747000 53.915000,-1.747000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.746000 53.914000,-1.747000 53.914000,-1.749000 53.914000,-1.749000 53.915000,-1.751000 53.915000,-1.751000 53.916000,-1.751000 53.915000,-1.753000 53.915000,-1.753000 53.916000,-1.755000 53.916000,-1.755000 53.917000,-1.756000 53.917000,-1.756000 53.916000,-1.755000 53.916000,-1.755000 53.915000,-1.755000 53.916000,-1.756000 53.916000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.756000 53.915000,-1.755000 53.915000,-1.754000 53.915000,-1.754000 53.914000,-1.753000 53.914000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.753000 53.913000,-1.752000 53.913000,-1.751000 53.913000,-1.752000 53.913000,-1.751000 53.913000,-1.751000 53.912000,-1.752000 53.912000,-1.752000 53.912000,-1.751000 53.912000,-1.750000 53.912000,-1.750000 53.911000,-1.745000 53.911000,-1.745000 53.912000,-1.744000 53.912000)))
   </div>
 </details>
-                    </td>
-                    <td>Burley In Wharfedale</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00009/CONARA</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -373,5 +398,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

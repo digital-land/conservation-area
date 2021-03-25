@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">South Highfields</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/LCE/SH</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                South Highfields            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LCE" class="govuk-link">Leicester City Council</a>
@@ -145,10 +168,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:SH            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                South Highfields            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-11-29            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-11-29</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/7b83162b4a995c21dc119b2595faf050ed16f16f023dfcfcf58dd7379bf3d50b.csv#L9">7b83162b4a99...</a></td>
-                <td>8</td>
-                    <td>South Highfields</td> 
-                    <td>local-authority-eng:LCE</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-11-29</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/7b83162b4a995c21dc119b2595faf050ed16f16f023dfcfcf58dd7379bf3d50b.csv#L9">7b83162b4a99...</a></td>
+            <td>8</td>
+                <td>South Highfields</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.115595 52.626574,-1.115510 52.627019,-1.115887 52.627045,-1.115857 52.627200,-1.116230 52.627226,-1.116249 52.627129,-1.116625 52.627156,-1.116617 52.627192,-1.116985 52.627218,-1.116956 52.627381,-1.117311 52.627406,-1.117305 52.627442,-1.117356 52.627446,-1.117191 52.628156,-1.116812 52.628134,-1.116796 52.628206,-1.114223 52.628024,-1.114197 52.628147,-1.113803 52.628120,-1.113847 52.628655,-1.114385 52.628669,-1.114431 52.628635,-1.114784 52.628662,-1.114849 52.628318,-1.116258 52.628419,-1.116000 52.629739,-1.116757 52.629804,-1.117266 52.629438,-1.117728 52.629660,-1.117695 52.629684,-1.118269 52.629955,-1.118344 52.630019,-1.118251 52.630077,-1.118595 52.630294,-1.118734 52.630213,-1.119040 52.630400,-1.119436 52.630148,-1.119836 52.630400,-1.119402 52.630653,-1.120198 52.631176,-1.119848 52.631357,-1.120534 52.631858,-1.122251 52.631172,-1.122082 52.631031,-1.122499 52.630869,-1.122559 52.630921,-1.122956 52.630767,-1.123012 52.630813,-1.123387 52.630593,-1.123757 52.630820,-1.124692 52.630402,-1.124763 52.630447,-1.125215 52.630145,-1.126047 52.629208,-1.125298 52.628992,-1.124741 52.628899,-1.124180 52.629558,-1.123649 52.629339,-1.123786 52.629189,-1.123604 52.629126,-1.123349 52.628970,-1.123495 52.628811,-1.122462 52.628446,-1.121689 52.627958,-1.121143 52.627788,-1.121371 52.627506,-1.120983 52.627387,-1.121012 52.627334,-1.120680 52.627220,-1.120616 52.627259,-1.119655 52.626776,-1.118962 52.626546,-1.118698 52.626633,-1.118620 52.626577,-1.118140 52.626725,-1.117781 52.626773,-1.117006 52.626737,-1.115595 52.626574)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:SH</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:LCE</td> 
+                <td>conservation-area:SH</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

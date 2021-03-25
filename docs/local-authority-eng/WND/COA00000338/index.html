@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Battersea Square Cons Area COA00000338</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/WND/COA00000338</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:COA00000338            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Battersea Square Cons Area COA00000338            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WND" class="govuk-link">London Borough of Wandsworth</a>
 <span title="Organisation identifier: local-authority-eng:WND" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WND)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Battersea Square Cons Area COA00000338            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:COA00000338            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L350">f617d13ef7ff...</a></td>
-                <td>349</td>
-                    <td>local-authority-eng:WND</td> 
-                    <td>Battersea Square Cons Area COA00000338</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L350">f617d13ef7ff...</a></td>
+            <td>349</td>
+                <td>Battersea Square Cons Area COA00000338</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.177776 51.477538,-0.177619 51.477110,-0.177616 51.476798,-0.177672 51.476675,-0.177875 51.476496,-0.178035 51.476294,-0.178105 51.476031,-0.178121 51.475817,-0.178394 51.475278,-0.178576 51.474716,-0.178708 51.474449,-0.178741 51.474006,-0.178967 51.473478,-0.176993 51.473115,-0.176981 51.473161,-0.177112 51.473284,-0.177131 51.473358,-0.176985 51.473874,-0.176275 51.473766,-0.176137 51.474151,-0.175789 51.474125,-0.175832 51.474066,-0.175090 51.473944,-0.175185 51.473673,-0.174559 51.473617,-0.174574 51.473178,-0.174632 51.472786,-0.175349 51.472793,-0.175370 51.472430,-0.174865 51.472417,-0.174859 51.472592,-0.174251 51.472613,-0.174259 51.472816,-0.173826 51.472856,-0.173758 51.472534,-0.173846 51.472531,-0.173853 51.472560,-0.174323 51.472544,-0.174307 51.472173,-0.173913 51.472162,-0.173918 51.471803,-0.173603 51.471802,-0.173597 51.471678,-0.173441 51.471656,-0.173412 51.471981,-0.173068 51.472037,-0.173023 51.472058,-0.173050 51.472122,-0.173029 51.472124,-0.173132 51.472959,-0.173484 51.472935,-0.173629 51.473680,-0.172544 51.473845,-0.172701 51.474202,-0.172824 51.474178,-0.172880 51.474220,-0.173731 51.474055,-0.173922 51.474272,-0.174376 51.474599,-0.174045 51.474768,-0.174021 51.474826,-0.173656 51.474984,-0.173839 51.475265,-0.173928 51.475253,-0.173992 51.475471,-0.174772 51.475305,-0.174902 51.475481,-0.174882 51.475487,-0.174978 51.475609,-0.174959 51.475618,-0.175136 51.475772,-0.174983 51.475892,-0.174862 51.475859,-0.174860 51.475927,-0.174928 51.475915,-0.174881 51.476162,-0.175149 51.476308,-0.174879 51.476504,-0.175634 51.476904,-0.177776 51.477538)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000338</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:WND</td> 
+                <td>conservation-area:COA00000338</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

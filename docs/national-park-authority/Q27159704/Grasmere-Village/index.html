@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Grasmere Village</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/national-park-authority/Q27159704/Grasmere-Village</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -139,15 +158,15 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Grasmere Village            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:Grasmere Village            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/national-park-authority/Q27159704" class="govuk-link">Lake District National Park Authority</a>
 <span title="Organisation identifier: national-park-authority:Q27159704" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>national-park-authority:Q27159704)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:Grasmere Village            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/bd5a54fc8d0377744c5f5c53d6235337e1e9b92aa8552de0e47b414b21d54e76.csv#L15">bd5a54fc8d03...</a></td>
-                <td>14</td>
-                    <td>conservation-area:Grasmere Village</td> 
-                    <td>national-park-authority:Q27159704</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/bd5a54fc8d0377744c5f5c53d6235337e1e9b92aa8552de0e47b414b21d54e76.csv#L15">bd5a54fc8d03...</a></td>
+            <td>14</td>
+                <td>Grasmere Village</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-3.019942 54.457985,-3.020074 54.458211,-3.020213 54.458278,-3.021237 54.458452,-3.022296 54.458896,-3.022677 54.459015,-3.023079 54.459095,-3.023198 54.459172,-3.023351 54.459219,-3.023435 54.459342,-3.023405 54.459448,-3.023278 54.459579,-3.022913 54.459806,-3.022554 54.460002,-3.021574 54.460445,-3.020878 54.460839,-3.020615 54.461157,-3.020440 54.461784,-3.020517 54.462163,-3.020839 54.462516,-3.021834 54.463257,-3.021747 54.463402,-3.021319 54.463473,-3.021967 54.463849,-3.021872 54.463981,-3.022580 54.464069,-3.022791 54.463525,-3.023259 54.463570,-3.023779 54.463569,-3.025464 54.463426,-3.025545 54.463367,-3.026271 54.463146,-3.026403 54.463068,-3.026459 54.462995,-3.026573 54.462949,-3.026878 54.462694,-3.026949 54.462525,-3.027039 54.462487,-3.027793 54.462778,-3.028117 54.462524,-3.027787 54.462278,-3.027773 54.462198,-3.027846 54.462013,-3.028083 54.461742,-3.028270 54.461614,-3.028322 54.461503,-3.027872 54.461452,-3.028915 54.460818,-3.028894 54.461055,-3.029198 54.461243,-3.029553 54.461334,-3.029986 54.461283,-3.030336 54.461162,-3.030742 54.461095,-3.031110 54.461163,-3.031544 54.461159,-3.031598 54.461127,-3.030741 54.460518,-3.030659 54.460502,-3.030561 54.460385,-3.030409 54.460275,-3.030247 54.460324,-3.029799 54.459782,-3.029557 54.459855,-3.029232 54.459890,-3.028565 54.459840,-3.026736 54.459543,-3.026714 54.459520,-3.026781 54.459379,-3.026486 54.458895,-3.027351 54.458071,-3.027283 54.457829,-3.026908 54.458114,-3.026216 54.458178,-3.026102 54.458153,-3.025817 54.457542,-3.025674 54.457563,-3.025638 54.457519,-3.025049 54.457590,-3.024261 54.457531,-3.024139 54.457382,-3.024484 54.457241,-3.024500 54.457164,-3.024605 54.457111,-3.024593 54.457046,-3.024431 54.456923,-3.024309 54.456879,-3.023886 54.456896,-3.023707 54.456843,-3.023991 54.456429,-3.024047 54.456327,-3.024036 54.456299,-3.023972 54.456228,-3.023926 54.456223,-3.023906 54.456255,-3.023324 54.456011,-3.023117 54.456328,-3.023068 54.456315,-3.022588 54.456868,-3.022484 54.456895,-3.022372 54.456860,-3.022397 54.456836,-3.022122 54.456747,-3.022014 54.456656,-3.021989 54.456694,-3.021922 54.456675,-3.021975 54.456562,-3.021836 54.456525,-3.021774 54.456611,-3.021465 54.456491,-3.021772 54.456114,-3.021264 54.456066,-3.020976 54.456398,-3.020769 54.456282,-3.020749 54.456486,-3.020715 54.456595,-3.020669 54.456614,-3.020637 54.457139,-3.020429 54.457202,-3.020423 54.457281,-3.020029 54.457441,-3.020176 54.457567,-3.019942 54.457985)))
   </div>
 </details>
-                    </td>
-                    <td>Grasmere Village</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>national-park-authority:Q27159704</td> 
+                <td>conservation-area:Grasmere Village</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

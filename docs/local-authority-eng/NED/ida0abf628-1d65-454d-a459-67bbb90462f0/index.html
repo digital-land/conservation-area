@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">ida0abf628-1d65-454d-a459-67bbb90462f0</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/NED/ida0abf628-1d65-454d-a459-67bbb90462f0</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NED" class="govuk-link">North East Derbyshire District Council</a>
-<span title="Organisation identifier: local-authority-eng:NED" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NED)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                ida0abf628-1d65-454d-a459-67bbb90462f0            </dd>
@@ -148,6 +161,12 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:ida0abf628-1d65-454d-a459-67bbb90462f0            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NED" class="govuk-link">North East Derbyshire District Council</a>
+<span title="Organisation identifier: local-authority-eng:NED" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NED)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-06</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/cb462731902b22a9e3f69fb54928180ca8d48d364bb4f8edd9fbedfa4541c4cd.csv#L26">cb462731902b...</a></td>
-                <td>25</td>
-                    <td>conservation-area:ida0abf628-1d65-454d-a459-67bbb90462f0</td> 
-                    <td>local-authority-eng:NED</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/cb462731902b22a9e3f69fb54928180ca8d48d364bb4f8edd9fbedfa4541c4cd.csv#L26">cb462731902b...</a></td>
+            <td>25</td>
+                <td>ida0abf628-1d65-454d-a459-67bbb90462f0</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.363552 53.308828,-1.363511 53.308853,-1.363505 53.309163,-1.362642 53.309186,-1.362639 53.309366,-1.362486 53.309430,-1.362080 53.309420,-1.361978 53.308627,-1.361774 53.308623,-1.361796 53.308844,-1.361241 53.308852,-1.361222 53.308338,-1.360518 53.308367,-1.360521 53.308567,-1.360594 53.308771,-1.360307 53.308801,-1.360256 53.308621,-1.359906 53.308707,-1.359625 53.308421,-1.360098 53.308261,-1.360097 53.308225,-1.360423 53.308211,-1.360333 53.308077,-1.360237 53.308073,-1.360210 53.307950,-1.360646 53.307840,-1.360759 53.307996,-1.360887 53.307961,-1.360910 53.307992,-1.361167 53.307919,-1.361195 53.307955,-1.361305 53.307926,-1.361290 53.307812,-1.362226 53.307748,-1.362244 53.308075,-1.362797 53.307993,-1.363655 53.307831,-1.363395 53.307531,-1.364581 53.307191,-1.364665 53.307254,-1.364831 53.307171,-1.364962 53.307221,-1.365533 53.306910,-1.365706 53.307029,-1.365628 53.307203,-1.365937 53.307370,-1.365996 53.307677,-1.365634 53.307765,-1.365743 53.307938,-1.364499 53.308307,-1.364439 53.308209,-1.363505 53.308401,-1.363419 53.308468,-1.363405 53.308822,-1.363552 53.308828)))
   </div>
 </details>
-                    </td>
-                    <td>ida0abf628-1d65-454d-a459-67bbb90462f0</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:NED</td> 
+                <td>conservation-area:ida0abf628-1d65-454d-a459-67bbb90462f0</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

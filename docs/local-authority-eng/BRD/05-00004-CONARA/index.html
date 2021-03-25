@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Baildon Station Road</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/BRD/05-00004-CONARA</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Baildon Station Road            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:05/00004/CONARA            </dd>
@@ -145,10 +168,6 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BRD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRD)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Baildon Station Road            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2021-02-07            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-02-07</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/806e837b4d1619f30bbf5b0b0e66ad1057df13ea4750511a6b43bce4e0e12f70.csv#L54">806e837b4d16...</a></td>
-                <td>53</td>
-                    <td>Baildon Station Road</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-02-07</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/806e837b4d1619f30bbf5b0b0e66ad1057df13ea4750511a6b43bce4e0e12f70.csv#L54">806e837b4d16...</a></td>
+            <td>53</td>
+                <td>Baildon Station Road</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,16 +231,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.758588 53.850394,-1.758659 53.850384,-1.758753 53.850585,-1.759266 53.850428,-1.760422 53.850258,-1.760348 53.849888,-1.760952 53.849819,-1.761410 53.849712,-1.761604 53.849899,-1.761946 53.849929,-1.762003 53.849907,-1.762044 53.849943,-1.762955 53.849727,-1.762627 53.849453,-1.763421 53.849325,-1.764240 53.849249,-1.764218 53.849073,-1.764079 53.849021,-1.764088 53.848980,-1.763896 53.848970,-1.763794 53.848929,-1.763245 53.848957,-1.763070 53.848818,-1.762833 53.848749,-1.762627 53.848752,-1.762421 53.848833,-1.762385 53.848806,-1.761793 53.848945,-1.761765 53.848959,-1.761792 53.848990,-1.760844 53.848979,-1.760722 53.848952,-1.760773 53.848863,-1.760208 53.848758,-1.759941 53.848534,-1.759335 53.848809,-1.759472 53.848925,-1.758696 53.849086,-1.758622 53.849167,-1.758727 53.849217,-1.758583 53.849271,-1.758585 53.849396,-1.758520 53.849404,-1.758561 53.849542,-1.757655 53.849553,-1.757787 53.849985,-1.757879 53.850089,-1.757853 53.850119,-1.757898 53.850224,-1.757986 53.850280,-1.758087 53.850287,-1.758143 53.850454,-1.758588 53.850394)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:05/00004/CONARA</td> 
-            </tr>            <tr>
-                <td>2021-02-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d3dcd8bbb587b2739ebae2b65c6cf648fe026abbe37c8d6e5bd44862ce4a0d38.csv#L54">d3dcd8bbb587...</a></td>
-                <td>53</td>
-                    <td>Baildon Station Road</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00004/CONARA</td> 
+        </tr>        <tr>
+            <td>2021-02-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/d3dcd8bbb587b2739ebae2b65c6cf648fe026abbe37c8d6e5bd44862ce4a0d38.csv#L54">d3dcd8bbb587...</a></td>
+            <td>53</td>
+                <td>Baildon Station Road</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -228,16 +250,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.759000 53.850000,-1.759000 53.851000,-1.759000 53.850000,-1.763000 53.850000,-1.763000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.763000 53.849000,-1.759000 53.849000,-1.759000 53.850000,-1.758000 53.850000,-1.759000 53.850000)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:05/00004/CONARA</td> 
-            </tr>            <tr>
-                <td>2020-09-14</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/fb9cd1432bfe914f997d1e67b281902c4a7af3a789bb31847dd1a6da40af0712.csv#L54">fb9cd1432bfe...</a></td>
-                <td>53</td>
-                    <td>Baildon Station Road</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00004/CONARA</td> 
+        </tr>        <tr>
+            <td>2020-09-14</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/fb9cd1432bfe914f997d1e67b281902c4a7af3a789bb31847dd1a6da40af0712.csv#L54">fb9cd1432bfe...</a></td>
+            <td>53</td>
+                <td>Baildon Station Road</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -247,16 +269,16 @@ crossorigin="" />
     MULTIPOLYGON (((-1.758588 53.850394,-1.758659 53.850384,-1.758753 53.850585,-1.759266 53.850428,-1.760422 53.850258,-1.760348 53.849888,-1.760952 53.849819,-1.761410 53.849712,-1.761604 53.849899,-1.761946 53.849929,-1.762003 53.849907,-1.762044 53.849943,-1.762955 53.849727,-1.762627 53.849453,-1.763421 53.849325,-1.764240 53.849249,-1.764218 53.849073,-1.764079 53.849021,-1.764088 53.848980,-1.763896 53.848970,-1.763794 53.848929,-1.763245 53.848957,-1.763070 53.848818,-1.762833 53.848749,-1.762627 53.848752,-1.762421 53.848833,-1.762385 53.848806,-1.761793 53.848945,-1.761765 53.848959,-1.761792 53.848990,-1.760844 53.848979,-1.760722 53.848952,-1.760773 53.848863,-1.760208 53.848758,-1.759941 53.848534,-1.759335 53.848809,-1.759472 53.848925,-1.758696 53.849086,-1.758622 53.849167,-1.758727 53.849217,-1.758583 53.849271,-1.758585 53.849396,-1.758520 53.849404,-1.758561 53.849542,-1.757655 53.849553,-1.757787 53.849985,-1.757879 53.850089,-1.757853 53.850119,-1.757898 53.850224,-1.757986 53.850280,-1.758087 53.850287,-1.758143 53.850454,-1.758588 53.850394)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:05/00004/CONARA</td> 
-            </tr>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a9f8d4ff0fbd665a8aa98a5650466ed4d125448551dbe7989cf3ece1e22923cb.csv#L54">a9f8d4ff0fbd...</a></td>
-                <td>53</td>
-                    <td>Baildon Station Road</td> 
-                    <td>local-authority-eng:BRD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00004/CONARA</td> 
+        </tr>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a9f8d4ff0fbd665a8aa98a5650466ed4d125448551dbe7989cf3ece1e22923cb.csv#L54">a9f8d4ff0fbd...</a></td>
+            <td>53</td>
+                <td>Baildon Station Road</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -266,12 +288,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.759000 53.850000,-1.759000 53.851000,-1.759000 53.850000,-1.763000 53.850000,-1.763000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.764000 53.849000,-1.763000 53.849000,-1.759000 53.849000,-1.759000 53.850000,-1.758000 53.850000,-1.759000 53.850000)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:05/00004/CONARA</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BRD</td> 
+                <td>conservation-area:05/00004/CONARA</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -373,5 +398,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

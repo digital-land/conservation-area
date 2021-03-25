@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Edgeworth Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/COT/137</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:137            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/COT" class="govuk-link">Cotswold District Council</a>
@@ -145,10 +168,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Edgeworth Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:137            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-11            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-11</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L58">5a098a0110b3...</a></td>
-                <td>57</td>
-                    <td>conservation-area:137</td> 
-                    <td>local-authority-eng:COT</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-11</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L58">5a098a0110b3...</a></td>
+            <td>57</td>
+                <td>Edgeworth Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-2.078795 51.756707,-2.078809 51.756770,-2.078863 51.756795,-2.078926 51.757243,-2.078986 51.757402,-2.078407 51.757747,-2.078331 51.757536,-2.078291 51.757080,-2.078209 51.756728,-2.077999 51.756733,-2.077973 51.756630,-2.077731 51.756632,-2.077769 51.756474,-2.077636 51.756472,-2.077363 51.756559,-2.077209 51.756411,-2.076532 51.756642,-2.076470 51.756349,-2.076012 51.756280,-2.076113 51.756099,-2.076019 51.755996,-2.076111 51.755799,-2.076577 51.755518,-2.077329 51.755658,-2.077705 51.755786,-2.077842 51.755747,-2.077743 51.755191,-2.077457 51.754735,-2.077207 51.754418,-2.077225 51.754380,-2.077429 51.754357,-2.078297 51.754130,-2.078549 51.753865,-2.078603 51.753677,-2.078204 51.753571,-2.078178 51.753531,-2.078365 51.753388,-2.078400 51.753409,-2.078622 51.753286,-2.078618 51.753251,-2.078174 51.752933,-2.077813 51.752905,-2.077749 51.752940,-2.077736 51.753027,-2.076614 51.752674,-2.075767 51.752538,-2.075751 51.752597,-2.075327 51.752547,-2.075194 51.752452,-2.075096 51.752451,-2.073691 51.751937,-2.073519 51.751913,-2.072345 51.752058,-2.072028 51.752132,-2.071719 51.751920,-2.071052 51.751347,-2.069726 51.751760,-2.069705 51.751714,-2.069564 51.751678,-2.069466 51.751597,-2.069607 51.751455,-2.069977 51.751373,-2.070226 51.751105,-2.070409 51.750989,-2.071219 51.750688,-2.071768 51.750611,-2.072907 51.750374,-2.074091 51.750332,-2.075106 51.750245,-2.076302 51.750270,-2.076245 51.750507,-2.076496 51.750896,-2.076518 51.751101,-2.076608 51.751244,-2.076737 51.751289,-2.077060 51.751242,-2.077280 51.751125,-2.077313 51.751132,-2.077403 51.751298,-2.077542 51.751279,-2.077881 51.751103,-2.078048 51.751106,-2.078405 51.751225,-2.078559 51.751233,-2.078691 51.751278,-2.079048 51.751084,-2.079167 51.751131,-2.079164 51.751172,-2.079098 51.751204,-2.079159 51.751242,-2.079369 51.751186,-2.079588 51.751173,-2.079728 51.751305,-2.078774 51.751741,-2.078781 51.751762,-2.078215 51.751916,-2.078198 51.751952,-2.078107 51.751976,-2.078220 51.752023,-2.078250 51.752176,-2.078483 51.752197,-2.078506 51.752261,-2.078943 51.752663,-2.079319 51.752932,-2.079626 51.752741,-2.080893 51.753999,-2.083286 51.753360,-2.086818 51.752479,-2.087213 51.753803,-2.087256 51.754113,-2.087269 51.754610,-2.087166 51.756391,-2.086856 51.757574,-2.086847 51.757705,-2.086743 51.757684,-2.085083 51.756940,-2.082902 51.756037,-2.082045 51.755646,-2.081851 51.755591,-2.081753 51.755621,-2.081793 51.755685,-2.081776 51.756498,-2.080156 51.756186,-2.079654 51.756164,-2.078774 51.756440,-2.078852 51.756689,-2.078795 51.756707)))
   </div>
 </details>
-                    </td>
-                    <td>Edgeworth Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:COT</td> 
+                <td>conservation-area:137</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

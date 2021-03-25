@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Wimbledon Hill Road COA00000694</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/MRT/COA00000694</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:COA00000694            </dd>
+            <dd class="govuk-summary-list__value">                Wimbledon Hill Road COA00000694            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:MRT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:MRT)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Wimbledon Hill Road COA00000694            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:COA00000694            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L696">f617d13ef7ff...</a></td>
-                <td>695</td>
-                    <td>Wimbledon Hill Road COA00000694</td> 
-                    <td>local-authority-eng:MRT</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L696">f617d13ef7ff...</a></td>
+            <td>695</td>
+                <td>Wimbledon Hill Road COA00000694</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.209694 51.422021,-0.209620 51.422064,-0.208864 51.421599,-0.208291 51.421953,-0.208166 51.421845,-0.207727 51.422048,-0.207632 51.422037,-0.207567 51.421993,-0.206746 51.422525,-0.206800 51.422557,-0.206744 51.422597,-0.206894 51.422685,-0.206863 51.422698,-0.207121 51.422930,-0.208002 51.422557,-0.208201 51.422691,-0.208399 51.422585,-0.209268 51.423117,-0.208290 51.423675,-0.207327 51.424073,-0.207362 51.424118,-0.206530 51.424481,-0.207153 51.425012,-0.207186 51.425109,-0.207147 51.425220,-0.207186 51.425234,-0.207192 51.425372,-0.207114 51.425516,-0.206652 51.425349,-0.206397 51.425515,-0.207398 51.426012,-0.207502 51.426178,-0.207724 51.426173,-0.207935 51.425718,-0.208233 51.425793,-0.208229 51.425468,-0.208806 51.425461,-0.209038 51.425191,-0.209218 51.425107,-0.209193 51.425081,-0.209547 51.424880,-0.209172 51.424632,-0.209829 51.424251,-0.209249 51.423922,-0.209542 51.423771,-0.210190 51.423311,-0.211185 51.423776,-0.211740 51.423978,-0.212530 51.424201,-0.213526 51.424368,-0.213566 51.424198,-0.212465 51.424007,-0.212871 51.423524,-0.212560 51.423406,-0.212116 51.423911,-0.211385 51.423661,-0.210601 51.423316,-0.210953 51.423117,-0.210763 51.422996,-0.211091 51.422768,-0.210924 51.422675,-0.211306 51.422392,-0.211605 51.422545,-0.211710 51.422553,-0.212491 51.422020,-0.212187 51.421875,-0.212322 51.421765,-0.212087 51.421654,-0.212273 51.421499,-0.212790 51.421744,-0.213144 51.421428,-0.213056 51.421389,-0.213344 51.421174,-0.213426 51.421103,-0.213395 51.421085,-0.213739 51.420817,-0.212199 51.420042,-0.211840 51.420326,-0.211908 51.420363,-0.209910 51.421810,-0.210117 51.421916,-0.209971 51.422024,-0.209785 51.421956,-0.209694 51.422021)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000694</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:MRT</td> 
+                <td>conservation-area:COA00000694</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

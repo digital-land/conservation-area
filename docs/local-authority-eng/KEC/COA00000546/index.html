@@ -132,9 +132,34 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Royal Hospital COA00000546</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/KEC/COA00000546</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/KEC" class="govuk-link">Royal Borough of Kensington and Chelsea</a>
+<span title="Organisation identifier: local-authority-eng:KEC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:KEC)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000546            </dd>
@@ -142,12 +167,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Royal Hospital COA00000546            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/KEC" class="govuk-link">Royal Borough of Kensington and Chelsea</a>
-<span title="Organisation identifier: local-authority-eng:KEC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:KEC)</span>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>name</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L552">f617d13ef7ff...</a></td>
-                <td>551</td>
-                    <td>local-authority-eng:KEC</td> 
-                    <td>Royal Hospital COA00000546</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L552">f617d13ef7ff...</a></td>
+            <td>551</td>
+                <td>Royal Hospital COA00000546</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.157172 51.490085,-0.157643 51.490449,-0.158070 51.491984,-0.158251 51.491965,-0.158623 51.491838,-0.159103 51.491623,-0.159321 51.491813,-0.160620 51.491179,-0.161274 51.490820,-0.160685 51.490368,-0.161273 51.490025,-0.161554 51.490187,-0.161798 51.490012,-0.161927 51.490089,-0.162132 51.489972,-0.162459 51.490169,-0.163350 51.489670,-0.164032 51.489344,-0.164418 51.489208,-0.163981 51.488904,-0.164111 51.488819,-0.163045 51.488143,-0.163209 51.488043,-0.163421 51.488212,-0.164516 51.487771,-0.165429 51.488820,-0.166214 51.488524,-0.167865 51.487818,-0.168291 51.488240,-0.168486 51.488517,-0.168756 51.488438,-0.168489 51.488047,-0.168524 51.488037,-0.168241 51.487655,-0.168734 51.487468,-0.169143 51.488019,-0.169736 51.487832,-0.169263 51.487251,-0.169010 51.487346,-0.168825 51.487148,-0.168892 51.487121,-0.168658 51.486843,-0.168425 51.486636,-0.167368 51.487080,-0.167770 51.487624,-0.167452 51.487758,-0.167335 51.487687,-0.167044 51.487835,-0.166945 51.487727,-0.166751 51.487794,-0.165558 51.486425,-0.166022 51.486276,-0.165828 51.486024,-0.165347 51.486165,-0.164945 51.485619,-0.165565 51.485457,-0.165451 51.485228,-0.164774 51.485386,-0.164574 51.485109,-0.164475 51.485136,-0.164247 51.485287,-0.164130 51.485120,-0.163940 51.484961,-0.163622 51.485185,-0.163074 51.484827,-0.164028 51.484068,-0.164059 51.483988,-0.164032 51.483877,-0.163943 51.483803,-0.163807 51.483765,-0.157110 51.484638,-0.152874 51.485269,-0.151932 51.485416,-0.151224 51.485568,-0.150260 51.485796,-0.150096 51.485875,-0.150191 51.486041,-0.150982 51.486589,-0.155860 51.489612,-0.157122 51.488797,-0.158159 51.489426,-0.157172 51.490085)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:COA00000546</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:KEC</td> 
+                <td>conservation-area:COA00000546</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

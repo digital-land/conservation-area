@@ -132,9 +132,34 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Aylestone</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/LCE/AY</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LCE" class="govuk-link">Leicester City Council</a>
+<span title="Organisation identifier: local-authority-eng:LCE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LCE)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Aylestone            </dd>
@@ -142,12 +167,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:AY            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LCE" class="govuk-link">Leicester City Council</a>
-<span title="Organisation identifier: local-authority-eng:LCE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LCE)</span>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-11-29</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/7b83162b4a995c21dc119b2595faf050ed16f16f023dfcfcf58dd7379bf3d50b.csv#L13">7b83162b4a99...</a></td>
-                <td>12</td>
-                    <td>conservation-area:AY</td> 
-                    <td>local-authority-eng:LCE</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-11-29</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/7b83162b4a995c21dc119b2595faf050ed16f16f023dfcfcf58dd7379bf3d50b.csv#L13">7b83162b4a99...</a></td>
+            <td>12</td>
+                <td>Aylestone</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.152911 52.605601,-1.153094 52.605678,-1.153547 52.605443,-1.153909 52.605337,-1.154294 52.605339,-1.154618 52.605401,-1.154954 52.605058,-1.155158 52.605147,-1.155110 52.605190,-1.155718 52.605424,-1.156360 52.605822,-1.157219 52.605448,-1.157554 52.605352,-1.158339 52.605196,-1.158963 52.604978,-1.159331 52.604825,-1.159647 52.604592,-1.160334 52.604207,-1.160645 52.604067,-1.161021 52.603951,-1.161222 52.603901,-1.162216 52.603931,-1.163039 52.603824,-1.163515 52.603687,-1.163690 52.603814,-1.163917 52.603698,-1.163415 52.603280,-1.162792 52.602930,-1.163368 52.602403,-1.164002 52.601933,-1.164064 52.601846,-1.164161 52.601855,-1.164252 52.601783,-1.164828 52.601507,-1.164737 52.601448,-1.164626 52.601506,-1.164440 52.601437,-1.164281 52.601486,-1.163951 52.601693,-1.163703 52.601597,-1.163474 52.601582,-1.163352 52.601611,-1.162769 52.601922,-1.162663 52.602011,-1.162503 52.602225,-1.162435 52.602250,-1.161832 52.602293,-1.161340 52.602461,-1.160802 52.602528,-1.160798 52.602390,-1.160479 52.602539,-1.160334 52.602570,-1.160168 52.602543,-1.159785 52.602549,-1.159377 52.602416,-1.159483 52.602307,-1.159863 52.602053,-1.159276 52.601826,-1.159051 52.602102,-1.158824 52.602011,-1.158681 52.602119,-1.158457 52.602050,-1.158173 52.602103,-1.158120 52.602078,-1.157888 52.602253,-1.157621 52.602170,-1.157372 52.602372,-1.156901 52.602145,-1.156440 52.602406,-1.156227 52.602270,-1.155688 52.602683,-1.155943 52.602807,-1.156225 52.602647,-1.156283 52.602694,-1.156558 52.602552,-1.156718 52.602691,-1.156867 52.602895,-1.156419 52.603029,-1.156609 52.603236,-1.155535 52.603634,-1.155222 52.603454,-1.155333 52.603398,-1.155032 52.603230,-1.154904 52.603311,-1.154605 52.603151,-1.154470 52.603158,-1.152959 52.604316,-1.151885 52.605203,-1.151918 52.605267,-1.152911 52.605601)))
   </div>
 </details>
-                    </td>
-                    <td>Aylestone</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:LCE</td> 
+                <td>conservation-area:AY</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

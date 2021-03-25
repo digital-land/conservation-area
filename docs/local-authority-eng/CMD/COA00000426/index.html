@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Belsize Park COA00000426</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CMD/COA00000426</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -139,15 +158,15 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Belsize Park COA00000426            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:COA00000426            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CMD" class="govuk-link">London Borough of Camden</a>
 <span title="Organisation identifier: local-authority-eng:CMD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CMD)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:COA00000426            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-04</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L434">f617d13ef7ff...</a></td>
-                <td>433</td>
-                    <td>conservation-area:COA00000426</td> 
-                    <td>local-authority-eng:CMD</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-04</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L434">f617d13ef7ff...</a></td>
+            <td>433</td>
+                <td>Belsize Park COA00000426</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.159973 51.547501,-0.162334 51.549040,-0.164410 51.550134,-0.166401 51.551526,-0.167270 51.550985,-0.167600 51.551219,-0.169105 51.550299,-0.169149 51.550327,-0.169547 51.550093,-0.169513 51.550071,-0.170243 51.549689,-0.170286 51.549715,-0.170620 51.549557,-0.170592 51.549511,-0.170689 51.549451,-0.170995 51.549672,-0.170543 51.549889,-0.170856 51.550140,-0.171552 51.549820,-0.172729 51.550191,-0.172759 51.550182,-0.172470 51.550098,-0.172531 51.549901,-0.172927 51.549924,-0.172915 51.550013,-0.173424 51.550035,-0.173422 51.550067,-0.173570 51.550072,-0.173576 51.549968,-0.173715 51.549973,-0.173724 51.549805,-0.174072 51.549793,-0.174074 51.549735,-0.173604 51.549750,-0.173508 51.549426,-0.173423 51.549314,-0.173544 51.549275,-0.173425 51.549076,-0.173526 51.548444,-0.173606 51.548215,-0.173602 51.548091,-0.173426 51.548028,-0.173455 51.547925,-0.173261 51.547882,-0.173564 51.547422,-0.174041 51.546847,-0.174217 51.546746,-0.174851 51.546507,-0.175116 51.546361,-0.175690 51.545966,-0.175719 51.545867,-0.175599 51.545615,-0.175030 51.544780,-0.174911 51.544757,-0.174685 51.544839,-0.174260 51.544475,-0.174552 51.544393,-0.174580 51.544215,-0.174502 51.544231,-0.174450 51.544172,-0.174340 51.544209,-0.174190 51.544033,-0.173920 51.544117,-0.173087 51.544172,-0.172748 51.543777,-0.173115 51.543655,-0.172833 51.543329,-0.173072 51.543250,-0.172913 51.543061,-0.172649 51.543148,-0.172695 51.543202,-0.172357 51.543316,-0.172370 51.543334,-0.170776 51.543541,-0.170681 51.543248,-0.170473 51.543255,-0.169999 51.543315,-0.170080 51.543631,-0.168018 51.543901,-0.168033 51.543951,-0.168017 51.543901,-0.162744 51.544577,-0.162715 51.544586,-0.162767 51.544978,-0.161071 51.545207,-0.161374 51.545368,-0.161399 51.545394,-0.161301 51.545461,-0.161448 51.545546,-0.161646 51.545521,-0.162241 51.545851,-0.160704 51.546901,-0.159973 51.547501)))
   </div>
 </details>
-                    </td>
-                    <td>Belsize Park COA00000426</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CMD</td> 
+                <td>conservation-area:COA00000426</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

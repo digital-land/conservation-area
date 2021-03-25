@@ -132,22 +132,41 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">MINSTER LOVELL</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/WOX/37</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WOX" class="govuk-link">West Oxfordshire District Council</a>
-<span title="Organisation identifier: local-authority-eng:WOX" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WOX)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:37            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                MINSTER LOVELL            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:37            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WOX" class="govuk-link">West Oxfordshire District Council</a>
+<span title="Organisation identifier: local-authority-eng:WOX" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WOX)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f371b704d21ccfe7b504048f0ff4fdcc434b849a9fb90193bee5c8712f603c12.csv#L20">f371b704d21c...</a></td>
-                <td>19</td>
-                    <td>conservation-area:37</td> 
-                    <td>local-authority-eng:WOX</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f371b704d21ccfe7b504048f0ff4fdcc434b849a9fb90193bee5c8712f603c12.csv#L20">f371b704d21c...</a></td>
+            <td>19</td>
+                <td>MINSTER LOVELL</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.548923 51.803093,-1.548845 51.803158,-1.548476 51.803248,-1.548304 51.803277,-1.547974 51.803265,-1.547852 51.803204,-1.547804 51.803117,-1.547819 51.802798,-1.547767 51.802708,-1.547570 51.802674,-1.546713 51.802776,-1.546458 51.802894,-1.545941 51.802894,-1.545512 51.802831,-1.545469 51.802792,-1.545319 51.802798,-1.545059 51.802891,-1.544780 51.803129,-1.544960 51.800405,-1.544692 51.800268,-1.544519 51.800071,-1.544272 51.800166,-1.544255 51.800131,-1.544084 51.800126,-1.541893 51.800445,-1.541929 51.800535,-1.541788 51.800555,-1.541875 51.800850,-1.541290 51.800950,-1.541228 51.800576,-1.538138 51.800844,-1.533743 51.801518,-1.533720 51.801620,-1.532977 51.801770,-1.532921 51.801674,-1.532421 51.801781,-1.532264 51.801531,-1.532043 51.801337,-1.531779 51.801443,-1.531099 51.801862,-1.530090 51.802392,-1.529560 51.802618,-1.527642 51.803260,-1.527105 51.802645,-1.525618 51.801511,-1.524595 51.799590,-1.524385 51.799680,-1.524250 51.799691,-1.524161 51.799597,-1.524023 51.799333,-1.524880 51.798930,-1.528067 51.797913,-1.530084 51.797614,-1.530613 51.797615,-1.530296 51.796819,-1.529407 51.795029,-1.529679 51.795026,-1.530798 51.795320,-1.531537 51.795439,-1.532642 51.795534,-1.534927 51.795605,-1.537085 51.795852,-1.540211 51.796395,-1.542337 51.796642,-1.544564 51.797033,-1.544558 51.797117,-1.544677 51.797410,-1.545250 51.798255,-1.545538 51.798806,-1.546168 51.798771,-1.546462 51.798802,-1.546654 51.798860,-1.546527 51.798963,-1.546743 51.799062,-1.546408 51.799465,-1.546054 51.799396,-1.545890 51.800281,-1.545900 51.800447,-1.545961 51.800523,-1.546244 51.800720,-1.547114 51.801207,-1.547146 51.801204,-1.547195 51.801058,-1.547152 51.801034,-1.547980 51.800454,-1.548552 51.800757,-1.548353 51.800914,-1.548782 51.801286,-1.548703 51.801329,-1.548401 51.801681,-1.548217 51.801954,-1.547751 51.802229,-1.547633 51.802335,-1.547722 51.802574,-1.547847 51.802681,-1.548091 51.802777,-1.548817 51.802879,-1.548903 51.802971,-1.548923 51.803093)))
   </div>
 </details>
-                    </td>
-                    <td>MINSTER LOVELL</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:WOX</td> 
+                <td>conservation-area:37</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

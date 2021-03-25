@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Milton Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/VAL/36</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-05</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L37">92cd49145a8d...</a></td>
-                <td>36</td>
-                    <td>conservation-area:36</td> 
-                    <td>local-authority-eng:VAL</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-05</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/92cd49145a8d049ef38c583cc48b9ca2b3c82227a72b960877e4b521edd982be.csv#L37">92cd49145a8d...</a></td>
+            <td>36</td>
+                <td>Milton Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.306546 51.631390,-1.306624 51.631134,-1.306688 51.630419,-1.307921 51.630215,-1.307959 51.630127,-1.307908 51.630049,-1.307591 51.629827,-1.307174 51.629661,-1.307022 51.629545,-1.306959 51.629410,-1.306577 51.629418,-1.305056 51.629279,-1.303404 51.629195,-1.303205 51.628083,-1.303151 51.627247,-1.303063 51.626777,-1.302999 51.626749,-1.302793 51.626817,-1.302482 51.626840,-1.301284 51.626803,-1.301410 51.626565,-1.301531 51.626214,-1.301785 51.625822,-1.301890 51.625476,-1.302179 51.625257,-1.302391 51.624975,-1.302472 51.624711,-1.302233 51.624681,-1.302307 51.624531,-1.302136 51.624501,-1.301652 51.624515,-1.301684 51.624863,-1.301205 51.624864,-1.301209 51.624910,-1.300075 51.624917,-1.300125 51.625200,-1.299725 51.625240,-1.299739 51.625428,-1.298553 51.625450,-1.298578 51.625010,-1.297955 51.625017,-1.296970 51.624760,-1.296376 51.624791,-1.296227 51.624872,-1.296161 51.624865,-1.295955 51.624958,-1.295874 51.624959,-1.295731 51.625492,-1.296757 51.625619,-1.296879 51.626375,-1.296968 51.626668,-1.296664 51.626780,-1.296881 51.627695,-1.297126 51.627621,-1.297444 51.627648,-1.297512 51.627514,-1.297361 51.627464,-1.297468 51.627216,-1.297750 51.627273,-1.298534 51.627511,-1.298435 51.627681,-1.298661 51.627727,-1.298592 51.627939,-1.298396 51.627899,-1.298370 51.627941,-1.298297 51.627927,-1.298269 51.627981,-1.298264 51.628161,-1.297805 51.628128,-1.297797 51.628490,-1.297939 51.628537,-1.298259 51.628564,-1.297999 51.628908,-1.297861 51.629427,-1.297304 51.629461,-1.297311 51.629580,-1.297399 51.629577,-1.297391 51.630004,-1.297075 51.630012,-1.297046 51.629733,-1.296613 51.629745,-1.296629 51.630108,-1.297558 51.630109,-1.297941 51.630140,-1.299744 51.630567,-1.299913 51.630740,-1.300151 51.630769,-1.301896 51.631213,-1.302476 51.631227,-1.303058 51.631167,-1.303880 51.631141,-1.304663 51.631153,-1.305476 51.631217,-1.306546 51.631390),(-1.298857 51.626581,-1.298856 51.626586,-1.298854 51.626581,-1.298857 51.626581)))
   </div>
 </details>
-                    </td>
-                    <td>Milton Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:VAL</td> 
+                <td>conservation-area:36</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

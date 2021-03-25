@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">POLRUAN</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/CON/47</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2021-02-18</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/de0b99137124fb1332b821c6f2f0a8f4af643c28bf2eb859e4ef5a38843446fc.csv#L48">de0b99137124...</a></td>
-                <td>47</td>
-                    <td>conservation-area:47</td> 
-                    <td>local-authority-eng:CON</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2021-02-18</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/de0b99137124fb1332b821c6f2f0a8f4af643c28bf2eb859e4ef5a38843446fc.csv#L48">de0b99137124...</a></td>
+            <td>47</td>
+                <td>POLRUAN</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-4.632776 50.328014,-4.632518 50.327708,-4.632219 50.327441,-4.631980 50.327463,-4.631815 50.327337,-4.632019 50.327158,-4.631746 50.326988,-4.632184 50.326621,-4.632783 50.326394,-4.633730 50.327079,-4.634189 50.327617,-4.634460 50.327600,-4.634541 50.327648,-4.634788 50.327640,-4.635006 50.327871,-4.635406 50.328023,-4.635217 50.328221,-4.635423 50.328297,-4.636171 50.328445,-4.637609 50.328668,-4.637534 50.328791,-4.637661 50.328838,-4.637723 50.328816,-4.637918 50.328919,-4.638191 50.328872,-4.638521 50.328860,-4.638753 50.328883,-4.638949 50.328972,-4.638894 50.328979,-4.638875 50.329013,-4.638780 50.328974,-4.638579 50.328995,-4.638512 50.328928,-4.638451 50.328968,-4.638370 50.328930,-4.638309 50.328965,-4.638341 50.328996,-4.638309 50.329012,-4.638489 50.329141,-4.638537 50.329244,-4.638528 50.329286,-4.638484 50.329307,-4.638509 50.329342,-4.638414 50.329365,-4.638478 50.329419,-4.638391 50.329436,-4.638448 50.329511,-4.638345 50.329552,-4.638428 50.329638,-4.638255 50.329629,-4.638262 50.329684,-4.638354 50.329760,-4.638501 50.329833,-4.638498 50.329863,-4.638446 50.329885,-4.638173 50.329816,-4.638019 50.329821,-4.638040 50.329865,-4.638003 50.329885,-4.637633 50.329856,-4.637113 50.329558,-4.637171 50.329511,-4.636955 50.329354,-4.636792 50.329283,-4.636705 50.329287,-4.636702 50.329249,-4.636660 50.329250,-4.636658 50.329282,-4.636571 50.329280,-4.636090 50.329156,-4.636105 50.329079,-4.635929 50.329046,-4.635926 50.329071,-4.635668 50.329086,-4.635618 50.329147,-4.635384 50.329217,-4.635367 50.329133,-4.635238 50.329148,-4.635220 50.329096,-4.635134 50.329135,-4.635125 50.329111,-4.635009 50.329127,-4.635025 50.329149,-4.634975 50.329162,-4.635040 50.329261,-4.634883 50.329283,-4.634814 50.329633,-4.634759 50.329669,-4.634682 50.329667,-4.634689 50.329604,-4.634653 50.329602,-4.634670 50.329466,-4.634640 50.329290,-4.634516 50.329106,-4.634467 50.329114,-4.634427 50.329070,-4.634245 50.329107,-4.634322 50.329234,-4.634047 50.329319,-4.634005 50.329254,-4.633897 50.329281,-4.634068 50.329538,-4.633785 50.329583,-4.633344 50.329707,-4.633181 50.329906,-4.633143 50.329893,-4.633082 50.329977,-4.632976 50.329957,-4.632740 50.330062,-4.632710 50.330165,-4.632489 50.330484,-4.631945 50.330363,-4.631881 50.330306,-4.632016 50.330181,-4.632202 50.330087,-4.632171 50.329909,-4.632363 50.329779,-4.632485 50.329737,-4.632474 50.329684,-4.631901 50.329469,-4.631882 50.329410,-4.632370 50.329227,-4.632503 50.329123,-4.632451 50.329018,-4.632578 50.328949,-4.632384 50.328634,-4.632666 50.328532,-4.632654 50.328494,-4.632723 50.328422,-4.632982 50.328284,-4.632776 50.328014)))
   </div>
 </details>
-                    </td>
-                    <td>POLRUAN</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:CON</td> 
+                <td>conservation-area:47</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

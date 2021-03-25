@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">The Avenue</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/STH/15</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                The Avenue            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/STH" class="govuk-link">Southampton City Council</a>
@@ -145,10 +168,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:15            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                The Avenue            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-09-12            </dd>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>geography</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-12</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/6a68cb39713a4e45d0c715bd6ae1dad80b2865ce9bd21f8d34091afa4dfb0e5f.csv#L14">6a68cb39713a...</a></td>
-                <td>13</td>
-                    <td>The Avenue</td> 
-                    <td>local-authority-eng:STH</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-12</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/6a68cb39713a4e45d0c715bd6ae1dad80b2865ce9bd21f8d34091afa4dfb0e5f.csv#L14">6a68cb39713a...</a></td>
+            <td>13</td>
+                <td>The Avenue</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.402143 50.914193,-1.402052 50.914161,-1.401395 50.914135,-1.400983 50.914168,-1.401059 50.914364,-1.400925 50.914468,-1.400468 50.914682,-1.400794 50.915171,-1.401116 50.915091,-1.401592 50.915853,-1.401279 50.915934,-1.401925 50.916994,-1.402028 50.917023,-1.402221 50.917459,-1.402135 50.917473,-1.402203 50.917620,-1.402131 50.917635,-1.402637 50.918679,-1.402927 50.918643,-1.402992 50.918878,-1.402843 50.918891,-1.402966 50.919282,-1.403155 50.919245,-1.403542 50.920050,-1.403570 50.920072,-1.403781 50.920029,-1.403859 50.920200,-1.403976 50.920185,-1.404031 50.920310,-1.403956 50.920326,-1.404005 50.920421,-1.404038 50.920414,-1.404175 50.920830,-1.403875 50.920877,-1.403977 50.921080,-1.404776 50.920924,-1.404918 50.921613,-1.406749 50.921296,-1.406494 50.920767,-1.406371 50.920803,-1.406077 50.920362,-1.405551 50.919677,-1.405691 50.919640,-1.405632 50.919554,-1.405332 50.919624,-1.405163 50.919412,-1.405470 50.919336,-1.405320 50.919135,-1.405188 50.919185,-1.404899 50.918803,-1.404729 50.918267,-1.404519 50.917804,-1.404595 50.917788,-1.404376 50.917323,-1.404624 50.917277,-1.404310 50.916545,-1.404074 50.915864,-1.404052 50.915870,-1.403867 50.915118,-1.403497 50.915142,-1.403464 50.914922,-1.403382 50.914909,-1.402512 50.914950,-1.402333 50.914379,-1.402282 50.914295,-1.402143 50.914193)))
   </div>
 </details>
-                    </td>
-                    <td>conservation-area:15</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:STH</td> 
+                <td>conservation-area:15</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

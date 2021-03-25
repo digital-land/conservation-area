@@ -132,16 +132,35 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Hidcote Bartrim Conservation Area</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/COT/154</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Hidcote Bartrim Conservation Area            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:154            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Hidcote Bartrim Conservation Area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-11</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L109">5a098a0110b3...</a></td>
-                <td>108</td>
-                    <td>conservation-area:154</td> 
-                    <td>local-authority-eng:COT</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-11</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/5a098a0110b34b50162315d40d71bd62db9577a44702719aaa9328182835027d.csv#L109">5a098a0110b3...</a></td>
+            <td>108</td>
+                <td>Hidcote Bartrim Conservation Area</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-1.741695 52.087984,-1.743051 52.085242,-1.742934 52.085018,-1.743136 52.084832,-1.743402 52.084303,-1.743555 52.084209,-1.743563 52.084174,-1.743320 52.084146,-1.743334 52.084110,-1.743366 52.084114,-1.743405 52.083995,-1.743549 52.084015,-1.743587 52.083880,-1.743543 52.083875,-1.743558 52.083830,-1.743292 52.083824,-1.743266 52.083779,-1.743113 52.083847,-1.743042 52.083834,-1.742983 52.083931,-1.741684 52.083630,-1.741653 52.083485,-1.741314 52.083059,-1.743601 52.083497,-1.744206 52.082897,-1.744280 52.082899,-1.744292 52.082872,-1.744218 52.082830,-1.744205 52.082770,-1.744356 52.082757,-1.744353 52.082515,-1.744332 52.082446,-1.744208 52.082431,-1.744205 52.082383,-1.744313 52.082357,-1.744292 52.082256,-1.744330 52.082250,-1.744354 52.082177,-1.744439 52.082152,-1.744425 52.082044,-1.746346 52.081812,-1.746375 52.081848,-1.745966 52.082882,-1.746424 52.082863,-1.746543 52.082916,-1.746784 52.082897,-1.746907 52.082942,-1.747073 52.082834,-1.747292 52.082824,-1.748118 52.082665,-1.748435 52.082641,-1.748918 52.082493,-1.749544 52.082625,-1.750308 52.082866,-1.750797 52.083064,-1.751342 52.083204,-1.750830 52.083574,-1.750658 52.083645,-1.750681 52.083790,-1.750455 52.083844,-1.750305 52.083936,-1.749017 52.085005,-1.748593 52.085310,-1.748524 52.085407,-1.748478 52.085402,-1.748461 52.085444,-1.746619 52.085384,-1.745532 52.085414,-1.745239 52.085428,-1.745211 52.085594,-1.744538 52.085549,-1.743164 52.085377,-1.741947 52.088020,-1.741695 52.087984)))
   </div>
 </details>
-                    </td>
-                    <td>Hidcote Bartrim Conservation Area</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:COT</td> 
+                <td>conservation-area:154</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

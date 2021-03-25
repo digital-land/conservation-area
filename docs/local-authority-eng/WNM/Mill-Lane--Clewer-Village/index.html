@@ -132,12 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Mill Lane, Clewer Village</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/WNM/Mill-Lane--Clewer-Village</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Mill Lane, Clewer Village            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:Mill Lane, Clewer Village            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -145,9 +164,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:WNM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WNM)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:Mill Lane, Clewer Village            </dd>
+            <dd class="govuk-summary-list__value">                Mill Lane, Clewer Village            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-08</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/292ababefd38db91e5f0a1c766db1a6fd1e004b49b399ba5af18c2d6fdb238d9.csv#L16">292ababefd38...</a></td>
-                <td>15</td>
-                    <td>conservation-area:Mill Lane, Clewer Village</td> 
-                    <td>local-authority-eng:WNM</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-08</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/292ababefd38db91e5f0a1c766db1a6fd1e004b49b399ba5af18c2d6fdb238d9.csv#L16">292ababefd38...</a></td>
+            <td>15</td>
+                <td>Mill Lane, Clewer Village</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((-0.627118 51.486986,-0.626920 51.487299,-0.626779 51.487215,-0.626607 51.487187,-0.626564 51.487154,-0.626491 51.487172,-0.626097 51.487123,-0.625776 51.487210,-0.625049 51.487101,-0.624019 51.486752,-0.624110 51.486671,-0.624225 51.486611,-0.624291 51.486612,-0.624346 51.486548,-0.624841 51.486284,-0.625333 51.486139,-0.625725 51.486083,-0.625994 51.486142,-0.626170 51.486035,-0.625716 51.485978,-0.625663 51.485899,-0.625418 51.485928,-0.625028 51.485902,-0.624714 51.485837,-0.624275 51.485797,-0.624303 51.485561,-0.624412 51.485411,-0.624501 51.485165,-0.624742 51.485161,-0.625158 51.485213,-0.625272 51.484847,-0.625472 51.484871,-0.625582 51.484540,-0.625674 51.484099,-0.626398 51.484185,-0.626493 51.484146,-0.626566 51.483937,-0.626623 51.483888,-0.626821 51.483842,-0.627226 51.483909,-0.626717 51.485326,-0.626732 51.485572,-0.627042 51.485927,-0.627352 51.486152,-0.627592 51.486251,-0.627841 51.486174,-0.628278 51.486793,-0.627953 51.486716,-0.627951 51.486802,-0.627904 51.486833,-0.627674 51.486838,-0.627437 51.486919,-0.627333 51.487013,-0.627118 51.486986)))
   </div>
 </details>
-                    </td>
-                    <td>Mill Lane, Clewer Village</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:WNM</td> 
+                <td>conservation-area:Mill Lane, Clewer Village</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

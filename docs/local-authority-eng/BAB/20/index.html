@@ -132,6 +132,25 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">conservation-area</span>
     <h1 class="govuk-heading-xl">Stradbroke</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/BAB/20</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
@@ -139,15 +158,15 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Stradbroke            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:20            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BAB" class="govuk-link">Babergh District Council</a>
 <span title="Organisation identifier: local-authority-eng:BAB" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BAB)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:20            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -158,7 +177,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -176,30 +197,31 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>geography</th>
-                <th>organisation</th>
-                <th>geometry</th>
-                <th>name</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-09-11</td>
-                <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea8b5f08dde355f8b4cc435efd408c5519e64db1b208acc7987b0ffd50a935c6.csv#L20">ea8b5f08dde3...</a></td>
-                <td>19</td>
-                    <td>conservation-area:20</td> 
-                    <td>local-authority-eng:BAB</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-11</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/ea8b5f08dde355f8b4cc435efd408c5519e64db1b208acc7987b0ffd50a935c6.csv#L20">ea8b5f08dde3...</a></td>
+            <td>19</td>
+                <td>Stradbroke</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -209,12 +231,15 @@ crossorigin="" />
     MULTIPOLYGON (((1.275171 52.316571,1.274866 52.316458,1.274922 52.316298,1.274596 52.316275,1.274095 52.316313,1.273497 52.316256,1.273288 52.316489,1.273223 52.316591,1.273172 52.316763,1.273610 52.316836,1.273557 52.317196,1.273137 52.317119,1.272980 52.317358,1.272061 52.317179,1.272110 52.317090,1.271638 52.317060,1.271619 52.317095,1.271164 52.317097,1.271219 52.317559,1.271186 52.317590,1.269238 52.317344,1.269152 52.317363,1.267570 52.317122,1.267668 52.316859,1.267233 52.316774,1.267072 52.317044,1.266714 52.316976,1.266587 52.317293,1.266836 52.317373,1.267560 52.317468,1.267582 52.317498,1.267919 52.317554,1.267825 52.317995,1.268165 52.318014,1.268533 52.318086,1.268631 52.317862,1.269439 52.318013,1.269514 52.317883,1.269582 52.317862,1.270355 52.318001,1.271105 52.318005,1.271358 52.318055,1.271417 52.317970,1.271538 52.318005,1.271660 52.317945,1.272080 52.318099,1.271981 52.318233,1.271912 52.318215,1.271686 52.318558,1.271633 52.318545,1.271589 52.318635,1.270942 52.319398,1.270694 52.319571,1.270732 52.319951,1.270102 52.320014,1.270106 52.320215,1.270023 52.320198,1.270011 52.320232,1.270093 52.320484,1.270861 52.320600,1.270803 52.320916,1.270717 52.321117,1.271365 52.321214,1.270890 52.321780,1.271127 52.321831,1.271113 52.321872,1.271417 52.321898,1.271488 52.321729,1.272288 52.321805,1.272336 52.321379,1.272699 52.321409,1.273830 52.321407,1.273946 52.320570,1.273886 52.320531,1.273374 52.320561,1.273361 52.320382,1.273522 52.320307,1.273534 52.320208,1.273498 52.320154,1.273550 52.320125,1.273748 52.320038,1.273932 52.320060,1.273991 52.319756,1.273767 52.319713,1.273907 52.319459,1.273927 52.319364,1.273966 52.319367,1.274019 52.319090,1.274123 52.319110,1.274651 52.318524,1.275265 52.318698,1.275418 52.318488,1.275014 52.318309,1.274272 52.318087,1.274532 52.317831,1.274854 52.317617,1.274786 52.317459,1.274587 52.317373,1.274685 52.317019,1.274869 52.317034,1.275168 52.316613,1.275171 52.316571)),((1.275171 52.316571,1.275173 52.316572,1.275170 52.316569,1.275171 52.316571)))
   </div>
 </details>
-                    </td>
-                    <td>Stradbroke</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>local-authority-eng:BAB</td> 
+                <td>conservation-area:20</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -316,5 +341,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>
