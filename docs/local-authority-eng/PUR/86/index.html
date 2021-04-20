@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>Dorset Heaths (Purbeck &amp; Wareham) &amp; Studland Dunes | Conservation-area | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about">Team</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/guidance/">Guidance</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/dataset/">Datasets</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/organisation/">Organisations</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/map/">Map</a>
+            </li>
+          </ul>
+        </nav>
+</div>
+    </div>
+  </div>
+</header>
+
+      <div class="govuk-width-container ">
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype. Please provide feedback to the Digital Land team.
+    </span>
+  </p>
+</div><div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../../../">Conservation Area</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../../">Local Authority Eng</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../">PUR</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">conservation-area:86</li>
+  </ol>
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+<span class="govuk-caption-xl">conservation-area</span>
+    <h1 class="govuk-heading-xl">Dorset Heaths (Purbeck &amp; Wareham) &amp; Studland Dunes</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+    <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/PUR/86</h4>
+    <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Dorset Heaths (Purbeck &amp; Wareham) &amp; Studland Dunes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:86            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">reference
+            </dt>
+            <dd class="govuk-summary-list__value">                86            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/PUR" class="govuk-link">Purbeck District Council</a>
+<span title="Organisation identifier: local-authority-eng:PUR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:PUR)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entry-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-09-11            </dd>
+        </div>    
+    </dl></article>
+</div>
+            
+</div>
+
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
+
+
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+    <div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
+        id="dlMap"
+        data-module="boundary-map"
+        style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+</div>
+
+
+    <div class="govuk-!-margin-top-2">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>organisation</th>
+            <th>reference</th>
+            <th>geography</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-11</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/61a1993b7cf1c81fdfab7689b68228089f342f33ccd4504accfaa434510f8c3d.csv#L91">61a1993b7cf1...</a></td>
+            <td>90</td>
+                <td>Dorset Heaths (Purbeck &amp; Wareham) &amp; Studland Dunes</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.950010 50.680192,-1.950037 50.680170,-1.949835 50.680128,-1.949321 50.679480,-1.948246 50.678470,-1.948044 50.678140,-1.948023 50.678045,-1.947828 50.677682,-1.947395 50.676249,-1.946998 50.675749,-1.946759 50.675527,-1.946374 50.675302,-1.945981 50.675127,-1.945448 50.674941,-1.944991 50.674823,-1.943098 50.674474,-1.943092 50.674543,-1.942912 50.674571,-1.941629 50.674327,-1.941022 50.673911,-1.940848 50.673855,-1.940809 50.673818,-1.940768 50.673661,-1.940883 50.673423,-1.941052 50.672834,-1.941082 50.672469,-1.941069 50.671770,-1.941333 50.671141,-1.941362 50.670976,-1.941447 50.670775,-1.941885 50.670026,-1.942036 50.669874,-1.942440 50.669618,-1.942890 50.669102,-1.943553 50.668485,-1.943855 50.668157,-1.944175 50.667897,-1.944549 50.667489,-1.945371 50.666685,-1.946128 50.665578,-1.946478 50.664931,-1.946640 50.664712,-1.947385 50.663979,-1.947682 50.663556,-1.948258 50.662512,-1.948618 50.662042,-1.949163 50.661089,-1.949655 50.660442,-1.950140 50.659903,-1.951144 50.658520,-1.951402 50.658102,-1.951831 50.657215,-1.952128 50.656340,-1.952250 50.655542,-1.952313 50.655348,-1.952305 50.655077,-1.952383 50.654657,-1.952427 50.654483,-1.952586 50.654125,-1.952648 50.653786,-1.952633 50.653285,-1.952536 50.652683,-1.952404 50.652278,-1.952113 50.651578,-1.951517 50.650454,-1.951226 50.650047,-1.950638 50.649464,-1.950194 50.648744,-1.950067 50.648592,-1.949599 50.647578,-1.949540 50.647206,-1.949554 50.646864,-1.949404 50.646453,-1.949000 50.646100,-1.948673 50.645927,-1.948458 50.645870,-1.949230 50.645621,-1.949662 50.645937,-1.949656 50.645916,-1.949714 50.645906,-1.950031 50.646200,-1.950129 50.646238,-1.950111 50.646270,-1.950172 50.646251,-1.950195 50.646329,-1.950292 50.646436,-1.950251 50.646460,-1.950265 50.646561,-1.950173 50.646669,-1.950247 50.646759,-1.950426 50.647153,-1.950424 50.647216,-1.950625 50.647548,-1.950719 50.647865,-1.951078 50.648439,-1.951009 50.648463,-1.951054 50.648552,-1.951467 50.649180,-1.951438 50.649190,-1.951475 50.649193,-1.951745 50.649589,-1.951782 50.649480,-1.951673 50.649274,-1.951693 50.649149,-1.951815 50.649092,-1.952124 50.649036,-1.952128 50.648994,-1.951983 50.648736,-1.951611 50.648244,-1.951077 50.647631,-1.951005 50.647424,-1.951000 50.647288,-1.951153 50.646851,-1.951078 50.646692,-1.950907 50.646532,-1.951159 50.646311,-1.951239 50.646177,-1.951384 50.646112,-1.951546 50.645919,-1.951697 50.645813,-1.951706 50.645749,-1.951676 50.645705,-1.951416 50.645536,-1.951430 50.645447,-1.951599 50.645226,-1.951806 50.645116,-1.951845 50.645006,-1.951947 50.644950,-1.952126 50.644645,-1.952079 50.644522,-1.952284 50.644524,-1.952636 50.644573,-1.952825 50.644658,-1.952898 50.644730,-1.952859 50.644848,-1.952786 50.644920,-1.952760 50.645022,-1.952631 50.645168,-1.952654 50.645263,-1.952751 50.645318,-1.952311 50.645645,-1.952163 50.645845,-1.952136 50.645914,-1.952277 50.646154,-1.952333 50.646170,-1.951756 50.646445,-1.951620 50.646552,-1.951532 50.646675,-1.951376 50.647091,-1.951405 50.647196,-1.951567 50.647290,-1.951662 50.647427,-1.951609 50.647452,-1.951631 50.647508,-1.951833 50.647597,-1.951988 50.647627,-1.952128 50.647766,-1.952270 50.647854,-1.952204 50.648024,-1.952743 50.648695,-1.952284 50.649315,-1.952325 50.649350,-1.952283 50.649359,-1.952332 50.649417,-1.952292 50.649461,-1.952191 50.649486,-1.952046 50.649578,-1.951953 50.649691,-1.951980 50.649723,-1.951686 50.649787,-1.951708 50.649831,-1.951788 50.649815,-1.951926 50.650000,-1.952626 50.651004,-1.952789 50.651323,-1.952925 50.651688,-1.953060 50.652209,-1.953071 50.652924,-1.953404 50.653320,-1.953572 50.653467,-1.953747 50.653493,-1.953983 50.653436,-1.954218 50.653324,-1.954316 50.653244,-1.954498 50.652965,-1.954550 50.652829,-1.954994 50.652617,-1.955729 50.652464,-1.955652 50.652344,-1.955748 50.652330,-1.955690 50.652196,-1.955701 50.652109,-1.955537 50.651852,-1.955496 50.651835,-1.955465 50.651735,-1.955491 50.651646,-1.955717 50.651403,-1.956238 50.651268,-1.956350 50.651283,-1.956456 50.651255,-1.956566 50.651179,-1.957483 50.650943,-1.957569 50.650958,-1.957845 50.651446,-1.958164 50.651787,-1.960747 50.653646,-1.961189 50.654147,-1.961451 50.654615,-1.961548 50.654991,-1.961542 50.655255,-1.961372 50.655909,-1.961367 50.656217,-1.961498 50.656617,-1.961719 50.656924,-1.962071 50.657222,-1.962345 50.657368,-1.964662 50.658285,-1.965066 50.658487,-1.965554 50.658875,-1.965872 50.659248,-1.966023 50.659580,-1.967205 50.662977,-1.967367 50.663542,-1.967383 50.663810,-1.967342 50.664102,-1.967170 50.664524,-1.966921 50.664884,-1.966657 50.665132,-1.954460 50.673872,-1.953769 50.674444,-1.953380 50.674842,-1.952403 50.676100,-1.951909 50.676348,-1.951724 50.676335,-1.951184 50.677073,-1.951123 50.677220,-1.951075 50.677239,-1.951084 50.677301,-1.950632 50.677795,-1.950479 50.678171,-1.950317 50.678239,-1.950499 50.678319,-1.950396 50.678358,-1.950447 50.678429,-1.950277 50.678668,-1.950478 50.678733,-1.950486 50.678767,-1.950410 50.678874,-1.950524 50.678894,-1.950791 50.678524,-1.951056 50.678493,-1.951128 50.678433,-1.951398 50.678398,-1.951428 50.678438,-1.951150 50.678553,-1.950595 50.679227,-1.950480 50.679300,-1.950398 50.679505,-1.950315 50.679581,-1.950161 50.680128,-1.950098 50.680192,-1.950010 50.680192)))
+  </div>
+</details>
+                </td>
+                <td>local-authority-eng:PUR</td> 
+                <td>86</td> 
+                <td>conservation-area:86</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
+</div>
+</div>        </main>
+      </div>
+
+    <div class="dlf-feedback__wrapper">
+    <div class="dlf-feedback">
+    <div class="dlf-feedback__prompt">
+        <div class="dlf-feedback__prompt-content">
+            <span class="dlf-feedback__prompt-content__text">Spotted an issue? Let us know so we can improve the data.</span>
+        </div>
+        <div class="dlf-feedback__prompt-action">
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (conservation-area:86) Dorset Heaths (Purbeck &amp; Wareham) &amp; Studland Dunes -- conservation-area" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<footer class="govuk-footer " role="contentinfo"
+>
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+              </ul>
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+
+<script>
+    const $mapElement = document.querySelector('[data-module="boundary-map"]')
+    const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
+</script>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
+</html>
