@@ -11,9 +11,7 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html">
-
-<!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,14 +152,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/LBH/CA14</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                CA14            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Gipsy Hill            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LBH" class="govuk-link">London Borough of Lambeth</a>
@@ -172,17 +162,25 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:CA14            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">reference
+            </dt>
+            <dd class="govuk-summary-list__value">                CA14            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Gipsy Hill            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2021-04-09            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                1974-01-01            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">documentation-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://beta.lambeth.gov.uk/planning-and-building-control/conservation-and-listed-buildings/conservation-area-profiles/gipsy">https://beta.lambeth.gov.uk/planning-and-building-control/conservation-and-listed-buildings/conservation-area-profiles/gipsy</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                1974-01-01            </dd>
         </div>    
     </dl></article>
 </div>
@@ -221,12 +219,12 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
+            <th>geometry</th>
+            <th>geography</th>
+            <th>documentation-url</th>
             <th>organisation</th>
             <th>reference</th>
-            <th>geometry</th>
-            <th>documentation-url</th>
-            <th>geography</th>
-            <th>name</th>
             <th>start-date</th>
         </tr>
     </thead>
@@ -234,19 +232,18 @@ crossorigin="" />
             <td>2021-04-09</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/e1acccbd6a46963b7c34ea51d1255e28d605b35264a7a7d583121de641b54bbf.csv#L7">e1acccbd6a46...</a></td>
             <td>6</td>
+                <td>Gipsy Hill</td> 
+            <td></td>
+                <td>conservation-area:CA14</td> 
+                <td>https://beta.lambeth.gov.uk/planning-and-building-control/conservation-and-listed-buildings/conservation-area-profiles/gipsy</td> 
                 <td>local-authority-eng:LBH</td> 
                 <td>CA14</td> 
-            <td></td>
-                <td>https://beta.lambeth.gov.uk/planning-and-building-control/conservation-and-listed-buildings/conservation-area-profiles/gipsy</td> 
-                <td>conservation-area:CA14</td> 
-                <td>Gipsy Hill</td> 
                 <td>1974-01-01</td> 
         </tr>        <tr>
             <td>2020-09-04</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f498f7e6f6eab582c68aa42a62bf61b74a01cf938d664fe44aaa0bb5ba23d845.csv#L28">f498f7e6f6ea...</a></td>
             <td>27</td>
-                <td>local-authority-eng:LBH</td> 
-                <td>CA14</td> 
+                <td>Gipsy Hill</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -259,9 +256,10 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-            <td></td>
                 <td>conservation-area:CA14</td> 
-                <td>Gipsy Hill</td> 
+            <td></td>
+                <td>local-authority-eng:LBH</td> 
+                <td>CA14</td> 
             <td></td>
         </tr>    </tbody>
 </table>
@@ -279,7 +277,7 @@ crossorigin="" />
             <span class="dlf-feedback__prompt-content__text">Spotted an issue? Let us know so we can improve the data.</span>
         </div>
         <div class="dlf-feedback__prompt-action">
-            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (conservation-area:CA14) Gipsy Hill -- conservation-area" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (geography) Gipsy Hill -- conservation-area" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
         </div>
     </div>
 </div>
