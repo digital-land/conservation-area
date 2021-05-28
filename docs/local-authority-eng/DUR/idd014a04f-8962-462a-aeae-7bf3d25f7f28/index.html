@@ -167,13 +167,13 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:DUR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:DUR)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:idd014a04f-8962-462a-aeae-7bf3d25f7f28            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                idd014a04f-8962-462a-aeae-7bf3d25f7f28            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:idd014a04f-8962-462a-aeae-7bf3d25f7f28            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -219,18 +219,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>reference</th>
             <th>geometry</th>
+            <th>reference</th>
             <th>name</th>
-            <th>organisation</th>
             <th>geography</th>
+            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-09-06</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/65bbb8c0161e34e08b371ff6f5008298526ad271ee885752fe28e8b52b007b5b.csv#L73">65bbb8c0161e...</a></td>
             <td>72</td>
-                <td>idd014a04f-8962-462a-aeae-7bf3d25f7f28</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,9 +242,10 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>idd014a04f-8962-462a-aeae-7bf3d25f7f28</td> 
                 <td>Bowes</td> 
-                <td>local-authority-eng:DUR</td> 
                 <td>conservation-area:idd014a04f-8962-462a-aeae-7bf3d25f7f28</td> 
+                <td>local-authority-eng:DUR</td> 
         </tr>    </tbody>
 </table>
 
@@ -360,7 +360,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

@@ -163,29 +163,29 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:SWK" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SWK)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:COA00000794            </dd>
+            <dd class="govuk-summary-list__value">                Liberty of the Mint            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                47            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Liberty of the Mint            </dd>
+            <dd class="govuk-summary-list__value">                conservation-area:COA00000794            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2021-04-09            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2015-12-01            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">documentation-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.southwark.gov.uk/planning-and-building-control/design-and-conservation/conservation-areas?chapter=23">https://www.southwark.gov.uk/planning-and-building-control/design-and-conservation/conservation-areas?chapter=23</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2015-12-01            </dd>
         </div>    
     </dl></article>
 </div>
@@ -227,33 +227,30 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>reference</th>
-            <th>start-date</th>
-            <th>documentation-url</th>
             <th>geometry</th>
+            <th>documentation-url</th>
+            <th>reference</th>
             <th>name</th>
-            <th>organisation</th>
+            <th>start-date</th>
             <th>geography</th>
+            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-04-09</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/e1acccbd6a46963b7c34ea51d1255e28d605b35264a7a7d583121de641b54bbf.csv#L108">e1acccbd6a46...</a></td>
             <td>107</td>
-                <td>47</td> 
-                <td>2015-12-01</td> 
-                <td>https://www.southwark.gov.uk/planning-and-building-control/design-and-conservation/conservation-areas?chapter=23</td> 
             <td></td>
+                <td>https://www.southwark.gov.uk/planning-and-building-control/design-and-conservation/conservation-areas?chapter=23</td> 
+                <td>47</td> 
                 <td>Liberty of the Mint</td> 
-                <td>local-authority-eng:SWK</td> 
+                <td>2015-12-01</td> 
                 <td>conservation-area:COA00000794</td> 
+                <td>local-authority-eng:SWK</td> 
         </tr>        <tr>
             <td>2020-09-04</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L800">f617d13ef7ff...</a></td>
             <td>799</td>
-                <td>COA00000794</td> 
-            <td></td>
-            <td></td>
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -266,9 +263,12 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+            <td></td>
+                <td>COA00000794</td> 
                 <td>Liberty of the Mint</td> 
-                <td>local-authority-eng:SWK</td> 
+            <td></td>
                 <td>conservation-area:COA00000794</td> 
+                <td>local-authority-eng:SWK</td> 
         </tr>    </tbody>
 </table>
 
@@ -283,11 +283,11 @@ crossorigin="" />
             <h3 class="govuk-heading-s">Document</h3>
             <ul class="govuk-list govuk-list--bullet">                <li>
                     <a href=/document/area-appraisal/COA00000794-1>None</a>
-                    <span class="secondary-text data-reference">(area-appraisal:COA00000794-1)</span>
+                    <span class="secondary-text data-reference">(145)</span>
                 </li>
                 <li>
                     <a href=/document/authoritative-boundary/COA00000794-1>None</a>
-                    <span class="secondary-text data-reference">(authoritative-boundary:COA00000794-1)</span>
+                    <span class="secondary-text data-reference">(327)</span>
                 </li>
 </ul>
 </div>
@@ -393,7 +393,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

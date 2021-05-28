@@ -165,15 +165,15 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:10            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                10            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SLF" class="govuk-link">Salford City Council</a>
 <span title="Organisation identifier: local-authority-eng:SLF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SLF)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">reference
+            </dt>
+            <dd class="govuk-summary-list__value">                10            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -219,18 +219,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>reference</th>
             <th>geometry</th>
+            <th>reference</th>
             <th>name</th>
-            <th>organisation</th>
             <th>geography</th>
+            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-03-04</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/804c40e898b06dd3e7211583810f9de552f2ffd0d4edc9980cfa0357a9cc362c.csv#L12">804c40e898b0...</a></td>
             <td>11</td>
-                <td>10</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,14 +242,14 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>10</td> 
                 <td>Mines Rescue Station</td> 
-                <td>local-authority-eng:SLF</td> 
                 <td>conservation-area:10</td> 
+                <td>local-authority-eng:SLF</td> 
         </tr>        <tr>
             <td>2020-09-06</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/a49d233ee0018bd9fb17e6b724aa95f02419beb4fa2b81bed88e50e07eab75f8.csv#L12">a49d233ee001...</a></td>
             <td>11</td>
-                <td>10</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -263,9 +262,10 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>10</td> 
                 <td>Mines Rescue Station</td> 
-                <td>local-authority-eng:SLF</td> 
                 <td>conservation-area:10</td> 
+                <td>local-authority-eng:SLF</td> 
         </tr>    </tbody>
 </table>
 
@@ -380,7 +380,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

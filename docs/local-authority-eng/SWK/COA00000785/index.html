@@ -157,10 +157,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/SWK/COA00000785</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Honor Oak Rise            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SWK" class="govuk-link">London Borough of Southwark</a>
@@ -171,6 +167,10 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000785            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Honor Oak Rise            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                26            </dd>
@@ -179,13 +179,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2021-04-09            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.southwark.gov.uk/planning-and-building-control/design-and-conservation/conservation-areas?chapter=18">https://www.southwark.gov.uk/planning-and-building-control/design-and-conservation/conservation-areas?chapter=18</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                1985-09-29            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">documentation-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.southwark.gov.uk/planning-and-building-control/design-and-conservation/conservation-areas?chapter=18">https://www.southwark.gov.uk/planning-and-building-control/design-and-conservation/conservation-areas?chapter=18</a>            </dd>
         </div>    
     </dl></article>
 </div>
@@ -227,33 +227,30 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
-            <th>reference</th>
-            <th>documentation-url</th>
             <th>geometry</th>
+            <th>documentation-url</th>
+            <th>reference</th>
             <th>name</th>
-            <th>organisation</th>
+            <th>start-date</th>
             <th>geography</th>
+            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-04-09</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/e1acccbd6a46963b7c34ea51d1255e28d605b35264a7a7d583121de641b54bbf.csv#L99">e1acccbd6a46...</a></td>
             <td>98</td>
-                <td>1985-09-29</td> 
-                <td>26</td> 
-                <td>https://www.southwark.gov.uk/planning-and-building-control/design-and-conservation/conservation-areas?chapter=18</td> 
             <td></td>
+                <td>https://www.southwark.gov.uk/planning-and-building-control/design-and-conservation/conservation-areas?chapter=18</td> 
+                <td>26</td> 
                 <td>Honor Oak Rise</td> 
-                <td>local-authority-eng:SWK</td> 
+                <td>1985-09-29</td> 
                 <td>conservation-area:COA00000785</td> 
+                <td>local-authority-eng:SWK</td> 
         </tr>        <tr>
             <td>2020-09-04</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L787">f617d13ef7ff...</a></td>
             <td>786</td>
-            <td></td>
-                <td>COA00000785</td> 
-            <td></td>
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -266,9 +263,12 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+            <td></td>
                 <td>COA00000785</td> 
-                <td>local-authority-eng:SWK</td> 
+                <td>COA00000785</td> 
+            <td></td>
                 <td>conservation-area:COA00000785</td> 
+                <td>local-authority-eng:SWK</td> 
         </tr>    </tbody>
 </table>
 
@@ -283,7 +283,7 @@ crossorigin="" />
             <h3 class="govuk-heading-s">Document</h3>
             <ul class="govuk-list govuk-list--bullet">                <li>
                     <a href=/document/notice/COA00000785-1>None</a>
-                    <span class="secondary-text data-reference">(notice:COA00000785-1)</span>
+                    <span class="secondary-text data-reference">(530)</span>
                 </li>
 </ul>
 </div>
@@ -389,7 +389,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map
