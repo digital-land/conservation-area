@@ -161,10 +161,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:653492            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                653492            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LND" class="govuk-link">City of London Corporation</a>
@@ -174,6 +170,10 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Bishopsgate            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">reference
+            </dt>
+            <dd class="govuk-summary-list__value">                653492            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -219,21 +219,18 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>organisation</th>
             <th>geography</th>
-            <th>reference</th>
-            <th>name</th>
             <th>geometry</th>
+            <th>organisation</th>
+            <th>name</th>
+            <th>reference</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-01-23</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/91bda03ea30d005becc524003436d555b42bdc849dc3247889c8bdfd3ead5927.csv#L25">91bda03ea30d...</a></td>
             <td>24</td>
-                <td>local-authority-eng:LND</td> 
                 <td>conservation-area:653492</td> 
-                <td>653492</td> 
-                <td>Bishopsgate</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -246,6 +243,9 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>local-authority-eng:LND</td> 
+                <td>Bishopsgate</td> 
+                <td>653492</td> 
         </tr>    </tbody>
 </table>
 
@@ -355,7 +355,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

@@ -219,21 +219,18 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>organisation</th>
             <th>geography</th>
-            <th>reference</th>
-            <th>name</th>
             <th>geometry</th>
+            <th>organisation</th>
+            <th>name</th>
+            <th>reference</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-09-14</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/bd5a54fc8d0377744c5f5c53d6235337e1e9b92aa8552de0e47b414b21d54e76.csv#L5">bd5a54fc8d03...</a></td>
             <td>4</td>
-                <td>national-park-authority:Q27159704</td> 
                 <td>conservation-area:Keswick</td> 
-                <td>Keswick</td> 
-                <td>Keswick</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -246,6 +243,9 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>national-park-authority:Q27159704</td> 
+                <td>Keswick</td> 
+                <td>Keswick</td> 
         </tr>    </tbody>
 </table>
 
@@ -355,7 +355,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

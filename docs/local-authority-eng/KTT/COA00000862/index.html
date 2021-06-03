@@ -163,7 +163,7 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:KTT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:KTT)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                COA00000862            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -171,7 +171,7 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000862            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                COA00000862            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -219,21 +219,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>geometry</th>
             <th>geography</th>
             <th>organisation</th>
-            <th>reference</th>
             <th>name</th>
-            <th>geometry</th>
+            <th>reference</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-09-04</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L867">f617d13ef7ff...</a></td>
             <td>866</td>
-                <td>conservation-area:COA00000862</td> 
-                <td>local-authority-eng:KTT</td> 
-                <td>COA00000862</td> 
-                <td>COA00000862</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -246,6 +242,10 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>conservation-area:COA00000862</td> 
+                <td>local-authority-eng:KTT</td> 
+                <td>COA00000862</td> 
+                <td>COA00000862</td> 
         </tr>    </tbody>
 </table>
 
@@ -355,7 +355,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

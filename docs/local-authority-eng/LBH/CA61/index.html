@@ -163,6 +163,10 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:LBH" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LBH)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">reference
+            </dt>
+            <dd class="govuk-summary-list__value">                CA61            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Herne Hill            </dd>
@@ -170,10 +174,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:CA61            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                CA61            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -227,36 +227,32 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
-            <th>documentation-url</th>
-            <th>organisation</th>
             <th>geography</th>
-            <th>reference</th>
-            <th>name</th>
+            <th>start-date</th>
             <th>geometry</th>
+            <th>organisation</th>
+            <th>name</th>
+            <th>documentation-url</th>
+            <th>reference</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-04-09</td>
-            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/e1acccbd6a46963b7c34ea51d1255e28d605b35264a7a7d583121de641b54bbf.csv#L59">e1acccbd6a46...</a></td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/c2f5fcc2524537d98ac79da451ceb62f1bd3b3640fb1ea726636cbe517b67bff.csv#L59">c2f5fcc25245...</a></td>
             <td>58</td>
-                <td>2007-12-01</td> 
-                <td>https://beta.lambeth.gov.uk/planning-and-building-control/conservation-and-listed-buildings/conservation-area-profiles/herne</td> 
-                <td>local-authority-eng:LBH</td> 
                 <td>conservation-area:CA61</td> 
-                <td>CA61</td> 
-                <td>Herne Hill</td> 
+                <td>2007-12-01</td> 
             <td></td>
+                <td>local-authority-eng:LBH</td> 
+                <td>Herne Hill</td> 
+                <td>https://beta.lambeth.gov.uk/planning-and-building-control/conservation-and-listed-buildings/conservation-area-profiles/herne</td> 
+                <td>CA61</td> 
         </tr>        <tr>
             <td>2020-09-04</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f498f7e6f6eab582c68aa42a62bf61b74a01cf938d664fe44aaa0bb5ba23d845.csv#L48">f498f7e6f6ea...</a></td>
             <td>47</td>
-            <td></td>
-            <td></td>
-                <td>local-authority-eng:LBH</td> 
                 <td>conservation-area:CA61</td> 
-                <td>CA61</td> 
-                <td>Herne Hill</td> 
+            <td></td>
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -269,6 +265,10 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>local-authority-eng:LBH</td> 
+                <td>Herne Hill</td> 
+            <td></td>
+                <td>CA61</td> 
         </tr>    </tbody>
 </table>
 
@@ -404,7 +404,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
