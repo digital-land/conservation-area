@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -219,21 +222,18 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
             <th>geography</th>
+            <th>geometry</th>
+            <th>name</th>
             <th>organisation</th>
             <th>reference</th>
-            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-09-08</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/def807a666ecdf7f42f597d5c4ea57f11220d8c6823e3dc588d42373eb8519bb.csv#L17">def807a666ec...</a></td>
             <td>16</td>
-                <td>Fenchurch Street Station</td> 
                 <td>conservation-area:623686</td> 
-                <td>local-authority-eng:LND</td> 
-                <td>623686</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -246,6 +246,9 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>Fenchurch Street Station</td> 
+                <td>local-authority-eng:LND</td> 
+                <td>623686</td> 
         </tr>    </tbody>
 </table>
 
