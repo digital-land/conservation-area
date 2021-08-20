@@ -158,6 +158,10 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/LND/676535</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:676535            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Reference
             </dt>
             <dd class="govuk-summary-list__value">                676535            </dd>
@@ -172,10 +176,6 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:LND" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LND)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Geography
-            </dt>
-            <dd class="govuk-summary-list__value">                conservation-area:676535            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
             <dd class="govuk-summary-list__value">                2021-05-14            </dd>
@@ -187,20 +187,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -218,19 +216,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>reference</th>
-            <th>name</th>
             <th>geometry</th>
-            <th>organisation</th>
+            <th>reference</th>
             <th>geography</th>
+            <th>organisation</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-14</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/2591f78af30f1fcc3c0304c1b1a133ea76d0c61a36841b2dcffab6f5fc7b7f13.csv#L14">2591f78af30f...</a></td>
             <td>13</td>
-                <td>676535</td> 
-                <td>Laurence Pountney Hill</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,8 +239,10 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>local-authority-eng:LND</td> 
+                <td>676535</td> 
                 <td>conservation-area:676535</td> 
+                <td>local-authority-eng:LND</td> 
+                <td>Laurence Pountney Hill</td> 
         </tr>    </tbody>
 </table>
 
