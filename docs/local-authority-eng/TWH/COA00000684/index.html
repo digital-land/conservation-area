@@ -156,12 +156,16 @@ crossorigin="" />
 
 <div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
-        <!-- this section can probably be removed. Entities no longer have a resource field<article class="data-record govuk-!-margin-bottom-6">
+        <!-- this section can probably be removed. Entities no longer have a resource field --><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/TWH/COA00000684</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                conservation-area:COA00000684            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                Wapping Wall COA00000684            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
@@ -172,10 +176,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">Reference
             </dt>
             <dd class="govuk-summary-list__value">                COA00000684            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
-            </dt>
-            <dd class="govuk-summary-list__value">                Wapping Wall COA00000684            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
@@ -221,17 +221,20 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>organisation</th>
+            <th>reference</th>
+            <th>geography</th>
             <th>geometry</th>
             <th>name</th>
-            <th>organisation</th>
-            <th>geography</th>
-            <th>reference</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-09-04</td>
             <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/f617d13ef7ff061424ec50ed641f05779797ff03beb2cde6935f2a307c01ab44.csv#L685">f617d13ef7ff...</a></td>
             <td>684</td>
+                <td>local-authority-eng:TWH</td> 
+                <td>COA00000684</td> 
+                <td>conservation-area:COA00000684</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,9 +248,6 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Wapping Wall COA00000684</td> 
-                <td>local-authority-eng:TWH</td> 
-                <td>conservation-area:COA00000684</td> 
-                <td>COA00000684</td> 
         </tr>    </tbody>
 </table>
 
