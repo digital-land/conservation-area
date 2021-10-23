@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>Gosforth | Conservation-area | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about">Team</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/guidance/">Guidance</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/dataset/">Datasets</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/organisation/">Organisations</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/map/">Map</a>
+            </li>
+          </ul>
+        </nav>
+</div>
+    </div>
+  </div>
+</header>
+
+      <div class="govuk-width-container ">
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype. Please provide feedback to the Digital Land team.
+    </span>
+  </p>
+</div><div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../../../">Conservation Area</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../../">Local Authority Eng</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../">NET</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">conservation-area:9</li>
+  </ol>
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+<span class="govuk-caption-xl">Conservation area</span>
+    <h1 class="govuk-heading-xl">Gosforth</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li><li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
+                None References
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+<div id="record">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
+        <!-- this section can probably be removed. Entities no longer have a resource field --><article class="data-record govuk-!-margin-bottom-6">
+    <h4 class="govuk-heading-s data-record__identifier">#/conservation-area/local-authority-eng/NET/9</h4>
+    <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="/entity/?slug=/organisation/local-authority-eng/NET" class="govuk-link">Newcastle City Council</a>
+<span title="Organisation identifier: local-authority-eng:NET" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NET)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Reference
+            </dt>
+            <dd class="govuk-summary-list__value">                9            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                Gosforth            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Geography
+            </dt>
+            <dd class="govuk-summary-list__value">                conservation-area:9            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Entity
+            </dt>
+            <dd class="govuk-summary-list__value">                510529            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Entry date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-09-06            </dd>
+        </div>    
+    </dl></article>
+</div>
+            
+</div>
+
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div>
+<h3 class="govuk-heading-m">Associated information</h3>
+
+<ul class="govuk-list govuk-list--bullet">
+    <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
+
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>geometry</th>
+            <th>name</th>
+            <th>organisation</th>
+            <th>geography</th>
+            <th>reference</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-09-06</td>
+            <td><a href="https://github.com/digital-land/conservation-area-collection/tree/main/transformed/conservation-area/9141bf76b0d89eab27d6e46014ec2fd282ad622924ec316d39dbf67551f8738c.csv#L12">9141bf76b0d8...</a></td>
+            <td>11</td>
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.630829 55.001839,-1.631168 55.002231,-1.631385 55.002162,-1.632007 55.002844,-1.634343 55.002129,-1.634779 55.002616,-1.633405 55.003073,-1.633446 55.003133,-1.632182 55.003517,-1.631656 55.002936,-1.631583 55.002950,-1.631613 55.002974,-1.631087 55.003125,-1.630704 55.002722,-1.630119 55.001863,-1.629644 55.001974,-1.629774 55.002191,-1.628574 55.002495,-1.628021 55.002601,-1.628087 55.002774,-1.628584 55.003364,-1.626536 55.003934,-1.626996 55.004475,-1.625451 55.004915,-1.625651 55.005159,-1.625233 55.005273,-1.625465 55.005554,-1.625010 55.005678,-1.625218 55.006010,-1.625001 55.005957,-1.624797 55.006000,-1.623190 55.006354,-1.620554 55.007002,-1.620590 55.007047,-1.620636 55.007278,-1.620679 55.007331,-1.620756 55.007319,-1.621109 55.007782,-1.619957 55.008104,-1.619852 55.007721,-1.619015 55.007807,-1.618803 55.007122,-1.618274 55.007188,-1.618507 55.007913,-1.617456 55.008017,-1.617244 55.007300,-1.616081 55.003902,-1.615981 55.003409,-1.615901 55.003420,-1.615122 55.003686,-1.615265 55.003840,-1.615433 55.004100,-1.615785 55.005153,-1.612085 55.005591,-1.611914 55.005626,-1.611752 55.005744,-1.611360 55.005676,-1.611077 55.005687,-1.609815 55.006022,-1.610204 55.006609,-1.609912 55.006690,-1.610061 55.006906,-1.609788 55.006963,-1.609940 55.007209,-1.609209 55.007359,-1.609343 55.007831,-1.607953 55.008115,-1.607844 55.007865,-1.607792 55.007235,-1.607977 55.006824,-1.608028 55.006567,-1.608169 55.006179,-1.608226 55.006146,-1.608265 55.006068,-1.609185 55.003933,-1.609936 55.003796,-1.610857 55.003933,-1.610747 55.004092,-1.610201 55.005260,-1.610810 55.005514,-1.612416 55.004957,-1.611640 55.004588,-1.612271 55.004175,-1.613536 55.003480,-1.614145 55.003194,-1.614942 55.002885,-1.614225 55.002173,-1.614020 55.002244,-1.613468 55.001737,-1.614981 55.001275,-1.614612 55.000851,-1.614626 55.000608,-1.615136 55.000554,-1.615456 55.000464,-1.615651 55.000373,-1.616039 54.999553,-1.616148 54.999406,-1.617530 54.999463,-1.617833 54.999329,-1.617764 54.999212,-1.617916 54.999186,-1.618134 54.999224,-1.618311 54.999294,-1.618394 54.999227,-1.618446 54.999242,-1.619034 54.998754,-1.619161 54.998457,-1.619532 54.997925,-1.620875 54.996797,-1.622009 54.996693,-1.623045 54.996507,-1.623801 54.996608,-1.624624 54.996540,-1.625014 54.996462,-1.626621 54.995914,-1.628115 54.995522,-1.628137 54.995549,-1.628695 54.995408,-1.629036 54.995244,-1.629691 54.995165,-1.630128 54.995185,-1.630681 54.995100,-1.631423 54.995064,-1.631663 54.995140,-1.631868 54.995277,-1.632075 54.995332,-1.632557 54.995387,-1.632992 54.995598,-1.633609 54.995589,-1.633844 54.995509,-1.633971 54.995517,-1.634048 54.995565,-1.634081 54.995738,-1.634132 54.995757,-1.635106 54.995672,-1.635663 54.995490,-1.636218 54.995557,-1.636535 54.995549,-1.636803 54.995468,-1.637028 54.995454,-1.636584 54.996598,-1.637439 54.996705,-1.637442 54.996857,-1.637315 54.997186,-1.636462 54.997082,-1.636332 54.997822,-1.636301 54.997825,-1.636076 54.998844,-1.636383 54.998888,-1.636141 54.999464,-1.636180 54.999470,-1.636151 54.999537,-1.636114 54.999518,-1.635726 54.999549,-1.634977 54.999400,-1.635032 54.998752,-1.634984 54.998747,-1.633876 54.998718,-1.632918 54.998761,-1.631427 54.999095,-1.631078 54.999223,-1.631478 54.999320,-1.632488 54.999439,-1.633605 54.999703,-1.633317 54.999984,-1.633653 55.000062,-1.634096 55.000347,-1.634011 55.000387,-1.634430 55.000673,-1.633314 55.000992,-1.633451 55.001127,-1.631403 55.001730,-1.630829 55.001839)))
+  </div>
+</details>
+                </td>
+                <td>Gosforth</td> 
+                <td>local-authority-eng:NET</td> 
+                <td>conservation-area:9</td> 
+                <td>9</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
+</div>
+</div><div id="referenced-by">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m dlf-subnav__heading">Referenced by</h2>
+            <p class="govuk-body">This record is referenced by None other planning related data records.</p>
+</div>
+    </div>
+</div>
+        </main>
+      </div>
+
+    <div class="dlf-feedback__wrapper">
+    <div class="dlf-feedback">
+    <div class="dlf-feedback__prompt">
+        <div class="dlf-feedback__prompt-content">
+            <span class="dlf-feedback__prompt-content__text">Spotted an issue? Let us know so we can improve the data.</span>
+        </div>
+        <div class="dlf-feedback__prompt-action">
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (geography) Gosforth -- conservation-area" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<footer class="govuk-footer " role="contentinfo"
+>
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+              </ul>
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+
+<script>
+    const datasetName = "conservation-area"
+    const $mapElement = document.querySelector('[data-module="boundary-map"]')
+    const $nationalMapLink = document.querySelector('.dl-link-national-map')
+    const mapParams = {
+    initZoomCallback: function (featureGroup, map) {
+          console.log("initial load completed")
+          // do we need to check there isn't more than one shape?
+          const center = featureGroup.getBounds().getCenter()
+          const zoom = map.getZoom()
+          let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+          console.log(url)
+          if ($nationalMapLink) {
+              // only show this for the datasets we've added to the national map
+              $nationalMapLink.href = url
+              $nationalMapLink.classList.remove("js-hidden")
+          }
+      }
+    }
+
+    mapParams.geojsonURLs = ["geometry.geojson"]
+
+    const mapComponent = new DLMaps.Map($mapElement).init(mapParams)
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
+</script>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
+</html>
